@@ -1,0 +1,21 @@
+{
+  "name": "{{MARKETPLACE_NAME}}",
+  "owner": {
+    "name": "{{OWNER_NAME}}",
+    "email": "{{OWNER_EMAIL}}"
+  },
+  "metadata": {
+    "description": "{{MARKETPLACE_DESCRIPTION}}",
+    "version": "1.0.0",
+    "homepage": "https://github.com/{{GITHUB_USER}}/{{MARKETPLACE_NAME}}",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "{{PLUGIN_NAME}}",
+      "source": "./plugins/{{PLUGIN_NAME}}",
+      "description": "{{PLUGIN_DESCRIPTION}}",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "{{PLUGIN_NAME}}",
+  "description": "{{PLUGIN_DESCRIPTION}}",
+  "version": "1.0.0",
+  "author": {
+    "name": "{{AUTHOR_NAME}}",
+    "email": "{{AUTHOR_EMAIL}}"
+  },
+  "homepage": "https://github.com/{{GITHUB_USER}}/{{PLUGIN_NAME}}",
+  "repository": "https://github.com/{{GITHUB_USER}}/{{PLUGIN_NAME}}",
+  "license": "MIT",
+  "keywords": []
+}
