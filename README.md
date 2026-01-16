@@ -29,6 +29,26 @@
 
 ---
 
+## Installation
+
+```bash
+/plugin marketplace add CodeAlive-AI/claude-code-reflection-skills
+/plugin install claude-code-reflection-skills
+```
+
+Or directly:
+
+```bash
+/plugin install github:CodeAlive-AI/claude-code-reflection-skills
+```
+
+**Requirements:**
+- Claude Code CLI
+- Python 3.x (for skill scripts)
+- `gh` CLI (optional, for plugin publishing)
+
+---
+
 ## Use Cases
 
 ### 1. Connect to Your Database
@@ -116,29 +136,6 @@ Installs the [official GitHub MCP server](https://github.com/github/github-mcp-s
 > *"Update my CodeAlive API key in the MCP config"*
 
 Edits your `~/.claude.json` or `.mcp.json` to update the API key without reinstalling the server. Perfect for rotating credentials.
-
----
-
-## Installation
-
-```bash
-/plugin marketplace add CodeAlive-AI/claude-code-reflection-skills
-/plugin install claude-code-reflection-skills
-```
-
-Or directly:
-
-```bash
-/plugin install github:CodeAlive-AI/claude-code-reflection-skills
-```
-
----
-
-## Requirements
-
-- Claude Code CLI
-- Python 3.x (for skill scripts)
-- `gh` CLI (optional, for plugin publishing)
 
 ---
 

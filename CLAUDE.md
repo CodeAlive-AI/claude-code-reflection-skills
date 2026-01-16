@@ -10,6 +10,7 @@ Changes to these files/directories require a new version tag and release:
 
 - `skills/*/` - Any skill file changes (SKILL.md, scripts, references, assets)
 - `.claude-plugin/plugin.json` - Plugin manifest changes
+- `.claude-plugin/marketplace.json` - Marketplace catalog changes
 - `LICENSE` - License changes
 
 Examples:

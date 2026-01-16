@@ -1,0 +1,39 @@
+{
+  "name": "claude-code-reflection-skills",
+  "owner": {
+    "name": "CodeAlive-AI",
+    "email": "contact@codealive.ai"
+  },
+  "metadata": {
+    "description": "Marketplace for Claude Code reflection and meta-skills",
+    "version": "1.0.0",
+    "homepage": "https://github.com/CodeAlive-AI/claude-code-reflection-skills"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-reflection-skills",
+      "source": ".",
+      "description": "A comprehensive collection of meta-skills for Claude Code that enable self-management and reflection capabilities. Includes skills for managing other skills, subagents, plugins, settings, MCP servers, and hooks.",
+      "version": "1.0.0",
+      "author": {
+        "name": "CodeAlive-AI"
+      },
+      "category": "productivity",
+      "keywords": [
+        "claude-code",
+        "skills",
+        "meta-skills",
+        "reflection",
+        "self-management",
+        "plugins",
+        "settings",
+        "mcp",
+        "hooks",
+        "subagents"
+      ],
+      "homepage": "https://github.com/CodeAlive-AI/claude-code-reflection-skills",
+      "repository": "https://github.com/CodeAlive-AI/claude-code-reflection-skills",
+      "license": "MIT"
+    }
+  ]
+}
