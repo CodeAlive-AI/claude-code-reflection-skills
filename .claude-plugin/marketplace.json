@@ -17,8 +17,8 @@
         "name": "CodeAlive-AI"
       },
       "source": {
-        "source": "github",
-        "repo": "CodeAlive-AI/claude-code-reflection-skills",
+        "source": "git",
+        "url": "https://github.com/CodeAlive-AI/claude-code-reflection-skills.git",
         "ref": "main"
       },
       "category": "developer-tools",
