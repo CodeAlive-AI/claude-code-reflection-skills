@@ -27,6 +27,8 @@ my-plugin/
 ├── hooks/                    # Optional: Event handlers
 │   └── hooks.json
 ├── .mcp.json                # Optional: MCP server config
+├── .lsp.json                # Optional: LSP server config
+├── scripts/                 # Optional: Hook helpers and utilities
 ├── README.md                # Required: Documentation
 └── LICENSE                  # Recommended: License file
 ```
@@ -37,7 +39,15 @@ my-plugin/
 
 File: `.claude-plugin/plugin.json`
 
-### Required Fields
+### Required Fields (Schema)
+
+```json
+{
+  "name": "plugin-name"
+}
+```
+
+### Strongly Recommended Metadata
 
 ```json
 {
@@ -61,6 +71,19 @@ File: `.claude-plugin/plugin.json`
   "repository": "https://github.com/user/plugin",
   "license": "MIT",
   "keywords": ["tag1", "tag2"]
+}
+```
+
+### Component Path Fields (Optional)
+
+Use these only for non-standard locations. Paths must be relative to the plugin root and start with `./`.
+
+```json
+{
+  "commands": ["./custom/commands/extra.md"],
+  "agents": "./custom/agents/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./mcp.json"
 }
 ```
 
@@ -108,9 +131,8 @@ Agent skills with frontmatter.
 
 ```markdown
 ---
-skill_name: Skill Display Name
-description: What the skill does
-when_to_use: Trigger conditions
+name: skill-name
+description: What the skill does and when to use it
 ---
 
 # Skill Documentation
@@ -122,33 +144,24 @@ Event handlers for Claude actions.
 
 ```json
 {
-  "PostToolUse": [
-    {
-      "matcher": "Write|Edit",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "./scripts/validate.sh",
-          "description": "Validate after edits"
-        }
-      ]
-    }
-  ],
-  "PrePrompt": [
-    {
-      "hooks": [
-        {
-          "type": "prompt",
-          "prompt": "Security reminder text",
-          "description": "Description"
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/validate.sh",
+            "description": "Validate after edits"
+          }
+        ]
+      }
+    ]
+  }
 }
 ```
 
-**Hook Events:** PrePrompt, PostToolUse
+**Hook Events:** PreToolUse, PermissionRequest, PostToolUse, UserPromptSubmit, Notification, Stop, SubagentStop, SessionStart, SessionEnd, PreCompact
 
 ### MCP Servers (.mcp.json)
 
@@ -165,6 +178,22 @@ Event handlers for Claude actions.
   }
 }
 ```
+
+### LSP Servers (.lsp.json)
+
+```json
+{
+  "go": {
+    "command": "gopls",
+    "args": ["serve"],
+    "extensionToLanguage": {
+      ".go": "go"
+    }
+  }
+}
+```
+
+**Note:** Users must install the language server binary locally.
 
 ---
 
@@ -206,11 +235,15 @@ File: `.claude-plugin/marketplace.json`
       "version": "1.0.0",
       "author": { "name": "Author" },
       "category": "productivity",
-      "keywords": ["tag1", "tag2"]
+      "keywords": ["tag1", "tag2"],
+      "tags": ["tag1", "tag2"],
+      "strict": true
     }
   ]
 }
 ```
+
+**Note:** Plugin entries accept all `plugin.json` fields as optional metadata, plus marketplace-only fields: `source`, `category`, `tags`, and `strict`. When `strict` is `false`, the marketplace entry can serve as the full manifest if the plugin lacks `plugin.json`.
 
 ### Advanced Plugin Entry
 
@@ -222,7 +255,7 @@ Override component locations:
   "source": "./plugins/plugin",
   "commands": ["./commands/core/", "./commands/extra/"],
   "agents": ["./agents/agent1.md"],
-  "hooks": { "PostToolUse": [...] },
+  "hooks": { "hooks": { "PostToolUse": [...] } },
   "mcpServers": { "server": {...} },
   "strict": false
 }
@@ -252,19 +285,9 @@ Override component locations:
 ```json
 {
   "source": {
-    "source": "git",
+    "source": "url",
     "url": "https://gitlab.com/team/plugin.git",
     "ref": "v1.0.0"
-  }
-}
-```
-
-### Direct URL
-```json
-{
-  "source": {
-    "source": "url",
-    "url": "https://example.com/marketplace.json"
   }
 }
 ```
@@ -280,6 +303,8 @@ Override component locations:
 /plugin uninstall <name>@<marketplace>
 /plugin enable <name>@<marketplace>
 /plugin disable <name>@<marketplace>
+claude plugin install <name>@<marketplace> --scope project
+claude plugin uninstall <name>@<marketplace> --scope project
 ```
 
 ### Marketplace Management
@@ -347,3 +372,9 @@ python scripts/prepare_submission.py ./my-plugin \
 - [ ] Description is 50-100 words
 - [ ] Plugin pushed to GitHub
 - [ ] Working directory is clean
+
+---
+
+## Environment Variables
+
+**`${CLAUDE_PLUGIN_ROOT}`** resolves to the plugin's installation directory. Use it in hooks, MCP configs, and scripts to avoid path errors after install.

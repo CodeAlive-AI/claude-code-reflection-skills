@@ -210,9 +210,25 @@ def validate_hooks(plugin_dir: Path, result: ValidationResult):
         with open(hooks_json) as f:
             hooks_data = json.load(f)
         result.add_info("Found hooks configuration")
+        events = hooks_data.get("hooks", hooks_data)
+        if not isinstance(events, dict):
+            result.add_error("hooks.json 'hooks' field must be an object")
+            return
 
-        valid_events = ["PrePrompt", "PostToolUse"]
-        for event in hooks_data.keys():
+        valid_events = {
+            "PreToolUse",
+            "PermissionRequest",
+            "PostToolUse",
+            "UserPromptSubmit",
+            "Notification",
+            "Stop",
+            "SubagentStop",
+            "SessionStart",
+            "SessionEnd",
+            "PreCompact",
+            "PrePrompt",
+        }
+        for event in events.keys():
             if event not in valid_events:
                 result.add_warning(f"Unknown hook event: {event}")
 

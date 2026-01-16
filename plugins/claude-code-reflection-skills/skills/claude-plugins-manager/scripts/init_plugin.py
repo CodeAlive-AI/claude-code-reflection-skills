@@ -99,9 +99,8 @@ Use this agent when...
 def create_skill_template(skill_name: str) -> str:
     """Create a SKILL.md file."""
     return f"""---
-skill_name: {skill_name.replace('-', ' ').title()}
-description: TODO: What this skill does
-when_to_use: TODO: When should this skill be triggered
+name: {skill_name}
+description: TODO: What this skill does. Use when ...
 ---
 
 # {skill_name.replace('-', ' ').title()}
@@ -119,18 +118,20 @@ TODO: How to use this skill.
 def create_hooks_json() -> dict:
     """Create hooks.json template."""
     return {
-        "PostToolUse": [
-            {
-                "matcher": "Write|Edit",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "echo 'File modified'",
-                        "description": "TODO: Replace with actual hook"
-                    }
-                ]
-            }
-        ]
+        "hooks": {
+            "PostToolUse": [
+                {
+                    "matcher": "Write|Edit",
+                    "hooks": [
+                        {
+                            "type": "command",
+                            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/validate.sh",
+                            "description": "TODO: Replace with actual hook"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 
 

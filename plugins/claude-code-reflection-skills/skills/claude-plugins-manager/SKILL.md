@@ -16,6 +16,7 @@ Manage Claude Code plugins: create, validate, publish, delete, and submit to off
 | Create plugin | `python scripts/init_plugin.py <name>` |
 | Create marketplace | `python scripts/init_marketplace.py <name>` |
 | Validate plugin | `python scripts/validate_plugin.py <path>` |
+| Validate marketplace | `claude plugin validate <path>` |
 | Prepare submission | `python scripts/prepare_submission.py <path> --email X --company-url Y` |
 | Install plugin | `/plugin install <name>@<marketplace>` |
 | Delete plugin | `/plugin uninstall <name>@<marketplace>` |
@@ -70,6 +71,12 @@ python scripts/init_marketplace.py my-marketplace --with-plugin my-plugin
 /plugin marketplace add username/my-marketplace
 ```
 
+**Marketplace references:**
+- Required file: `.claude-plugin/marketplace.json`
+- Plugin entries must have `name` that matches each plugin's `plugin.json` name
+- Use relative paths in `source` (e.g., `./plugins/my-plugin`), not absolute paths
+- Use `${CLAUDE_PLUGIN_ROOT}` inside hooks and MCP configs referenced by marketplace plugins
+
 ### 3. Validate a Plugin
 
 ```bash
@@ -82,6 +89,9 @@ python scripts/validate_plugin.py ./my-plugin
 - Command/agent frontmatter
 - Hooks and MCP configuration
 - README.md and LICENSE presence
+
+**Also consider:**
+- `claude plugin validate <path>` for marketplace JSON validation
 
 ### 4. Publish a Plugin
 
@@ -182,11 +192,20 @@ my-plugin/
 ├── hooks/
 │   └── hooks.json        # Event handlers
 ├── .mcp.json             # MCP servers
+├── .lsp.json             # LSP server config (optional)
 ├── README.md             # Documentation
 └── LICENSE
 ```
 
 **For detailed reference:** See [references/plugin-guide.md](references/plugin-guide.md)
+
+## Critical Rules (Avoid Silent Failures)
+
+- Keep `commands/`, `agents/`, `skills/`, and `hooks/` at the plugin root (never inside `.claude-plugin/`).
+- Do not add standard component paths to `plugin.json`. Only specify non-standard paths starting with `./`.
+- Use `${CLAUDE_PLUGIN_ROOT}` in hooks and MCP config paths (relative paths break after install).
+- Ensure hook scripts are executable (`chmod +x scripts/*`).
+- Marketplace `plugins[].name` must match the plugin's `plugin.json` `name`.
 
 ## Common Patterns
 
@@ -218,17 +237,19 @@ Detailed instructions and expertise.
 
 ```json
 {
-  "PostToolUse": [
-    {
-      "matcher": "Write|Edit",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "./scripts/validate.sh"
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/validate.sh"
+          }
+        ]
+      }
+    ]
+  }
 }
 ```
 
@@ -242,5 +263,33 @@ Detailed instructions and expertise.
       "args": ["./servers/server.js"]
     }
   }
+}
+```
+
+### Skill File Format
+
+```markdown
+---
+name: my-skill
+description: What this skill does and when to use it
+---
+
+# Skill Title
+
+Instructions for Claude when this skill is invoked.
+```
+
+### Marketplace Entry Example
+
+```json
+{
+  "name": "my-plugin",
+  "source": "./plugins/my-plugin",
+  "description": "Short description",
+  "version": "1.0.0",
+  "author": { "name": "Author Name" },
+  "category": "productivity",
+  "keywords": ["tag1", "tag2"],
+  "strict": true
 }
 ```
