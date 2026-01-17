@@ -30,6 +30,8 @@
 
 # Passo 2: Instale o plugin
 /plugin install claude-code-reflection-skills@claude-code-reflection-skills
+
+# Passo 3: Reinicie o Claude Code para que as alterações entrem em vigor
 ```
 
 ---

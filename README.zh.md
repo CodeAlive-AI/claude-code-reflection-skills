@@ -30,6 +30,8 @@
 
 # 第二步：安装插件
 /plugin install claude-code-reflection-skills@claude-code-reflection-skills
+
+# 第三步：重启 Claude Code 以使更改生效
 ```
 
 ---

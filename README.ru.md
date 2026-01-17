@@ -30,6 +30,8 @@
 
 # Шаг 2: Установите плагин
 /plugin install claude-code-reflection-skills@claude-code-reflection-skills
+
+# Шаг 3: Перезапустите Claude Code для применения изменений
 ```
 
 ---

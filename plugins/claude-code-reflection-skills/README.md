@@ -21,6 +21,7 @@ Meta-skills that let Claude Code configure itself through conversation.
 ```bash
 /plugin marketplace add CodeAlive-AI/claude-code-reflection-skills
 /plugin install claude-code-reflection-skills@claude-code-reflection-skills
+# Restart Claude Code for changes to take effect
 ```
 
 ## Examples
