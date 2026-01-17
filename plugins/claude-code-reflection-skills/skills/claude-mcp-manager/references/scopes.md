@@ -1,30 +1,96 @@
 # MCP Installation Scopes
 
+## Contents
+
+- [Scope Types](#scope-types)
+- [Config File Locations](#config-file-locations)
+- [Scope Precedence](#scope-precedence)
+- [Config File Examples](#config-file-examples)
+- [Managed MCP (Enterprise)](#managed-mcp-enterprise)
+
 ## Scope Types
 
 ### Local Scope (Default)
 
-- **Storage**: `~/.claude.json` under project's path key
-- **Visibility**: Only you, only current project
-- **Use when**: Personal development servers, sensitive credentials, experimental configs
-
 ```bash
 claude mcp add --transport http stripe https://mcp.stripe.com
 # or explicitly:
-claude mcp add --transport http stripe --scope local https://mcp.stripe.com
+claude mcp add --scope local --transport http stripe https://mcp.stripe.com
 ```
 
+- **Storage**: `~/.claude.json` under project's path key
+- **Visibility**: Only you, only current project
+- **Use when**: Personal dev servers, sensitive credentials, experimental configs
+
 ### Project Scope
+
+```bash
+claude mcp add --scope project --transport http paypal https://mcp.paypal.com/mcp
+```
 
 - **Storage**: `.mcp.json` at project root
 - **Visibility**: Everyone via version control
 - **Use when**: Team-shared servers, project-specific integrations
 
+### User Scope
+
 ```bash
-claude mcp add --transport http paypal --scope project https://mcp.paypal.com/mcp
+claude mcp add --scope user --transport http hubspot https://mcp.hubspot.com/anthropic
 ```
 
-**Example .mcp.json:**
+- **Storage**: `~/.claude.json` (global section)
+- **Visibility**: Only you, all projects
+- **Use when**: Personal utilities, cross-project tools
+
+## Config File Locations
+
+| Scope | File | Section |
+|-------|------|---------|
+| Local | `~/.claude.json` | `projects.<project-path>.mcpServers` |
+| Project | `.mcp.json` (project root) | `mcpServers` |
+| User | `~/.claude.json` | `mcpServers` |
+
+## Scope Precedence
+
+When servers with the same name exist at multiple scopes:
+
+1. **Local** (highest priority)
+2. **Project**
+3. **User** (lowest priority)
+
+This allows overriding team configs with personal preferences.
+
+## Config File Examples
+
+### Local/User scope (~/.claude.json)
+
+```json
+{
+  "mcpServers": {
+    "my-global-server": {
+      "type": "http",
+      "url": "https://api.example.com/mcp"
+    }
+  },
+  "projects": {
+    "/path/to/project": {
+      "mcpServers": {
+        "project-db": {
+          "type": "stdio",
+          "command": "npx",
+          "args": ["-y", "@bytebase/dbhub", "--dsn", "${DATABASE_URL}"],
+          "env": {
+            "API_KEY": "${MY_API_KEY}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Project scope (.mcp.json)
+
 ```json
 {
   "mcpServers": {
@@ -41,29 +107,29 @@ claude mcp add --transport http paypal --scope project https://mcp.paypal.com/mc
 }
 ```
 
-### User Scope
+### Environment Variables in Config
 
-- **Storage**: `~/.claude.json` (global section)
-- **Visibility**: Only you, all projects on your machine
-- **Use when**: Personal utilities, cross-project tools
+Syntax: `${VAR}` or `${VAR:-default}`
 
-```bash
-claude mcp add --transport http hubspot --scope user https://mcp.hubspot.com/anthropic
+```json
+{
+  "mcpServers": {
+    "api": {
+      "type": "http",
+      "url": "${API_URL:-https://default.com}/mcp",
+      "headers": {
+        "Authorization": "Bearer ${API_KEY}"
+      }
+    }
+  }
+}
 ```
-
-## Scope Precedence
-
-When servers with the same name exist at multiple scopes:
-
-1. **Local** (highest priority)
-2. **Project**
-3. **User** (lowest priority)
-
-This allows overriding team configs with personal preferences.
 
 ## Managed MCP (Enterprise)
 
-System administrators can control MCP via managed configuration files:
+System administrators can control MCP via managed configuration files.
+
+### File Locations
 
 | Platform | Location |
 |----------|----------|

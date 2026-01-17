@@ -1,5 +1,12 @@
 # MCP Transport Types
 
+## Contents
+
+- [HTTP Transport (Recommended)](#http-transport-recommended)
+- [SSE Transport (Deprecated)](#sse-transport-deprecated)
+- [Stdio Transport](#stdio-transport)
+- [Popular Servers](#popular-servers)
+
 ## HTTP Transport (Recommended)
 
 Remote servers accessible via HTTP/HTTPS URLs.
@@ -11,7 +18,7 @@ claude mcp add --transport http <name> <url>
 claude mcp add --transport http <name> <url> --header "Authorization: Bearer TOKEN"
 ```
 
-**Configuration format (.mcp.json):**
+**Config format:**
 ```json
 {
   "mcpServers": {
@@ -36,7 +43,7 @@ Server-Sent Events transport. Use HTTP instead when possible.
 claude mcp add --transport sse <name> <url>
 ```
 
-**Configuration format:**
+**Config format:**
 ```json
 {
   "mcpServers": {
@@ -54,12 +61,9 @@ Local servers via subprocess execution. Required for npm packages.
 
 ```bash
 claude mcp add --transport stdio <name> -- <command> [args...]
-
-# With environment variables
-claude mcp add --transport stdio --env VAR1=value1 --env VAR2=value2 <name> -- <command>
 ```
 
-**Configuration format:**
+**Config format:**
 ```json
 {
   "mcpServers": {
@@ -78,7 +82,9 @@ claude mcp add --transport stdio --env VAR1=value1 --env VAR2=value2 <name> -- <
 
 **Best for:** Local databases, npm packages, custom scripts.
 
-## Popular Stdio Servers
+## Popular Servers
+
+### Stdio Servers
 
 | Server | Command |
 |--------|---------|
@@ -88,7 +94,7 @@ claude mcp add --transport stdio --env VAR1=value1 --env VAR2=value2 <name> -- <
 | Brave Search | `npx -y @anthropics/mcp-server-brave-search` |
 | Puppeteer | `npx -y @anthropics/mcp-server-puppeteer` |
 
-## Popular HTTP Servers
+### HTTP Servers
 
 | Service | URL |
 |---------|-----|
@@ -98,4 +104,4 @@ claude mcp add --transport stdio --env VAR1=value1 --env VAR2=value2 <name> -- <
 | Asana | `https://mcp.asana.com/sse` (SSE) |
 | Linear | `https://mcp.linear.app/sse` (SSE) |
 
-Browse more servers: https://github.com/modelcontextprotocol/servers
+Browse more: https://github.com/modelcontextprotocol/servers

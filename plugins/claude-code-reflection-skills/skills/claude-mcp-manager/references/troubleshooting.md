@@ -1,5 +1,13 @@
 # MCP Troubleshooting
 
+## Contents
+
+- [Check Server Status](#check-server-status)
+- [Common Issues](#common-issues)
+- [Environment Variables](#environment-variables)
+- [Security Notes](#security-notes)
+- [Resources](#resources)
+
 ## Check Server Status
 
 ```bash
@@ -27,7 +35,7 @@ claude mcp add --transport http my-server https://example.com
 
 ### Server Not Connecting
 
-1. **Check URL is correct** - Must be full URL with protocol
+1. **Check URL** - Must be full URL with protocol
 2. **Verify credentials** - Run `/mcp` to re-authenticate
 3. **Check timeout** - Increase with `MCP_TIMEOUT=30000 claude`
 
@@ -39,12 +47,12 @@ claude mcp add --transport http my-server https://example.com
    npx -y @package/name --help
    ```
 
-2. **Check environment variables are set:**
+2. **Check environment variables:**
    ```bash
    echo $API_KEY
    ```
 
-3. **Windows users** - Use `cmd /c` wrapper:
+3. **Windows** - Use `cmd /c` wrapper:
    ```bash
    claude mcp add --transport stdio my-server -- cmd /c npx -y @some/package
    ```
@@ -58,13 +66,11 @@ export MAX_MCP_OUTPUT_TOKENS=50000
 claude
 ```
 
-Warning threshold is at 10,000 tokens.
-
 ### OAuth Authentication Issues
 
 1. Run `/mcp` in Claude Code
-2. Follow browser login prompts
-3. Tokens are stored and refreshed automatically
+2. Follow browser prompts
+3. Tokens refresh automatically
 
 If issues persist, remove and re-add the server:
 ```bash
@@ -74,16 +80,16 @@ claude mcp add --transport http github https://api.githubcopilot.com/mcp/
 
 ### Environment Variable Not Expanding
 
-**Check syntax:**
+**Syntax:**
 - `${VAR}` - Expands to value
 - `${VAR:-default}` - Uses default if not set
 
-**Verify variable is set:**
+**Verify variable:**
 ```bash
 echo $MY_API_KEY
 ```
 
-**In .mcp.json:**
+**In config:**
 ```json
 {
   "env": {
@@ -92,13 +98,16 @@ echo $MY_API_KEY
 }
 ```
 
-## Key Environment Variables
+### --env Flag Issues
+
+The `--env` CLI flag can misinterpret arguments with special characters. Workaround: add server without env vars, then edit config file directly. See [scopes.md](scopes.md) for file locations.
+
+## Environment Variables
 
 | Variable | Purpose | Default |
 |----------|---------|---------|
 | `MCP_TIMEOUT` | Server startup timeout (ms) | 10000 |
 | `MAX_MCP_OUTPUT_TOKENS` | Maximum output tokens | 25000 |
-| `CLAUDE_PLUGIN_ROOT` | Plugin path expansion | - |
 
 ## Security Notes
 

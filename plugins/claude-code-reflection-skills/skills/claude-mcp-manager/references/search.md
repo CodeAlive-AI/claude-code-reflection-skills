@@ -1,80 +1,82 @@
 # MCP Server Search & Verification
 
-## Search Priority
+## Contents
 
-**ALWAYS search for the official vendor source FIRST using WebSearch, then fallback to the MCP Registry.**
+- [Search Workflow](#search-workflow)
+- [Deployment Options](#deployment-options)
+- [Known Official Vendor Servers](#known-official-vendor-servers)
+- [MCP Reference Servers](#mcp-reference-servers)
+- [User Choice Template](#user-choice-template)
+- [Collecting Configuration](#collecting-configuration)
 
-## Step 1: Find Official Vendor Source (Primary)
+## Search Workflow
 
-Use WebSearch with queries like:
+**ALWAYS search for official vendor source FIRST, then fallback to MCP Registry.**
+
+### Step 1: Find Official Vendor Source
+
+Use WebSearch:
 ```
 "[service-name] MCP server official"
 "[service-name] Model Context Protocol GitHub"
 site:github.com [vendor-name] mcp-server
 ```
 
-**What to look for:**
-- Official vendor GitHub repo (e.g., `github.com/github/github-mcp-server`)
-- Vendor documentation about MCP support
-- Official announcement/blog post
-
-**How to verify it's official:**
-- GitHub org matches vendor name (github/github-mcp-server, not random-user/github-mcp)
+**Verify it's official:**
+- GitHub org matches vendor name (e.g., `github/github-mcp-server`)
 - Links from vendor's official website
-- Mentioned in vendor's official documentation
+- Mentioned in vendor's official docs
 
-## Step 2: Fetch Installation Details
+### Step 2: Fetch Installation Details
 
-Use WebFetch on the official repo README to extract:
+Use WebFetch on the official repo README to get:
 - Available deployment options (Remote, Local, Docker)
-- The vendor's **recommended** approach (highlight this!)
+- Vendor's recommended approach
 - Required environment variables
 - Authentication requirements
 
-## Step 3: Fallback to MCP Registry
+### Step 3: Fallback to MCP Registry
 
-Only if no official source found, query:
+Only if no official source found:
 ```
 https://registry.modelcontextprotocol.io/v0.1/servers?search=<query>&limit=20
 ```
 
-**Response fields to use:**
+**Response fields:**
 - `server.name` - Server identifier
 - `server.description` - What it does
 - `server.repository.url` - Source code
-- `server.remotes[].url` - Remote endpoint (HTTP/SSE)
+- `server.remotes[].url` - Remote endpoint
 - `server.packages[].identifier` - npm package name
 - `server.packages[].environmentVariables` - Required config
 
-## Deployment Options Reference
+## Deployment Options
 
 ### Remote (HTTP/SSE)
 ```bash
 claude mcp add --transport http <name> <url>
-# or for SSE
-claude mcp add --transport sse <name> <url>
 ```
 **Pros:** No local setup, always updated, vendor-managed
-**Cons:** Requires internet, vendor dependency
-**Best for:** Most users, production use
+**Cons:** Requires internet
+**Best for:** Most users, production
 
 ### Local (npm/Stdio)
 ```bash
 claude mcp add --transport stdio <name> -- npx -y @vendor/mcp-server
 ```
-**Pros:** Works offline, full control, customizable
+**Pros:** Works offline, full control
 **Cons:** Requires Node.js, manual updates
-**Best for:** Offline use, development, customization
+**Best for:** Offline use, development
 
 ### Docker
 ```bash
 claude mcp add --transport stdio <name> -- docker run -i --rm vendor/mcp-server
 ```
-**Pros:** Isolated, reproducible, no Node.js needed
-**Cons:** Requires Docker, more resources
-**Best for:** CI/CD, isolation requirements, complex dependencies
+**Pros:** Isolated, reproducible
+**Cons:** Requires Docker
+**Best for:** CI/CD, isolation requirements
 
-## Known Official Vendor Servers (Top 20)
+## Known Official Vendor Servers
 
 ### Developer Tools & Platforms
 
@@ -126,11 +128,9 @@ claude mcp add --transport stdio <name> -- docker run -i --rm vendor/mcp-server
 
 ### Code Intelligence
 
-| Service | Official Repo | Remote URL | Local Package | Docker |
-|---------|---------------|------------|---------------|--------|
-| CodeAlive | `CodeAlive-AI/codealive-mcp` | `https://mcp.codealive.ai/api` | `codealive-mcp` (Python) | `ghcr.io/codealive-ai/codealive-mcp` |
-
-**CodeAlive** - Semantic code search and AI consulting across indexed codebases. Requires API key from https://app.codealive.ai/
+| Service | Official Repo | Remote URL | Local Package |
+|---------|---------------|------------|---------------|
+| CodeAlive | `CodeAlive-AI/codealive-mcp` | `https://mcp.codealive.ai/api` | `codealive-mcp` (Python) |
 
 ### Other Services
 
@@ -140,7 +140,9 @@ claude mcp add --transport stdio <name> -- docker run -i --rm vendor/mcp-server
 | Firebase | `firebase/firebase-tools` | - | Firebase MCP |
 | Auth0 | `auth0/auth0-mcp-server` | - | `@auth0/mcp` |
 
-## MCP Reference Servers (Anthropic/MCP Team)
+## MCP Reference Servers
+
+From Anthropic/MCP team:
 
 | Server | Package | Description |
 |--------|---------|-------------|
@@ -154,7 +156,7 @@ claude mcp add --transport stdio <name> -- docker run -i --rm vendor/mcp-server
 
 ## User Choice Template
 
-When presenting options to the user, use this format with `AskUserQuestion`:
+When presenting options, use `AskUserQuestion` with this format:
 
 ```
 Found [Service] MCP Server (Official ✓)
@@ -176,16 +178,14 @@ Available deployment options:
 Which would you like to install?
 ```
 
-Mark the vendor's recommended option (or Remote if not specified) with ⭐.
+Mark vendor's recommended option (or Remote if not specified) with ⭐.
 
-## Collecting Required Configuration
+## Collecting Configuration
 
-**IMPORTANT:** Before installing, check if the server requires configuration (API keys, tokens, URLs, etc.). If so, ASK the user for these values BEFORE running the install command.
-
-Use `AskUserQuestion` to collect required info:
+**IMPORTANT:** Check if server requires configuration before installing. Use `AskUserQuestion`:
 
 ```
-This MCP server requires the following configuration:
+This MCP server requires configuration:
 
 **Required:**
 - API_KEY: Your [Service] API key (get it from [url])
@@ -194,13 +194,13 @@ This MCP server requires the following configuration:
 **Optional:**
 - CUSTOM_URL: Custom API endpoint (default: https://api.service.com)
 
-Please provide the required values to continue.
+Please provide the required values.
 ```
 
-Common configuration patterns:
-- **API Keys**: Most services require an API key for authentication
-- **OAuth**: Some servers (GitHub, Atlassian) use OAuth - will prompt in browser
+Common patterns:
+- **API Keys**: Most services require authentication
+- **OAuth**: GitHub, Atlassian - will prompt in browser
 - **Database URLs**: Connection strings like `postgresql://user:pass@host:5432/db`
-- **Workspace/Team IDs**: Slack, Notion, Atlassian often need workspace identifiers
+- **Workspace IDs**: Slack, Notion, Atlassian often need workspace identifiers
 
-**Never install with placeholder values** - always get real values from the user first.
+Never install with placeholder values.
