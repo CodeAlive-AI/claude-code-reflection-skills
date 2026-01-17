@@ -4,7 +4,7 @@ Meta-skills that let Claude Code configure itself through conversation.
 
 ## Included Skills
 
-- **claude-mcp-installer** - Connect to databases, GitHub, APIs via MCP servers
+- **claude-mcp-manager** - Connect to databases, GitHub, APIs via MCP servers
 - **claude-hooks-manager** - Auto-format, auto-test, log commands after edits
 - **claude-settings-manager** - Configure permissions, sandbox, model selection
 - **claude-subagents-manager** - Create specialized agents for specific tasks

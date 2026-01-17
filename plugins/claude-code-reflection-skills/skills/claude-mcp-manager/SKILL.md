@@ -1,5 +1,5 @@
 ---
-name: claude-mcp-installer
+name: claude-mcp-manager
 description: Search, install, configure, update, and remove MCP servers in Claude Code. Can search the official MCP registry to find servers, preferring official/trusted sources and requiring user permission before installing.
 ---
 

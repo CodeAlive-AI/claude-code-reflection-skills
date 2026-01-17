@@ -34,7 +34,7 @@ The **claude-code-reflection-skills** plugin provides 6 skills:
 
 | Skill | What It Does |
 |-------|--------------|
-| **claude-mcp-installer** | Connect to databases, GitHub, APIs via MCP servers |
+| **claude-mcp-manager** | Connect to databases, GitHub, APIs via MCP servers |
 | **claude-hooks-manager** | Auto-format, auto-test, log commands after edits |
 | **claude-settings-manager** | Configure permissions, sandbox, model selection |
 | **claude-subagents-manager** | Create specialized agents for specific tasks |
@@ -117,7 +117,23 @@ Adds a PreToolUse hook that appends commands to `~/.claude/command-log.txt`. Ful
 
 ---
 
-### 10. Install GitHub Integration
+### 10. Block Dangerous Commands
+
+> *"Add hook that blocks global rm -rf commands"*
+
+Adds a PreToolUse hook that rejects destructive commands before they run. Protects against accidental data loss.
+
+---
+
+### 11. Require Confirmation for Risky Operations
+
+> *"Add hook that asks user permission for commands containing 'db reset'"*
+
+Adds a PreToolUse hook that pauses and requests confirmation for database resets or other sensitive operations.
+
+---
+
+### 12. Install GitHub Integration
 
 > *"Connect Claude to GitHub so it can create PRs and manage issues"*
 
@@ -125,11 +141,19 @@ Installs the [official GitHub MCP server](https://github.com/github/github-mcp-s
 
 ---
 
-### 11. Update MCP Server Credentials
+### 13. Update CodeAlive API Key
 
 > *"Update my CodeAlive API key in the MCP config"*
 
-Edits your `~/.claude.json` or `.mcp.json` to update the API key without reinstalling the server. Perfect for rotating credentials.
+Edits your `~/.claude.json` or `.mcp.json` to update the API key for the CodeAlive MCP server. Perfect for rotating credentials without reinstalling.
+
+---
+
+### 14. Update MCP Server Configuration
+
+> *"Change the timeout for all my MCP servers to 120 seconds"*
+
+Bulk updates MCP server configuration in your `.claude.json` or `.mcp.json`. Adjust timeouts, environment variables, or command args across all servers at once.
 
 ---
 
@@ -152,7 +176,7 @@ claude-code-reflection-skills/
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       ├── skills/
-│       │   ├── claude-mcp-installer/
+│       │   ├── claude-mcp-manager/
 │       │   ├── claude-hooks-manager/
 │       │   ├── claude-settings-manager/
 │       │   ├── claude-subagents-manager/
