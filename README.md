@@ -40,7 +40,7 @@ The **claude-code-reflection-skills** plugin provides 7 skills:
 | **claude-subagents-manager** | Create specialized agents for specific tasks |
 | **claude-skills-manager** | Organize and share skills across projects |
 | **claude-plugins-manager** | Package and publish your own plugins |
-| **claude-optimizer-skill** | Audit repos and optimize CLAUDE.md for agent work |
+| **optimizing-claude-code** | Audit repos and optimize CLAUDE.md for agent work |
 
 ---
 
@@ -177,7 +177,7 @@ Packages your plugin and creates a GitHub release for others to install.
 
 ---
 
-### claude-optimizer-skill
+### optimizing-claude-code
 
 > Audit repos and optimize CLAUDE.md for agent work
 
@@ -218,7 +218,7 @@ claude-code-reflection-skills/
 │       │   ├── claude-subagents-manager/
 │       │   ├── claude-skills-manager/
 │       │   ├── claude-plugins-manager/
-│       │   └── claude-optimizer-skill/
+│       │   └── optimizing-claude-code/
 │       ├── LICENSE
 │       └── README.md
 ├── CLAUDE.md
