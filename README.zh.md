@@ -46,7 +46,7 @@
 | **claude-hooks-manager** | 自动格式化、自动测试、命令日志记录 |
 | **claude-settings-manager** | 配置权限、沙箱模式、模型选择 |
 | **claude-subagents-manager** | 创建专门处理特定任务的子代理 |
-| **claude-skills-manager** | 跨项目管理和分享技能 |
+| **skills-manager** | 跨项目管理和分享技能 |
 | **claude-plugins-manager** | 打包和发布自己的插件 |
 | **optimizing-claude-code** | 审计仓库并优化 CLAUDE.md 配置 |
 
@@ -155,7 +155,7 @@
 
 ---
 
-### claude-skills-manager
+### skills-manager
 
 > 跨项目管理和分享技能
 
@@ -226,7 +226,7 @@ claude-code-reflection-skills/
 │       │   ├── claude-hooks-manager/
 │       │   ├── claude-settings-manager/
 │       │   ├── claude-subagents-manager/
-│       │   ├── claude-skills-manager/
+│       │   ├── skills-manager/
 │       │   ├── claude-plugins-manager/
 │       │   └── optimizing-claude-code/
 │       ├── LICENSE

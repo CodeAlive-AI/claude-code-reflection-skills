@@ -61,7 +61,7 @@ def check_name(name: str) -> list[dict]:
                 "severity": "warning",
                 "rule": "reserved-word",
                 "message": f"Name contains reserved word '{word}'",
-                "suggestion": f"Consider renaming without '{word}' (e.g., 'managing-skills' instead of 'claude-skills-manager')"
+                "suggestion": f"Consider renaming without '{word}' (e.g., 'skills-manager' instead of 'claude-skills-manager')"
             })
 
     # Naming convention (gerund form preferred)

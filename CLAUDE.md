@@ -70,7 +70,7 @@ claude-code-reflection-skills/
 │   ├── claude-hooks-manager/
 │   ├── claude-settings-manager/
 │   ├── claude-subagents-manager/
-│   ├── claude-skills-manager/
+│   ├── skills-manager/
 │   └── claude-plugins-manager/
 ├── README.md                # Documentation - no release needed
 ├── CLAUDE.md                # This file - no release needed

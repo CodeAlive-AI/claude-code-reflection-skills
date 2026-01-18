@@ -10,7 +10,7 @@ Meta-skills that let Claude Code configure itself through conversation.
 | **claude-hooks-manager** | Auto-format, auto-test, log commands after edits |
 | **claude-settings-manager** | Configure permissions, sandbox, model selection |
 | **claude-subagents-manager** | Create specialized agents for specific tasks |
-| **claude-skills-manager** | Organize and share skills across projects |
+| **skills-manager** | Organize and share skills across projects |
 | **claude-plugins-manager** | Package and publish your own plugins |
 | **optimizing-claude-code** | Audit repos and optimize CLAUDE.md for agent work |
 

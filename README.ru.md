@@ -46,7 +46,7 @@
 | **claude-hooks-manager** | Автоформатирование, автотесты, логирование команд |
 | **claude-settings-manager** | Настройка прав доступа, песочницы, выбора модели |
 | **claude-subagents-manager** | Создание специализированных агентов под конкретные задачи |
-| **claude-skills-manager** | Организация и распространение навыков между проектами |
+| **skills-manager** | Организация и распространение навыков между проектами |
 | **claude-plugins-manager** | Упаковка и публикация собственных плагинов |
 | **optimizing-claude-code** | Аудит репозиториев и оптимизация CLAUDE.md |
 
@@ -155,7 +155,7 @@
 
 ---
 
-### claude-skills-manager
+### skills-manager
 
 > Организация и распространение навыков между проектами
 
@@ -225,7 +225,7 @@ claude-code-reflection-skills/
 │       │   ├── claude-hooks-manager/
 │       │   ├── claude-settings-manager/
 │       │   ├── claude-subagents-manager/
-│       │   ├── claude-skills-manager/
+│       │   ├── skills-manager/
 │       │   ├── claude-plugins-manager/
 │       │   └── optimizing-claude-code/
 │       ├── LICENSE

@@ -46,7 +46,7 @@ O plugin **claude-code-reflection-skills** oferece 7 habilidades:
 | **claude-hooks-manager** | Auto-formatação, auto-testes, log de comandos |
 | **claude-settings-manager** | Configura permissões, sandbox e seleção de modelo |
 | **claude-subagents-manager** | Cria agentes especializados para tarefas específicas |
-| **claude-skills-manager** | Organiza e compartilha habilidades entre projetos |
+| **skills-manager** | Organiza e compartilha habilidades entre projetos |
 | **claude-plugins-manager** | Empacota e publica seus próprios plugins |
 | **optimizing-claude-code** | Audita repositórios e otimiza o CLAUDE.md |
 
@@ -155,7 +155,7 @@ Cria um agente especializado em rodar suítes de teste com acesso limitado a fer
 
 ---
 
-### claude-skills-manager
+### skills-manager
 
 > Organiza e compartilha habilidades entre projetos
 
@@ -226,7 +226,7 @@ claude-code-reflection-skills/
 │       │   ├── claude-hooks-manager/
 │       │   ├── claude-settings-manager/
 │       │   ├── claude-subagents-manager/
-│       │   ├── claude-skills-manager/
+│       │   ├── skills-manager/
 │       │   ├── claude-plugins-manager/
 │       │   └── optimizing-claude-code/
 │       ├── LICENSE
