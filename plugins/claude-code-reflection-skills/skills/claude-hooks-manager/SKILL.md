@@ -80,6 +80,49 @@ Use Edit tool for modifications, Write tool for new files.
 }
 ```
 
+### Simple vs Complex Hooks
+
+**PREFER SCRIPT FILES** for complex hooks. Inline commands with nested quotes, `osascript`, or multi-step logic often break due to JSON escaping issues.
+
+| Complexity | Approach | Example |
+|------------|----------|---------|
+| Simple | Inline | `jq -r '.tool_input.command' >> log.txt` |
+| Medium | Inline | Single grep/jq pipe with basic conditionals |
+| Complex | **Script file** | Dialogs, multiple conditions, osascript, error handling |
+
+**Script location**: `~/.claude/hooks/` (create if needed)
+
+**Script template** (`~/.claude/hooks/my-hook.sh`):
+```bash
+#!/bin/bash
+set -euo pipefail
+
+# Read JSON input from stdin
+input=$(cat)
+cmd=$(echo "$input" | jq -r '.tool_input.command')
+
+# Your logic here
+if echo "$cmd" | grep -q 'pattern'; then
+    # Show dialog, log, or block
+    exit 2  # Block the operation
+fi
+
+exit 0  # Allow
+```
+
+**Hook config using script**:
+```json
+{
+  "type": "command",
+  "command": "~/.claude/hooks/my-hook.sh"
+}
+```
+
+**Always**:
+1. Create script in `~/.claude/hooks/`
+2. Make executable: `chmod +x ~/.claude/hooks/my-hook.sh`
+3. Test with sample input: `echo '{"tool_input":{"command":"test"}}' | ~/.claude/hooks/my-hook.sh`
+
 ### Common Patterns
 
 **Logging (PreToolUse)**:
