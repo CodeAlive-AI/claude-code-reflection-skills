@@ -12,7 +12,7 @@
 > * CAL authoring (G.4),
 > * method/generator registries and dispatch (G.5).
 >
-> **Scope note.** This pattern **governs** the harvesting + synthesis *generator* in Part G. Shipping governing-definition assignment is in **G.10**, refresh orchestration governing-definition assignment is in **G.11**.
+> **Scope note.** This pattern **governs** the harvesting + synthesis *generator* in Part G. Use **G.10** to ship the pack and **G.11** to orchestrate refresh.
 >
 > **Terminology note (normative).** In normative clauses below, **`Tradition`** refers to the *Tech* token `Tradition` (a plural lineage with internally coherent commitments). Plain “tradition” is allowed only as a 1:1 synonym.
 
@@ -42,7 +42,7 @@ How can we systematically assemble a SoTA view that is:
 * **Breadth vs. load‑bearing depth.** Too broad becomes shallow; too deep misses rival lineages.
 * **Recency vs. stability.** Freshness matters, yet durable “backbone” claims must be identified and kept visible.
 * **Pedagogy vs. rigour.** Outputs must be teachable enough to support review, while remaining audit‑ready.
-* **Authoring vs. operations.** This pattern lives in the authoring plane; operational runs and decisions belong to Work planes and to governing patterns.
+* **Authoring vs. operations.** This pattern governs authoring; use the applicable Work and decision patterns for operational runs and decisions.
 
 ### G.2:4 - Solution
 
@@ -53,7 +53,8 @@ How can we systematically assemble a SoTA view that is:
 **GCoreLinkageManifest (normative).**
 *(Canonical form, Nil‑elision, and Expansion rule are defined in `G.Core`.)*
 
-`GCoreLinkageManifest := ⟨
+```text
+GCoreLinkageManifest := ⟨
   CoreConformanceProfileIds := {
     GCoreConformanceProfileId.PartG.AuthoringBase,
     GCoreConformanceProfileId.PartG.UTSWhenPublicIdsMinted
@@ -87,7 +88,8 @@ How can we systematically assemble a SoTA view that is:
 
   DefaultsConsumed := ∅,
   TriggerAliasMapRef := ∅
-⟩`
+⟩
+```
 
 *(RSCR payload pins: `ClaimSheetId[]`, `SoTA_SetId`, `SoTAPaletteDescriptionId`, `BridgeMatrixId?`, `GammaEpistSynthId[]?`, `UTSRowId[]?`, `DistanceDefRef.edition?`, `HarvestPolicyRef?`, `InclusionCriteriaId?`, `ScreeningRubricId?`, `PathId/PathSliceId?` when path‑citable evidence or a stable freshness window is pinned.)*
 
@@ -123,7 +125,7 @@ Each named component is addressable via a stable **pack‑local identifier** (e.
    If any row asserts substitution or fusion across sources or across `Tradition` records, the pack **MUST** attach a `GammaEpistSynthId` record (alias: **`G.2‑F`**) per `G.2:Ext.GammaEpistSynthesis` (no silent fusion).
 
 5. **`G.2e MicroExamples`**
-   Worked micro-examples for load-bearing claims. Each names the exact source and edition, claim region, EntityOfConcern, comparison basis, and intended use; cites its A.10 carrier or evidence path; and annotates applicable assurance types (`TA`, `VA`, or `LA`). The example card is only a publication form for those claims.
+   Worked micro-examples for load-bearing claims. Each names the exact source and edition, claim region, EntityOfConcern, comparison basis, and intended use; cites its evidence carrier or A.10 evidence-provenance path; and annotates applicable assurance types (`TA`, `VA`, or `LA`). The example card is only a publication form for those claims.
 
 6. **`G.2f UTSProposals`**
    Draft Name Cards + Minimal Definitional Sheets (MDS) + alias proposals (incl. concept‑set linkage where applicable), with the required publication pins.
@@ -150,12 +152,14 @@ Each named component is addressable via a stable **pack‑local identifier** (e.
 
 **SoTAPaletteDescription** *(export view; required downstream)*
 A view‑friendly description object (pack‑local `SoTAPaletteDescriptionId`) that binds together:
+
 * the `SoTA_Set@CG‑Frame` view,
 * `ClaimSheetId[]`, `OperatorAndObjectInventory`, `BridgeMatrixId?`,
 * `SoSIndicatorFamilies` (with variant/branch structure),
 * `MethodFamilyCards` / `GeneratorFamilyCards?`,
 * `MicroExamples`, `UTSProposals`,
 * and the `entityOfConcern Map` for citation and later CHR/CAL authoring.
+
 **Note (normative intent):** this is the primary “consumable surface” for `G.3/G.4/G.5`; it prevents downstream patterns from scraping free prose.
 
 **Editorial template: 1‑page “SoTA Sheet” per Tradition (informative).**
@@ -171,7 +175,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 2. **Discover and triage sources (ledger‑first).**
    Populate `CorpusLedger` via:
 
-   * seed sources,
+   * adding seed sources,
    * expansion via citation chaining and keyword family exploration,
    * pruning using load‑bearing relevance tests tied to the declared CG‑Frame scope.
 
@@ -188,7 +192,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
    If a `G.2` pack publication asserts fusion or substitution across sources or across `Tradition` records (beyond mere “parallel divergent claims”), it **MUST** emit `GammaEpistSynthId` records per `G.2:Ext.GammaEpistSynthesis` (provenance union + explicit object alignment refs + assurance tuple refs), and it **MUST** keep penalties routed to `R_eff` only by delegation (`CC‑GCORE‑PEN‑1`).
 
 7. **Publish teachable micro‑groundings.**
-   Attach worked micro-examples to load-bearing claims, each tied to the exact source and edition, claim region, EntityOfConcern, comparison basis, intended use, and A.10 carrier or evidence path.
+   Attach worked micro-examples to load-bearing claims, each tied to the exact source and edition, claim region, EntityOfConcern, comparison basis, intended use, and evidence carrier or A.10 evidence-provenance path.
 
 8. **Apply gates and record repairs.**
    Enforce `FamilyCoverageFloorK` (and any optional diversity‑by‑distance gate). If a gate fails, the pack **MUST**:
@@ -199,10 +203,11 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 9. **Emit hand‑off manifests and export views.**
    Produce explicit manifests to:
 
-* `G.3` (CHR authoring),
-* `G.4` (CAL authoring),
-* `G.5` (registry/dispatch),
-  so that downstream work can cite pack components by id rather than re‑authoring them.
+   * `G.3` (CHR authoring),
+   * `G.4` (CAL authoring),
+   * `G.5` (registry/dispatch),
+
+   so that downstream work can cite pack components by id rather than re‑authoring them.
    The pack **MUST** also export `SoTA_Set@CG‑Frame` and `SoTAPaletteDescription` as the default downstream consumption surfaces (ids pinned).
 
 #### G.2:4.4 - Interfaces (minimal I/O Standard)
@@ -230,7 +235,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 **RequiredPins/EditionPins/PolicyPins (minimum):**
 
 * `GammaEpistSynthId[]` *(pack‑local ids of synthesis records; emitted iff fusion/substitution is asserted)*
-* `EvidenceAnchorRef[]` *(provenance union; A.10 carriers)*
+* `EvidenceAnchorRef[]` *(provenance union; evidence carriers cited by A.10 evidence-provenance paths)*
 * `BridgeMatrixId` and `BridgeCardId[]` *(explicit object alignment references when crossing is involved)*
 * `CL/CL^plane` + `Φ/Ψ/Φ_plane policy-ids` *(ids only; semantics governed by cited definitions; penalties → `R_eff` only by delegation)*
 * `PathId/PathSliceId?` *(only when citing via `G.6`)*
@@ -365,7 +370,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 
 ### G.2:6 - Bias-Annotation (informative)
 
-Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
+Bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: harvesting and synthesis for a `CG‑Frame`.
 
 * **Selection bias (Gov/Onto).** Any harvesting protocol can over‑represent certain venues, languages, or evidence styles.
   *Mitigation:* pluralism floor + explicit `CorpusLedger` + explicit protocol pins.
@@ -383,7 +388,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
 
 | ConformanceId             | Requirement                                                                                                                                                                                                                                                                                                                                        | Purpose / Notes                                                                     |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **CC‑G2‑CoreRef**         | A conforming `G.2` artefact **MUST** satisfy the **effective** core obligations declared by the `GCoreLinkageManifest` in `G.2:4.1` (per `G.Core` Expansion rule).                                                                                                                                                                                 | Phase‑2 bridge clause: ensures universal invariants are not redefined inside `G.2`. |
+| **CC‑G2‑CoreRef**         | A conforming `G.2` artefact **MUST** satisfy the **effective** core obligations declared by the `GCoreLinkageManifest` in `G.2:4.1` (per `G.Core` Expansion rule).                                                                                                                                                                                 | Keeps core invariants governed by `G.Core`. |
 | **CC-G2-Pluralism-1** | A conforming pack MUST include at least two `Tradition` lineages and at least three materially distinct entries, each identified by its source edition and claim region, with its EntityOfConcern, evidence norm, and comparison limits visible. | Prevents a single lineage or one renamed source cut from masquerading as synthesis. |
 | **CC‑G2‑Ledger‑1**        | A conforming pack **MUST** include `G.2a CorpusLedger` with inclusion/triage status and explicit rationale hooks per entry.                                                                                                                                                                                                                        | Makes discovery/triage auditable.                                                   |
 | **CC‑G2‑FlowRecord‑1**    | A conforming pack **MUST** include `G.2h FlowRecord` that traces identification → screening → eligibility → included at a minimum granularity sufficient to reproduce the corpus boundary.                                                                                                                                                         | Prevents “mystery inclusion” and supports refresh.                                  |
@@ -393,11 +398,11 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
 | **CC‑G2‑AtlasInterpretation‑1**  | If the pack exports `TraditionAtlasView`, it **MUST** satisfy the same interpretive-view declaration required by `A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW`: keep the base palette and active source set or active set result recoverable, name `TypedSetViews` when several declared set views are held together, cite any active `SearchSpaceRef`, `OutcomeSpaceRef`, or other declared space refs, cite any active `OutcomeMapRef`, `SpaceMetricRef`, `TransitionRelationRef`, or `BridgeDistortionNote` only when they do real explanatory work, state why thinner `DeclaredSubstrateInterpretiveView` is insufficient here, and **MUST NOT** use atlas form when palette-first or thinner `DeclaredSubstrateInterpretiveView` is sufficient. | Keeps the `G.2` specialization at least as constraining as the general `DeclaredSubstrateAtlasView` declaration and preserves space-role recoverability. |
 | **CC‑G2‑entityOfConcernMap‑1** | A conforming pack **MUST** include `G.2g entityOfConcern Map`, mapping (at minimum) each load‑bearing claim family and each minted/evolved public id to `entityOfConcern := ⟨GroundingHolon, ReferencePlane⟩`, and citing the relevant `ClaimSheetId` and evidence anchors (A.10 and/or G.6 paths when used).                                         | Keeps plane/holon boundaries explicit and citable.                                  |
 | **CC‑G2‑Alignment‑1**     | Any cross‑`Tradition` consolidation **SHALL** be presented as either (i) disjoint parallel claims with explicit divergence, or (ii) an explicitly justified alignment proof; any reuse across `Tradition` boundaries **MUST** use explicit crossing bundles per `CC‑GCORE‑CROSS‑1` (delegation).                                                  | Prevents silent semantic leakage.                                                   |
-| **CC‑G2‑GammaSynth‑1**    | If the pack asserts **fusion or substitution** across sources or across `Tradition` records (not merely “parallel divergent claims”), it **MUST** emit `GammaEpistSynthId` records satisfying `G.2:Ext.GammaEpistSynthesis` (provenance union + explicit alignment refs + assurance tuple refs). If no fusion or substitution is asserted, the pack **SHALL** state so explicitly. | Restores the load‑bearing synthesis artefact (alias: `G.2‑F`) without shadow specs. |
+| **CC‑G2‑GammaSynth‑1**    | If the pack asserts **fusion or substitution** across sources or across `Tradition` records (not merely “parallel divergent claims”), it **MUST** emit `GammaEpistSynthId` records satisfying `G.2:Ext.GammaEpistSynthesis` (provenance union + explicit alignment refs + assurance tuple refs). If no fusion or substitution is asserted, the pack **SHALL** state so explicitly. | Keeps the synthesis record (alias: `G.2‑F`) citable under its governing definitions. |
 | **CC‑G2‑Inventory‑1**     | A conforming pack **MUST** include `G.2c OperatorAndObjectInventory`, sufficient for downstream CHR/CAL authoring to begin without re‑harvesting terms.                                                                                                                                                                                            | Ensures the pack is actionable.                                                     |
 | **CC‑G2‑Inventory‑2**     | `G.2c OperatorAndObjectInventory` entries **MUST** be treated as **stubs** for downstream authoring: they **MUST NOT** embed acceptance thresholds or claim legality decisions locally. If an entry is not a citation of an already governed CHR/CAL artefact, it **MUST** be explicitly marked as `stub` (typing/lawfulness `TBD`) and **MUST NOT** be used as if lawful. Legality/threshold semantics are governed by `G.3` for CHR and `G.4` for CAL via explicit ids/pins. | Prevents “shadow CHR/CAL” and preserves lawfulness discipline without redefining it locally. |
 | **CC‑G2‑MeasurementLawful‑1** | If any inventory entry is presented as **non‑stub** (i.e., already lawful/typed), the pack **MUST** cite the governing lawfulness discipline (e.g., `A.17–A.19/C.16` as applicable) and provide the minimal evidence anchors needed to justify that typing claim.                                                                                      | Prevents “quietly lawful” measurement claims inside the harvester pack.             |
-| **CC-G2-MicroExamples-1** | For every load-bearing claim family, a conforming pack MUST include at least two worked micro-examples on heterogeneous substrates. Each names the source and edition, claim region, EntityOfConcern, comparison basis, and intended use; cites its A.10 carrier or evidence path; and gives an applicable assurance tag. | Makes the synthesis teachable and inspectable; the example form supplies no meaning or authority. |
+| **CC-G2-MicroExamples-1** | For every load-bearing claim family, a conforming pack MUST include at least two worked micro-examples on heterogeneous substrates. Each names the source and edition, claim region, EntityOfConcern, comparison basis, and intended use; cites its evidence carrier or A.10 evidence-provenance path; and gives an applicable assurance tag. | Makes the synthesis teachable and inspectable; the example form supplies no meaning or authority. |
 | **CC‑G2‑UTS‑1**           | If the pack proposes or evolves any public ids, it **MUST** publish UTS proposals *(Name Cards + MDS where applicable)* and cite them via `UTSRowId[]`, satisfying `CC‑GCORE‑UTS‑1` (delegation).                                                                                                                                               | Keeps naming and evolution disciplined.                                             |
 | **CC‑G2‑Families‑1**      | SoS indicators and candidate evaluation constructs **SHALL** be represented as **families/variants** (windows/constraints/assumptions) **with explicit Acceptance branch structure per variant** (branch ids/labels only), not as single unqualified scalars; any scalar summary **MAY** be included only as report‑only unless explicitly promoted by governing patterns. *(Set-return discipline is delegated to `CC‑GCORE‑SET‑1`.)* | Prevents covert scalarization and keeps acceptance governed by downstream patterns.                |
 | **CC‑G2‑HandOff‑1**       | A conforming pack **MUST** emit hand‑off manifests to `G.3`, `G.4`, and `G.5` that cite pack components by id and identify which families/operators are intended for downstream formalisation or registry entry.                                                                                                                                   | Prevents downstream re‑authoring and drift.                                         |
@@ -475,7 +480,7 @@ This pattern aligns its *method options* (via Extensions and authoring practice)
   * `E.8` (pattern template discipline)
   * `E.10` (lexical/ontological rules; strict distinction; kind‑suffix discipline)
   * `E.19` (conformance discipline)
-  * `A.10` (provenance anchors / carriers)
+  * `A.10` (evidence-provenance paths and cited source/carrier anchors)
   * `A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW` (generic interpretive-view and atlas discipline when `TraditionAtlasView` is used)
   * `A.6.P` (space/view/publication precision restoration when palette/support claims collapse)
   * `B.3` (trust, freshness/decay as cited governing patterns)

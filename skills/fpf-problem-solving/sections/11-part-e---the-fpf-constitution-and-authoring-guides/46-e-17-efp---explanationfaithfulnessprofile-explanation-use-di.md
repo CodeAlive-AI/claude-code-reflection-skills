@@ -43,7 +43,7 @@
 | --- | --- | --- |
 | A `SourcePinnedExplanation` or `SourceLinkedExplanationReconstruction` helps navigation, bounded restatement, or source inspection with pins and trace visible. | A didactic explanation helps onboarding or source-finding, while any operative claim returns to the exact source or target episteme and its obtaining source-to-target relation; an `A.10` evidence path opens only when the receiving use actually needs evidence. | A fluent explanation is used as assurance, evidence, approval, gate passage, release permission, or work-occurrence evidence. |
 
-**Neighboring patterns and project records.** `E.17.ID.CR` supplies the bounded-comparison discipline for a comparative review unit; `A.6.3.CR` and `A.6.3.RT` define same-entity rewrite and representation change; `A.6.3.CSC` defines the narrower-use result, blocked downstream use, and source-bearing reopen needed after deliberate coarsening; `A.6.4` and `OntologicalReframing` address a changed EntityOfConcern; `A.15` and `A.15.4` define downstream work or reliance; `B.3` supplies assurance and engineering-justification tests; and `A.20` or `A.21` define gate-bearing claims and effects. For permission-looking or policy-bearing prose, use `A.2.8.PER` for strong grants, exercises, weak non-prohibition/non-violation findings, and permission conflicts; use `A.2.8` for obligation, recommendation-as-duty, and prohibition commitments; and use `A.2.9` for the communicative Work that institutes or revokes an effect.
+**Neighboring patterns and project records.** `E.17.ID.CR` supplies the bounded-comparison discipline for a comparative review unit; `A.6.3.CR` and `A.6.3.RT` define same-entity rewrite and representation change; `A.6.3.CSC` defines the narrower-use result, blocked downstream use, and source-bearing reopen needed after deliberate coarsening; `A.6.4` and `OntologicalReframing` address a changed EntityOfConcern; `A.15` governs System-Role–Method–Work alignment; `A.15.1` independently admits dated Work; `A.15.4` repairs an appearance-based work or reliance use only while its prerequisite remains unclear; `B.3` supplies assurance and engineering-justification tests; `A.20` tests a named internal constraint for a stated case under that pattern's subject and applicability conditions; and `A.21` governs a named gate decision under its applicable profile. For permission-looking or policy-bearing prose, use `A.2.8.PER` for strong grants, exercises, weak non-prohibition/non-violation findings, and permission conflicts; use `A.2.8` for obligation, recommendation-as-duty, and prohibition commitments; and use `A.2.9` for the communicative Work that institutes or revokes an effect.
 
 **Common wrong escalations and boundary transfers.** Do not use this profile to hide new claims, bridge-comparison load, action-selection pressure, or gate-bearing guidance inside helpful prose. If the rendering is really a bounded comparison, apply `E.17.ID.CR`; if it is only same-entity rewriting or representation shift, apply `A.6.3.CR` or `A.6.3.RT`; if a deliberately coarsened rendering's narrower bounded claim or effect, blocked downstream use, and source-bearing reopen are the actual problem, apply `A.6.3.CSC`; if it is already making world, work or reliance, assurance, or gate-bearing claims, leave `E.17.EFP` for the more exact downstream FPF pattern or project-side record.
 
@@ -100,7 +100,7 @@ Without a dedicated profile:
 
 #### E.17.EFP:4.1.a - Profile, episteme, and published-form distinction
 
-`ExplanationFaithfulnessProfile` is a **review profile**. Its cases concern passive publication forms or representations of an exact `U.Episteme`; the profile itself does not act, decide, publish, constitute an episteme, or make a source-to-target relation obtain.
+`ExplanationFaithfulnessProfile` is a **review profile**. Its cases concern passive publication forms or representations of an exact `U.Episteme`.
 
 The distinction is executable: same source ClaimGraph means a form or representation of that source edition; changed claim content means another target episteme under C.2.1 plus an exact source-to-target relation shown to obtain under its applicable test. An EFP class applies only after that branch and cannot legalize a hidden claim change.
 
@@ -218,7 +218,7 @@ This profile classifies explanation use on existing faces; it does not describe 
 
 When reader fit materially changes the explanation class, bounded use, blocked use, or reopen condition, make only the distinction needed for that change. A familiar audience and static note may need no separate reader-model field. A contrastive or interactive case may need one or more of `targetUserModel`, `interactionMode`, `contrastiveQuestion`, `boundedReaderUse`, or `overreadRisk`.
 
-These names are optional prompts, not a five-field publication block. They create no source relation, permission, evidence relation, or authority; they only expose the reader-fit difference that changes the present use.
+These names are optional prompts, not a five-field publication block. They only expose the reader-fit difference that changes the present use.
 
 #### E.17.EFP:4.3 - Explanation class set
 
@@ -309,7 +309,7 @@ A published form states material omission, reordering, simplification, or connec
 When a concrete reader-fit difference is load-bearing, expose only enough of its bounded use or overread risk to prevent the actual didactic or contrastive form from being mistaken for assurance, policy, or gate guidance.
 
 ##### E.17.EFP:4.5.c. Downstream-use and boundary rule
-This profile stays explanation-facing and episteme-facing. It does not decide bridge stance, retargeting, action selection, executable docking, gate-bearing claims or effects, assurance, engineering justification, or work enactment. If a case starts carrying one bounded comparative review case, rival interpretations, bridge-mediated comparison load, world consequences, work or reliance consequences, gate consequences, assurance, or engineering justification, apply the neighboring FPF pattern, then name the project-side object or record that carries the claim or effect and its FPF kind (`E.17.ID.CR`, `F.9.1`, `B.5.2`, `A.6.4`, `A.15`, `A.15.4`, `B.3`, `A.20`, `A.21`).
+This profile stays explanation-facing and episteme-facing. It does not decide bridge stance, retargeting, action selection, executable docking, gate-bearing claims or effects, assurance, engineering justification, or work enactment. If a case starts carrying one bounded comparative review case, rival interpretations, bridge-mediated comparison load, world consequences, work or reliance consequences, gate consequences, assurance, or engineering justification, apply the neighboring FPF pattern, then name the project-side object or record that carries the claim or effect and its FPF kind. Relevant patterns include `E.17.ID.CR`, `F.9` for an obtaining Bridge and its bounded-use claim, `F.9.1` for an optional stance note, `B.5.2`, `A.6.4`, `A.15`, `A.15.1`, `A.15.4` only while an appearance hides the needed work or reliance prerequisite, `B.3`, `A.20`, and `A.21`.
 
 Interpretant-side fields do not weaken that boundary rule. They only bound reader use; they do not authorize unsupported downstream guidance.
 
@@ -327,14 +327,14 @@ A rendering reviewed under this profile keeps the following explicit:
 - it does **not** replace bridge discipline, retargeting discipline, or world or gate boundary discipline;
 - it does **not** let `publication face/form` and `interop publication form` collapse into one undifferentiated explanation channel.
 
-If explanation text carries a changed ClaimGraph, stop class review, identify the exact target episteme and make the direct source-to-target relation obtain. Resume EFP only for a publication form of that target when bounded explanation use remains separately material.
+If explanation text carries a changed ClaimGraph, stop class review, identify the exact target episteme and establish that the direct source-to-target relation obtains. Resume EFP only for a publication form of that target when bounded explanation use remains separately material.
 
 ### E.17.EFP:5 - Archetypal grounding
 
 #### E.17.EFP:5.1 - Source-pinned explanation across multiple faces
 **Source claim slice.** `Claim D-14: Cooling loop CL-2 maintains the required temperature margin during standard load. Evidence pins: T-44, E-17.`
 
-**`PlainView` rendering.** `Cooling loop CL-2 keeps the required temperature margin in standard operation. Source pins: T-44, E-17.`
+**`PlainView` rendering.** `Cooling loop CL-2 keeps the required temperature margin during standard load. Source pins: T-44, E-17.`
 
 **`TechCard` rendering.** `D-14 stays source-pinned to T-44 and E-17; this rendering only shortens and reorders the claim.`
 
@@ -347,7 +347,7 @@ This stays within `SourcePinnedExplanation` because the rendering changes readab
 - `D-14: During standard load, CL-2 outlet temperature is at most 65 °C.`
 - `D-18: During standard load, inspection criterion IC-7 is satisfied when that same outlet temperature is at most 70 °C.`
 
-**Published reconstruction.** `During standard load, D-14 satisfies the IC-7 upper-bound criterion stated by D-18.`
+**Published reconstruction.** `During standard load, CL-2 outlet temperature satisfies the IC-7 upper-bound criterion stated by D-18.`
 
 The connective is recoverable because both claims concern the same outlet and load context, `RS_plantThermal` supplies the Celsius order, and `65 <= 70`. The compact `addedLinkPolicy` points to `{D-14,D-18}`, `RS_plantThermal.order`, and that one-step derivation. It does not merely call the link implied. This form may be `SourceLinkedExplanationReconstruction` while those exact premises and rules remain current.
 
@@ -363,9 +363,9 @@ No source premise, effective-scheme rule, or already obtaining robustness relati
 
 **Source slice.** `The method-selection note chooses method M-2 because the material stays below threshold T and resource window W is available. It also says that work plan WP-17 and result measurement RM-4 remain required before and after execution.`
 
-**Published explanation.** `M-2 is selected here for the stated material condition and resource window. Planning still requires WP-17, and result measurement still requires RM-4.`
+**Published explanation.** `M-2 is selected here because the material stays below threshold T and resource window W is available. Work plan WP-17 and result measurement RM-4 remain required before and after execution.`
 
-The selection relation and both limits are explicit in the source, so this is ordinary same-ClaimGraph re-expression; it needs no invented `addedLinkPolicy`. It is not evidence that work occurred, a gate decision, or engineering justification. Selection use still concerns exact `U.Method` M-2; planning concerns `U.WorkPlan` WP-17 under A.15; any claim that work occurred requires a dated `U.Work` under A.15.1. Evidence, engineering-justification, or gate use remains under A.10, B.3, A.20, or A.21 only when actually raised.
+The selection relation and both limits are explicit in the source, so this is ordinary same-ClaimGraph re-expression; it needs no invented `addedLinkPolicy`. It is not evidence that work occurred, a gate decision, or engineering justification. Selection use still concerns exact `U.Method` M-2; planning concerns `U.WorkPlan` WP-17 under A.15.2; any claim that work occurred requires a dated `U.Work` under A.15.1. Evidence, engineering-justification, or gate use remains under A.10, B.3, A.20, or A.21 only when actually raised.
 
 #### E.17.EFP:5.2.c - Mixed-face bundle with one entailed connective
 
@@ -381,7 +381,7 @@ The `PlainView` form is `SourcePinnedExplanation`. The `TechCard` connective is 
 
 **Source episteme claim.** `The pressure-control condition is satisfied whenever the reserve valve opens within 80 ms.`
 
-**Didactic publication form.** `For onboarding: in this stated test, opening the reserve valve within 80 ms is enough to satisfy the pressure-control condition. The exact condition and threshold remain in the pinned source edition.`
+**Didactic publication form.** `For onboarding: opening the reserve valve within 80 ms is enough to satisfy the pressure-control condition. The exact condition and threshold remain in the pinned source edition.`
 
 The form expresses the same source ClaimGraph; `DidacticRetelling` qualifies only its teaching use. If the text instead says that the whole system is safe, that different safety claim requires its own target episteme, an obtaining source-to-target relation, and the applicable safety relation before publication. A didactic label cannot supply them.
 
@@ -418,7 +418,7 @@ This assurance sentence has a different ClaimGraph. It requires an exact target 
 This does **not** remain ordinary explanation profiling. The lighter text expresses a coarsened ClaimGraph, so it must be identified as an exact target episteme under C.2.1 and related to the source through `A.6.3.CSC`; only a later publication form of that target can receive an EFP class if explanation use remains material.
 
 #### E.17.EFP:5.5 - Class-specific reopen cues in the worked slices
-- **`SourcePinnedExplanation`** reopens when the pinned source claim set, source pins, or face-use assumptions change so that the rendering can no longer remain omission-only and visibly source-bound.
+- **`SourcePinnedExplanation`** reopens when the pinned source claim set, source pins, or face-use assumptions change so that the rendering can no longer remain claim-preserving and visibly source-bound.
 - **`SourceLinkedExplanationReconstruction`** reopens when any source premise, effective-scheme rule, derivation, context identity, source claim about the exact relation occurrence, or that occurrence's obtaining basis changes or disappears.
 - **`DidacticRetelling`** reopens when the exact source or target edition connected under A.6.3 changes, or when teaching use starts functioning as policy-bearing, design-bearing, or gate-bearing guidance.
 - **`SpeculativeRetelling`** reopens when its exact B.5.2 hypothesis edition, prompt link, or exploratory use changes; it never falls back to being a passive form of the observation source.
@@ -440,7 +440,7 @@ The human-authored case is the ordinary non-use boundary. The generated case is 
 
 ### E.17.EFP:6 - Bias-Annotation
 
-Lenses tested: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**. Scope: **Conditional** where explanation-class ambiguity changes use. External source grounding is limited to generated, model-facing, retrieval-facing, or interactive explanation; ordinary human-authored use remains a local design branch with a simpler-note non-use default.
+Scope: **Conditional** where explanation-class ambiguity changes use. External source grounding is limited to generated, model-facing, retrieval-facing, or interactive explanation; ordinary human-authored use remains a local design branch with a simpler-note non-use default.
 
 The profile biases toward source restraint and against overread. Its counter-bias is the E.17.EFP:5.7 task replay: do not apply the profile when a shorter source-linked boundary sentence performs the human task equally well.
 
@@ -494,7 +494,7 @@ Use core ordinary checks first. Conditional rows open only when reader-fit, bund
 | Calling a connective source-linked because `addedLinkPolicy` names it | a policy declaration is mistaken for derivation or an obtaining relation | require exact source premises and effective scheme plus a derivation, or an exact relation claim already in the source plus an independently obtaining occurrence; otherwise constitute a target claim or leave EFP |
 | Treating speculative prose as a source rendering | a new causal or counterfactual claim is hidden inside a form label | constitute the separate B.5.2 hypothesis episteme, then restrict only its publication form's use |
 | Collapsing MVPK face and `publication face/form` or `interop publication form` discipline | explanation appears to create a new publication family | stay on existing MVPK faces and keep named `publication face/form` or `interop publication form` and carrier policy explicit |
-| Derivative text as source replacement | a changed ClaimGraph is treated as the original source because the text is easier to read | identify same-source form versus exact target episteme and make its A.6.3 or other direct relation obtain before EFP classification |
+| Derivative text as source replacement | a changed ClaimGraph is treated as the original source because the text is easier to read | identify same-source form versus exact target episteme and establish that its A.6.3 or other direct relation obtains before EFP classification |
 | Explanation as evidence or assurance | a fluent or source-linked explanation is cited as proof, approval, gate passage, release reliance, work authority, or assurance | identify the exact episteme and any required source-to-target relation before classifying its publication form; open `A.10`, `B.3`, `A.21`, `A.15`, or another direct record only for the exact operative claim and receiving use that need it |
 
 ### E.17.EFP:9 - Consequences
@@ -534,11 +534,11 @@ Generated and model-facing explanation can hide source drift; ordinary human exp
 - **Builds on:** `E.17.0`, `E.17`, `A.7`, `E.10.D2`, `A.6.B`, `F.9`, `F.18`
 - **Coordinates with:** `ConservativeRetextualization`, `RepresentationSchemeTransition`, `A.6.3.CSC Controlled Semantic Coarsening`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `A.15`, `A.15.4`, `B.3`, `A.20`, `A.21`
 - **Profile basis and main neighboring-pattern boundaries:** E.17 supplies face discipline; E.17.0 supplies viewpoint/view conformance only when `U.View` membership is material. A shift toward new semantics, a coarsened narrower-use target, or a gate-bearing claim or effect leaves the profile.
-- **Boundary notes:** bounded comparison over a comparative review unit applies `E.17.ID.CR ComparativeReviewUnit`; explanation-like renderings with declared source-loss mode whose narrower bounded claim or effect, blocked downstream claim or effect, and source-bearing reopen are primary apply `A.6.3.CSC Controlled Semantic Coarsening`; retargeting applies `A.6.4`; work and reliance consequences apply `A.15` and `A.15.4`; assurance and engineering-justification consequences apply `B.3`; gate-bearing consequences apply `A.20` or `A.21`.
+- **Boundary notes:** bounded comparison over a comparative review unit applies `E.17.ID.CR ComparativeReviewUnit`; explanation-like renderings with declared source-loss mode whose narrower bounded claim or effect, blocked downstream claim or effect, and source-bearing reopen are primary apply `A.6.3.CSC Controlled Semantic Coarsening`; retargeting applies `A.6.4`; work and reliance consequences apply their direct patterns, including `A.15` for alignment, `A.15.1` for dated Work, and `A.15.4` only while an appearance hides the needed prerequisite; assurance and engineering-justification consequences apply `B.3`; gate-bearing consequences apply `A.21` under the named gate’s applicable profile; use `A.20` only for a named internal-constraint check under that pattern's subject and applicability conditions.
 
 ### E.17.EFP:12a - C.29 mathematical-lens use relation
 
-> When a published explanation form uses a mathematical lens, EFP still classifies and bounds its explanation use. Cite the applicable `C.29` output only for the mathematical-lens claim actually used. When that claim is load-bearing, cite the exact `MathLensUse.LensCandidateNote`, `MathLensUse.OneLine`, `MathLensUse.MiniCard`, or `MathLensUse.FullCard` result required by C.29 and keep recoverable its candidate mathematical object, lens mapping mode, preserved and lost structure, exposed invariant or distinction, `LensUseAdmissibilityValue`, bounded use, blocked downstream use, and stop condition; do not copy fields already recoverable through that exact reference. Add source-relation, evidence, face, or forbidden-use detail only when the receiving use makes it material; the mathematical-lens result does not make the explanation faithful, evidential, or admissible downstream by itself.
+> When a published explanation form uses a mathematical lens, EFP still classifies and bounds its explanation use. Cite the applicable `C.29` output only for the mathematical-lens claim actually used. If the applicable C.29 result is `MathLensUse.LensCandidateNote`, retain its first-candidate recognition use and next lens-use action and output; `CandidateMathObject?` remains optional. For a load-bearing mathematical-lens claim, cite the exact `MathLensUse.OneLine`, `MathLensUse.MiniCard`, or `MathLensUse.FullCard` result required by C.29. Keep recoverable the candidate mathematical object, lens mapping mode, preserved and lost structure, exposed invariant or distinction, and stop condition required by that output, plus `LensUseBoundaryValue` and `declaredLensUse` where C.29 requires them; include `blockedLensOverread?` only when it passes F.19's plausible-reader test. Keep EFP's bounded explanation use and blocked downstream use explicit; do not copy fields already recoverable through that exact reference. Add source-relation, evidence, face, or forbidden-use detail only when the receiving use makes it material; the mathematical-lens result does not make the explanation faithful, evidential, or admissible downstream by itself.
 
 ### E.17.EFP:End
 

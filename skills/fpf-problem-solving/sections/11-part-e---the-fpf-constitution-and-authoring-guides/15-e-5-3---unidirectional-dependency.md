@@ -22,14 +22,14 @@ FPF Layering**.
 | **Simplicity** | Rule must be testable and unambiguous ↔ must allow legitimate upward imports. |
 
 ### E.5.3:4 - Solution — One‑Way, Acyclic Imports
-Define a strict **partial order** over FPF ecosystem families **and guard meaning flow** (see **E.10 V-1**): imports point only **upward** in stability, and **no Core semantics** may derive from Tooling/Pedagogy. No linters or machine checking in Conceptual Core.
+Define a strict **partial order** over FPF ecosystem families **and guard meaning flow** (see **E.10 V-1**): imports between families point only **upward** in stability, and **no Core semantics** may derive from Tooling/Pedagogy. No linters or machine checking in Conceptual Core.
 
-**`imports` is a dependency DAG, not a specialisation relation (normative).** Whenever an artefact exposes an explicit `imports : [...]` list (e.g., `SignatureManifest.imports` in A.6.0), treat `imports` as **dependency edges** governed by this section: the induced `imports` graph MUST be **acyclic** (a DAG) and MUST respect the declared direction. `imports` MUST NOT be used to encode *specialisation* (e.g., `⊑` / `⊑⁺` between mechanisms); specialisation relations are declared separately via the relevant morphism and specialisation-chain rules (e.g., A.6.1 `U.MechMorph`).
+**`imports` is a dependency DAG, not a specialisation relation (normative).** Whenever an artefact exposes an explicit `imports : [...]` list (e.g., `SignatureManifest.imports` in A.6.0), treat the dependency claims carried by `imports` as **dependency edges** governed by this section: the induced `imports` graph MUST be **acyclic** (a DAG) and MUST respect the declared direction. `imports` MUST NOT be used to encode *specialisation* (e.g., `⊑` / `⊑⁺` between mechanisms); specialisation relations and any specialisation-chain claims are declared separately under their defining rules. For mechanism declarations, apply A.6.1:4.8 to the comparison claim and C.29 when a mathematical morphism is claimed.
 
 Pedagogical Companion  ⟶  Tooling Reference  ⟶  Conceptual Core
 
 1. **Allowed edges**
-   Dependencies **MAY** point **only upward** (toward greater semantic
+   Dependencies between families **MAY** point **only upward** (toward greater semantic
    stability). No cycle is ever permitted.
 
 2. **No downward import**

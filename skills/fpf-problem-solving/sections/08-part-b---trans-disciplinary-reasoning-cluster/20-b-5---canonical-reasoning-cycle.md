@@ -2,7 +2,7 @@
 
 ### B.5:1 - **Problem Frame**
 
-While preceding patterns define the anatomy of trust (`Assurance Levels` in B.3) and the structure of holons (A.1, A.14), they do not specify the cognitive "engine" that drives the creation and evolution of knowledge within FPF. A framework for thinking must provide more than just a filing system for conclusions; it must offer a repeatable, rigorous method for arriving at them, especially when confronting novel, complex, or ill-defined problems.
+While preceding patterns define claim-and-use-qualified assurance (B.3) and the structure of holons (A.1, A.14), they do not specify the reasoning that connects a new hypothesis, its consequences and empirical evaluation. A framework for thinking must provide more than just a filing system for conclusions; it must offer a repeatable, rigorous method for arriving at them, especially when confronting novel, complex, or ill-defined problems.
 
 ### B.5:2 - **Problem**
 
@@ -27,22 +27,22 @@ These pathologies lead to wasted resources, circular debates, and a failure to s
 
 FPF establishes the **Abductive–Deductive–Inductive Loop** as its canonical reasoning cycle. This cycle gives formal primacy to **abduction** (hypothesis generation) as the engine of innovation, while using deduction and induction as the rigorous mechanisms for testing and refining those hypotheses.
 
-The loop consists of three distinct, sequential phases:
+Use the cycle for hypothesis-led inquiry: propose a conjecture, derive the consequences that make a test interpretable, then compare those consequences with relevant evidence. These are three distinct, sequential contributions to that inquiry. A sufficient bounded result can finish at an intermediate contribution; a new test or another iteration requires a live question and an obtainable, worthwhile contribution. Actual domain proof, validation and operational requirements continue to govern the uses that need them.
 
 #### B.5:4.1 - Abduction (Hypothesis Generation)
 
 *   **Core Question:** "What is the most plausible new explanation or solution?"
-*   **Description:** This is the creative, inventive leap. When faced with an anomaly, a design challenge, or an unanswered question, the first step is to propose a new `U.Episteme`—a new requirement, a new component, a new causal link—that *might* solve the problem. This act is not guaranteed to be correct; it is a conjecture. Within FPF, this new, untested hypothesis episteme typically begins its life at **`AssuranceLevel:L0 (Unsubstantiated)`**. Abduction is the only phase that introduces genuinely novel ideas into the model. This formalizes the process described in the **Abductive Loop** (Pattern B.5.2).
+*   **Description:** This is the creative, inventive leap. When faced with an anomaly, a design challenge, or an unanswered question, the first step is to propose a new `U.Episteme`—a new requirement, a new component, a new causal link—that *might* solve the problem. This act is not guaranteed to be correct; it is a conjecture. Publish the conjecture with its present supports, rivals, limitations and allowed use. Its abductive origin assigns no assurance level; B.3.3 governs any claim/use-specific assurance assignment. Abduction is the only phase that introduces genuinely novel ideas into the model. This formalizes the process described in the **Abductive Loop** (Pattern B.5.2).
 
 #### B.5:4.2 - Deduction (Consequence Derivation)
 
 *   **Core Question:** "If this hypothesis is true, what logically follows?"
-*   **Description:** This is the phase of rigorous analysis. Given the new hypothesis, we use the formal models and calculi of FPF to deduce its logical consequences. What are its testable predictions? Does it create internal contradictions with other parts of the model? How does it propagate through the system? This phase aligns with **Verification Assurance (VA)** and is concerned with raising the hypothesis episteme's **FormalVerifiabilityScore (FV)**. Deduction turns a plausible idea into a set of precise, falsifiable claims.
+*   **Description:** This is the phase of rigorous analysis. Given the new hypothesis, we use the formal models and calculi of FPF to deduce its logical consequences. What are its testable predictions? Does it create internal contradictions with other parts of the model? How does it propagate through the system? This phase can contribute **Verification Assurance (VA)** for a consequence under the stated premises. Deduction makes implications precise; it does not establish that the premises hold in the actual system. Use a formal-verifiability measure only with the bearer, scale and interpretation that the receiving assurance argument needs.
 
 #### B.5:4.3 - Induction (Empirical Evaluation)
 
 *   **Core Question:** "Do the predicted consequences match reality?"
-*   **Description:** This is the phase of testing and learning from evidence. The predictions derived in the deductive phase are compared against real-world data from experiments, simulations, or observations. This phase aligns with **Validation Assurance (LA)** and is the primary mechanism for raising the hypothesis episteme's **EmpiricalValidabilityScore (EV)** and, consequently, its **Reliability (R)**. A successful test corroborates the hypothesis (raising its `AssuranceLevel`), while a failed test (a refutation) provides critical new information that feeds back into the next abductive cycle.
+*   **Description:** This is the phase of testing and learning from evidence. The predictions derived in the deductive phase are compared against real-world data from experiments, simulations, or observations. This phase can contribute **Validation Assurance (LA)** when the data, measurement and test conditions support the receiving claim. A successful test may corroborate that claim within its coverage; a failed prediction can support revision or rejection. Judge the contribution through B.3 and B.3.3 instead of inferring greater reliability or a higher level merely from a test having passed. Reopen abduction when the result leaves an explanatory question that needs rival hypotheses.
 
 #### B.5:4.4 - **Didactic Note for Managers: The "Propose → Analyze → Test" Cycle**
 >
@@ -50,9 +50,9 @@ The loop consists of three distinct, sequential phases:
 >
 > | Phase | Simple Name | What Your Team Does | FPF's Contribution |
 > | :--- | :--- | :--- | :--- |
-> | **Abduction** | **Propose** | Brainstorms a new feature, architecture, or fix. | Gives formal permission for this creative step and a place to record the new hypothesis episteme (`L0`). |
-| **Deduction** | **Analyze** | Thinks through the implications, runs simulations, checks for conflicts. | Provides the formal models (VA, FV) to make this analysis rigorous and repeatable. |
-| **Induction** | **Test** | Builds a prototype, runs A/B tests, gathers user feedback. | Provides the framework (LA, EV, R) to measure the results and build an auditable evidence base. |
+> | **Abduction** | **Propose** | Brainstorms a new feature, architecture, or fix. | Provides the B.5.2 discipline for a qualified conjecture, its rivals and grounds. |
+| **Deduction** | **Analyze** | Thinks through the implications, runs simulations, checks for conflicts. | Provides models and logical arguments for inspectable consequences under stated premises. |
+| **Induction** | **Test** | Builds a prototype, runs A/B tests, gathers user feedback. | Connects observations to the tested predictions and the claims they actually support. |
 >
 > By making this cycle explicit, FPF transforms problem-solving from a chaotic art into a repeatable, auditable science. It gives teams a shared map for navigating from an unknown problem to a validated solution.
 
@@ -60,11 +60,11 @@ The loop consists of three distinct, sequential phases:
 
 To ensure the reasoning cycle is applied consistently and rigorously, the following criteria are normative:
 
-*   **CC-B5.1 (Abductive Primacy):** Any discipline that introduces a new, non-derivable claim or design element into a working model **MUST** document it as an abductive step. The resulting claim or design element **SHALL** initially be assigned `AssuranceLevel:L0` as a hypothesis episteme or equivalent working-model element.
+*   **CC-B5.1 (Abductive Primacy):** Any discipline that introduces a new, non-derivable claim or design element into a working model **MUST** document it as an abductive step. The resulting claim or design element **SHALL** retain its conjectural status, grounds and limitations. An assurance level, when needed by a receiving use, **SHALL** follow B.3.3 rather than be assigned from its abductive origin.
 *   **CC-B5.2 (Deductive Mandate):** An abductively generated hypothesis **SHALL NOT** be subjected to inductive testing (Validation Assurance) until its key logical consequences have been derived and documented through a deductive process.
-*   **CC-B5.3 (Inductive Grounding):** A claim **SHALL NOT** be promoted to `AssuranceLevel:L1` or higher on the basis of a successful inductive test unless that test is explicitly linked to a prediction derived in the deductive phase.
-*   **CC-B5.4 (Cycle Closure):** The outcome of an inductive test (whether corroboration or refutation) **MUST** be formally recorded as an evidence carrier (Pattern A.10), and that evidence carrier **MUST** be used as an input for the next iteration of the reasoning cycle.
-*   **CC-B5.5 (State Machine Alignment):** The Abductive–Deductive–Inductive Loop is the cognitive engine that drives state transitions in the **Explore → Shape → Evidence → Operate** state machine (Pattern B.5.1). Abduction dominates the *Explore* phase; Deduction dominates the *Shape* phase; and Induction is the core of the *Evidence* phase.
+*   **CC-B5.3 (Inductive Grounding):** A positive support claim based on an inductive test **MUST** link the actual result to the derived prediction and establish its relevance, coverage and limitations for the receiving claim. Passing a test **SHALL NOT** by itself assign an assurance level; an elected B.3.3 profile retains its applicable evidence criteria.
+*   **CC-B5.4 (Cycle Closure):** The actual outcome of an inductive test (whether corroboration or refutation) **MUST** be recorded through an evidence carrier (Pattern A.10). If a further iteration relies on that result, it **MUST** use the recorded result with its scope and limitations. Recording a sufficient result does not itself require another iteration.
+*   **CC-B5.5 (State Machine Alignment):** When the B.5.1 development cycle is used, abduction commonly contributes to *Exploration*, deduction to *Shaping*, and empirical evaluation to *Evidence*. Actual transitions **MUST** meet their applicable project and domain conditions. A completed reasoning contribution or sufficient bounded use is not by itself a project-state transition or an assurance level.
 
 **Common Anti-Patterns and How to Avoid Them**
 
@@ -87,12 +87,12 @@ To ensure the reasoning cycle is applied consistently and rigorously, the follow
 
 FPF is designed to be an "operating system for thought," and this reasoning cycle is its central processing unit. By elevating abduction to a first-class citizen, FPF acknowledges a fundamental truth about complex problem-solving: progress does not come from simply rearranging known facts (deduction) or finding patterns in data (induction). It comes from the creative act of proposing a new way of seeing the world—a new hypothesis. Deduction and induction are the indispensable tools we use to discipline and validate this creativity.
 
-This pattern provides the engine that drives a hypothesis episteme through the `AssuranceLevels` progression. An abductive leap creates an `L0` hypothesis episteme. Deduction begins the process of providing **Verification Assurance**, building its `FV` score. Induction provides the **Validation Assurance**, building its `EV` and `R` scores. Without this cycle, the assurance framework would be a static scoring system; with it, it becomes a dynamic model of knowledge growth.
+The cycle connects conjecture, logical consequence and empirical evaluation without collapsing their different contributions. A recipient can use a qualified conjecture, an established consequence or an empirical result for the question it answers. B.3.3 determines what that contribution warrants for a particular claim and use; further inquiry addresses a remaining question rather than completing an assurance ladder.
 
 ### B.5:8 - **Relations**
 
 *   **Integrates:** `B.5.1 Explore → Shape → Evidence → Operate`, `B.5.2 Abductive Loop`.
-*   **Drives:** The progression through `B.3.3 Assurance Subtypes & Levels`.
+*   **Supplies contributions to:** `B.3.3 Assurance Subtypes & Levels`, which judges support for the particular claim and use; the reasoning phases assign no levels by themselves.
 *   **Enables:** The refinement phase of the `B.4 Canonical Evolution Loop`.
 *   **Operationalizes:** The core FPF mission of transforming ideas into reliable, evidence-backed holons.
 

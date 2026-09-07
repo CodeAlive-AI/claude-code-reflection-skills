@@ -12,7 +12,7 @@
 
 **Local lexical-head repair object in plain terms.** The local repair object here is one local lexical head inside one publication unit: the load-bearing word or phrase whose kind is no longer recoverable from the sentence. The local repair action is to restore the lexical-head kind, active local reading, active primary entity or relation when one is active, carried action or question under repair, and nearest outside-work boundary before the rest of the publication unit inherits ambiguity.
 
-**Use this when.** Use this section when one note, memo, review unit, table, or episteme-publication-heavy paragraph starts leaning on one broad familiar word and you can no longer tell which FPF kind or locally declared head that word names here. Use it when the local lexical head has become the overload point, but the publication unit has not yet proved that it needs full EntityOfConcern stabilization.
+**Use this when.** Use this section when one note, memo, review unit, table, or episteme-publication-heavy paragraph starts leaning on one broad familiar word and you can no longer tell which FPF kind or locally declared head that word names here. Use it when the local lexical head has become the overload point, but the publication unit has not yet proved that it needs whole-unit primary-subject stabilization.
 
 **First-minute working moment.** A draft says `this review`, `this text`, `this document`, `this publication`, or `this interpretation`, and everyone in the room keeps reading a different FPF kind or locally declared head into the same local lexical head. You do not yet need a whole new publication-unit rule check. You need the local lexical-head repaired before the rest of the unit can be trusted.
 
@@ -22,12 +22,12 @@
 
 **Naming boundary.** `F.18` is nearby because a repaired head may sometimes become durable reusable naming work. It is not the default output here. If the local sentence becomes honest after one head repair and no durable cross-context name, UTS row, Core-facing name, reusable FPF head, or high-risk label is being minted, do not open a full Name Card. Keep the LHR output as the repaired local head plus its recovered local kind, active local reading, active primary entity or relation when one is active, carried action or question under repair, and outside-work boundary.
 
-**Success condition.** LHR succeeds when a careful reader can identify the local lexical-head kind, active primary entity or relation when one is active, carried action or question under repair, and outside-work boundary for this sentence or small unit. If that is enough and the publication unit no longer shifts, stop. Apply `E.17.AUD.OOTD` only when the whole publication unit still cannot keep one primary entity of concern, one carried move, and one outside boundary stable after the local repair.
+**Success condition.** LHR succeeds when a careful reader can identify the local lexical-head kind, active primary entity or relation when one is active, carried action or question under repair, and outside-work boundary for this sentence or small unit. If that is enough and the publication unit no longer shifts, stop. Apply `E.17.AUD.OOTD` only when the whole publication unit still cannot keep one primary subject, one carried move, and one outside boundary stable after the local repair.
 
 **Ordinary-output claim inventory.** After LHR, the author has claimed only that this local head now has one recovered kind or locally declared head, one active local reading, and one admissible local use inside this publication unit. The author has not claimed that the whole publication unit is stable, that the name is reusable globally, that the term is admitted to FPF Core, that a `Name Card` is open, or that any downstream evidence path, gate decision, work record, decision result, approval effect, or reliance basis exists.
 
 **Not this pattern when.** This is not the right pattern when:
-- the same publication unit still has unstable EntityOfConcern or carried-move reading after local repair and now needs one stable answer to what it is about, what move it carries, and what remains outside;
+- the same publication unit still has unstable primary-subject or carried-move reading after local repair and now needs one stable answer to what it is about, what move it carries, and what remains outside;
 - the question under repair is already one bounded comparative review move over an otherwise stable source episteme or publication;
 - the main issue is view, face, carrier, publication architecture, or downstream approval, gate, adjudication, or execution work rather than an overloaded local lexical head;
 - the text is already honest locally, and the unresolved problem is wider strategy, rollout sequencing, or architecture framing.
@@ -47,7 +47,7 @@
 
 **Local-repair threshold.** One honest local repair should restore the overloaded local lexical head, its lexical-head kind, the active local reading, the active primary entity or relation when one is active, and the carried action or question under repair the sentence is actually carrying. If the next sentence still borrows a different kind, a different local reading, or a different outside-work boundary from the same local lexical head, local repair is no longer the only primary question.
 
-**Neighboring comparison-unit boundary check.** If one honest local repair stabilizes the unit and the remaining question is one bounded comparison over already pinned source epistemes or publications, apply `E.17.ID.CR` (`ComparativeReviewUnit`) rather than thickening this local lexical-head repair pattern. If the same publication unit still cannot keep one stable primary entity of concern, one carried move, and one outside-work boundary visible after local repair, apply `E.17.AUD.OOTD` (`PublicationUnit Primary EntityOfConcern Discipline`) instead of stacking more qualifiers onto the overloaded local lexical head.
+**Neighboring comparison-unit boundary check.** If one honest local repair stabilizes the unit and the remaining question is one bounded comparison over already pinned source epistemes or publications, apply `E.17.ID.CR` (`ComparativeReviewUnit`) rather than thickening this local lexical-head repair pattern. If the same publication unit still cannot keep one stable primary subject, one carried move, and one outside-work boundary visible after local repair, apply `E.17.AUD.OOTD` (`PublicationUnit Primary-Subject Discipline`) instead of stacking more qualifiers onto the overloaded local lexical head.
 
 **Quick kind positions.** `PublicationUnit Stability Discipline` names the wider publication-unit stability discipline. `Local Head Restoration` names the local lexical-head repair pattern used when one overloaded local lexical head inside one publication unit still needs its lexical-head kind, active local reading, active primary entity or relation, carried action or question under repair, and any family and governing-pattern relation set restored before the rest of the unit inherits ambiguity. When that broader relation set is doing real work, write one explicit output line: `repair disposition = ... | governing pattern = ... | primary entity = ... | active relation = ... | move = ... | outside work = ...`. This local repair works over the inherited frame; it does not redefine the moving lineage, carrier, face, or publication architecture that sits outside the current publication-unit repair. Publication-unit stability remains outside until local repair fails, in which case the case should apply `E.17.AUD.OOTD`. The canonical publication-unit rule and check section remains `E.17.AUD.OOTD`; this section governs only the narrower local lexical-head repair pattern.
 
@@ -55,7 +55,7 @@ If those five questions are the right questions, start here.
 
 ### E.17.AUD.LHR:1 - Problem frame
 
-**Anti-single-sequence note.** The quick checks, ordinary card, worked slices, and governing-pattern and project-side-reference boundary rules in this section are local aids for one publication unit under review. They are not a canonical transformation-flow structure, not a mandatory ordered sequence, and not a promise that admissible cases move through one fixed sequence. One case may stabilize after one lexical-head repair, another may reopen when outside observation changes the honest question, and another may apply `E.17.AUD.OOTD` when the publication unit still has unstable EntityOfConcern or carried-move reading.
+**Anti-single-sequence note.** The quick checks, ordinary card, worked slices, and governing-pattern and project-side-reference boundary rules in this section are local aids for one publication unit under review. They do not prescribe a canonical transformation flow or a fixed sequence for every admissible case. One case may stabilize after one lexical-head repair, another may reopen when outside observation changes the honest question, and another may apply `E.17.AUD.OOTD` when the publication unit still has unstable primary-subject or carried-move reading.
 
 The recurring defect is small but expensive:
 - one broad familiar word enters early;
@@ -96,7 +96,7 @@ Without a named local restoration move:
 #### E.17.AUD.LHR:3.1 - Pairwise plain glosses
 
 - **Pressured local lexical head** = the word doing more work than the sentence has honestly restored.
-- **Lexical-head kind** = what FPF kind or locally declared head that word names here: for example description, carrier, publication unit, EntityOfConcern, relation record, face, or view.
+- **Lexical-head kind** = what FPF kind or locally declared head that word names here: for example description, carrier, publication unit, relation record, face, or view. When the word names an EntityOfConcern, recover that entity's own kind.
 - **Active local work position** = where the local work is happening here: for example review, publication, comparison, process, or authority.
 - **Active primary entity or relation** = what the local sentence or publication unit is actually about here, when such an object or relation is active.
 - **Move or question under repair** = what the sentence is doing with the active primary entity, active relation, or local lexical-head repair object, if anything.
@@ -163,7 +163,7 @@ Use this order when one local lexical head is carrying too much:
 A narrowing qualifier alone does not count as restoration.
 Treat this order as one local repair aid, not as a canonical flow.
 Steps 1-6 restore the overloaded local lexical head; step 7 classifies what the repaired unit can honestly do next.
-If step 6 keeps reopening because the same unit still cannot hold one stable primary entity of concern, one carried move, and one outside-work boundary, stop local repair and apply `E.17.AUD.OOTD`.
+If step 6 keeps reopening because the same unit still cannot hold one stable primary subject, one carried move, and one outside-work boundary, stop local repair and apply `E.17.AUD.OOTD`.
 If the local lexical head is now honest and the only remaining question is one bounded contrast over already available source epistemes or publications, apply `E.17.ID.CR` instead of escalating the local card into a heavier record by habit.
 If the local lexical head is honest and no neighboring reading has become primary, stop here rather than manufacturing extra extension weight.
 
@@ -173,7 +173,7 @@ If you need one ordinary entry sentence fast, start from one of these:
 
 | Working moment | Safe starter sentence |
 | --- | --- |
-| Architecture note | `This note is about the proposed service boundary as one review publication unit, not yet about rollout work.` |
+| Architecture note | `This note is one review publication unit about the proposed service boundary, not yet about rollout work.` |
 | Operations review | `This review unit is about the incident episode and its timing contrast, not yet about action approval.` |
 | Semio-heavy paragraph | `This paragraph is about the comparative review unit, not the wider architecture strategy.` |
 
@@ -250,12 +250,12 @@ But the unit is really one comparative review note over already pinned source ep
 Local repair:
 - overloaded local lexical head = `review`;
 - restored lexical-head kind = comparative review unit;
-- active local comparison = bounded comparative review unit, not whole release process;
+- active local comparison = compare the pinned options within this review unit; the whole release process remains outside;
 - primary entity/relation = the already pinned option contrast;
 - carried move = make one bounded contrast visible over already available source epistemes or publications;
 - outside work = rollout choice or approval.
 
-Once that local lexical head is repaired, do not keep thickening this pattern by habit. The admissible next pattern application is `E.17.ID.CR` for the now-stable unit, because the remaining question is one bounded contrast rather than publication-unit EntityOfConcern instability.
+Once that local lexical head is repaired, do not keep thickening this pattern by habit. The admissible next pattern application is `E.17.ID.CR` for the now-stable unit, because the remaining question is one bounded contrast rather than publication-unit primary-subject instability.
 
 **Recovery reading.** This is the honest bounded-comparison disposition: finish the local repair here, then let `E.17.ID.CR` carry the remaining bounded contrast over the now-stable unit.
 
@@ -285,7 +285,7 @@ But the repaired local lexical head does not keep the same publication unit stab
 A status note says:
 `This note captures the current rollback state for the candidate.`
 
-Mid-review, a new vendor bulletin changes the live failure boundary and pushes the surrounding conversation toward approval pressure.
+Mid-review, a new vendor bulletin changes the reported failure boundary and pushes the surrounding conversation toward approval pressure.
 
 Local repair can still make the current sentence honest:
 - overloaded local lexical head = `note`;
@@ -303,24 +303,24 @@ But this is the stop-and-reopen case. Once outside observation changes what the 
 **Assurance-recovery note.** Read these governing-pattern boundary dispositions as a heavier audit record over the same ordinary five-row card and the same three honest repair dispositions. They are not a second compact rule list. If a governing-pattern boundary disposition bullet starts carrying the case by itself, recover the local-repair threshold, `E.17.AUD.LHR:3.2 Row 5`, and the nearest worked slice first.
 
 Use a different governing pattern when:
-- the repaired local lexical head is no longer the real problem and the publication unit still has unstable EntityOfConcern or carried-move reading;
+- the repaired local lexical head is no longer the real problem and the publication unit still has unstable primary-subject or carried-move reading;
 - the same unit is already stable enough and the remaining question is one bounded comparative review move over already pinned source epistemes or publications;
 - the problem is really view, face, or carrier architecture;
-- the unit has already become downstream approval, gate, adjudication, or execution work;
+- the unit is being used to communicate approval or a gate or adjudication decision, or to direct execution work;
 - outside observation or environmental change has changed what the same local unit can honestly carry, so the case now needs stop-and-reopen or application of the neighboring governing pattern rather than one more local qualifier.
 
 **Governing-pattern boundary recovery map.**
 
 | If this pattern boundary becomes primary | Recover this ordinary question first | Nearest worked recovery |
 | --- | --- | --- |
-| The repaired local lexical head is no longer the real problem and the publication unit still has unstable EntityOfConcern or carried-move reading. | `E.17.AUD.LHR:3.2 Row 5`: one honest local repair no longer stabilizes one object, one move, and one outside-work boundary. | `E.17.AUD.LHR:5.5` |
+| The repaired local lexical head is no longer the real problem and the publication unit still has unstable primary-subject or carried-move reading. | `E.17.AUD.LHR:3.2 Row 5`: one honest local repair no longer stabilizes one object, one move, and one outside-work boundary. | `E.17.AUD.LHR:5.5` |
 | The same unit is already stable enough and the remaining question is one bounded comparative review move over already pinned source epistemes or publications. | `E.17.AUD.LHR:3.2 Row 5`: the local lexical head is now honest and the remaining question is the bounded comparison, not one more local repair. | `E.17.AUD.LHR:5.4` |
 | Outside observation or environmental change has changed what the same local unit can honestly carry. | The local-repair threshold plus the stop-and-reopen safeguard: do not keep appending new pressure to the same unit. | `E.17.AUD.LHR:5.6` |
-| The unit has already become downstream approval, gate, adjudication, or execution work. | `E.17.AUD.LHR:3.2 Row 4` plus the outside-work field: the sentence is no longer naming one overloaded local lexical head inside one review publication unit. | `E.17.AUD.LHR:5.5` and `E.17.AUD.LHR:5.6` |
+| The unit is being used to communicate approval or a gate or adjudication decision, or to direct execution work. | `E.17.AUD.LHR:3.2 Row 4` plus the outside-work field: the sentence is no longer naming one overloaded local lexical head inside one review publication unit. | `E.17.AUD.LHR:5.5` and `E.17.AUD.LHR:5.6` |
 
-The comparison-side neighbor is `E.17.ID.CR ComparativeReviewUnit`: use that governing pattern when the local lexical head is now honest, the unit already stays about the same EntityOfConcern, and the remaining question is one bounded comparison over already available source epistemes or publications.
+The comparison-side neighbor is `E.17.ID.CR ComparativeReviewUnit`: use that governing pattern when the local lexical head is now honest, the unit already stays about the same primary subject, and the remaining question is one bounded comparison over already available source epistemes or publications.
 
-The main publication-unit neighbor is `E.17.AUD.OOTD PublicationUnit Primary EntityOfConcern Discipline`: use that governing pattern when local lexical-head repair is no longer enough and the whole publication unit still cannot keep one stable primary entity of concern, one carried move, and one outside-work boundary visible.
+The main publication-unit neighbor is `E.17.AUD.OOTD PublicationUnit Primary-Subject Discipline`: use that governing pattern when local lexical-head repair is no longer enough and the whole publication unit still cannot keep one stable primary subject, one carried move, and one outside-work boundary visible.
 
 Treat those as neighboring recoveries, not as a required sequence. Some cases will stop after one local repair, some will apply bounded comparison under `E.17.ID.CR`, and some will apply publication-unit stabilization under `E.17.AUD.OOTD` once the honest question changes.
 
@@ -332,7 +332,7 @@ Used well, this pattern:
 - makes later publication-unit stability review cleaner because the local lexical head question has already been restored;
 - gives authors and reviewers one common language for saying `the problem is still local`.
 
-Used badly, it can become one more vocabulary exercise. If the publication unit still has unstable EntityOfConcern or carried-move reading after local repair, do not keep polishing the overloaded local lexical head forever. Apply the governing pattern for the remaining problem situation.
+Used badly, it can become one more vocabulary exercise. If the publication unit still has unstable primary-subject or carried-move reading after local repair, do not keep polishing the overloaded local lexical head forever. Apply the governing pattern for the remaining problem situation.
 
 ### E.17.AUD.LHR:8 - SoTA-Echoing
 
@@ -344,8 +344,8 @@ Used badly, it can become one more vocabulary exercise. If the publication unit 
 | One local lexical head should not be repaired by synonym taste alone. | Terminology work separates designation, concept, definition, and term-formation practice. | ISO 704:2022 and ISO 1087:2019 | In `E.17.AUD.LHR:5.1` and `E.17.AUD.LHR:5.3`, repair the local head by naming the FPF kind or locally declared head it designates here, without importing an ISO concept system as FPF ontology. | Reject synonym substitution, dictionary taste, and global vocabulary rows as local head restoration. | `E.17.AUD.LHR:3.2 Rows 1-3`; `E.17.AUD.LHR:5.1`; `E.17.AUD.LHR:5.3` | **Adapt lightly.** Use designation discipline, not a new global vocabulary. |
 | The common sense of a word is not enough when the local context points to a rarer or narrower reading. | Word-sense disambiguation practice treats sense recovery as context-sensitive; long-tail WSD work shows why common-sense defaulting fails. | Blevins and Zettlemoyer (2020); Blevins et al. (2021); source maturity = analogy-only source use | In `E.17.AUD.LHR:5.2` and `E.17.AUD.LHR:5.4`, do not assume that `review`, `interpretation`, `text`, or `document` has its common local reading when the FPF context selects a narrower kind or neighboring pattern. | Reject common-usage defaulting as proof that the local FPF sense has been recovered. | `E.17.AUD.LHR:3.2 Row 2`; `E.17.AUD.LHR:5.2`; `E.17.AUD.LHR:5.4` | **Adapt as analogy.** Do not import machine-learning benchmarks as authoring rules. |
 | Human-readable local heads should improve comprehension rather than merely sound tidy. | Identifier and label clarity practice treats names as comprehension aids whose bad choices can mislead readers. | Hofmeister et al. (2017), identifier-name comprehension study; source maturity = empirical analogy only | In `E.17.AUD.LHR:5.1` and `E.17.AUD.LHR:5.6`, choose the lightest local head that lets the reader recover kind, active local reading, active primary entity or relation, action, and outside work. | Reject a nicer label when it changes kind, scope, authority, or downstream use. | `E.17.AUD.LHR:3.2`; `E.17.AUD.LHR:5.1`; `E.17.AUD.LHR:5.6` | **Adapt lightly.** Use clarity to aid local repair, not to justify renaming stable FPF heads. |
-| A working pattern should make the first useful move teachable and critique-ready, not merely correct in hindsight. | Pattern-writing practice emphasizes clear template usage, concrete consequences, and critique-ready worked guidance. | Iba (2021), “How to Write Patterns …” (PLoP 2021) | The ordinary card and worked slices are here so a practitioner can repair one overloaded local lexical head in `E.17.AUD.LHR:5.1` or `E.17.AUD.LHR:5.4` without opening publication-unit discipline too early. | Reject a skeleton-only pattern that leaves the actual local repair action to reviewer intuition. | `E.17.AUD.LHR:3.2`; `E.17.AUD.LHR:5.1`; `E.17.AUD.LHR:5.4` | **Adopt.** Keep the move teachable through one small card plus concrete slices. |
-| Review quality improves when criteria are explicit instead of left to taste. | Pattern-validation practice pushes toward explicit criteria and documented review checks. | Riehle et al. (2020), "Pattern Discovery and Validation Using Scientific Research Methods". | The local-repair threshold and the three repair dispositions keep review from collapsing into style debate: see `E.17.AUD.LHR:5.2` for stay-local, `E.17.AUD.LHR:5.4` for bounded-comparison disposition, and `E.17.AUD.LHR:5.5` for governing-pattern application. | Reject style-debate closure when the repair disposition is still not named. | local-repair threshold; `E.17.AUD.LHR:3.2 Row 5`; `E.17.AUD.LHR:5.2`; `E.17.AUD.LHR:5.4`; `E.17.AUD.LHR:5.5`; `E.17.AUD.LHR:5.6` | **Adopt.** Keep the criteria lightweight but explicit. |
+| A working pattern should make the first useful move teachable and critique-ready, not merely correct in hindsight. | Pattern-writing practice emphasizes clear template usage, concrete consequences, and critique-ready worked guidance. | Iba (2021), [How to Write Patterns](https://hillside.net/plop/2021/plopourri/PLoP21_PLOPOURRI_Iba_Methodology4.pdf) (PLoP 2021) | The ordinary card and worked slices are here so a practitioner can repair one overloaded local lexical head in `E.17.AUD.LHR:5.1` or `E.17.AUD.LHR:5.4` without opening publication-unit discipline too early. | Reject a skeleton-only pattern that leaves the actual local repair action to reviewer intuition. | `E.17.AUD.LHR:3.2`; `E.17.AUD.LHR:5.1`; `E.17.AUD.LHR:5.4` | **Adopt.** Keep the move teachable through one small card plus concrete slices. |
+| Review quality improves when criteria are explicit instead of left to taste. | Pattern-validation practice pushes toward explicit criteria and documented review checks. | Riehle, Harutyunyan, and Barcomb (2025), [Pattern Discovery and Validation Using Scientific Research Methods](https://doi.org/10.1007/978-3-662-70810-1_6), with the [authors' 2021 preprint](https://arxiv.org/abs/2107.06065). | The local-repair threshold and the three repair dispositions keep review from collapsing into style debate: see `E.17.AUD.LHR:5.2` for stay-local, `E.17.AUD.LHR:5.4` for bounded-comparison disposition, and `E.17.AUD.LHR:5.5` for governing-pattern application. | Reject style-debate closure when the repair disposition is still not named. | local-repair threshold; `E.17.AUD.LHR:3.2 Row 5`; `E.17.AUD.LHR:5.2`; `E.17.AUD.LHR:5.4`; `E.17.AUD.LHR:5.5`; `E.17.AUD.LHR:5.6` | **Adopt.** Keep the criteria lightweight but explicit. |
 
 Read `E.17.AUD.LHR:6 - Boundary dispositions` through this table only after the repair disposition is already visible by value. The citations do not choose the repair disposition for you; they discipline why the already-recovered repair disposition is reviewable and teachable.
 
@@ -358,7 +358,7 @@ Read `E.17.AUD.LHR:6 - Boundary dispositions` through this table only after the 
 - `A.7 Strict Distinction`
 
 **Nearest neighbors**
-- `E.17.AUD.OOTD PublicationUnit Primary EntityOfConcern Discipline`
+- `E.17.AUD.OOTD PublicationUnit Primary-Subject Discipline`
 - `E.17.ID.CR ComparativeReviewUnit`
 
 ### E.17.AUD.LHR:End

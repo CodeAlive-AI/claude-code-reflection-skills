@@ -5,7 +5,7 @@
 
 **At a glance.** Use `E.17` when one already accepted engineering account must be published in one or more readable faces for different readers without changing its claims.
 
-**Use this when.** The source account is already accepted for the present work, but a reader needs a plain explanation, technical card, interoperability card, or evidence-facing lane. The publication task is to expose the same account for that reader, not to create a new engineering claim, perform work, pass a gate, or establish assurance by presentation.
+**Use this when.** The source account is already accepted for the present work, but a reader needs a plain explanation, technical card, interoperability card, or evidence-facing lane. The publication task is to expose the same account for that reader, not to create a new engineering claim or establish performed Work, gate passage, or assurance by presentation.
 
 **What goes wrong if missed.** A readable face can silently add, widen, or hide claims. The opposite failure is to make every publication start with a four-face kit, a newly authored viewpoint or bundle, and an assurance dossier even when one small face would answer the reader's question.
 
@@ -35,7 +35,7 @@
 
 At the first screen, keep only the current source, named reader/use, minimum useful face set, visible omissions, and return to source.
 
-**Not this pattern when.** Use `A.15.1` for a performed-work claim, `A.10` for an evidence or provenance path, `B.3` for assurance or engineering justification, `A.20`/`A.21` for constraint or gate decisions, `A.7` for carrier work, and the relevant release or authority rule when that is the actual problem. E.17 only publishes the already accepted account and keeps those downstream claims separate.
+**Not this pattern when.** Use `A.15.1` for a performed-work claim, `A.10` for an evidence or provenance path, `B.3` for assurance or engineering justification, `A.20`/`A.21` for constraint or gate decisions, `A.7` when carrier, publication, and Work are conflated, and the relevant release or authority rule when that is the actual problem. E.17 only publishes the already accepted account and keeps those downstream claims separate.
 
 > **Tech-name:** `MultiViewPublicationKit` (**MVPK**)
 
@@ -58,8 +58,8 @@ Let a practitioner publish the few readable faces that current readers actually 
 
 ### E.17:3 - Problem
 
-1. **Semantic drift in publication.** Unchecked presentations introduce claims not present in the exact C.2.1 source epistemes about the arrow. Each such episteme, including a Description episteme admitted for specification use, keeps its exact claim content, EntityOfConcern, and effective `U.ReferenceScheme`; publication form, viewpoint reference, scope, or carrier supplies none of those identity discriminators.
-2. **Non‑compositionality.** Publishing `g∘f` yields faces that do not match composing the faces of `f` and `g`.
+1. **Semantic drift in publication.** Unchecked presentations introduce claims not present in the exact C.2.1 source epistemes, including those about the arrow in the optional morphism profile. Each such episteme, including a Description episteme admitted for specification use, keeps its exact claim content, EntityOfConcern, and effective `U.ReferenceScheme`; publication form, viewpoint reference, scope, or carrier supplies none of those identity discriminators.
+2. **Non‑compositionality in the morphism profile.** Publishing `g∘f` yields faces that do not match composing the faces of `f` and `g`.
 3. **View, viewpoint, and face confusion.** A template or face is treated as the view or viewpoint, with no exact conformance relation between two claim-bearing epistemes.
 4. **Unpinned numbers.** Numeric claims lack unit, scale, reference‑plane, and **edition pins** from Part F or Part G, undermining auditability.
 
@@ -67,10 +67,10 @@ Let a practitioner publish the few readable faces that current readers actually 
 
 | Force | Tension |
 | --- | --- |
-| **Compositionality vs legibility** | Preserve arrow invariants across views ↔ keep each view didactic and audience‑appropriate. |
+| **Compositionality vs legibility** | Preserve arrow invariants across faces ↔ keep each face didactic and audience‑appropriate. |
 | **Neutral naming vs domain idioms** | Use vocabulary stable across domains ↔ allow local templates (SOPs, APIs, checklists). |
 | **Publication-face independence (A.7)** | Publication preserves EntityOfConcern, Description-episteme, and specification-use boundaries ↔ authors expect rich presentations. |
-| **Evidence discipline** | Views cite CG-Spec and CHR references when numeric or comparable claims are exposed ↔ authors want compact cards. |
+| **Evidence discipline** | Faces cite CG-Spec and CHR references when numeric or comparable claims are exposed ↔ authors want compact cards. |
 
 ### E.17:5 - Solution — the **MVPK Kit**
 
@@ -93,7 +93,7 @@ Let a practitioner publish the few readable faces that current readers actually 
     * **Rendering** = display layout of a carrier, purely graphical formatting; performed rendering is separate `U.Work` on its exact carrier, not a `publication-face kind` or publication occurrence.
     * **Representation** = a C.29 representation and its exact correspondence to independently recovered objects or relations; it is not a publication occurrence, publication form, view-membership rule, or carrier. Publication or representation does not by itself make any represented object or relation exist.
 * **Architecture-description mapping note.** An architecture **viewpoint** maps to one exact `U.Viewpoint` episteme; `PublicationVPId` or `EngineeringVPId` designates it and a `U.ViewpointRef` resolves it. An architecture **view** maps to one exact episteme that passes E.17.0 conformance. An MVPK face is the separate publication form through which that episteme may be exposed for a separately declared bounded use and, when material, in an exact publication occurrence.
-* **No-mechanism equivalence:** MVPK is not a mechanism and no face acts. Build, rendering, upload, or delivery may be actual `U.Work` performed by an exact System recovered through A.13. When such Work is current, A.15.1 independently identifies the Work, performers, Method, time, and containing System. Add F.6 only when the publication account expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. Name a carrier relation separately only when the claim or downstream use depends on it.
+* **Publication work:** Build, rendering, upload, or delivery may be actual `U.Work` performed by an exact System recovered through A.13. When such Work is current, A.15.1 independently identifies the Work, performers, Method, time, and containing System. Add F.6 only when the publication account expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. Name a carrier relation separately only when the claim or downstream use depends on it.
 * **Viewpoint (`U.Viewpoint`)** - an exact claim-bearing episteme edition recognized under E.17.0's dependent-kind rule. Resolve an existing viewpoint when it already states the relevant concerns and conformance rules. Author a new reusable viewpoint, or create an E.17.1 local family declaration inside an exact catalogue episteme edition, only when the current reader/use cannot be served truthfully without that separate result. The declaration packages exact `U.ViewpointRef` values; it is not another bundle entity. `PublicationVPId` designates the viewpoint episteme; `U.ViewpointRef` resolves it.
 * **Explanation-use profile values.** An existing publication form can be paired with a bounded explanation-use profile value such as `SourcePinnedExplanation`, `SourceLinkedExplanationReconstruction`, `DidacticRetelling`, or `SpeculativeRetelling`; the profile value is neither the form nor a new face, explanation, or carrier-rendering kind. Pins, provenance references, and no-new-A.6.B-boundary-claims discipline apply only when the exact source, transformation, or receiving use makes them material.
 
@@ -117,8 +117,8 @@ For functional-description publications, E.17 covers only the publication relati
 - evidence and provenance path under `A.10`;
 - engineering-justification record under `B.3`;
 - constraint or gate decision under `A.20` or `A.21`;
-- supervisory or control architecture record under `B.2.5`;
-- carrier, export, OCR, or front-end record under `A.7`;
+- supervisor-subholon feedback record under `B.2.5`, control-structure-view record under `C.30.LCA`, or a record of the exact architecture claim under `C.30` or selected-structure claim under `A.22`, as applicable;
+- carrier, export, OCR, or front-end distinction under `A.7`, followed by the applicable carrier, front-end, or Work pattern;
 - same-entity textual relation under `A.6.3.CR`;
 - representation relation under `A.6.3.RT`;
 - reduced-use-rendering relation under `A.6.3.CSC`.
@@ -142,7 +142,7 @@ When a morphism publication is encountered or reused, name only the relation pos
 * the exact project-side object, reference, or authority relation when the next work or reliance claim depends on it.
 
 Changed claim content, EntityOfConcern, or effective reference scheme identifies another episteme edition under C.2.1. Re-evaluate `PublicationFormExpressionRelation` only when its selected edition, form, bounded-use declaration, or obtaining predicate changes; re-evaluate `PublicationFormBearingRelation` only when its carrier, form, or obtaining predicate changes. Independently, changing any of the five `EpistemePublicationRelation` participants identifies another publication occurrence without reidentifying an otherwise unchanged episteme. Publication availability lost and later restored creates a later occurrence; a file rename or layout change alone proves none of those changes.
-The practical payoff is that a reader can recover which relation is available for reliance: the episteme claim, the published form, the view, the carrier, the typed project-side FPF kind and reference named by value, or the authority-reference relation. A dashboard tile, generated explanation, card face, credential view, or carrier can guide source-finding, but it does not by itself establish the source claim or effect, gate decision, evidence relation, assurance claim, local system-role kind, separate System-classification judgment, assignment occurrence or state, direct status predicate, responsibility or authority predicate, Work occurrence, or permission. If its source uses *role or status* without making one of those claims clear, treat that phrase as unresolved recognition wording and route it through `E.10.ROLE`; then use the recovered direct pattern or return the exact missing governor.
+The practical payoff is that a reader can recover which object or relation is available for reliance: the episteme claim, the published form, the view, the carrier, the typed project-side FPF kind and reference named by value, or the authority-reference relation. A dashboard tile, generated explanation, card face, credential view, or carrier can guide source-finding, but it does not by itself establish the source claim or effect, gate decision, evidence relation, assurance claim, local system-role kind, separate System-classification judgment, assignment occurrence or state, direct status predicate, responsibility or authority predicate, Work occurrence, or permission. If its source uses *role or status* without making one of those claims clear, treat that phrase as unresolved recognition wording and route it through `E.10.ROLE`; then use the recovered direct pattern or return the exact missing governor.
 
 **Source-exposure rule.** A face, carrier, rendering, dashboard tile, credential view, status view, comparison unit, explanation, signed memo, release record, approval publication, or gate dashboard exposes another project-side object only when that exact object and its direct relation are recoverable. Readability, layout, title, color, fluency, proximity, copying, generation, or reuse establishes none of them. If a real `SpeechAct`, `GateDecision`, evidence path, credential or status source, `U.Work` occurrence, `U.Episteme`, or publication occurrence is recoverable, rely on that object and relation; otherwise use the face only for orientation or source-finding.
 
@@ -161,7 +161,7 @@ Use this vocabulary when a publication face, rendering, generated text, comparis
 | `source-relation-absent` | The needed source relation is known absent from the current publication-facing unit and available source set for the stated use. Block that use; do not infer that the underlying world claim is false merely from this absence. |
 | `source-available` | The cited source can be recovered or inspected for the current use. This does not yet show that the rendering used it correctly. |
 | `source-retrieved` | The cited source has actually been recovered for the current check. This still does not show that it was used correctly or makes the local claim recoverable. |
-| `source-used` | The inspectable generation, rewrite, rendering, comparison, work, or reliance source relation actually used the named source rather than only similar background. If that relation is unavailable, treat the unit as pointer-only or orientation-only until a source relation is recovered. |
+| `source-used` | The named source, rather than only similar background, was actually used in the generation, rewrite, rendering, comparison, work, or reliance linked by the inspectable source relation. If that relation is unavailable, treat the unit as pointer-only or orientation-only until a source relation is recovered. |
 | `source-faithful` | The publication-facing unit stays within the source claim relation for the stated use; omissions, declared source-loss modes, and additions are visible enough to inspect. |
 | `claim-recoverable-from-source` | The local claim is recoverable from the source, declared correspondence relation, or required typed project-side FPF kind and reference named by value for the stated use. |
 | `claim-not-recoverable-from-source` | The local claim is not recoverable from the source relation currently available. |
@@ -171,14 +171,14 @@ Use this vocabulary when a publication face, rendering, generated text, comparis
 | `source-loss-declared` | The publication-facing unit declares a source-loss mode such as omitted-detail, qualifier-loss, redaction, aggregation, scope-narrowing, recoverability-loss, or representation-factor-loss for the local source-to-rendering relation. |
 | `claim-widened` | The publication-facing unit turns a source possibility, hypothesis, bounded condition, low-confidence statement, narrower permission, or source-finding cue into a wider claim or use. |
 | `added-linkage` | The publication-facing unit adds a causal, explanatory, bridge, comparison, work, evidence, gate, or authority relation not already carried by the source relation. |
-| `independent-verification-present` | A separate named record makes the local claim or use available independently of the face, such as an `A.10` evidence path, `B.3` assurance claim, `A.21` `GateDecision`, `A.20` constraint profile, `A.15` `U.WorkPlan`, `A.15.1` dated `U.Work` occurrence, or `F.9` Bridge Card. |
+| `independent-verification-present` | The exact result or evidence basis of an independent check of the local claim is recoverable under the pattern that defines or tests that result, together with the outcome, applicable qualifications, and named bounded use; for example, an `A.20` `ConstraintValidityResult` with `evaluationState=evaluated` and `outcome=satisfied` for a named applicable constraint, subject, case, and evaluation window, with its witness. An existing qualifying result suffices; source availability alone does not establish verification. |
 | `admissible-for-this-use` | The face is usable for the named bounded purpose only. Wider work, evidence, decision, bridge, gate, release, or assurance use requires the exact separate object and relation that carry that claim. |
 | `downstream-use-forbidden` | The publication-facing unit is not used for the named downstream claim or effect because the needed source relation is absent, source-loss-declared, contradicted, or outside scope. |
 | `reopen-trigger-present` | A stated change, dispute, use escalation, source update, context shift, missing source relation, or contradiction requires return to the source-bearing side or recheck of the concrete claim, predicate, definition, constraint, or downstream record. Add exact assertion or ClaimGraph identity only when that identity is material. |
 
 Patterns can use shorter local field names such as `sourceRelationStatus`, `explanationSourceStatus`, or `representationValidityStatus` when the local object is clear. Comparative patterns split source-relation status from comparative-relation status instead of using one overloaded field. The local field remains interpretable through the vocabulary above, and the bounded use is named beside it when downstream reliance could change.
 
-For ordinary use, name only the status distinction that changes the next bounded use. The common light states are `source-pointer-only`, `source-relation-unknown`, `source-relation-not-needed`, `source-not-recoverable-here`, `admissible-for-this-use`, `downstream-use-forbidden`, and `reopen-trigger-present`. The vocabulary is neither an ordered source-stage scale nor a source-record or authority taxonomy, and it does not substitute for evidence, assurance, gate, or work records. A missing source relation blocks only the unsupported use; it does not prove the underlying world claim false. If `independent-verification-present` is relied on, name the exact separate evidence, assurance, decision, work, or bridge record that performs that check.
+For ordinary use, name only the status distinction that changes the next bounded use. The common light states are `source-pointer-only`, `source-relation-unknown`, `source-relation-not-needed`, `source-not-recoverable-here`, `admissible-for-this-use`, `downstream-use-forbidden`, and `reopen-trigger-present`. The vocabulary is neither an ordered source-stage scale nor a source-record or authority taxonomy, and it does not substitute for evidence, assurance, gate, or work records. A missing source relation blocks only the unsupported use; it does not prove the underlying world claim false. If `independent-verification-present` is relied on, name the exact separate evidence, assurance, decision, work, or bridge record that supplies the independent basis.
 
 #### E.17:5.1c - Shared use-boundary terms
 
@@ -201,7 +201,7 @@ When a publication-facing unit, publication face, rendering, narrower-use render
 **Mixed-case precedence.** When several publication-use patterns appear possible, repair the smallest unstable interpretation that changes the current bounded use before applying a neighboring pattern whose claim or effect is present:
 
 1. If one local head is the only unstable part, apply `E.17.AUD.LHR` or `C.2.P` and stop when the repaired sentence names the local kind, relation, and bounded use.
-2. If the bounded `PublicationUnit` or its primary EntityOfConcern interpretation is unstable, apply `E.17.AUD` or `E.17.AUD.OOTD` before using `E.17.ID.CR` or `E.17.EFP`.
+2. If the bounded `PublicationUnit` or the interpretation of its primary subject is unstable, apply `E.17.AUD` or `E.17.AUD.OOTD` before using `E.17.ID.CR` or `E.17.EFP`. Use `EntityOfConcern(E)` for that subject only when the unit carries one identified claim-bearing episteme `E` and both name the same exact entity.
 3. If the unit is stable and the present problem is comparison overread, apply `E.17.ID.CR`; use `F.9`, `C.11`, `A.20`, or `A.21` only when equivalence, recommendation, selection, decision, gate, or release claim is actually being made.
 4. If the unit is stable and the present problem is explanation overread, apply `E.17.EFP`; use `A.10`, `B.3`, `A.20`, `A.21`, or `A.15.4` only when evidence, engineering-justification, gate, release, work, or reliance claim is actually being made.
 5. If the present problem is a durable reusable name, UTS row, Core-facing term, or cross-context naming relation, apply `F.18`; otherwise keep the lighter local repair pattern.
@@ -219,7 +219,7 @@ When a publication-facing unit, publication face, rendering, narrower-use render
 | Is the primary issue one bounded comparative review unit over sources? | `E.17.ID.CR ComparativeReviewUnit`. |
 | Did the EntityOfConcern, target, ontology frame, or claim or relation record named by value change? | `A.6.4`, `OntologicalReframing`, or the retargeting or reframing pattern named by value. |
 | Is the publication-facing unit being used as bridge, substitution, equivalence, "same", "equivalent", "align", or "map" wording, or cross-context comparison relation? | Use Part F and `A.6.9` to repair the wording. Use F.9 for the obtaining Bridge, bounded-use claim, optional `CL`, evidence and loss boundaries, and optional Card. Use F.9.1 only for a separate stance note about that claim. Comparison alone is not a Bridge, and a publication face is neither the Bridge nor the note. |
-| Is the live question carrier, export, OCR, screen, front-end behavior, or work on carriers? | `A.7` and the exact carrier relation, front-end relation, or work-on-carrier record. |
+| Is the live question carrier, export, OCR, screen, front-end behavior, or work on carriers? | Use `A.7` to repair a conflated relation position; recover the exact carrier or front-end relation under its direct pattern, and use `A.15.1` for a dated Work claim. |
 
 **Evidence-path boundary.** An `A.10` evidence/provenance path, including one that cites attestation, freshness, or a G.11 currentness result, carries only the claim named by value it instantiates. It does not approve or authorize work, pass a gate, perform work, supply release permission, or raise assurance or engineering-justification use unless the typed project-side FPF kind and reference named by value that carries that downstream claim is also instantiated, such as `A.15.4`, `A.15`, `A.20`, `A.21`, or `B.3`.
 
@@ -267,7 +267,7 @@ This preservation rule also applies across extraction, translation, screenshotti
 
 **Measure and display overread.** A number, score, percentage, color, rank, confidence value, similarity value, dashboard state, or measurement display is orientation only until its measurement source, aggregation rule, time window, scope, calibration or evidence path, and intended use are recoverable. Use `A.10` for evidence, `B.3` for assurance, `A.20`/`A.21` for gate use, `A.15.4` plus the recovered work relation for work reliance, and F.9 for a Bridge or bounded-use claim. Use F.9.1 only for an optional stance note about an already constituted claim.
 
-**World-contact stop.** A face does not self-refresh after source update, revocation, policy change, holon-state change, incident, model update, environmental change, or new observation. Refresh the source, reissue the publication, or recover the new concrete project-side record before downstream work, evidence, gate, control, carrier, or reliance continues.
+**World-contact stop.** After source update, revocation, policy change, holon-state change, incident, model update, environmental change, or new observation, refresh the source, reissue the publication, or recover the new concrete project-side record before downstream work, evidence, gate, control, carrier, or reliance continues.
 
 **Functional-description boundary.** A functional, architectural, descriptive, representational, or explanatory fit claim creates no permission, obligation, approval, gate passage, release relation, performed-work evidence, or engineering justification. Those uses need the exact separate work, authority, evidence, decision, gate, release, or assurance object and relation that carry the claim.
 
@@ -296,7 +296,7 @@ This preservation rule also applies across extraction, translation, screenshotti
 - A generated explanation appears to prove a causal relation. Block the evidence or assurance interpretation when source pins and evidence path are absent or insufficient. Useful publication use remains: use the explanation as reader help or source-finding, then use `A.10` for the evidence path or `B.3` for the engineering-justification claim.
 
 - `C.2.P` prevents the wrong object from being treated as source, the wrong relation from being treated as source relation, and a loose phrase from being treated as an FPF kind.
-- `E.17.AUD` and `E.17.AUD.OOTD` prevent action on a publication unit whose primary entity of concern, carried publication move, or outside boundary shifted silently.
+- `E.17.AUD` and `E.17.AUD.OOTD` prevent action on a publication unit whose primary subject, carried publication move, or outside boundary shifted silently.
 - `E.17.ID.CR` prevents a comparison unit from being used as decision, equivalence, bridge, evidence, or release source relation.
 - `E.17.EFP` prevents fluent explanation from laundering unsupported claims into reliance, assurance, gate, or evidence use.
 - `E.17` MVPK prevents a readable publication face from being treated as evidence, gate, work, authority, or release source relation by display quality.
@@ -357,7 +357,7 @@ The optional morphism-publication profile uses representation-side constructors,
 4. **Set-returning comparison.** Whenever a face shows selection or comparison, it returns sets or declared partial orders and does not hide scalarization; cite a `ComparatorSetRef` for any total order.
 5. **Bridge and plane references.** A semantic crossing cites its F.9 Bridge and separate bounded-use claim. A plane-dependent value cites its characteristic, selected `ReferencePlane`, and applicable C.16 or A.19.CPM transfer or comparison rule. If B.3 is triggered and its assurance claim depends on an integration relation, retain that relation's B.3 `CL` and `Φ(CL)` reference; infer no penalty from an F.9 Bridge or publication face.
 6. **Carrier references and relation positions.** When the use depends on them, name the carrier reference, any A.10 evidence/provenance path or G.6 path citation, and the G.11 currentness result; keep `U.Work` occurrences distinct from epistemic claims via relation positions.
-7. **Publication is not execution.** Faces carry no time or resource semantics; any build, render, or upload work is separate **`U.Work`**.
+7. **Publication is not execution.** Publication morphisms carry no time or resource semantics; any build, render, or upload work is separate **`U.Work`**.
 
 #### E.17:5.5 - Pins and local publication-profile fields (normative; never "axes")
 
@@ -429,7 +429,7 @@ For composable arrows `X -f-> Y -g-> Z` and exact `s,t` in `F_face`:
    * When another episteme is actually constructed from the source, use A.6.3 to identify that source-to-receiving construction relation. The face constructor is not a species of `U.EpistemicViewing`, and A.6.3 does not establish `U.View` membership.
    * Changed claim content, EntityOfConcern, or effective reference scheme identifies another episteme under C.2.1. Changed form, carrier, or publication occurrence does not by itself.
 4. **Pin discipline.** Numeric or comparable claims used from a face retain the unit, scale, reference-plane, and edition pins required by the applicable characteristic and measurement patterns.
-5. **Publication is not work.** Build, rendering, upload, or delivery is `U.Work` only when each exact actual performer has its A.13 core and A.15.1 independently admits the dated occurrence. F.6 enters only when the publication account also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. A face, emitter symbol, view episteme, or publication occurrence does not act.
+5. **Publication is not work.** Build, rendering, upload, or delivery is `U.Work` only when each exact actual performer has its A.13 core and A.15.1 independently admits the dated occurrence. F.6 enters only when the publication account also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact.
 6. **Publication and carrier separation.** E.24.PUB identifies the selected episteme edition, publication occurrence, form, and presentation carrier separately. A.10 supplies the evidence/provenance source-to-use path, G.6 supplies addressable path citation, slicing, and local refresh, and B.3 supplies any assurance claim.
 7. **Cross-context and reference-plane use.** For a semantic crossing, recover the F.17 endpoint senses, F.9 Bridge, and separate bounded-use claim. For a plane-dependent value, retain the characteristic, selected `ReferencePlane`, and applicable transfer or comparison rule. Add A.10 or B.3 only when reliance is current; an optional F.9 `CL` summarizes evidence strength and never grants use. Visual juxtaposition and scheme difference alone establish none of these claims.
 8. **PublicationScope discipline.** For a face use v selecting episteme E, `PublicationScope(v)` does not exceed the claim scope on which that publication relies. A capability description may also cite a work scope, but the publication scope does not grant work admissibility. `PromoteFace` does not widen either scope.
@@ -445,9 +445,9 @@ The equations are conceptual-form constraints on the optional morphism-publicati
 | `F_face` | finite C.13 collection of publication-form designators for this profile | not a viewpoint bundle or `U.ViewFamily` |
 | `Emit_s`, `FaceObj_s`, `FaceMorph_s`, `PromoteFace` | conceptual-form symbols for constructing and checking publication-form content | defined only in the representation-side formalism; no U-kind membership follows |
 | receiving episteme, when separately constructed | its claims are checked against the source and, only for a material `U.View` claim, against P | A.6.3 construction and E.17.0 conformance are independent claims |
-| publication occurrence, form, carrier | makes the selected episteme available to a declared audience and use | E.24.PUB identifies these participants and tests whether the publication relations obtain |
+| publication occurrence, form, carrier | makes the selected episteme available to a declared audience and use | E.24.PUB identifies these objects and tests whether the publication relations obtain |
 
-In the optional morphism profile, the author selects source E and publication-form profile `F_face`; P is selected only for a material `U.View` claim or a formal operation whose definition depends on that viewpoint. A system performs any authoring, rendering, checking, or publication work. MVPK names the publication method and constraints; it neither acts nor mints a view-family entity.
+In the optional morphism profile, the author selects source E and publication-form profile `F_face`; P is selected only for a material `U.View` claim or a formal operation whose definition depends on that viewpoint. A system performs any authoring, rendering, checking, or publication work. MVPK names the publication method and constraints.
 
 ### E.17:8 - Archetypal Grounding (SoTA-aligned Local Tests)
 
@@ -466,7 +466,7 @@ The remaining examples exercise optional formal or load-bearing branches.
     * Profunctor and optic accounts are useful only as a source idea for why compositional publication matters. The local FPF test is still the MVPK witness: emit the face for `g∘f`, compose the emitted faces for `f` and `g`, and compare them. If the comparison is not supplied or fails, the face stays non-compositional or explanatory-only; optics vocabulary does not carry the rule by analogy.
 
 4. **Functional-description publication (`PlainView` + `TechCard`).**
-    A principle scheme or functional diagram can publish a readable relation from signature or principle episteme content to method-family selection, selected method, `U.WorkPlan`, performed `U.Work`, work-result record, and result measurement. The MVPK faces can help inspect that relation and prepare a work plan, but they do not become work, gate passage, evidence, engineering justification, or control architecture. When one of those claims is current, recover its concrete `A.15`/`A.15.1`, `A.10`, `B.3`, `A.20`/`A.21`, or `B.2.5` record; if none exists, create only a prospective repair, decision, or work-plan request rather than backdating the claim.
+    A principle scheme or functional diagram can publish a readable relation from signature or principle episteme content to method-family selection, selected method, `U.WorkPlan`, performed `U.Work`, work-result record, and result measurement. The MVPK faces can help inspect that relation and prepare a work plan, but they do not become work, gate passage, evidence, engineering justification, or control architecture. When one of those claims is current, recover its concrete `A.15`/`A.15.1`, `A.10`, `B.3`, or `A.20`/`A.21` record, or, for control architecture, a record of the exact architecture claim governed by `C.30` and `A.22`. Use `C.30.LCA` for a separately current control-structure-view record and `B.2.5` for a separately current supervisor-subholon feedback record. If the needed record does not exist, create only a prospective repair, decision, or work-plan request rather than backdating the claim.
 
 ### E.17:8.1 - Bias-Annotation
 
@@ -485,7 +485,7 @@ A conformance check is kept only if it changes the next bounded use of the publi
 | **CC-MVPK-1 (Source, reader, and use visible)** | Each ordinary publication form points to the current source account and exposes the separate reader/use declaration it serves. | A cold reader can find the source, understand why this form exists, and see material omissions. |
 | **CC-MVPK-1b (`U.View` claim conditional)** | Only when the selected episteme exposed through a face is claimed as a `U.View` does the publication resolve an exact `publicationViewpointRef` and cite the obtaining E.17.0 conformance relation. | A form label, layout, or packaged reference alone is rejected as membership evidence. |
 | **CC-MVPK-1a (Publication relations explicit when load-bearing)** | When availability, recurrence, dispute, external exchange, or reliance depends on publication identity, name the selected edition, audience, bounded use, form, carrier, expression relation, bearing relation, and publication occurrence. | The exact values resolve only for that stronger use; an ordinary face is not rejected for lacking an unused identity dossier. |
-| **CC‑MVPK‑3 (No content extension)** | `PlainView`, `TechCard`, and `InteropCard` add **no new claims** beyond the underlying Description epistemes, including Description epistemes admitted for specification use. | Red‑line vs Description episteme, including any exact specification-use source, shows only formatting or indexing. |
+| **CC‑MVPK‑3 (No content extension)** | `PlainView`, `TechCard`, and `InteropCard` add **no new claims** beyond the underlying source epistemes, including Description epistemes admitted for specification use. | Red‑line vs source episteme, including any exact specification-use source, shows only formatting or indexing. |
 | **CC-MVPK-4 (Pins and source references when material)** | Numeric or comparable claims relied on through a publication form retain the units, scale, reference plane, edition, and source references that change their interpretation; an ordinal-only claim stays comparison-only and is neither averaged nor converted to a z-score. | Relevant pins are visible, and an ordinal-only face contains no mean or z-score; a qualitative ordinary form carries no irrelevant pin dossier. |
 | **CC-MVPK-4j (Publication bound visible)** | Alongside every selected form, the separate bounded-use declaration is visible; identify exact `U.PublicationScope` when that bound must travel or constrain a stronger use. | The ordinary use line is readable, and any load-bearing scope reference resolves without granting work or reliance. |
 | **CC-MVPK-5 (Return and carrier boundary)** | Every selected form retains a return to source; identify the carrier, the needed A.10 evidence/provenance path or G.6 path citation, and any G.11 currentness result only when carrier identity, carrier work, reliance, evidence, replay, or currentness is material. | Source return is visible; stronger carrier/provenance references appear only where used. |
@@ -510,9 +510,9 @@ A conformance check is kept only if it changes the next bounded use of the publi
 | **CC‑MVPK‑4k (Subset‑of underlier)** | For views about epistemes or capabilities, `PublicationScope ⊆ ClaimScope or WorkScope`; reindexing **does not widen** it. | Subset witness passes; promotion diff shows no widening. |
 | **CC‑MVPK‑6 (Γ‑separation)** | No cost, time, or data-spend on publication morphisms. | CI shows proof records or witness records; gate validation passes. |
 | **CC‑MVPK‑7 (Reindexing monotone)** | If `s ⪯ t`, then `Emit_s(x) ⪯ Emit_t(x)`. | `TechCard` ≤ `InteropCard` (more structure, same claims). |
-| **CC‑MVPK‑8 (`publication-face kind` discipline)** | Only literal `publication-face kind` values **publication face/form** or **interop publication form** are used; faces are named **...View** or **...Card**. | Token scan; no “rendering” or “presentation” as `publication-face kind` values. |
+| **CC‑MVPK‑8 (`publication-face kind` discipline)** | Only literal `publication-face kind` values **publication face/form** or **interop publication form** are used; faces are named **...View**, **...Card**, or **...Lane**. | Token scan; no “rendering” or “presentation” as `publication-face kind` values. |
 | **CC‑MVPK‑9 (Reindexing naturality)** | Conceptual-form coercions `PromoteFace[s->t]` exist, are total in the selected formal substrate, and commute with composition. | The local witness uses `PromoteFace` and is not overread as a world-side relation. |
-| **CC‑MVPK‑10 (Iso‑preservation)** | Isomorphisms in `U` remain isomorphisms under each viewpoint. | Cards show mapped inverses or an iso‑witness. |
+| **CC‑MVPK‑10 (Iso‑preservation)** | Isomorphisms in `U` remain isomorphisms under each selected `Emit_s`. | Cards show mapped inverses or an iso‑witness. |
 | **CC‑MVPK‑11 (Typing & totality)** | Ill-typed composites are rejected at `FaceObj_s` rather than weakening the selected conceptual-form rules. | Type-check fails early; no best-effort composition claim appears on cards. |
 | **CC‑MVPK‑12 (Crossing distinctions)** | A cross-context semantic face keeps the F.9 Bridge, bounded-use claim, and reliance result distinct; a ReferencePlane-dependent face keeps its characteristic, plane, and transfer or comparison rule distinct. Optional F.9 `CL` and B.3 integration `CL` remain in their own uses. | The face exposes only the references consumed by its bounded use and grants no crossing, reliance, or assurance by display. |
 
@@ -520,8 +520,8 @@ A conformance check is kept only if it changes the next bounded use of the publi
 
 1. **“Presentation logic” as semantics.**
     *Fix:* Keep every claim in the source ClaimGraph. When a reader needs to know how a claim arose, name the exact authoring, measurement, observation, model, source-use, representation, or refinement relation. Use an exact specification-use gate, CG-Spec, or KD-CAL when it owns the requirement; keep views declarative; publication adds **zero** claims.
-2. **Publishing only view objects.**
-    *Fix:* The optional formal profile constructs faces for `g o f`, not only endpoint faces for `FaceObj_s(X)`, `FaceObj_s(Y)`, and `FaceObj_s(Z)`. A system performs the construction work; MVPK does not act.
+2. **Publishing only endpoint faces.**
+    *Fix:* The optional formal profile constructs faces for `g o f`, not only endpoint faces for `FaceObj_s(X)`, `FaceObj_s(Y)`, and `FaceObj_s(Z)`. A system performs the construction work.
 3. **Unpinned numbers.**
     *Fix:* Reject card; supply **pins** plus CG and CHR references.
 4. **Face presented as a view without conformance.**
@@ -533,8 +533,8 @@ A conformance check is kept only if it changes the next bounded use of the publi
 
 | Benefit | Why it matters | Trade-off and mitigation |
 | --- | --- | --- |
-| **Arrow traceability.** | Composition preserved across views enables chain‑of‑evidence on pipelines. | Slight authoring overhead → MVPK templates. |
-| **Review-ready faces.** | Pins plus CHR references make numeric claims verifiable. | Declared publication checks perform MVPK checks; project gates stay with the relevant `OperationalGate(profile)` or `GateDecision` source when the gate claim is present. |
+| **Arrow traceability.** | Composition preserved across faces enables chain‑of‑evidence on pipelines. | Slight authoring overhead → MVPK templates. |
+| **Review-ready faces.** | Pins plus CHR references make numeric claims verifiable. | Apply the declared publication checks to MVPK claims; project gates stay with the relevant `OperationalGate(profile)` or `GateDecision` source when the gate claim is present. |
 | **Terminology hygiene.** | Clear View vs Viewpoint, Publication vs Presentation. | Enforce publication-face-kind discipline tokens in CI. |
 | **Notation independence.** | Viewpoints talk concerns, not tools. | Provide adapters to local publication toolchains. |
 

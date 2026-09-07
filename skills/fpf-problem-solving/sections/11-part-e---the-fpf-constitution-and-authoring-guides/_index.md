@@ -11,19 +11,19 @@
 - [E.4.FPF - First Principles Framework Form and Publication-or-Access Carrier Assembly](06-e-4-fpf---first-principles-framework-form-and-publication-or.md) (269 lines) — Type: Architectural (A)
 - [E.4.PFAD - Principle-Framework Architecture Decision](07-e-4-pfad---principle-framework-architecture-decision.md) (284 lines) — Type: Architectural (A)
 - [E.4.DPF - Domain Principle Framework Authoring and Publication-or-Access Carrier Assembly](08-e-4-dpf---domain-principle-framework-authoring-and-publicati.md) (623 lines) — Type: Architectural (A)
-- [E.4.DPF.DA - Domain Principle Framework Package-Adequacy Evaluation CharacteristicSpace](09-e-4-dpf-da---domain-principle-framework-package-adequacy-eva.md) (374 lines) — Normativity: Normative unless marked informative.
+- [E.4.DPF.DA - Domain Principle Framework Package-Adequacy Evaluation CharacteristicSpace](09-e-4-dpf-da---domain-principle-framework-package-adequacy-eva.md) (403 lines) — Normativity: Normative unless marked informative.
 - [E.4.PFR - Pattern-Framework Relation and Edition Discipline](10-e-4-pfr---pattern-framework-relation-and-edition-discipline.md) (336 lines) — Type: Architectural (A)
 - [E.4.PFIP - Principle-Framework Publication Integration and Preservation](11-e-4-pfip---principle-framework-publication-integration-and-p.md) (250 lines) — Normativity: Normative unless explicitly marked informative
-- [E.5 - Four Guard‑Rails of FPF](12-e-5---four-guard-rails-of-fpf.md) (101 lines) — FPF positions itself as a timeless, universal “operating system for
-- [E.5.1 - DevOps Lexical Firewall](13-e-5-1---devops-lexical-firewall.md) (75 lines) — The FPF Core is meant to remain valid across decades and technology
+- [E.5 - Four Guard‑Rails of FPF](12-e-5---four-guard-rails-of-fpf.md) (102 lines) — FPF positions itself as a timeless, universal “operating system for
+- [E.5.1 - DevOps Lexical Firewall](13-e-5-1---devops-lexical-firewall.md) (76 lines) — The FPF Core is meant to remain valid across decades and technology
 - [E.5.2 - Notational Independence](14-e-5-2---notational-independence.md) (79 lines) — FPF concepts must travel across academic disciplines, modelling tools,
 - [E.5.3 - Unidirectional Dependency](15-e-5-3---unidirectional-dependency.md) (80 lines) — FPF separates artefacts into stable Conceptual Core, executable
 - [E.5.4 - Cross‑Disciplinary Bias Audit](16-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
-- [E.6 - Didactic Architecture of the Specification](17-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers from at least two characteristics of diversity:
+- [E.6 - Didactic Architecture of the Specification](17-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers who differ in at least two respects:
 - [E.7 - Archetypal Grounding Principle](18-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
 - [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (670 lines) — Type: Architectural (A)
 - [E.8.ECSPF - FPF Pattern Publication Form for Evaluation Guidance](20-e-8-ecspf---fpf-pattern-publication-form-for-evaluation-guid.md) (243 lines) — Type: Authoring method pattern
-- [E.9 - Design‑Rationale Record (DRR) Method](21-e-9---design-rationale-record-method.md) (360 lines) — Type: Governance and authoring pattern
+- [E.9 - Design‑Rationale Record (DRR) Method](21-e-9---design-rationale-record-method.md) (359 lines) — Type: Governance and authoring pattern
 - [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](22-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (442 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
 - [E.10 - Unified Lexical Rules for FPF](23-e-10---unified-lexical-rules-for-fpf.md) (1568 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recovering What “Learning” Means in the Current Claim](24-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (215 lines) — Type: lexical and ontological precision restoration (E)
@@ -35,9 +35,9 @@
 - [E.10.D1 - Recovering What “Context” Means in Use](30-e-10-d1---recovering-what-context-means-in-use.md) (171 lines) — Normativity: Normative when context carries meaning needed by an FPF claim; informative for quoted source wording and ordinary prose that already makes its meaning clear.
 - [E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline](31-e-10-d2---entityofconcern-description-episteme-and-specifica.md) (413 lines) — Definitional pattern - normative, notation-agnostic
 - [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](32-e-11---first-practical-entry-and-pattern-use-discoverability.md) (508 lines) — Type: Pattern-language governance pattern (E)
-- [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](33-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (545 lines) — Type: Pattern-language use pattern (E)
-- [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](34-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (289 lines) — Type: Pattern-language use pattern (E)
-- [E.11.PFP - Framework Publication Form Profile](35-e-11-pfp---framework-publication-form-profile.md) (316 lines) — Type: Specialization of E.11
+- [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](33-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (547 lines) — Type: Pattern-language use pattern (E)
+- [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](34-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (319 lines) — Type: Pattern-language use pattern (E)
+- [E.11.PFP - Framework Publication Form Profile](35-e-11-pfp---framework-publication-form-profile.md) (318 lines) — Type: Specialization of E.11
 - [E.11.DSG - DPF Suite Reference](36-e-11-dsg---dpf-suite-reference.md) (214 lines) — Type: Specialization of E.11 (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](37-e-12---didactic-primacy-cognitive-ergonomics.md) (88 lines) — The FPF is designed as an "Operating System for Thought," a tool intended to augment and clarify human (and artificial) reasoning. This mission places a unique demand on its architecture: the...
 - [E.13 - Pragmatic Utility and Value Alignment](38-e-13---pragmatic-utility-and-value-alignment.md) (195 lines) — Type: Part E FPF evaluation and repair pattern
@@ -46,19 +46,19 @@
 - [E.16 - RoC‑Autonomy Budget & Enforcement](41-e-16---roc-autonomy-budget-enforcement.md) (244 lines) — Intent. Make an autonomy claim testable and enforceable through a published AutonomyBudgetDecl, guarded enactment, override SpeechActs with separation of duties, and a Work-anchored AutonomyLedger.
 - [E.17.0 - Viewpoint and View Recognition for Multi-View Describing](42-e-17-0---viewpoint-and-view-recognition-for-multi-view-descr.md) (545 lines) — At a glance. Use E.17.0 to decide whether one exact engineering account is a view under one already defined viewpoint, without mistaking its label, layout, generation history, bundle position, or...
 - [E.17.1 - Viewpoint Bundle Library - Reusable Viewpoint Reference Bundles](43-e-17-1---viewpoint-bundle-library---reusable-viewpoint-refer.md) (436 lines) — Type: Architectural (A)
-- [E.17.2 - TEVB - Project-local Typical Engineering Viewpoint Bundle Template for Holons](44-e-17-2---tevb---project-local-typical-engineering-viewpoint.md) (330 lines) — Status: Stable authoring template; no TEVB catalogue value is shipped by this pattern.
+- [E.17.2 - TEVB - Project-local Typical Engineering Viewpoint Bundle Template for Holons](44-e-17-2---tevb---project-local-typical-engineering-viewpoint.md) (331 lines) — Status: Stable authoring template; no TEVB catalogue value is shipped by this pattern.
 - [E.17 - Multi‑View Publication Kit](45-e-17---multi-view-publication-kit.md) (589 lines) — Type: Part E publication pattern
 - [E.17.EFP - ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces](46-e-17-efp---explanationfaithfulnessprofile-explanation-use-di.md) (544 lines) — Type: Architectural (A)
-- [E.17.ID.CR - ComparativeReviewUnit - bounded comparison over comparative review units](47-e-17-id-cr---comparativereviewunit---bounded-comparison-over.md) (719 lines) — Plain-name. Bounded comparison over comparative review units.
+- [E.17.ID.CR - ComparativeReviewUnit - bounded comparison over comparative review units](47-e-17-id-cr---comparativereviewunit---bounded-comparison-over.md) (714 lines) — Plain-name. Bounded comparison over comparative review units.
 - [E.17.AUD - PublicationUnit Stability Discipline - keep one publication unit stable enough to read honestly](48-e-17-aud---publicationunit-stability-discipline---keep-one-p.md) (250 lines) — Plain name. Keep one publication unit stable enough to read honestly.
 - [E.17.AUD.LHR - PublicationUnit Stability Discipline and Local Head Restoration - repair the overloaded local lexical head before the publication unit inherits it](49-e-17-aud-lhr---publicationunit-stability-discipline-and-loca.md) (365 lines) — Placement. Narrow local lexical-head repair pattern inside the broader PublicationUnit Stability Discipline.
-- [E.17.AUD.OOTD - PublicationUnit Stability Discipline and PublicationUnit Primary-Subject Discipline - publication-unit stability over one primary subject](50-e-17-aud-ootd---publicationunit-stability-discipline-and-pub.md) (384 lines) — Placement. Narrow publication-unit stability pattern inside the broader PublicationUnit Stability Discipline.
+- [E.17.AUD.OOTD - PublicationUnit Stability Discipline and PublicationUnit Primary-Subject Discipline - publication-unit stability over one primary subject](50-e-17-aud-ootd---publicationunit-stability-discipline-and-pub.md) (383 lines) — Placement. Narrow publication-unit stability pattern inside the broader PublicationUnit Stability Discipline.
 - [E.18 - Transformation Flow Structure](51-e-18---transformation-flow-structure.md) (595 lines) — Tech-name: TransformationFlowStructure (pattern label)
 - [E.18.1 - P2W Problem-to-Work Carry-Through](52-e-18-1---p2w-problem-to-work-carry-through.md) (560 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](53-e-18-2---transformation-flow-mathematical-description.md) (239 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](54-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (469 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
 - [E.18.NET - Network of Transformation-Flow Structures](55-e-18-net---network-of-transformation-flow-structures.md) (418 lines) — Tech-name: TransformationFlowStructureNetwork
-- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](56-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (791 lines) — Type: Architectural pattern
+- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](56-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (793 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol](57-e-20---mechanism-introduction-protocol.md) (403 lines) — Type: Architectural pattern
 - [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](58-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (602 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](59-e-22---improvement-oriented-quality-evaluation-question-fram.md) (350 lines) — Use E.22 when someone is about to ask for a quality evaluation, quality review, returned-finding absorption, improvement proposal, or follow-up hypothesis over an object version named by value, and...

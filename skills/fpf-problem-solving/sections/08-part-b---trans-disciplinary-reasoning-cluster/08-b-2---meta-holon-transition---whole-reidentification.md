@@ -27,7 +27,7 @@ Typical moments:
 - If the claim is ordinary part-whole construction, use `B.1`, `A.14`, and `C.13`.
 - If the claim is a whole-level characteristic change, use `C.16` and the direct measurement or evaluation pattern.
 - If the claim is capability without whole reidentification, use the direct capability and characteristic patterns.
-- If the claim is transformation or work, use `A.3.4`, `A.12`, `A.15`, and `A.15.1`.
+- If the claim is transformation or work, use `A.3.4` for the change and `A.15.1` for the Work; use `A.12` when the acting side needs recovery and `A.15` when alignment across the neighboring objects is the question.
 - If the claim is only wording repair for emergence-family language, use `B.2.P` first.
 - If the claim is graph, RG-like, MSPD, or other mathematical expression, use `C.29` unless whole reidentification is also current.
 
@@ -91,7 +91,7 @@ The optional `MHTTriggerProfile`, `ExistingWholeExplanationResult`, and `HolonRe
 | `evidenceRelationRefs[]` | References to exact evidence relation occurrences supporting the trigger claims. |
 | `sourceUseRelationRefs[]` | References to exact source-use relation occurrences when a source is relied on. |
 
-The profile's effective `U.ReferenceScheme`, any current `U.ClaimScope`, and an independently selected model-use structure can qualify this episteme under C.2.1 when its receiving use needs them. They do not identify either whole, become MHT trigger facts, or make any referenced relation obtain. A single cue warrants attention; it does not establish whole reidentification.
+The profile's exact ClaimGraph and effective `U.ReferenceScheme`, together with its existing-whole EntityOfConcern, constitute its C.2.1 identity. Any current `U.ClaimScope` and an independently selected model-use structure can qualify this episteme when its receiving use needs them. These identity values and qualifications do not identify either whole, become MHT trigger facts, or make any referenced relation obtain. A single cue warrants attention; it does not establish whole reidentification.
 
 #### B.2:4.2 - Existing-whole comparison and optional result
 
@@ -138,11 +138,11 @@ Do not use `post*` field names as live governed names. They hide the candidate n
 
 #### B.2:4.5 - Agency Threshold
 
-Agency is not a binary status and not a root kind. Treat agency as a characteristic-space threshold for one exact system, predicate, claim scope, and qualification window.
+An agency-characteristic threshold is a condition in a characteristic space, not a root kind or a substitute for the A.13 agency claim. State its exact System, predicate, claim scope, and qualification window.
 
 Use `A.13`, `A.19`, and `C.16` for the characteristic-space and threshold claim. Levin-line TAME work can discipline the multi-characteristic framing when agency evidence is relied on for the current claim. B.2 uses agency threshold only as one possible trigger in `MHTTriggerProfile`, and only when crossing the threshold changes closure, supervision, objective, or whole identity.
 
-Recover the admitted System and its agency-relevant characteristic or threshold independently. A System may bear that characteristic while participating passively in the situation. Recover a local system-role kind, a separate System-classification judgment, an obtaining assignment, and ordinary source wording as separate branches; include one only when the receiving claim depends on it. If claim-bearing source wording still says only “role,” use `E.10.ROLE` rather than presuming classification or assignment.
+Recover the admitted System and its agency-relevant characteristic or threshold independently. A System may bear that characteristic while participating passively in the situation. A precise agency claim additionally requires the A.13 core, including the local agential system-role kind, System-classification judgment, and obtaining assignment; a characteristic-only claim does not acquire that additional scope. If claim-bearing source wording still says only “role,” use `E.10.ROLE` rather than presuming classification or assignment.
 
 #### B.2:4.6 - Acting-System Participation
 
@@ -158,7 +158,7 @@ Use `C.29` when the mathematical lens is relied on for the current claim. Use B.
 
 #### B.2:4.8 - Keep Whole Identity, Evidence, Currentness, And Reliance Separate
 
-Keep five results apart:
+Keep these five distinctions explicit:
 
 - the existing whole and candidate new whole, their constituents, obtaining constructive relations, assemblies, characteristics, and identity rules are world-side objects and facts under their direct patterns;
 - a B.2 whole-reidentification assertion is a C.2.1 episteme about those objects;
@@ -203,7 +203,7 @@ The exact EntityOfConcern is an actual participant in the C.2.1 `EpistemeConstit
 
 A collection of results can remain a catalogue. B.2 becomes current only when the knowledge body is reidentified as an episteme whole with its own claim-bearing structure, explanatory objective, reference scheme, and evidence relations.
 
-`B.2.3` specializes this case when the exact candidate new holon named by the MHT claim is recognized under the already admitted `U.Episteme` kind. C.2.1 defines episteme constitution and identity; E.17 and E.24.PUB define publication occurrences, forms, and carriers; C.2.P recovers source-expression and source-to-use distinctions; A.10 and G.6 supply evidence-provenance relations when the receiving use relies on them.
+`B.2.3` specializes this case when the exact candidate new holon named by the MHT claim is recognized under the already admitted `U.Episteme` kind. C.2.1 defines episteme constitution and identity; E.17 and E.24.PUB define publication occurrences, forms, and carriers; C.2.P recovers source-expression and source-to-use distinctions; use A.10 for bounded evidence reliance and G.6 for its evidence/provenance graph and ledger, retaining each relation's direct governor.
 
 #### B.2:5.3 - Capability Envelope Appears
 
@@ -287,7 +287,7 @@ Costs:
 
 Holonic work needs a way to recognize when a whole has changed enough that the old EntityOfConcern no longer carries the current claim. B.2 provides that move without collapsing all novelty into "emergence" and without inventing record-field U-kinds.
 
-The pattern is intentionally conservative: it applies repairs from subject patterns first, then supports whole reidentification only when the existing whole no longer explains the observed shift. This protects B.1 part-whole construction, A.15 work, A.3.4 transformation, C.16 characteristics, C.29 math-lens use, and episteme and publication discipline from being swallowed by MHT.
+The pattern is intentionally conservative: it applies repairs from subject patterns first, then supports whole reidentification only when the existing whole no longer explains the observed shift. This protects B.1 part-whole construction, A.15.1 work, A.3.4 transformation, C.16 characteristics, C.29 math-lens use, and episteme and publication discipline from being swallowed by MHT.
 
 ### B.2:11 - Decision-bearing SoTA account
 
@@ -302,7 +302,7 @@ These sources answer different questions. None supplies a universal emergence de
 
 ### B.2:12 - Relations
 - **Builds on:** `A.1` for world-side holon recognition, `B.1` for part-whole construction, `A.14` and `C.13` for relation and constructional grounding, and `E.24.UK` for one-time public-kind admission.
-- **Coordinates with:** `A.12` and `A.3.4` for acting-side and transformation, `A.15` and `A.15.1` for method and work, `C.16` and `A.19` for characteristic space and threshold, `C.2.1` for optional claim and record epistemes, `A.10` and `B.3` for evidence and warrant, `G.11` for edition currentness, `C.29` for mathematical lenses, and `C.32.P2S` when architecturing pressure becomes whole reidentification rather than local structure repair.
+- **Coordinates with:** `A.12` and `A.3.4` for acting-side and transformation, `A.3.1` and `A.15.1` for Method and Work, `A.15` when their alignment is the current question, `C.16` and `A.19` for characteristic space and threshold, `C.2.1` for optional claim and record epistemes, `A.10` and `B.3` for evidence and warrant, `G.11` for edition currentness, `C.29` for mathematical lenses, and `C.32.P2S` when architecturing pressure becomes whole reidentification rather than local structure repair.
 - **Specialized by:** `B.2.2` when the candidate new whole is a system, `B.2.3` when it is recognized under the admitted `U.Episteme` kind, and `B.2.4` when capability or functioning facts require whole reidentification.
 - **Can use neighboring evidence from:** `B.2.5` when a supervisor-subholon feedback relation is part of the B.2 case evidence or neighboring structure; that does not make B.2.5 a specialization for the candidate new holon's kind.
 - **Uses:** `B.2.P` when emergence-family, MHT, MET, MFT, synergy, or metric-mirage wording hides which claim kind is current before B.2 is applied.

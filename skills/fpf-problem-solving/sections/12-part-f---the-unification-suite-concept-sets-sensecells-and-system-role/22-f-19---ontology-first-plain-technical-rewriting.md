@@ -40,6 +40,7 @@ Apply the same method to FPF pattern prose and to other technical prose whose ac
 
 - If only one already-visible FPF word or head has an unresolved technical use, take the exact `E.10` route for it.
 - If the question is a durable reusable name, use `F.18`.
+- If clear advice still demands work whose contribution, feasibility or requirement merits are unresolved, use `C.11.DUA` to repair that advice. Return here for any wording repair it needs.
 - If source prose is only being observed and not admitted into governed technical prose, keep the observation source-side.
 - If evocation, rhythm, ambiguity, or parallelism is the declared work of a poem, quotation, ceremonial passage, or other expressive genre, do not flatten it into technical instruction. Apply `F.19` only to the technical claim or action that must remain recoverable.
 - If a language-specific grammar or idiom remains after the common semantic repair, use the applicable language profile.

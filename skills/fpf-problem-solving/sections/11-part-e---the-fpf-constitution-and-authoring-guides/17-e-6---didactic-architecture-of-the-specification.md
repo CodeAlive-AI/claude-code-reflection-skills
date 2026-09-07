@@ -1,7 +1,7 @@
 ## E.6 - Didactic Architecture of the Specification
 
 ### E.6:1 - Problem frame
-FPF addresses readers from at least two characteristics of diversity:
+FPF addresses readers who differ in at least two respects:
 
 * **Disciplinary** – systems engineers, knowledge scientists, ethicists.
 * **Experience** – newcomers need intuition; experts need rigour.
@@ -40,7 +40,7 @@ The "On-Ramp First" Macro-Structure: The specification is ordered to create a sm
    stories before any normative language appears.
 
 2. **Part A Kernel**
-   Minimal holonic ontology and the Transformer principle give readers
+   Minimal holonic ontology and acting-side externalization (A.12) give readers
    the essential vocabulary.
 
 3. **Part B Trans‑disciplinary Reasoning**
@@ -65,7 +65,7 @@ The "On-Ramp First" Macro-Structure: The specification is ordered to create a sm
 | Narrative layer | First sight of `U.System` | First sight of `U.Episteme` |
 |-----------------|---------------------------|-----------------------------|
 | Preface | Coffee‑machine story (pump as system). | Meta‑analysis story (study bundle as episteme). |
-| Part A | Formal definition inherits boundary invariant. | Formal definition inherits F‑G‑R coordinates. |
+| Part A | Formal definition states the System criterion and applicable boundary conditions. | Formal definition states the Episteme criterion; F‑G‑R coordinates characterize a claim under the C.2.2 profile. |
 | Part B Tell‑Show‑Show | Γ\_sys example: assemble pump. | Γ_epist example: merge study bundle. |
 
 ### E.6:6 - Conformance Checklist

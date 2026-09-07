@@ -13,7 +13,7 @@ Typical moments:
 - a metric improves, but the team cannot say what intended value improved;
 - a quality score, all-`5` posture, assurance level, citation count, source count, or review pass becomes the target;
 - a proxy is used as a gate, incentive, resource-allocation signal, reputation signal, or release argument;
-- a model, method, pattern, or system is formally better while users, operators, safety, maintainability, learning, or decision quality get worse;
+- a model, method, pattern, or system is formally better while users or operators are worse off, or safety, maintainability, learning, or decision quality worsens;
 - an evaluation loop adds apparatus to satisfy the evaluator instead of improving the object of concern.
 
 **First useful move.** Name the intended value or objective, name the proxy or visible measure, and state how that proxy is being used now: measure, target, incentive, gate, release argument, decision driver, reputation signal, repair target, or orientation cue.
@@ -40,7 +40,7 @@ The danger starts when the visible measure becomes the object being optimized. A
 
 ### E.13:2 - Problem
 
-Without `E.13`:
+Typical failures include:
 
 1. **Measures replace objectives.** Teams speak as if the score, metric, benchmark, assurance level, or all-`5` posture is the value.
 2. **Evaluation loops become reward functions.** A checking reader asks for improvement; the author adds fields, guards, source rows, proof sketches, and relation catalogues until the visible evaluation looks better.
@@ -60,7 +60,7 @@ Without `E.13`:
 
 ### E.13:4 - Solution
 
-Use `ProxyToValueAlignment` as a short repair note, not a new bureaucracy.
+Use `ProxyToValueAlignment` as a short repair note.
 
 ```text
 ProxyToValueAlignment:
@@ -108,7 +108,7 @@ If nothing worsened, say which loci were checked. If no loci were checked, do no
 
 #### E.13:4.4 - Require a Minimally Viable Value Slice
 
-Do not require every project to create a lifecycle artifact named MVE. Require a minimally viable value slice: one compact case, worked slice, observation, trial, user/operator moment, or decision replay where the intended value is visible enough for the declared use.
+Require a minimally viable value slice: one compact case, worked slice, observation, trial, user/operator moment, or decision replay where the intended value is visible enough for the declared use.
 
 The value slice may be small. It must show the value, not merely the proxy.
 
@@ -145,7 +145,7 @@ E.13 blocks proxy-for-value bias: the visible measure, score, evidence volume, r
 | `CC-E13-3` | If a proxy improved, the repair asks what got worse and names checked loci or protected qualities. |
 | `CC-E13-4` | A minimally viable value slice shows the intended value for the declared use, or the value claim is lowered. |
 | `CC-E13-5` | The repair does not treat evaluation values, source counts, review praise, all-`5` posture, assurance level, or release status as value by itself. |
-| `CC-E13-6` | Stronger claims are governed by their direct patterns: measurement by `C.16`; quality evaluation by `E.21`, `E.9.DA`, or `E.2.DA`; assurance by `B.3`; gate passage by `A.21`; decision authority by `C.11`; and value and proxy alignment here. |
+| `CC-E13-6` | Stronger claims are governed by their direct patterns: measurement by `C.16`; quality evaluation by `E.21`, `E.9.DA`, or `E.2.DA`; assurance by `B.3`; gate passage by `A.21`; choice among options by `C.11`; decision authority by the applicable domain rule; and value and proxy alignment here. |
 | `CC-E13-7` | The repair changes value movement, proxy use, protected qualities, claim split, or stop condition; it does not close by adding proof apparatus alone. |
 
 ### E.13:8 - Common Anti-Patterns and How to Avoid Them
@@ -156,7 +156,7 @@ E.13 blocks proxy-for-value bias: the visible measure, score, evidence volume, r
 | All-`5` targeting | A pattern or DRR is rewritten to make every coordinate defensible as `5`. | Use the evaluation as measurement; repair content movement and protected trade-offs. |
 | Source-count proof | More citations or source rows are treated as better decision quality. | Ask which decision payload changed. |
 | Dashboard myopia | A visible dashboard metric improves while unmeasured harm rises. | Add protected qualities and split measure from value. |
-| Proxy as gate authority | A proxy becomes a release or gate argument without the governing gate or assurance pattern. | Use the governing gate or assurance pattern for gate or assurance claims and keep proxy use bounded. |
+| Proxy as gate authority | A proxy is treated as authority for release or gate passage without satisfying the rule that governs that decision. | Apply the governing release rule for release, `A.21` for gate passage, and `B.3` for an assurance claim; keep proxy use bounded. |
 | Value slice missing | Practical payoff is asserted but never shown in a case. | Add a minimally viable value slice or lower the payoff claim. |
 
 ### E.13:12 - Consequences

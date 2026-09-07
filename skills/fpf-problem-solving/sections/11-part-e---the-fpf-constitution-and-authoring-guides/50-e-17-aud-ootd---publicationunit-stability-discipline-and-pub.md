@@ -176,7 +176,7 @@ When the sentence is hard to write or a reviewer suspects a hidden shift, use th
 These prompts guide attention; they are not six publication rows. Discard the diagnostic once it has yielded the clear ordinary declaration.
 
 If local repair is still enough, go back to `E.17.AUD.LHR` (`Local Head Restoration`) instead of adding more structure here.
-If the unit remains one publication unit but neighboring-boundary claim-kind, misuse risk, or cross-interpretation ambiguity becomes claim-bearing, use the heavier extension as the assurance section.
+If the unit remains one publication unit but a claim or downstream use depends on the neighboring-boundary claim kind, misuse risk, or cross-interpretation ambiguity, use the heavier extension as the assurance section.
 If the same unit is already stable as one primary subject, one carried move, and one outside-work boundary, and the remaining question is one bounded comparative review move over already available source epistemes or publications, apply `E.17.ID.CR` rather than thickening the declaration.
 If the unit cannot stay stable even after local repair, reopen the unit or apply the neighboring pattern that answers the exact remaining question; do not stack more fields onto the declaration.
 
@@ -226,7 +226,7 @@ Three paragraphs later it says:
 `We should therefore assign rollout responsibility to platform and stage migration in two sprints.`
 
 The fix is not only lexical.
-The memo's primary subject began as the service boundary, but its carried move changed from describing or assessing that boundary to assigning responsibility and directing rollout; its apparent downstream use changed from understanding to planning and decision. None of those changes by itself proves that the `C.2.1` `EntityOfConcern` of an exact carried episteme changed.
+The memo's primary subject began as the service boundary, but its carried move changed from describing or assessing that boundary to proposing responsibility assignment and a two-sprint rollout; its apparent downstream use changed from understanding to planning and decision. None of those changes by itself proves that the `C.2.1` `EntityOfConcern` of an exact carried episteme changed.
 Repair the memo in one of two ways:
 - keep the note about the boundary and push rollout outside;
 - or make the changed move and downstream use explicit and use a downstream decision or rollout publication.
@@ -266,7 +266,7 @@ If the remaining question is now one bounded comparison between the already pinn
 #### E.17.AUD.OOTD:5.5 - Outside observation changes the live concern or carried claim
 
 A release-readiness note is already explicit that it is about one candidate publication or view and the risk state visible from the current evidence.
-Mid-review, an external vendor bulletin and a new field observation change the live failure boundary for that same candidate.
+Mid-review, an external vendor bulletin and a new field observation change the reported failure boundary for that same candidate.
 
 The candidate may remain the primary subject. What changed first is the evidence-facing concern and the claim the note can honestly carry; a later approval or execution question may also change the downstream use. Do not report an `EntityOfConcern` change unless one identified claim-bearing episteme actually has a different exact entity participant under `C.2.1`.
 Repair the note in one of three ways:
@@ -289,7 +289,6 @@ The local one-subject heuristic does not force three documents. The packet has o
 An unsectioned version is rejected because readers cannot see the subject and move changes. A short narrative with only one small shift may instead declare that transition. Separate documents become the least-cost choice when the rollout section starts assigning responsibility, serves another audience, needs independent reuse, or becomes an approval input with its own reliance boundary.
 
 ### E.17.AUD.OOTD:6 - Bias-Annotation
-Lenses tested: **Arch**, **Onto and Epist**, **Prag**, **Did**.
 This section intentionally biases toward explicit publication-unit stability and against quietly letting one unit absorb wider work or decision pressure by habit.
 The main mitigation is explicit primary-subject, concern, carried-move, downstream-use, and outside-work surfacing; conditional use of exact `EntityOfConcern` only when `C.2.1` warrants it; early return to `E.17.ID.CR` when publication-unit stability is already solved; and an explicit boundary choice once a downstream claim becomes primary.
 
@@ -312,7 +311,7 @@ The main mitigation is explicit primary-subject, concern, carried-move, downstre
 7. **CC-OOTD-7 - Neighboring-pattern boundary is explicit.**
    If an entityOfConcernRef-preserving transform, explanation, bridge, comparative-review, ontology, gate, approval, or execution claim becomes primary, use the neighboring pattern that defines or constrains that claim rather than pretending this pattern still carries the case.
 8. **CC-OOTD-8 - Claim-bearing lens is stated when needed.**
-   If a minimal modeling lens, exact `C.2.1` projection, or downstream-decision policy is materially claim-bearing, it is stated rather than silently assumed.
+   If a claim or downstream use materially depends on a minimal modeling lens, exact `C.2.1` projection, or downstream-decision policy, state that lens, projection, or policy rather than silently assuming it.
 9. **CC-OOTD-9 - Unit architecture is the least-cost honest choice.**
    Retaining one unit, declaring a transition, keeping a sectioned multi-subject unit, or splitting is chosen from the current reader, use, reuse, dependency, and overread costs. The author does not split to satisfy a count and does not retain a vague umbrella to avoid a necessary split.
 

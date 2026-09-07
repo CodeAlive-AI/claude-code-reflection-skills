@@ -14,7 +14,9 @@
 
 ### B.5.2:1 - Problem frame
 
-The Canonical Reasoning Cycle begins with abduction: the disciplined proposal of a candidate explanation, model, or conjecture that could account for a declared prompt. In practice this phase is often treated either as opaque inspiration or as unstructured ideation. Neither framing is bounded or auditable enough for FPF. The framework needs an entry discipline that is broad enough to admit real inquiry starts and narrow enough to keep the resulting hypothesis auditable.
+**Use this when.** An anomaly, opportunity or probe question needs candidate explanations that can be compared on their present plausibility. State the question and generate its serious rivals. The first useful result is a qualified conjecture with its supports, fragilities and allowed use, or an honest abort, defer or split outcome.
+
+An adequate present answer or action need not enter abduction merely to generate another research task. Use C.11 for a live choice among feasible actions and C.28 when a causal-support claim is needed. Abduction contributes candidate explanatory content; it is not the complete evidence synthesis or action decision.
 
 ### B.5.2:2 - Problem
 
@@ -29,7 +31,7 @@ Without an explicit abductive pattern:
 4. **Selection becomes opaque.**
    A chosen conjecture moves downstream without a visible record of why it outranked alternatives.
 5. **Untestable hypotheses survive too long.**
-   A candidate that cannot guide deduction, probe design, or evidence gathering is still treated as if it had earned progression.
+   A candidate with no interpretable implication or possible discriminating contrast is treated as a useful explanation. Distinguish this from a meaningful conjecture whose possible check is presently unavailable.
 
 ### B.5.2:3 - Forces
 
@@ -43,11 +45,11 @@ Without an explicit abductive pattern:
 
 ### B.5.2:4 - Solution - Structured abductive micro-cycle
 
-`B.5.2` defines abduction as a typed, iterative micro-cycle that begins from an admissible `U.AbductivePrompt`, expands a candidate set, filters that set by explicit plausibility criteria, and publishes one selected conjecture as a new `U.Episteme` with `AssuranceLevel:L0`.
+`B.5.2` begins from an admissible `U.AbductivePrompt`, expands a candidate set, compares it under explicit plausibility criteria, and publishes the selected conjecture as a hypothesis-bearing `U.Episteme`. Preserve the supports, rivals, limitations and allowed downstream use. Abduction alone assigns no `AssuranceLevel`.
 
 #### B.5.2:4.1 - Nature of abduction in FPF
 
-In FPF, abduction is **inference to a presently most plausible candidate explanation or solution** under a declared prompt. It is neither arbitrary guessing nor hidden inspiration. The output is not yet an established result; it is a disciplined conjecture prepared for downstream deduction, testing, or refinement.
+In FPF, abduction proposes a presently most plausible candidate explanation, model or conjecture under a declared prompt. Its plausibility can justify keeping or using that conjecture for a bounded purpose, but does not establish its causal mechanism or a stronger empirical claim. Deduction, evidence synthesis and action choice keep their own questions.
 
 #### B.5.2:4.2 - Four-step micro-cycle
 
@@ -56,7 +58,7 @@ In FPF, abduction is **inference to a presently most plausible candidate explana
 | **1. Frame the prompt** | State the initiating `U.AbductivePrompt` precisely enough that the unexplained contrast, opportunity, or probe pressure is explicit. | A prompt record with open question, scope notes, and provenance. |
 | **2. Generate candidate hypotheses** | Produce multiple candidate conjectures that could resolve the prompt. | A visible candidate set, even if lightweight. |
 | **3. Apply plausibility filters** | Compare candidates against explicit plausibility criteria. | A short rationale that records why some candidates remain live and others are rejected. |
-| **4. Select and publish the prime hypothesis** | Choose one candidate for downstream work and instantiate it as a hypothesis-bearing episteme. | A new `U.Episteme` at `AssuranceLevel:L0`, linked back to the prompt and selection rationale. |
+| **4. Select and publish the prime hypothesis** | Choose the presently preferred conjecture where the comparison warrants one. | A hypothesis-bearing `U.Episteme` with its prompt, selection rationale, live rivals, supports, fragilities and allowed use. No universal level or mandatory next experiment follows. |
 
 The loop is intentionally iterable. A selected prime hypothesis may later be replaced, narrowed, or reopened if deduction, probe work, or evidence reveals a better rival.
 
@@ -71,7 +73,7 @@ The filtering step is local and context-sensitive, but the criteria used **SHALL
 - **Parsimony.** Does the candidate introduce only the additional structure that the prompt requires?
 - **Explanatory reach.** How much of the prompt does the candidate actually account for?
 - **Consistency with established constraints.** Does the candidate avoid collision with already trusted pillars, mechanisms, or scope declarations?
-- **Falsifiability / probeability.** Does the candidate create an admissible next check, deduction, contrast, or evidence-acquisition relation?
+- **Falsifiability / probeability.** What implication, deduction or possible observation could discriminate the candidate from its rivals? Keep that question separate from whether a check is obtainable and worth performing now.
 - **Scope fit.** Is the candidate framed for the declared prompt scope rather than for an inflated or shifted target?
 
 No one filter is universally decisive. The pattern only requires that at least two filters be declared when a prime hypothesis is selected.
@@ -102,7 +104,7 @@ Use `unfoldingStructureRef` for the current local structure record; use A.22.CGU
 
 **Tell.** Abduction is not "a flash of insight." It is the governed passage from a typed prompt to a candidate conjecture through explicit rival generation and plausibility comparison.
 
-**Show (System).** An operations team sees a recurring latency spike that existing method explanations do not cover. They publish an `AnomalyStatement`, generate rival causes, filter them by consistency with current telemetry and mechanism knowledge, and publish one prime conjecture as an `L0` hypothesis for downstream checking.
+**Show (System).** An operations team sees a recurring latency spike that existing explanations do not cover. They publish an `AnomalyStatement`, compare rival causes against current telemetry and mechanism knowledge, and retain a qualified prime conjecture. They name a possible discriminating probe without assigning a maturity level or committing the service team to an experiment.
 
 **Show (Episteme).** A research group notices that two accepted results no longer fit together under one framing. It publishes a `ProbeCuePrompt`, enumerates several rival explanatory reframings, rejects the ones that fail scope fit or would not generate decisive probes, and advances one candidate explanation as the next working hypothesis.
 
@@ -115,16 +117,16 @@ This pattern biases authors toward visible candidate plurality, explicit plausib
 - `CC-B.5.2-1` Every abductive run **SHALL** begin from a declared `U.AbductivePrompt`; arbitrary prose fragments are not sufficient prompt-entry forms.
 - `CC-B.5.2-2` A conforming abductive run **SHALL** record at least one rival candidate alongside any selected prime hypothesis, unless the author explicitly justifies why no rival candidate was available.
 - `CC-B.5.2-3` Selection of a prime hypothesis **SHALL** cite at least two explicit plausibility filters.
-- `CC-B.5.2-4` The selected prime hypothesis **SHALL** be published as a new `U.Episteme` with `AssuranceLevel:L0`.
+- `CC-B.5.2-4` The selected prime hypothesis SHALL be published as a hypothesis-bearing `U.Episteme` with its scope, support and limitations. An assurance level, if a receiving use requires one, SHALL follow B.3.3's applicable justified profile rather than the fact that abduction occurred.
 - `CC-B.5.2-5` The prime hypothesis record **SHALL** preserve a link to the initiating prompt and to the filtering rationale that justified selection.
-- `CC-B.5.2-6` A hypothesis that cannot support any downstream deduction, probe design, or evidence-acquisition relation **SHALL NOT** be presented as a conforming abductive result.
+- `CC-B.5.2-6` A conforming conjecture SHALL expose an interpretable implication, deduction or possible discriminating contrast. The availability and value of a check SHALL be considered separately before selecting evidence acquisition. An unavailable probe neither creates an observation nor by itself forbids a separately supported present decision.
 
 ### B.5.2:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | What it looks like | How FPF prevents it |
 |---|---|---|
 | **Authority candidate** | One favored conjecture is advanced immediately, with no rival set and no explicit filtering. | `CC-B.5.2-2` and `CC-B.5.2-3` require candidate plurality and visible plausibility grounds. |
-| **Untestable grand conjecture** | The candidate sounds deep or comprehensive, but it creates no admissible next step for checking, probing, or deduction. | `CC-B.5.2-6` rejects prime hypotheses that cannot open a downstream checking, probing, deduction, or evidence-acquisition relation. |
+| **Untestable grand conjecture** | The candidate sounds explanatory but has no interpretable implication or discriminating contrast. | Use CC-B.5.2-6 to make its implications clear or refuse that abductive result. Do not confuse absence of a useful implication with temporary unavailability of a meaningful check. |
 | **Prompt amnesia** | A later reader can see the conjecture but not the initiating anomaly, opportunity, or probe pressure. | `CC-B.5.2-1` and `CC-B.5.2-5` keep prompt provenance attached. |
 | **Symptom patching** | The selected candidate only redescribes a visible symptom and leaves the actual prompt unresolved. | The explicit plausibility filter for explanatory reach forces the candidate to be compared against the whole prompt. |
 
@@ -134,7 +136,7 @@ This pattern biases authors toward visible candidate plurality, explicit plausib
 |---|---|
 | **Disciplined generativity.** Abduction stays inventive without collapsing into formless conjecturing. | Requires explicit prompt and filter publication; mitigation: the required record can remain lightweight. |
 | **Traceable hypothesis origin.** Later review can reconstruct why a conjecture entered the reasoning cycle. | Adds a small provenance-support load; mitigation: reuse prompt and candidate-set notes from adjacent patterns. |
-| **Cleaner downstream use.** Deduction and evidence work begin from an `AssuranceLevel:L0` `U.Episteme` publication with explicit scope and rationale. | Some early conjectures will be rejected sooner; that is a feature, not a defect. |
+| **Cleaner downstream use.** A hypothesis-bearing episteme gives the receiving question its scope, rivals, support and limitations. | A candidate can remain useful without being confirmed or receiving a universal level; a stronger claim still needs its own evidence. |
 | **Admissible reopening.** Rival candidates can be revisited when later work undermines the selected prime hypothesis. | Demands editorial discipline so that abandoned rivals remain legible rather than silently vanishing. |
 
 ### B.5.2:10 - Rationale
@@ -150,8 +152,8 @@ Contemporary inquiry practice in science, engineering, design, and diagnosis tre
 - **Is the first reasoning phase within:** `B.5 Canonical Reasoning Cycle`.
 - **Typically operates during:** `B.5.1 Exploration`.
 - **Consumes:** `U.AbductivePrompt` publications from `B.5.2.0`, often reached through `B.4.1` and `A.16`.
-- **Produces:** hypothesis-bearing `U.Episteme` publications at `AssuranceLevel:L0`.
-- **Provides inputs for:** downstream deduction, probe design, and evidence acquisition in the reasoning cycle.
+- **Produces:** hypothesis-bearing `U.Episteme` publications with explicit conjectural content, supports, fragilities and allowed use; no automatic `AssuranceLevel:L0`.
+- **Provides inputs for:** deduction, probe design and evidence synthesis when those questions are live. C.11 governs a separate feasible-action or acquisition choice; C.28 supplies needed causal-use support. A possible experiment is not funded or scheduled Work.
 - **Coordinates with:** `A.22.CGUS` when the abductive prompt, `B.4.1` cue publication, rival hypotheses, plausibility constraints, evidence-return loci, and downstream tests must be inspected as an `AbductiveSearchUnfoldingStructure`.
 
 #### B.5.2:12.1 - Prompt-entry broadening via `U.AbductivePrompt`
@@ -182,26 +184,26 @@ A candidate-set note is the minimal record that preserves rival plurality. It ne
 - the differentiating claim each candidate adds,
 - the principal plausibility supports and liabilities of each candidate,
 - whether the candidate remains live, is deferred, or is rejected,
-- and what missing evidence or probe would best discriminate among the remaining rivals.
+- and the implication or possible evidence that would best discriminate among remaining rivals, with an availability limitation when it changes the receiving use.
 
 The important point is not bureaucratic completeness. The important point is to prevent retrospective rewriting in which the surviving candidate is made to look as if it had been the only serious option from the beginning.
 
 #### B.5.2:13.3 - Prime-hypothesis record
 
-A selected prime hypothesis should preserve more than the hypothesis sentence itself. A conforming `L0` hypothesis record should name:
+A selected prime hypothesis should preserve more than the hypothesis sentence itself. Its record names:
 
 - the **selected candidate**,
 - the **prompt** it answers,
 - the **filters** under which it outranked rivals,
 - the **scope** within which it is being advanced,
-- the **next admissible downstream move** (deduction, probe design, targeted evidence acquisition, or explicit reopening criteria),
+- the **allowed downstream use or next question**, which may concern deduction, a possible probe, a separately justified action or reconsideration; include availability limits when they change that use,
 - and any **known fragilities** already visible at selection time.
 
 This is how `B.5.2` stays connected to the rest of the reasoning cycle. The abductive loop does not merely emit an idea; it emits a conjecture with explicit downstream-use terms.
 
 ### B.5.2:14 - Admissible Transitions, Abort Paths, and Reopening
 
-The abductive loop is iterative, but it is not formless. Several transition cases need explicit handling so that later stages know whether they are receiving a stable `L0` conjecture, a deferred candidate, or a prompt that should be reopened rather than forced forward.
+The abductive loop keeps its outcomes distinct so the recipient can tell whether it receives a qualified conjecture, deferred rivals, or a prompt that needs reopening. None of these outcomes by itself establishes an assurance level or an evidence-acquisition commitment.
 
 #### B.5.2:14.1 - Relation to `B.4.1` and `A.16`
 
@@ -215,7 +217,7 @@ The abductive loop is iterative, but it is not formless. Several transition case
 Not every abductive run should end in a prime hypothesis. Three non-selection outcomes are admissible:
 
 1. **Abort.** The prompt dissolves because the initiating anomaly or opportunity was misread, duplicated, or already answered elsewhere.
-2. **Defer.** Several candidates remain live, but the discriminating evidence or probe is not yet available. The loop pauses without pretending a winner exists.
+2. **Defer.** Several candidates remain live and the available comparison does not justify a winner, for example because a needed discriminator is unavailable. Preserve the unresolved set and its limits without inventing a winning explanation. A separately warranted present action may still proceed under C.11.
 3. **Split.** The original prompt turns out to contain several distinct questions. The run should fork into several narrower prompts rather than select one over-broad conjecture.
 
 These outcomes are not failures. They are part of keeping abduction honest.
@@ -249,7 +251,11 @@ The candidate set includes:
 - a time-window interaction with backup traffic,
 - and a recent mechanism regression in cache invalidation.
 
-The prime hypothesis is not selected because it sounds most familiar. It is selected because it best fits the observed window, remains consistent with known mechanism declarations, and generates a concrete next probe: isolate backup traffic and compare the latency shape against prior windows. The resulting conjecture becomes an `L0` hypothesis with one explicit evidence-acquisition relation.
+The backup-interaction conjecture is preferred because its timing fits the existing observations and it remains consistent with known mechanisms; the other two candidates remain live. Isolating backup traffic and comparing latency against prior windows is a possible discriminator. When that probe is obtainable and its expected contribution justifies its cost and delay, it can be selected as separate work. The conjecture itself records no observation from that unperformed probe.
+
+Now keep the same observations and rival set but make the probe window unavailable. The qualified conjecture and its uncertainty remain; if the available comparison cannot select a winner, defer that selection. No new test, waiver or study proposal is needed just to finish the present abductive result.
+
+In both variants, suppose an existing operational qualification independently supports a bounded diversion to a spare instance for this traffic and interval, with sufficient capacity and actual permission, across all three remaining causes. C.11 can support that service response on the available basis. Diverting traffic does not identify the cause; a causal claim about the mechanism still needs the appropriate C.28 support. If that operational basis is absent, do not infer a justified diversion from conjecture plausibility.
 
 #### B.5.2:15.2 - Opportunity-driven materials inquiry
 
@@ -261,7 +267,7 @@ Candidate hypotheses include:
 - it is caused by composition gradients,
 - or it is an effect of one measurement regime.
 
-The selected prime hypothesis is the geometry explanation because it explains more of the initial observations and yields a cleaner discriminating experiment. The loop shows why opportunity-driven abduction still needs rival tracking; without it, attractive novelty language would substitute for hypothesis discipline.
+The geometry explanation is the prime conjecture because it fits more of the initial observations and suggests a clearer discriminating experiment. Keep the composition and measurement rivals visible. The possible experiment can inform a separate research choice; its description neither funds it nor makes it mandatory. Long-horizon research can be worthwhile on its own declared contribution, without treating the conjecture as an established thermal-performance result.
 
 #### B.5.2:15.3 - Probe-driven theory repair
 
@@ -295,14 +301,14 @@ Hypothesis reviewers should not ask only whether the chosen hypothesis looks pla
 - whether the prompt was typed in an admissible way,
 - whether at least one real rival was preserved,
 - whether the filters named at selection time actually discriminate among candidates,
-- whether the selected hypothesis has a credible downstream test, deduction, or evidence-acquisition relation,
+- whether the selected hypothesis has interpretable implications and a meaningful possible discriminator, with actual availability kept separate from that explanatory contribution,
 - and whether any scope inflation occurred during selection.
 
 A polished hypothesis with no visible rivals is usually less trustworthy than a rougher hypothesis whose rival space is explicit.
 
 #### B.5.2:16.3 - For integrators and assurance leads
 
-Integrators should remember that `L0` is still early assurance. `B.5.2` supplies disciplined conjectures, not corroborated claims. Its value is that it exposes where deduction, method design, and evidence acquisition should now concentrate. Assurance leads therefore should preserve the prompt link and the filter rationale rather than flattening the conjecture into a decontextualized work item.
+Integrators receive a qualified conjecture, not early assurance conferred by an `L0` label. Preserve its prompt, rivals, supports, filter rationale and fragilities. Use B.3.3 only for a receiving assurance question, C.11 for a feasible-action or evidence-acquisition choice, and C.28 for causal support when needed. An unavailable probe can leave the explanation unresolved while an independently warranted bounded service action remains useful; do not turn the conjecture into a mandatory work item.
 
 ### B.5.2:17 - Migration and Boundary Notes
 
@@ -316,6 +322,6 @@ Legacy prose that describes abduction as a flash, leap, or raw creative moment m
 
 #### B.5.2:17.3 - Boundary to deduction and evidence
 
-`B.5.2` ends when one conjecture is published as a prime `L0` hypothesis or when the run is explicitly aborted, deferred, or split. Deduction, evidence acquisition, and later assurance do not belong to the abductive loop itself, even though the loop must prepare a clear downstream-use boundary for them.
+`B.5.2` ends with a qualified prime conjecture or an explicit abort, defer or split outcome. Deduction, evidence acquisition, synthesis, assurance and action choice remain separate questions. Naming their possible contribution states a downstream-use boundary; it does not require a new experiment, guarantee its availability or prevent a present decision already supported on other grounds.
 ### B.5.2:End
 

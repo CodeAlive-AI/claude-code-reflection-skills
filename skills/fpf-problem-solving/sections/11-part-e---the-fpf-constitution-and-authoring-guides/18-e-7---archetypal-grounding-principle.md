@@ -27,7 +27,7 @@ A purely abstract statement risks two failures:
 
 Every architectural pattern **SHALL** include a dedicated
 section, titled exactly **“Archetypal Grounding,”** that *shows* how the
-abstract law SCRs in FPF’s two canonical holon flavours:
+abstract law applies to FPF’s two canonical grounding archetypes:
 
 1. **`U.System`** – the archetype of a **physical, operational holon**.
 2. **`U.Episteme`** – the archetype of an **abstract, epistemic holon**.
@@ -52,7 +52,7 @@ This enforces a repeatable **Tell‑Show‑Show** rhythm:
 |----|-------------|---------|
 | **CC‑AG.1** | Every architectural pattern in Parts A, B, C, D, E **SHALL** contain a subsection headed exactly *“Archetypal Grounding”*. | Guarantees consistent Tell‑Show‑Show rhythm. |
 | **CC‑AG.2** | The Archetypal Grounding subsection **MUST** illustrate the rule with both `U.System` *and* `U.Episteme`. | Demonstrates trans‑disciplinary reach. |
-| **CC‑AG.3** | If a rule intentionally applies to only one substrate, the subsection **SHALL** state the scope limitation and justify it against the five Principle‑Taxonomy lenses (`Gov`, `Arch`, `Onto/Epist`, `Prag`, `Did`). | Prevents silent bias; links to Bias‑Audit guard‑rail. |
+| **CC‑AG.3** | If a rule intentionally applies to only one substrate, the subsection **SHALL** state the scope limitation and justify it against the five Principle‑Taxonomy lenses (`Gov`, `Arch`, `Epist` (epistemological and ontological), `Prag`, `Did`). | Prevents silent bias; links to Bias‑Audit guard‑rail. |
 | **CC‑AG.4** | Patterns lacking a compliant Archetypal Grounding subsection **MAY NOT** progress to “Accepted” status. | Enforces discipline without referring to workflow mechanics. |
 
 ### E.7:7 - Consequences

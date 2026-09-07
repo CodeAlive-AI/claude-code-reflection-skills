@@ -2,7 +2,7 @@
 
 **Tag:** Architectural kit pattern; notation-independent.
 
-**Stage:** optional series authoring → measurement and series-update Work → representation → optional publication and refresh.
+**Stage:** optional series authoring → measurement and series-update Work when needed → representation → optional publication and refresh.
 
 **Primary hooks:** C.21 for discipline-health Characteristics and the common replay basis; C.16 for measurement; C.2.1 for result and series epistemes; C.29 for representations; E.24.PUB for publication availability; G.6 for evidence paths when relied on; G.11 for refresh; G.Core, A.19, and G.0 for the exact legality and comparison surfaces actually used.
 
@@ -18,7 +18,7 @@ Do not use G.12 for one ordinary field-health claim, to manufacture measurements
 
 ### G.12:1 — Intent
 
-Produce a reproducible discipline-health series and view while keeping five objects separate:
+Produce a reproducible discipline-health series and view while keeping these objects separate:
 
 1. C.16 measurement results and their C.2.1 coordinate-result epistemes;
 2. one optional C.2.1 `DHCSeries` episteme that orders exact result refs by window;
@@ -126,7 +126,7 @@ DashboardSlice := <
 1. **Start from exact results.** Select persisted C.21 coordinate-result refs for one already identified discipline. Do not compute from labels or restate Characteristic semantics in G.12.
 2. **Fix use, scope, and windows.** Name IntendedUse and ClaimScope. Add a `TargetSliceRef` only when the computation or publication really consumes it, and state its relation to the scope.
 3. **Check replay identity.** For every coordinate, resolve the C.21 `DHCReplayBasis`: Characteristic, Scale, Unit when current, `DHCMethodRef.edition`, exact Method and MethodDescription, model or calibration pins when used, time or population basis, and any distance or definition-set edition.
-4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. Actual distinct-local-sense use cites the obtaining F.9 relation, direction, admitted use, and loss. Add reference-plane routing only when a real plane crossing is used; cite its exact basis, and keep any assurance consequence in R only.
+4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. Actual distinct-local-sense use cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim naming direction, use rule, and loss tolerance, with the current supporting reliance required by F.9. Add reference-plane routing only when a real plane crossing is used; cite its exact basis, and keep any assurance consequence in R only.
 5. **Open optional panels only when used.** Portfolio, QD, open-ended, maturity, SoTA, shipping, and advanced-view fields appear only through their extension blocks.
 
 **Stage B — Construct or update content**
@@ -168,7 +168,7 @@ DashboardSlice := <
 * `GPatternExtensionKind`: `MethodSpecific`
 * `GoverningPatternId`: `C.18`
 * Conditional pins: `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceSpecRef.edition?`, `InsertionPolicyRef`, `EmitterPolicyRef?`, `ArchiveSnapshotRef?`, and `PathSliceId[]` when refresh uses them.
-* Illumination and coverage stay telemetry unless a separate accepted policy promotes them.
+* Illumination and coverage stay telemetry unless a separate accepted policy promotes them into the comparator, dominance set, or selected-set criteria under C.18's trade-off and authority conditions.
 
 ##### `G.12:Ext.OpenEndedTelemetry` — open-ended or transfer panel
 
@@ -203,7 +203,7 @@ This non-normative seed reserves no semantics. An embedding, prediction, change-
 | Interface | Consumes | Produces |
 | --- | --- | --- |
 | `Create_DHCSeries` | exact coordinate-result refs, discipline, intended use, ClaimScope, windows, comparison basis, optional definition-set and target-slice refs | one C.2.1 `DHCSeries` episteme edition |
-| `Update_DHCSeries` | prior series edition, added or replaced exact result refs, affected windows, edition rule | successor series episteme edition plus exact edition relation when asserted |
+| `Update_DHCSeries` | prior series edition, added or replaced exact result refs, affected windows, edition rule | successor series episteme edition only when C.2.1's historical-continuation predicate holds, plus exact edition relation when asserted |
 | `Render_DHCView` | exact result or series refs, view specification, annotations | `DHCRow[]` and/or `DashboardSlice` representations |
 | `Publish_DHCView` | selected episteme or view edition plus E.24.PUB audience, bounded use, form, carrier, and interval | obtaining publication relation when its predicate holds |
 | `Emit_DHCTelemetry` | exact changed definition, window, evidence, crossing, or policy pin and affected slice | G.11-facing telemetry payload |
@@ -215,7 +215,7 @@ This non-normative seed reserves no semantics. An embedding, prediction, change-
 | --- | --- |
 | `CC-G12-1` | Every displayed coordinate resolves one exact C.21/C.16 result episteme and the active C.21 replay basis. |
 | `CC-G12-2` | ClaimScope is authoritative; TargetSlice is optional, consumed explicitly, and related to that scope. |
-| `CC-G12-3` | Direct same-semantics comparison uses C.16 conditions without a Bridge; actual distinct-local-sense use cites exact F.9 direction, admitted use, and loss. |
+| `CC-G12-3` | Direct same-semantics comparison uses C.16 conditions without a Bridge; actual distinct-local-sense use cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim with its direction, use rule, loss tolerance, and the current supporting reliance required by F.9. |
 | `CC-G12-4` | Characteristic, Scale, Unit, Method, MethodDescription, model, calibration, Work, result, result episteme, series episteme, row, slice, publication, form, and carrier are not collapsed. |
 | `CC-G12-5` | Numeric, ordinal, target-band, normalization, distance, comparison, and aggregation operations cite their exact lawful definitions. |
 | `CC-G12-6` | A series ClaimGraph identifies exact result refs, windows, intended use, ClaimScope, and comparison basis; content change uses the applicable edition rule. |
@@ -235,7 +235,7 @@ G.12 counters screen-first, “latest”-by-default, scalar-winner, and publicat
 
 **Costs.** A relied-on trend needs exact result, scope, window, and replay identities. Publication and refresh add their own conditional work.
 
-**Risks avoided.** Screenshot-as-result, context-container resurrection, scope/slice collapse, hidden method drift, illicit ordinal arithmetic, scalarization by view, and carrier-as-publication are blocked.
+**Risks avoided.** Screenshot-as-result, scope/slice collapse, hidden method drift, illicit ordinal arithmetic, scalarization by view, and carrier-as-publication are blocked.
 
 ### G.12:9 — Relations
 

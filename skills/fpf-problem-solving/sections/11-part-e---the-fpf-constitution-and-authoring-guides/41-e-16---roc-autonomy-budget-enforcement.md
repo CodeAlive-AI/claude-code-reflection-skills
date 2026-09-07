@@ -13,7 +13,7 @@ A System that performs Work without continuous human direction must stay within 
 ### E.16:2 - Problem
 
 * **Opaque autonomy.** Patterns assert “autonomous” behavior with no **budget** or **enforcement**.
-* **Un‑gated execution.** Methods can execute beyond authority or risk limits.
+* **Un‑gated execution.** Systems can perform Work beyond authority or risk limits.
 * **Ad‑hoc overrides.** No standard **SpeechAct** for pausing/de‑scoping; SoD is unclear.
 * **Non‑portable publication.** **UTS (Unified Term Sheet)** rows cannot surface autonomy‑critical data for parity or selection.
 
@@ -116,7 +116,7 @@ AutonomyLedgerEntry {
 }
 ```
 
-The ledger is evidence about the Work. The Work, its performer System, its A.2.1 assignment, and the `performedUnderAssignment` attribution remain separately recoverable. Fold the resulting entries under **Γ_work** and **Γ_time** for reporting.
+The ledger is evidence about the Work. The Work, its performer System, its A.2.1 assignment, and the `performedUnderAssignment` attribution remain separately recoverable. For reporting, use **Γ_work** (B.1.6) for the recorded resource values under the applicable accounting and overlap policy, and **Γ_time** (B.1.4) for the recovered temporal relations among the Work occurrences.
 
 **E.16-S4 (Overrides - SpeechActs, authority, and separation of duties).**
 Every budget **MUST** reference an `overrideProtocolRef` that defines the available SpeechActs:
@@ -160,10 +160,10 @@ If no **ScaleLensPolicy** is declared, selection remains **neutral** with respec
 **Show-A (enactment-bound mobile robot).**
 The autonomy claim names navigation Method `Navigate_v3`. Its enactment-bound budget names `NavigatorSystemRole` as the consumer kind, robot `Robot_R7` as holder, exact assignment `R7-NavigatorAssignment-2026`, and the current warehouse-navigation Work item. It also names the warehouse policy, ClaimScope and shift window, `FloorSupervisorSystemRole` as the override-authority kind, supervisor System `Mina`, her exact assignment, and the independently obtaining authority relation for pause and resume Work.
 
-The declared A.2.7 relation is `NavigatorSupervisorIncompatibility`; its predicate prohibits the same System from holding both assignments for the same navigation Work during overlapping windows. The gate resolves both A.2.1 assignments and their holders and admits the override path because the actual pair does not match that prohibited case and the independent authority relation is current. The budget then supplies `action_tokens=10 k steps/day`, `risk_bands={maxSpeed <= 1.2 m/s, minDist >= 0.5 m}`, and `resource_caps={battery >= 20%}`. Ledger entries decrement the action budget and record distance checks. Depletion stops autonomous movement; it does not make either assignment or the incompatibility relation act.
+The declared A.2.7 relation is `NavigatorSupervisorIncompatibility`; its predicate prohibits the same System from holding both assignments for the same navigation Work during overlapping windows. The gate resolves both A.2.1 assignments and their holders and admits the override path because the actual pair does not match that prohibited case and the independent authority relation is current. The budget then supplies `action_tokens=10 k steps/day`, `risk_bands={maxSpeed <= 1.2 m/s, minDist >= 0.5 m}`, and `resource_caps={battery >= 20%}`. Ledger entries decrement the action budget and record distance checks. Depletion stops autonomous movement.
 
 **Show-B (prospective, then enactment-bound deployment).**
-A prospective deployment budget names the autonomy claim, `DeployerSystemRole` and `ReleaseAuthorizerSystemRole`, the production-promotion situation, deployment policy, ClaimScope, daily window, guard set, and the exact A.2.7 incompatibility relation. It leaves holder Systems, assignments, deployment Work, and authority-relation occurrence empty because no release has been scheduled. Nothing is invented to make the template look complete.
+A prospective deployment budget names the autonomy claim, `DeployerSystemRole` and `ReleaseAuthorizerSystemRole`, the production-promotion situation, deployment policy, ClaimScope, daily window, guard set, and the exact A.2.7 incompatibility relation. It leaves holder Systems, assignments, deployment Work, and authority-relation occurrence empty because no release has been scheduled.
 
 When a release is scheduled, an enactment-bound edition names the deployment service System, its exact deployer assignment, the release Work, the authorizer System and assignment, and the independently obtaining release-authority relation. The receiving check tests the two assignments against the declared predicate for holder, same Work, overlap, and applicability; it then applies `decision_tokens=3/day`, `error-budget burn <= 2%/day`, and the ordinary deployment guards. A kind label or the notation `role A perpendicular role B` would not close either check.
 
@@ -181,7 +181,7 @@ When a release is scheduled, an enactment-bound edition names the deployment ser
 
 ### E.16:7 - Consequences
 
-* **Testability.** Autonomy is measurable (tokens/envelopes), audit‑ready (ledger), and stoppable (SpeechActs).
+* **Testability.** Budget use is checkable against declared tokens/envelopes; Work-anchored ledger entries support audit; **PauseAutonomy** stops autonomy-gated steps.
 * **Comparability.** UTS surfaces autonomy metadata for fair selection & parity.
 * **Safety.** Guards are hard gates; depletion halts further autonomy‑gated Work.
 
@@ -196,7 +196,7 @@ When a release is scheduled, an enactment-bound edition names the deployment ser
    **Adopt.** “Concrete Problems in AI Safety” pushes instrumentation and testable safety constraints over informal assurances (Amodei et al., 2016). E.16 mirrors this by turning “autonomy” into a **budget + ledger + guards** specification that can be benchmarked and audited.
 
 3. **SRE error budgets & “stop the line” operations (2016→).**
-   **Adopt/Adapt.** Error‑budget practice treats reliability as a measurable envelope that gates risky change when depleted (Beyer et al., *Site Reliability Engineering*, 2016; Höller et al., *The Site Reliability Workbook*, 2018). E.16 adapts the idea into `risk_bands` and depletion behavior that blocks autonomy‑gated steps until governed resume.
+   **Adopt/Adapt.** Error‑budget practice treats reliability as a measurable envelope that gates risky change when depleted (Beyer et al., *Site Reliability Engineering*, 2016; Beyer et al., eds., [*The Site Reliability Workbook*](https://sre.google/workbook/preface/), 2018). E.16 adapts the idea into `risk_bands` and depletion behavior that blocks autonomy‑gated steps until governed resume.
 
 4. **Risk management frameworks for AI systems (2023→).**
    **Adopt/Adapt.** Contemporary risk frameworks emphasize governance, continuous measurement, and traceable controls (NIST AI RMF 1.0, 2023; ISO/IEC 23894, 2023). E.16 adapts these into **UTS publication** + **Work‑anchored ledger evidence** for parity and audit.
@@ -219,14 +219,14 @@ When a release is scheduled, an enactment-bound edition names the deployment ser
 | **Self-override** | The actual consumer and override assignments are missing, or their holder, Work, and window facts match the prohibited joint-allocation case in the declared A.2.7 predicate. | A label pair or two different assignment IDs does not establish separation of duties. | Resolve both exact A.2.1 assignments, apply the declared incompatibility predicate, reject a prohibited pair, and check the independent authority relation (**E.16-S4**). |
 | **Budget bypass via “scale”** | Scaling preference relaxes guards or ignores caps | Undermines declared limits; breaks comparability | In ScaleLensPolicy, **guards/SoD must remain non‑weakened** (**E.16‑S7**) |
 | **Untyped quotas** | Tokens/caps are recorded without units, or units are mixed | Ledger becomes non-comparable; audits become meaningless | Type budgets and deltas via **MM‑CHR (C.16)**; keep unitful rates/quotas |
-| **Ledger-as-logging** | Logs exist but are not Work‑anchored (no workId/budgetId/version/pins) | Evidence is non-portable; cannot support parity/refresh | Require `AutonomyLedgerEntry` attached to `U.Work` with ids, versions, and edition pins |
+| **Ledger-as-logging** | Logs exist but are not Work‑anchored (no workRef/budgetId/version or recoverable edition pins) | Evidence is non-portable; cannot support parity/refresh | Require `AutonomyLedgerEntry` attached to `U.Work` with workRef, budgetId, version, and the referenced declaration's edition pins |
 
 ### E.16:8 - Rationale & E‑/F‑/G‑links
 
 * **E.8** — follows the pattern template (Context → Problem → Forces → Solution → Grounding → CC → Consequences).
-* **E.10** — uses LEX‑BUNDLE: Scope via **ClaimScope (G)**, time via **Γ_time**, no “validity/process/actor/agent‑as‑noun” language; new lexical rule **L‑AUTO** added in edits below.
+* **E.10** — uses LEX‑BUNDLE: Scope via **ClaimScope (G)**, time via **Γ_time**, and **L‑AUTO** for autonomy wording.
 * **Mint/reuse authority (policy-ids).** Mint/reuse authority is expressed via **F.8:8.1** (`PolicyIdRef`: `PolicySpecRef` + `MintDecisionRef?`) and explicit **GateCrossing** checks (**E.18**) evaluated by the active **GateProfile/GateFit** (**A.21**); no tier ladder is required.
-* **Part F** — integrates with **F.4** Role Description (RCS includes *AgencyLevel*; RSG gates), **F.6** Role Assignment & Enactment (Green‑Gate), **F.15** SCR/RSCR (harness includes depletion/override tests), **F.17** UTS (columns, incl. optional ScaleLens fields).
+* **Part F** — integrates with **F.4** Role Description (RCS includes *AgencyLevel*; RSG gates), **F.6** for exact performed-Work attribution after independent A.15.1 admission, **F.15** SCR/RSCR (harness includes depletion/override tests), **F.17** UTS (columns, incl. optional ScaleLens fields).
 * **Part G** — **G.4/G.5**: method authors must declare budgets & guards; **G.9** parity includes autonomy consumption & violations; **G.10** shipping requires UTS autonomy fields.
 
 ### E.16:9 - Mini conformance checklist (cross-E-F; author's quick use)

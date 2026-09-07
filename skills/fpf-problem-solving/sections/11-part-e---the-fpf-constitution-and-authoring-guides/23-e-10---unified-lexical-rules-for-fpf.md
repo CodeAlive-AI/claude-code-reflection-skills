@@ -132,8 +132,8 @@ Classify the sentence first.
 | --- | --- |
 | the EntityOfConcern named by a claim-bearing episteme or episteme-lane `U.View` | the actual `EntityOfConcern` participant under C.2.1; use `EntityOfConcernRef` or `entityOfConcernRef` only when the applicable reference rule requires it, and keep the episteme or `U.View` separate |
 | the admissible class constraint on actual EntityOfConcern participants corresponding to one current episteme-constitution declaration | `EntityOfConcernClass` only where that declaration or an EntityOfConcern-preserving law is being applied |
-| the primary entity of concern for one bounded `PublicationUnit` | `publicationUnitPrimaryEntityOfConcern` when the unit carries or exposes a claim-bearing episteme or episteme-lane `U.View`; otherwise the non-claim-bearing kind or reference named by value, or plain `topic` or `subject` only when no claim-bearing episteme participant, current A.6.5 declaration, or direct reference use is current |
-| wording such as `describedEntity`, `DescribedEntityRef`, `primary described entity`, `EntityOfInterest`, or `EoIClass` | recover the actual `EntityOfConcern` participant under C.2.1, the publication-unit primary-EntityOfConcern use, or the local FPF kind; use `EntityOfConcernSlot` only as an A.6.5 `SlotSpec` inside a current reusable constitution `RelationSignature`; keep `entityOfConcernRef` and `EntityOfConcernRef` under their applicable reference rules; and rewrite to the exact current value among those, `EntityOfConcernChangeMode`, `EntityOfConcernClass`, `publicationUnitPrimaryEntityOfConcern`, or the local FPF kind named by value. If no use can be recovered by value, keep the old wording only as quoted source or trigger wording and block reliance. |
+| what one bounded `PublicationUnit` is mainly about | `publicationUnitPrimaryEntityOfConcern` under `C.2.P` and `E.17.AUD`, with its carried-EntityOfConcern or non-claim-bearing kind/topic/subject meaning; `publicationUnitPrimarySubject` for `E.17.AUD.OOTD`'s separate primary-subject question, with C.2.1 projection only under that pattern's equality condition; otherwise the non-claim-bearing kind or reference named by value, or plain `topic` or `subject` only when no claim-bearing episteme participant, current A.6.5 declaration, or direct reference use is current |
+| wording such as `describedEntity`, `DescribedEntityRef`, `primary described entity`, `EntityOfInterest`, or `EoIClass` | recover the actual `EntityOfConcern` participant under C.2.1, the publication-unit primary-EntityOfConcern or ordinary primary-subject use, or the local FPF kind; use `EntityOfConcernSlot` only as an A.6.5 `SlotSpec` inside a current reusable constitution `RelationSignature`; keep `entityOfConcernRef` and `EntityOfConcernRef` under their applicable reference rules; and rewrite to the exact current value among those, `EntityOfConcernChangeMode`, `EntityOfConcernClass`, `publicationUnitPrimaryEntityOfConcern`, `publicationUnitPrimarySubject` only for the `E.17.AUD.OOTD` primary-subject use, or the local FPF kind named by value. For the non-claim-bearing case, use the kind named by value or plain `topic` or `subject` without inventing an `EntityOfConcernRef`. If no use can be recovered by value, keep the old wording only as quoted source or trigger wording and block reliance. |
 | a review target | `review target`, review-facing target packet named by value, FPF pattern, pattern section, or file-carrier set only when the file-carrier interpretation is being made |
 | a local table or paragraph topic with no claim-bearing episteme, C.2.1 participant, current declaration, or reference use | `topic`, `subject`, or direct noun |
 | an FPF-side pattern, pattern section, accepted `DRR`, FPF publication, FPF view, document with named source-basis, evidence-basis, architecture-basis, or review-basis relation or use, or companion or projection material being improved | FPF pattern, pattern section, accepted `DRR`, FPF publication, FPF view, document with named source-basis, evidence-basis, architecture-basis, or review-basis relation or use, or companion or projection material |
@@ -309,7 +309,7 @@ Recover the movement, control, and temporal relation set before using these word
 - `A.16` local move;
 - `A.16.0` trajectory account;
 - `A.19`, `C.2.2a` position in characteristic space or state space;
-- `B.2.5` control relation, control-layer relation;
+- `B.2.5` for a two-sided supervisor-subholon feedback relation; use the direct subject pattern for any other control or control-layer relation and `C.30.LCA` for a control-structure view;
 - process handoff;
 - selector relation or selection mechanism;
 - work transfer;
@@ -462,7 +462,7 @@ If a basis changes what may be done, state the admissible use. State a relation 
 
 A bilingual alias is not a Bridge by itself and does not create equivalence, substitution, UTS admission, or a cross-local naming relation.
 
-When translated wording has FPF-governed use, recover the FPF kind named by value, local head, publication construction, source relation, and admissible use before accepting the translation. A translated explanation is a derivative rendering; operative claims need claim-bound source relations and `E.17.EFP` or `A.10` when reliance use is being made. A translated `PublicationUnit` may preserve form while shifting `publicationUnitPrimaryEntityOfConcern` or carried publication move; apply `E.17.AUD` or `E.17.AUD.OOTD` when that shift is being claimed. Local translated heads may use `E.17.AUD.LHR` or `C.2.P` without full `F.18` unless durable cross-local naming, a UTS row, a Core-facing term, or a reusable FPF head is intended.
+When translated wording has FPF-governed use, recover the FPF kind named by value, local head, publication construction, source relation, and admissible use before accepting the translation. A translated explanation is a derivative rendering; operative claims need claim-bound source relations and `E.17.EFP` or `A.10` when reliance use is being made. A translated `PublicationUnit` may preserve form while shifting its primary subject or carried publication move; apply `E.17.AUD` or `E.17.AUD.OOTD` when that shift is being claimed. Local translated heads may use `E.17.AUD.LHR` or `C.2.P` without full `F.18` unless durable cross-local naming, a UTS row, a Core-facing term, or a reusable FPF head is intended.
 
 ##### E.10:0.2c.25 - `state`, `status`, `posture`, `readiness`
 
@@ -1441,7 +1441,7 @@ Admit each Work occurrence through A.13 and A.15.1; add F.6 only for a current a
 **Separate source claims.** If the source also specifies durability and availability targets as a storage promise, recover them in `ObjectStoragePromiseContent`. If it supplies an access-method description, identify that separate episteme as `S3_API_Spec_vX` and preserve the method it describes.
 
 ### E.10:13 - Bias-Annotation
-Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: FPF-governed wording-use repair; ordinary ungoverned language remains outside this pattern.
+Scope: FPF-governed wording-use repair; ordinary ungoverned language remains outside this pattern.
 
 | Bias | How E.10 prevents it |
 | --- | --- |

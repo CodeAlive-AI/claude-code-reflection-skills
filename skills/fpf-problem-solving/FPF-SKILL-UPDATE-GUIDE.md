@@ -36,6 +36,8 @@ Section INDEX and README tables.
 
 After generation, record the upstream commit hash and verify both the generated Markdown
 file total and every per-section H2 count against SKILL.md, README.md, and README-RU.md.
+Review upstream licensing notices when they change; keep README attribution, license links,
+and the distinction between specification content and skill packaging accurate.
 
 ### 1. Description field (YAML frontmatter)
 

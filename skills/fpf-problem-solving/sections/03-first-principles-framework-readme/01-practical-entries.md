@@ -15,18 +15,18 @@ The ordinary examples show difficulties that one direct pattern use can usually 
 ### METHOD-RECOVERY — Explain what reusable way several performances may show
 
 - **Situation:** Several observations or records suggest a reusable way, but no Method has been established.
-- **Question:** What candidate explanation is supported, what rival still fits, and what observation would distinguish them?
-- **First useful result or honest blocker:** One source-traceable account per candidate with gaps and a distinguishing question—or an honest record-only result.
+- **Question:** What candidate explanation is supported, which real rivals remain, and which uncertainty can change the intended use?
+- **First useful result or honest blocker:** One source-traceable provisional account per candidate with real rivals and relevant gaps—or an honest record-only result. Include a useful distinguishing question when it changes recovery or receiving use; designing or undertaking a study is a separate choice.
 - **Start with:** `A.3.1.MR`.
 - **Stop or return:** Stop at the strongest honest account or lowering result. Continue to `A.3.1` or specialist `ME.18` only when that later use is current.
 
 ### PROFESSIONAL-RESULT — Use one result from another practice without transferring the decision
 
 - **Situation:** A decision needs a legal, safety, tax, privacy, engineering, scientific, or other outside-practice result, but the available source or request names only a title, department, document, approval, provider, or tool.
-- **Question:** What smallest result can change this decision, and is an already-available result current and qualified for that exact use?
-- **First useful result or honest blocker:** A bounded decision to reuse the existing result, a request for the smallest missing result, or the exact source, Method, capability, authority, access, evidence, or applicability blocker.
+- **Question:** What does the available result support for this decision, and would an obtainable additional contribution warrant its whole acquisition burden?
+- **First useful result or honest blocker:** The supported answer with its necessary use limit, a worthwhile bounded result request, or the exact source, Method, capability, authority, access, evidence, or applicability blocker.
 - **Start with:** `A.15.9`.
-- **Stop or return:** Stop before requesting new Work when the existing result is enough. The supplier keeps its Method and professional authority; the receiver keeps the receiving decision. A title, document, delivery, provider label, or tool output transfers neither.
+- **Stop or return:** Finish at the useful answer and its material limit; a remaining gap does not itself require a request or an explanation for omitting one. Select acquisition through A.15.9 when its contribution is worth obtaining. The supplier keeps its Method and professional authority; the receiver keeps the receiving decision. A title, document, delivery, provider label, or tool output transfers neither.
 
 ### NAMING — Give one identified thing a usable name
 
@@ -122,12 +122,13 @@ The keys only help navigation. Compare cards by the situation and intended resul
 
 #### OPTION-COMPARISON — Keep unlike option results distinct
 
-- **Situation:** A candidate list mixes labels such as *build*, *buy*, *reuse*, *provider*, *internal*, *outsource*, or *AI*; or one unresolved question makes a costly commitment unsafe.
-- **Question:** Must you form complete ways to obtain one result, compare or retain them, govern a pool, prepare a set for another chooser, choose now, or resolve the uncertainty blocking commitment?
-- **First useful result or honest blocker:** A complete-enough same-result way set, comparison or retained set, pool rule, prepared `OptionSet`, `ChoiceResult`, answer to the blocking question, or exact gap.
+- **Situation:** Labels such as *build*, *buy*, *reuse*, *provider*, *internal*, *outsource* or *AI* need comparison; uncertainty blocks costly commitment; or advice demands costly or infeasible work.
+- **Question:** Form complete ways, compare or retain candidates, govern a pool, prepare options for another chooser, choose now, or repair an evidence demand?
+- **First useful result or honest blocker:** A complete-enough same-result way set, comparison or retained set, pool rule, prepared `OptionSet`, `ChoiceResult`, usable advice, answer to the blocking question or exact gap.
 - **Mantra:** Name one result, use, situation, horizon, and acceptance basis. Turn labels into complete ways on one parity basis, keeping supported, proposed, and unknown premises visible. Compare or choose only when current; preserve worthwhile variants and gaps. For costly action, resolve only the uncertainty blocking commitment. Return when the result, basis, evidence, or use changes.
-- **Start with:** `C.38` when labels or fragments need complete ways; otherwise open only the current branch in `A.19.ECS`, `C.18`, `C.19`, `G.5`, or `C.11`. For costly action, use only the current check in `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `C.11`, or `A.15.5`.
-- **Stop or return:** Stop at the result for the present question. An option description does not choose or establish capability, authority, Work, provision, delivery, acceptance, or use.
+- **Start with:** `C.11.DUA` for a demand's contribution or feasibility; `C.38` for incomplete ways; otherwise `A.19.ECS`, `C.18`, `C.19`, `G.5` or `C.11` for the current question. For costly commitment, select the current check in `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `C.11` or `A.15.5`.
+- **Stop or return:** Stop at the present question's result. Option descriptions establish neither choice nor capability, authority, Work, provision, delivery, acceptance or use.
+
 
 #### RESULT-TO-NEXT-MOVE — Route an obtained result to the next probe or option
 
@@ -141,11 +142,11 @@ The keys only help navigation. Compare cards by the situation and intended resul
 #### ACTUAL-TEMPORAL-STRUCTURE — Recover what actually obtains before testing coordination
 
 - **Situation:** A cycle, onset list, trace, notation, or geometry is called rhythm, but may be a prescription, representation, Method unfolding, or account rather than what obtains.
-- **Question:** Which subjects and relations support one actual selected structure, what grounds it, and what coordination change should be tested?
-- **First useful result or honest blocker:** One A.22-selected structure and grounded C.2.1 account—or the missing bearer, relation, observation, or grounding. Keep future specifications and representations separate. For coordination, add direct relations, trial conditions, observations, and next decision or stop.
-- **Mantra:** Start with actual changing subjects and use. Recover changes, Work parts or continuous carrier, plus exact obtaining relations. Select one structure; ground only supported account. Keep structure, account, future specification, representation, Method unfolding and Work distinct. For coordination, name bearers and direct relations; compare interventions, try one in bounds, observe, then decide or stop. Never infer structure from periodicity, onsets, notation or geometry.
+- **Question:** Which subjects and relations support the selected structure, what grounds it, and is a coordination trial useful now?
+- **First useful result or honest blocker:** A.22-selected structure and grounded C.2.1 account—or missing bearer, relation, observation, or grounding. Keep future specifications and representations separate. For a selected coordination trial, add direct relations, conditions, observations, and next decision or stop.
+- **Mantra:** Start with actual changing subjects and use. Recover changes, Work parts or continuous carrier, plus obtaining relations. Select one structure; ground a supported account. Keep structure, account, future specification, representation, Method unfolding and Work distinct. For coordination, name bearers and direct relations. If a trial can change the decision and is worth its burden, compare feasible interventions, try one in bounds, observe, then decide or stop. Never infer structure from periodicity, onsets, notation or geometry.
 - **Start with:** A.3.4/A.15.1 for change/Work, C.27.TA/A.22 for claim/structure, C.2.1 for account; add specification, representation, decision, causal, trial, or domain patterns only when current.
-- **Stop or return:** Stop when use is answered. Return when bearer, relation, constraint, grounding, intervention, or use changes; domain Methods stay in DPF.
+- **Stop or return:** Stop when answered. Return when bearer, relation, constraint, grounding, intervention, or use changes; domain Methods stay in DPF.
 
 #### PROBLEM-SHAPING — Stop at the earliest honest problem-side result
 
@@ -170,7 +171,7 @@ The keys only help navigation. Compare cards by the situation and intended resul
 - **Situation:** A load-bearing sentence hides the subject, relation, kind, use, or nearby false inference.
 - **Question:** What should the reader understand and do, and which distinctions matter for that use?
 - **First useful result or honest blocker:** One plain repaired sentence, direct clarification, local naming result, or exact missing subject, sense, test, or reader use.
-- **Mantra:** Recover the ordinary project sentence first. Name what it is about, what it claims, and who must use it; add ontological distinctions only where they change truth, understanding, or action; choose a durable name only when later use needs one; rewrite in plain technical language; check the result with a cold reader; retain a guard only under F.19's full grounded-contribution test; return to the domain task.
+- **Mantra:** Recover the ordinary project sentence first. Name what it is about, what it claims, and who must use it; add ontological distinctions only where they change truth, understanding, or action; choose a durable name only when later use needs one; rewrite in plain technical language; check that a reader without private context can recover the intended claim and action; retain a guard only under F.19's full grounded-contribution test; return to the domain task.
 - **Start with:** `F.19`; use `E.10` for unresolved FPF wording, and `F.18`, `F.0.1`, `F.9`, or the subject's direct pattern only when needed.
 - **Stop or return:** Stop when the reader can understand the claim and carry out its intended use. Do not continue ontology work after the language problem is solved.
 
@@ -196,8 +197,8 @@ The keys only help navigation. Compare cards by the situation and intended resul
 
 - **Situation:** A change has one plausible receiver, but the list may omit other physical or operational wholes that can change.
 - **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what should the receiver do next?
-- **First useful result or honest blocker:** An affected-System consequence account naming the focus; one or more bearers or intended referents; obtaining or modal path; possible changed characteristic; support, uncertainty, receiver connection, and residual; plus the next probe or stop—or the missing System-recognition or relation fact.
-- **Mantra:** Name the focus and receiver; generate concrete possibilities; trace obtaining relations and modal paths separately; challenge the boundary; recover real holons instead of a level ladder; qualify each changed characteristic; keep the sides distinct; return the cheapest probe, constraint, alternative, monitoring condition, or honest stop.
+- **First useful result or honest blocker:** A bounded consequence account with its focus, bearers or intended referents, obtaining or modal paths, changed characteristics, support, uncertainty, and material limit. A useful constraint, alternative, or explicit unknown can complete the answer; further discovery needs a worthwhile obtainable contribution.
+- **Mantra:** Name the focus and receiver; trace obtaining relations and modal paths separately; challenge the boundary; recover real holons; qualify each change; keep the sides distinct; return the useful answer and its limit. Select further inquiry by its individual and combined contribution and burden.
 - **Start with:** `A.1.CSD`; use `A.1.SCR` only when a candidate's systemhood is load-bearing, and leave through the direct evidence, causality, comparison, domain, or value pattern only when that stronger question is current.
 - **Stop or return:** Stop at the smallest account that changes or holds open the named decision or investigation. Return when the focus, configuration, horizon, whole, relation support, bearer, observation, or receiving use changes.
 

@@ -2,12 +2,12 @@
 
 **Tag.** Architectural kit pattern (conceptual interop kit; notation‑independent; normative when used)
 **Stage.** *design‑time registration & alignment* → *run‑time ingestion, telemetry, refresh*
-**Primary hooks.** `G.Core` (Part‑G core invariants + trigger catalogue + Default Governing Definition Index), `G.2` (SoTA Synthesis Pack), `G.3` (CHR Pack), `G.4` (CAL Pack), `G.5` (selector & registries), `G.6` (EvidenceGraph + PathId/PathSliceId), `G.7` (BridgeMatrix + CL/planes), `G.8` (SoS‑LOG bundle surfaces), `G.9` (parity harness), `G.10` (shipping), `G.11` (refresh orchestration), `G.12` (dashboards), `A.19` (CN‑Spec), `A.18` (CSLC legality), `G.0` (CG‑Spec), `F.17` (UTS), `F.9` (BridgeCard / CL), `E.17` (publication faces), `E.5.2` (notation independence), `E.18/A.21` (GateCrossing/CrossingBundle checks).
+**Primary hooks.** `G.Core` (Part‑G core invariants + trigger catalogue + Default Governing Definition Index), `G.2` (SoTA Synthesis Pack), `G.3` (CHR Pack), `G.4` (CAL Pack), `G.5` (selector & registries), `G.6` (EvidenceGraph + PathId/PathSliceId), `G.7` (BridgeMatrix + CL/planes), `G.8` (SoS‑LOG bundle surfaces), `G.9` (parity harness), `G.10` (shipping), `G.11` (refresh orchestration), `G.12` (dashboards), `A.19` (CN‑Spec), `A.18` (CSLC legality), `G.0` (CG‑Spec), `F.17` (UTS), `F.9` (cross-semantic relations and bounded-use claims), `E.17` (publication faces), `E.5.2` (notation independence), `E.18` (crossing visibility when a selected transformation-flow structure is in use), `A.21` (gate decisions under an applicable profile).
 
-**Status.** Stable (Phase‑2 universalized; `G.Core` linkage explicit)
+**Status.** Stable
 **Normativity.** Normative when used (when any `G.13` surface is authored/emitted/consumed); informative otherwise.
 
-**Non‑duplication note (Phase‑2 universalization).** This pattern **does not restate** Part‑G‑wide invariants (CN/CG spec-ref governing-definition assignment, crossing visibility, penalty routing, set‑return discipline, typed RSCR triggers, Default Governing Definition Index, Δ‑discipline). Those are governed in `G.Core` and referenced here via the linkage manifest and CC delegations (*cite, don’t duplicate*).
+**Part‑G linkage.** `G.Core` governs Part‑G‑wide invariants; the linkage manifest in §4.1 and the conformance checklist in §8 name the applicable obligations.
 
 ### G.13:1 - Problem frame
 
@@ -107,7 +107,7 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 
   **Notes.**
 
-  * The derivation is a **typing + provenance** surface; it does not introduce new comparators or new governance cards or legality gates.
+  * The derivation records **typing + provenance**; comparator and legality definitions remain with the cited governing patterns.
 
 * **`ScaleEmbeddingSpec@Context`** — optional constraints for representation/space alignment used inside an alignment recipe.
 
@@ -115,7 +115,7 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
   `⟨ ScaleEmbeddingSpecId, IntendedUse, AllowedTransformFamily, RequiredPins{NormalizationMethodRef.edition?}, ProhibitedCoercions ⟩`
 
   **Design intent.** Make any representation alignment *explicitly constrained* and edition‑pinned, instead of silently “creating a new scale”.
-  **LEX/UTS note (informative).** `ScaleEmbeddingSpec` is a new LEX head; when it mints a public id it must be published to UTS with twin labels (see `G.Core` / UTS profile).
+  **LEX/UTS note (informative).** `ScaleEmbeddingSpec` is a LEX head; when a public id is minted for a `ScaleEmbeddingSpec`, the corresponding UTS row must be published with twin labels (see `G.Core` / UTS profile).
 
 * **`IndexTelemetryPin`** — an emitted refresh input that makes interop changes RSCR‑visible.
 
@@ -140,13 +140,13 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
    * `G.2` harvesting (ClaimSheets / operator & object inventories / candidate bridge hints),
    * `G.3` CHR typing (when numeric signals are formalized as CHR characteristics/scales/coordinates),
    * `G.4` acceptance/threshold policies (when a downstream decision requires explicit CAL policy rather than telemetry),
-   * `G.12` dashboards (when derived SoS features are used as DHC slots).
+   * `G.12` dashboards (when derived SoS features are used for DHC readings).
 4. **Feed selection/parity/shipping without smuggling semantics.**
 
    * `G.5` consumes the produced artefacts under its own governing spec refs and returns set‑valued outcomes (selector semantics remain governed by `G.5` + `G.Core`).
    * `G.9` parity consumes pinned editions/windows and produces traceable parity reports.
    * `G.10` shipping may include interop surfaces **as cited publications or records**; `G.13` does not govern shipping.
-5. **Emit telemetry and refresh causes.** Any change in external editions, alignment policies, plane maps, or embedding specs emits:
+5. **Emit telemetry and refresh causes.** On any change in external editions, alignment policies, plane maps, or embedding specs, emit:
 
    * a canonical `RSCRTriggerKindId` (per `G.Core`),
    * a scope (`PathSliceId[]` and/or `PatternScopeId`),
@@ -232,10 +232,10 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 ### G.13:6 - Archetypal grounding (informative; SoTA‑oriented)
 
 **System.** *Software architecture portfolio design.*
-Register an external scholarly index edition for “software architecture” concept neighborhoods. Align extracted technique/tactic claims into ClaimSheets and derive a CHR‑typed feature set (e.g., evidence depth, maturity). Use `G.5` to select a **set** of tactics under multi‑objective tradeoffs, and ship a SoTA pack that cites the interop surface.
+Register an external scholarly index edition for “software architecture” concept neighborhoods. Align extracted technique/tactic claims into ClaimSheets and derive a CHR‑typed feature set (e.g., evidence depth, maturity). Select a **set** of tactics under multi‑objective tradeoffs, use `G.5` to declare that result, and ship a SoTA pack that cites the interop surface.
 
 **Episteme.** *Science‑of‑science discipline dashboard.*
-Align external claim graphs (replication, standardisation, disruption‑style proxies) into CHR‑typed features for DHC series. Publish a dashboard slice that cites the external edition and alignment policy; refresh triggers fire when the external edition updates.
+Align external claim graphs (replication, standardisation, disruption‑style proxies) into CHR‑typed features for DHC series. Publish a dashboard slice that cites `ExternalIndexRef.edition` and `MappingPolicyRef`; refresh triggers fire when the external edition updates.
 
 **OEE/QD.** *Open‑ended environment generation.*
 Register external environment/task taxonomies as index cards. Align them into generator‑family registries (as cited publications or records), keeping coverage/regret strictly as telemetry inputs. Use refresh to re‑align when the taxonomy edition changes.
@@ -306,9 +306,9 @@ Register external environment/task taxonomies as index cards. Align them into ge
 
 ### G.13:11 - Rationale
 
-FPF is a conceptual framework for disciplined creative work, not a data governance system. External scholarly infrastructure is valuable precisely because it provides fast, wide coverage—but without an explicit interop kit, that value is purchased by silently importing semantics (implicit comparisons, unpinned editions, hidden transformations).
+FPF is a conceptual framework for disciplined creative work. An explicit interop kit lets authors use the fast, wide coverage of external scholarly infrastructure while keeping comparisons, editions, and transformations visible.
 
-`G.13` resolves the tension by turning “interop” into **first‑class conceptual wiring**: cards/surfaces that pin editions, cite governing patterns, expose provenance hooks, and produce typed refresh causes, while leaving domain/tool specifics in `Extensions` (or Phase‑3 governing definitions).
+`G.13` provides **conceptual registration, alignment, and telemetry hooks**: cards and surfaces pin editions, cite governing patterns, and expose provenance hooks; telemetry hooks produce typed refresh causes. Domain/tool specifics remain in `Extensions` (or Phase‑3 governing definitions).
 
 ### G.13:12 - SoTA‑Echoing (post‑2015, for orientation; non‑normative)
 

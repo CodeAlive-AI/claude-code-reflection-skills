@@ -94,10 +94,12 @@ Name the affected EntityOfConcern and any affected Systems, the value-frame edit
 | --- | --- | --- |
 | A compromise is proposed but the D.3 description omits a side, affected entity, scope, value frame, consequence, or horizon. | Return to `D.3` and complete the affected side or tension. | `D.3` |
 | Harm claim depends on causal effect. | Demand the C.28 causal-use evidence value and verdict before ethical decision use. | `C.28` |
-| Evidence is too weak or outdated. | Demand stronger or fresher evidence before mediation. | `A.10`, `C.27` |
+| Evidence is too weak or outdated for the proposed use. | Name the affected claim and use. Use `C.11.DUA` to compare a feasible evidence request with a narrower use, explicit residual acceptance or refusal; obtain stronger or fresher evidence when the selected use needs it. | `C.11.DUA`; `A.10` and `C.27` for the evidence and its currentness |
 | Assurance claim is being used as ethical permission. | Keep assurance as an assurance or evidence relation, not moral authorization. | `B.3`, `D.5` |
 | Architecture move reduces one residual but creates ethical conflict elsewhere. | Return the architecture residual and keep the ethical conflict distinct. | `C.30.ILC`, `D.3` |
 | A decision must proceed with residual harm. | Record the accepted residual, admitted decision or repair Systems, prospective plan, commitment, permission, authority, or assignment requirements, direct responsibility relations or exact missing governors, evidence limits, and return condition. If Work has actually occurred, recover each precise performer's A.13 core and independently admit the Work under A.15.1; add F.6 only when the decision account also needs exact assignment-bound attribution. | `C.11`, `B.3`, `D.5`, A.2.1, A.13, A.15.1, and F.6 as applicable |
+
+When required evidence cannot be obtained, the attempted use remains unsupported. A different bounded use must satisfy its own evidence, ethical and authority conditions. Record accepted residuals under the residual-harm row.
 
 ### D.4:4 - Archetypal Grounding (Worked Slices)
 

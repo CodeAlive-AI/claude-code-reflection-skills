@@ -7,7 +7,7 @@
 **Primary output.** the **six‑card chassis** `M1…M6` published as a **complete, reusable CG‑Frame kit**, plus a versioned **kit manifest** `CGKitId` that binds the six cards as a single reusable unit (view‑friendly inventory + wiring surface)
 **Primary hooks.** see **§12 Relations** (notably `G.Core`, `G.0`, `G.2`, `G.5`, `G.10`, `G.11`)
 **Working‑model first (informative).** prefer working models and didactic micro‑examples; escalate to formal harnesses only when risk warrants (per E.8).
-**Non‑duplication note.** Universal Part‑G invariants (tri‑state guard, set-return, penalties→`R_eff`‑only, crossing visibility, typed RSCR triggers, Default Governing Definition Index, P2W split, linkage discipline, shipping boundary) are governed in `G.Core` and are **only cited** here.
+**Non‑duplication note.** Universal Part‑G invariants (tri‑state guard, set-return, penalties→`R_eff`‑only, crossing visibility, typed RSCR triggers, Default Governing Definition Index, P2W split, linkage discipline, shipping boundary) are located through `G.Core` and their governing definitions are **only cited** here.
 
 **Start here when.** You are authoring a reusable generator, selector, or set-result scaffold rather than a one-off plan, one-off comparison, or tool-specific method recipe.
 
@@ -15,7 +15,7 @@
 
 **Neighboring FPF patterns.** Use `G.2` for the local SoTA set, `G.5` for governed set-return selection, `G.10` for shipping surfaces, `G.11` for refresh wiring, and `F.17` when the result must also land on a human-facing UTS surface.
 
-**Common wrong neighboring-pattern changes.** If the real entry load is only a one-off governed comparison or shortlist, use `A.19`, `G.0`, or `G.5`; if the real entry load is project alignment rather than kit authoring, use `A.15`; if tooling choice is being treated as the first kit candidate, keep the case here only after the chassis and its bindings are explicit.
+**Common wrong neighboring-pattern changes.** If the real entry load is only a one-off governed comparison or shortlist, use `A.19.CPM` for comparing an admitted profile pair under an explicit comparator, `G.0` for comparison legality, or `G.5` for the shortlist; if the real entry load is project alignment rather than kit authoring, use `A.15`; if tooling choice is being treated as the first kit candidate, keep the case here only after the chassis and its bindings are explicit.
 
 ### G.1:1 - Problem frame
 
@@ -131,7 +131,7 @@ The chassis is *view‑friendly*: it is an inventory of “what exists and how i
 
 **Purpose:** provide the *single scope anchor* used by all downstream cards.
 
-**Notes:** any spec-legality content is **cited** via `A.19 (CN‑Spec)` and `G.0 (CG‑Spec)` (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`); this card does not introduce a local “mini‑spec”.
+**Notes:** any spec-legality content is **cited** via `A.19.CN (CN‑Spec)` and `G.0 (CG‑Spec)` (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`); this card does not introduce a local “mini‑spec”.
 
 ##### M2 — SoTA_Set@CG‑Frame (harvester output card)
 
@@ -141,7 +141,7 @@ The chassis is *view‑friendly*: it is an inventory of “what exists and how i
 * explicit provenance anchors for the set (via `A.10`), and any published UTS stubs/rows when applicable
 
 **Governing pattern:** harvesting discipline and SoTA-pack payload are governed by `G.2`.
-In `G.1`, M2 is a *slot in the chassis* and a wiring surface; it does not redefine the harvesting method.
+In `G.1`, M2 is a *card in the chassis* and a wiring surface; it does not redefine the harvesting method.
 
 ##### M3 — VariantPool (candidate inventory + emitter trace)
 
@@ -155,7 +155,7 @@ In `G.1`, M2 is a *slot in the chassis* and a wiring surface; it does not redefi
 
 * tri‑state eligibility handling, penalties routing, crossing visibility, and set‑return constraints are not defined here; they are enforced via `G.Core` conformance.
 
-**Governing pattern for method payload:** method‑specific emitter semantics are governed by `Extensions` (e.g., `C.17`, `C.18`, `C.19`).
+**Governing pattern for method payload:** method‑specific emitter semantics remain in their governing definitions, cited through `Extensions` (e.g., the relevant `C.17`, `C.18`, and `C.19` definitions).
 M3 MUST remain method‑agnostic in its core definition: it is an inventory surface, not an algorithm spec.
 
 ##### M4 — Shortlist (selector/assurer output)
@@ -178,7 +178,7 @@ M4 MUST preserve *set‑return semantics* (as governed by `G.Core`) and MUST NOT
 
   * CHR/CAL/LOG bundles (by their ids; semantics governed by `G.3`, `G.4`, `G.8`)
   * published identifiers (UTS rows, Name Cards) per Part‑F governing definitions
-  * additional Part‑F binding surfaces (e.g., RoleDescription templates, Concept‑Set rows) by governing definition‑ids only
+  * additional Part‑F binding surfaces (e.g., RoleDescription templates, Concept‑Set rows) by ids locating those surfaces under their governing definitions
   * RSCR test identifiers (e.g., from `F.15`) and worked examples (where applicable)
 
 **Boundary:** M5 is a **kit/library surface**, not shipping. If a shipped pack is needed, governing-definition assignment is `G.10`.
@@ -226,6 +226,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * `SoTA_SetId`
 * `ClaimSheetId[]` / `BridgeMatrixId` *(as referenced by the chosen G.2 pack form)*
 * `CNSpecRef.edition`, `CGSpecRef.edition` *(already required via `GCorePinSetId.PartG.AuthoringMinimal`)*
+
 **RSCRTriggerSetIds:** `{GCoreTriggerSetId.SoTAHarvestSynthesis}`
 **Notes (wiring‑only):** harvesting semantics (living review funnels, inclusion policy families, SoS indicator families, etc.) are defined by `G.2` and are not duplicated in `G.1`.
 
@@ -279,7 +280,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * `InsertionPolicyRef` *(policy id / ref, as defined by the governing definition)*
 * `TaskSignatureRef?` *(when QD is enabled via TaskSignature flags/traits rather than by an external switch)*
 * `DHCMethodRef.edition?` *(when illumination/coverage summaries are pinned to a method)*
-* `EmitterPolicyRef` *(policy‑id/ref; points to the exploration governance governing definition, e.g., `C.19` when E/E‑LOG is used)*
+* `EmitterPolicyRef` *(policy‑id/ref; identifies the chosen emitter policy under its governing definition, e.g., `C.19` when E/E‑LOG is used)*
 
 **RSCRTriggerKindIds:** `{RSCRTriggerKindId.EditionPinChange, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.TelemetryDelta, RSCRTriggerKindId.FreshnessOrDecayEvent}`
 
@@ -318,6 +319,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * `RefreshReadinessCardId`
 * `RSCRTestId[]`
 * canonical `RSCRTriggerKindId[]` emitted/recorded (aliases only as labels, if any)
+
 **RSCRTriggerSetIds:** `{GCoreTriggerSetId.RefreshOrchestration}`
 **Notes (wiring‑only):** M6 declares readiness and wiring; orchestration semantics (queueing, prioritisation, cadence) are governed by `G.11`.
 
@@ -337,6 +339,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * `EvidenceGraphId?`, `BridgeMatrixId?`, `BridgeCalibrationTableId?` *(when cited by the shipped artefacts)*
 * `UTSRowId[]?` *(when any public ids are minted/published)*
 * `SlotFillingsPlanItemRef[]?` *(when planned baseline is bound by id into the shipment surface)*
+
 **Notes (wiring‑only):** this block does not define shipping; it only records the minimum wiring from the chassis/library index to `G.10` when shipping is performed.
 
 ### G.1:5 - Archetypal Grounding — Tell–Show–Show (informative)
@@ -364,7 +367,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 * **Recency bias:** “newest paper wins” (mitigate with explicit inclusion criteria and update cadence in `G.2` wiring).
 * **Novelty bias:** over‑rewarding novelty at the expense of legality/assurance (mitigate by making acceptance and assurance pins explicit and governed).
-* **Algorithmic favoritism:** baking a preferred generator into “the chassis” (mitigate by keeping M3 method‑agnostic and pushing methods into Extensions).
+* **Algorithmic favoritism:** baking a preferred generator into “the chassis” (mitigate by keeping M3 method‑agnostic and putting method‑specific wiring into Extensions).
 * **Scalarisation bias:** collapsing selected sets or partial orders into a single score (mitigate by set‑return discipline pinned through `G.Core`).
 * **Hidden‑crossing bias:** implicit reuse across contexts (mitigate by explicit crossing pins and Bridge‑only routing via `G.Core`).
 
@@ -377,7 +380,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 | CC‑G1‑02          | `M1` MUST bind the kit to a single `CG‑FrameContext` and MUST expose the required pins from `GCorePinSetId.PartG.AuthoringMinimal` (including `entityOfConcern` and `CNSpecRef/CGSpecRef` editions). `M1` MUST also expose (or explicitly cite) a `ReferenceMap` surface and MUST NOT restate its semantics (cite `G.0:CG‑Spec.ReferenceMap`).  |
 | CC‑G1‑03          | `M2` MUST be wired to `G.2` (or explicitly cite the `G.2` artefacts governed by cited patterns) and MUST be reconstructible as a scoped set, including `SoTAPaletteDescriptionId` + `SoTA_SetId` (not free‑floating prose). Provenance MUST be anchored via `A.10` for the emitted set.  |
 | CC‑G1‑04          | `M3` MUST record emitter provenance as a wiring surface, including `EmitterPolicyRef` (policy‑id/ref), edition pins, and provenance anchors (via `A.10`). Any method‑specific fields MUST be introduced only via `GPatternExtension` blocks.   |
-| CC‑G1‑05          | `M4` MUST be wired to `G.5` (or explicitly cite `G.5` artefacts governed by cited patterns) and MUST preserve set-result outcomes. `SCRId` MUST be present (or explicitly cited to the governing definition surface) so assurance is id‑addressable; `DRRId` SHOULD be present when a decision‑rationale artefact is minted.   |
+| CC‑G1‑05          | `M4` MUST be wired to `G.5` (or explicitly cite `G.5` artefacts governed by cited patterns) and MUST preserve set-result outcomes. `SCRId` MUST be present (or recoverable from an explicitly cited SCR record) so assurance is id‑addressable; `DRRId` SHOULD be present when a decision‑rationale artefact is minted.   |
 | CC‑G1‑06          | `M5` MUST publish a library/index surface that points to referenced CHR/CAL/LOG artefacts and to any minted public ids (`UTSRowId[]`, Name Cards) via the canonical governing definitions (Part F), without introducing shadow specs (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`).    |
 | CC‑G1‑07          | `M6` MUST publish `CGKitId` and expose refresh‑readiness wiring: canonical `RSCRTriggerKindId[]` applicability + minimal payload pins (including `SlotFillingsPlanItemRef[]` when applicable) and RSCR test ids; orchestration semantics MUST be cited to `G.11`.  |
 | CC‑G1‑08          | Any method/discipline/generator specificity in `G.1` MUST be located in `G.1:4.4` as `GPatternExtension` blocks with `PatternScopeId`, `GPatternExtensionKind`, and `GoverningPatternId` (or `governing pattern not yet selected` only for Phase-3 seeds). If QD/illumination or Open‑Ended generator families are declared, the corresponding extension blocks MUST be present and MUST carry the edition and policy pins required by the governing pattern. |
@@ -404,13 +407,13 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * **Repeatable authoring:** CG‑Frame work becomes reconstructible: what exists, what it depends on, and how it is refreshed.
 * **Method pluralism with discipline:** multiple generator/selector families can coexist without turning the chassis into a shadow method spec.
 * **Better reuse:** outputs land directly in published artefacts (UTS/Name/RSCR‑ready) rather than remaining local notes.
-* **Lower refactor cost:** method changes localise to Extensions; core invariants remain stable and one governing definition.
+* **Lower refactor cost:** method-wiring changes localise to Extensions; core invariants remain stable under their governing definitions.
 
 ### G.1:10 - Rationale (informative)
 
 * **Why six cards?** It matches the minimal decomposition needed to keep scope, harvesting, generation, selection, publication, and refresh **explicitly separable** (and thus auditable and evolvable).
 * **Why “kit/index” rather than “pack”?** A CG‑Frame authoring effort must stay modular; shipping is a separate governing boundary (`G.10`).
-* **Why push method content into Extensions?** It prevents conflating (i) universal invariants, (ii) frame‑specific kit surfaces, and (iii) method/generator families—supporting Phase‑2 universalisation goals.
+* **Why put method-specific wiring into Extensions?** It prevents conflating (i) universal invariants, (ii) frame‑specific kit surfaces, and (iii) method/generator families.
 * **Why working‑model first?** Many CG‑Frames fail due to premature formalism; a chassis with didactic micro‑examples improves correctness of pins, names, and boundaries before deep formalisation.
 
 ### G.1:11 - SoTA‑Echoing (informative)
@@ -426,7 +429,7 @@ This chassis is designed to stay compatible with modern (post‑2015) practice w
 ### G.1:12 - Relations
 
 **Builds on:** `G.Core`, `E.8`, `E.10`, `E.19`.
-**Uses:** `A.10 (Provenance Anchors)`, `A.15.3 (SlotFillingsPlanItem)`, `A.19 (CN‑Spec)`, `G.0 (CG‑Spec)`, `G.2 (SoTA Synthesis Pack)`, `G.3 (CHR Pack@CG‑Frame)`, `G.4 (CAL Pack@CG‑Frame)`, `G.5 (Selector & Dispatch)`, `G.10 (Shipping)`, `G.11 (Refresh Orchestration)`, and (via Extensions) `C.17, C.18, and C.19`.
+**Uses:** `A.10 (Provenance Anchors)`, `A.15.3 (SlotFillingsPlanItem)`, `A.19.CN (CN‑Spec)`, `G.0 (CG‑Spec)`, `G.2 (SoTA Synthesis Pack)`, `G.3 (CHR Pack@CG‑Frame)`, `G.4 (CAL Pack@CG‑Frame)`, `G.5 (Selector & Dispatch)`, `G.10 (Shipping)`, `G.11 (Refresh Orchestration)`, and (via Extensions) `C.17, C.18, and C.19`.
 **Publishes to / consumes from:** Part‑F publication surfaces (UTS, naming, RSCR tests, Role/Concept artefacts) as cited by their governing definitions.
 
 ### G.1:End

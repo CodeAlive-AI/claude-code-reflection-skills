@@ -2,7 +2,7 @@
 
 **Use this when.** A team has typed characteristics and now needs to publish reusable operators, acceptance clauses, and legal compositions before any candidate is actually evaluated. The working object is one design-time `CAL Pack@CG-Frame`, not an evaluation run, verdict, selector outcome, assurance case, or decision.
 
-**First move.** Write one plain acceptance statement for one task: “For subject `x` within `ClaimScope` `S` and evaluation window `W`, apply operator `O` to a C.16 measurement result for Characteristic `K` that argument declaration `R` admits. In the actual application, bind current result episteme `E`; clause `A` returns `pass | fail | unknown` under threshold or policy `P` and its currentness rule.” Then turn only the reusable nouns into stable CAL declarations. `E` belongs to the later application, not to reusable clause `A`.
+**First move.** Write one plain acceptance statement for one task: “For subject `x` within `ClaimScope` `S` and evaluation window `W`, apply operator `O` to a C.16 measurement result for Characteristic `K` that argument declaration `R` admits. In the actual application, bind current result episteme `E`; the application of clause `A` returns `pass | fail | unknown` under threshold or policy `P` and its currentness rule.” Then turn only the reusable operator and clause definitions into stable CAL declarations. `E` belongs to the later application, not to reusable clause `A`.
 
 **Smallest viable CAL pack.** Publish one charter for the exact CG frame, one typed operator card, one acceptance clause with `ClaimScope`, evaluation window, and unknown or failure behavior, one legal flow, one evidence and currentness profile, one proof-or-gap row, one worked declaration example, and a minimal editioned `TaskMap` that cites the exact charter, the C.22 `TaskSignatureRef`, and the declaration refs used by selection. Stop there when this pack answers the task; method-family extensions, archive surfaces, crossing records, and additional policy pins enter only when the case actually needs them.
 
@@ -12,13 +12,13 @@
 
 ### G.4:1 - Problem frame
 
-A CG‑Frame has:
+CAL authoring starts from:
 
 * one exact `CG‑Frame` with its `EntityOfConcern`, `ReferencePlane`, task, and assumption envelope,
 * a plurality of method traditions and claims (SoTA inputs), and
 * CHR‑typed measurement constructs (`Characteristic/Scale/Coordinate` + legality guard macros).
 
-Before any run‑time selection, comparison, aggregation, or selected-set formation is executed downstream, the CG‑Frame needs an explicit, auditable **CAL Pack** that:
+Before any run‑time selection, comparison, aggregation, or selected-set formation is executed downstream, authors need an explicit, auditable **CAL Pack** that:
 
 1. defines *what operators exist* and what they are allowed to do over CHR types,
 2. externalizes *fit-for-purpose acceptance* as typed predicates whose use is bounded by an exact `ClaimScope`, evaluation window, and any separate qualification window that limits use, and
@@ -60,7 +60,7 @@ Complete these actions in order; widen a step only when its stated input is need
 8. **C8 — Exercise declaration behavior.** Provide one worked authoring example and focused conformance tests for illegal operations, `pass | fail | unknown`, freshness, and failure behavior. The example and test remain declarations/test records unless separately grounded dated work is named.
 9. **C9 — Publish and hand off.** Mint stable ids and continuity notes, then emit the smallest immutable `TaskMap` edition. It cites the exact charter edition, the already constituted C.22 `TaskSignatureRef`, the task, and edition-bearing operator, flow, gating-clause, and evidence-profile refs; the cited evidence profiles carry the needed currentness pins. It neither constructs the TaskSignature nor copies clause thresholds. Use G.11 for change refs; G.4 defines no refresh rule or runtime occurrence or result.
 
-The authoring path is complete when a cold reader can reconstruct the plain acceptance sentence from the published ids and can also say what still has to happen at runtime. The maintainer-facing manifests, schemas, interfaces, and optional extension blocks below make the same pack machine-citable; they do not add another practitioner sequence.
+The authoring path is complete when a cold reader can reconstruct the plain acceptance sentence from the published ids and can also say what still has to happen at runtime. The detailed manifests, schemas, interfaces, and optional extension blocks below make the same pack machine-citable; they do not add another practitioner sequence.
 
 #### G.4:4.1 - G.Core linkage (normative)
 
@@ -68,7 +68,8 @@ The authoring path is complete when a cold reader can reconstruct the plain acce
 
 **GCoreLinkageManifest (normative).** Canonical shape, Nil‑elision, and the Expansion rule are defined in `G.Core`.
 
-`GCoreLinkageManifest := ⟨
+```text
+GCoreLinkageManifest := ⟨
 CoreConformanceProfileIds := {
 GCoreConformanceProfileId.PartG.AuthoringBase,
 GCoreConformanceProfileId.PartG.TriStateGuard,
@@ -83,7 +84,7 @@ GCorePinSetId.PartG.CrossingVisibilityPins
 
 CorePinsRequired := {
 UTSRowId[],                 // CAL artefacts are public ids (Name Cards plus public-id continuity notes)
-ΓFoldRef.edition?            // only when an explicit Γ‑fold override is pinned (otherwise use DefaultId)
+ΓFoldRef.edition?            // pin an actual numerical composition model/policy when used; otherwise cite the governing rule
 },
 
 // consumed iff no explicit `ΓFoldRef.edition` override is pinned
@@ -95,7 +96,8 @@ RSCRTriggerKindIds := {      // deltas (Expansion rule applies)
   RSCRTriggerKindId.DefaultGoverningDefinitionChange,
   RSCRTriggerKindId.BaselineBindingEdit
 }
-⟩`
+⟩
+```
 
 By the `G.Core` Expansion rule, the effective conformance ids / trigger kinds / pin obligations for `G.4` are the expansions of the referenced profiles/sets/pin‑sets plus the explicit deltas above.
 
@@ -135,14 +137,14 @@ Each `resultInputDeclarationRef` resolves an A.6.1 `ArgumentDeclaration` whose m
 
   * lane tags (`F/G/R`) / provenance anchors / policy pins needed for `SCR` and audit surfaces,
   * explicit freshness/decay hooks (freshness window + decay/Γ_time selectors) as pinned policies/refs (not prose).
-  * explicit `ReferencePlane` + penalty routing policy ids (`Φ(CL)`, `Ψ(CL^k)`, `Φ_plane`) as citable pins; any such policy family is justified in `CAL.ProofLedger` (monotone + bounded).
+  * explicit `ReferencePlane` and any used penalty-policy refs (`Φ(CL)`, `Ψ(CL^k)`, `Φ_plane`); the ProofLedger supplies the receiving quantity, scale, input meanings, assumptions, and derivation or calibration. Monotonicity and boundedness alone do not justify a numerical loss.
 * **Optional** `CAL.NQD[]` — QD/OEE‑related calculus surfaces when declared:
 
   * descriptor/distance/insertion artifacts are pinned by ids/editions,
   * semantics are governed by method‑specific governing definitions (e.g., `C.18`, `C.19`) and not redefined by CAL.
 * `CAL.ProofLedger` — a proof/justification ledger:
 
-  * links legality, monotonicity, boundedness, and other soundness obligations to operator/flow/clause ids.
+  * links operator/flow/clause ids to their needed legality and soundness results; a numerical support fold includes the B.3/C.2.2 receiving model, compatible scales and inputs, dependence assumptions, and boundary behavior.
 * Publication artifacts:
 
   * UTS Name Cards (twin labels) for all public ids,
@@ -152,8 +154,8 @@ Each `resultInputDeclarationRef` resolves an A.6.1 `ArgumentDeclaration` whose m
 Boundary discipline (normative):
 
 * **No shadow specs**: CAL artefacts cite `CN‑Spec`/`CG‑Spec` and do not introduce competing “local specs” (delegated; see `CC‑GCORE‑CN‑CG‑1` via **CC‑G4‑CoreRef**).
-* **No shipping governance:** CAL does not govern shipping; see `CC-GCORE-SKP-1` via **CC-G4-CoreRef**.
-* **No refresh governing-definition assignment**: CAL does not govern refresh orchestration; it only publishes pins/payload for refresh (governing definition: `G.11`).
+* **Shipping boundary:** `G.10` governs shipping; see `CC-GCORE-SKP-1` via **CC-G4-CoreRef**.
+* **Refresh boundary:** CAL publishes pins/payload for refresh; `G.11` governs refresh orchestration.
 
 **Minimal schema fragments (notation‑independent; fields for citation, not an implementation schema):**
 
@@ -296,7 +298,7 @@ This chain keeps declaration, execution, local result, result episteme, provenan
 
 ### G.4:5 - Archetypal Grounding
 
-**Tell.** A CG‑Frame must choose and justify a set of candidate methods (possibly a selected set or archive) under explicit legality, evidence, and scope constraints. CHR provides the typed measurement basis; CAL declares auditable predicates and flows that separately grounded runtime work may apply.
+**Tell.** A team working within a CG‑Frame must choose and justify a set of candidate methods (possibly a selected set or a set retained in an archive) under explicit legality, evidence, and scope constraints. CHR provides the typed measurement basis; CAL declares auditable predicates and flows that separately grounded runtime work may apply.
 
 **Show 1 (bounded CAL pack skeleton).**
 Use: R&D selected-set choice. The pack names the exact CG frame and EntityOfConcern, candidate-set `ClaimScope`, ReferencePlane, and evaluation window. CHR defines `SafetyClass(ord↑)`, `CostUSD_2026(ratio↓)`, `Readiness(nominal)`.
@@ -306,7 +308,7 @@ Use: R&D selected-set choice. The pack names the exact CG frame and EntityOfConc
 * `CAL.AcceptanceClause: AC_SafetyGate`
   Reusable typed predicate for `SafetyClass` (and its levels), citing `SafetyResultArgument-D1`, the A.6.1 argument declaration that admits a C.16 measurement-result episteme for that Characteristic. Thresholds are valid for the stated `ClaimScope` and evaluation window; unknown handling uses tri-state pins. The clause names no current measurement-result episteme.
 * `CAL.Flow: Flow_ParetoPortfolio`
-  Produces a selected-set result kind; gates by `AC_SafetyGate` and `AC_Budget`.
+  Declares a selected-set result kind; gated by `AC_SafetyGate` and `AC_Budget`.
 * `CAL.EvidenceProfile: EP_SafetyEvidence`
   Declares anchor ids and freshness policy pins required for `SCR`.
 
@@ -323,11 +325,19 @@ The local kind `SafetyAcceptanceEvaluatorSystemRole` is declared under A.2. Its 
 
 The same A.13 core uses `SafetyAcceptanceEvaluationAssignment`, a directly declared `U.SystemRoleAssignment` species under A.2.1. The species defines holder, assigned-kind, and evaluation-candidate participant meanings; its predicate appoints the holder to evaluate that candidate under the applicable clause for the stated scope, situation, and window. `SafetyAcceptanceEvaluationAssignment-17` obtains with `SafetyEvaluatorSystem-17` as holder, `SafetyAcceptanceEvaluatorSystemRole` as assigned-kind value, and `C-17` as evaluation candidate. Its maximal uninterrupted predicate-true interval covers the full stated window.
 
-Only after that A.13 core is established does A.15.1 independently admit `EvalWork-2026-07-30-17 : U.Work` from its exact performance history, enacted `SafetyAcceptanceMethod`, temporal extent, and obtaining containing-System relation to independently admitted `SafetyEvaluationTeamSystem-17`. The actual A.6.1 application `SafetyAcceptanceApplication-17` separately binds candidate `C-17` and current C.16 measurement-result episteme `SafetyMeasureResult-E17` to `SafetyResultArgument-D1` while using unchanged reusable clause `AC_SafetyGate`. Neither the assignment nor an F.6 conclusion is an A.15.1 admission premise.
+Only after that A.13 core is established does A.15.1 independently admit `EvalWork-2026-07-30-17 : U.Work` from its exact performance history, enacted `SafetyAcceptanceMethod`, temporal extent, and obtaining containing-System relation to independently admitted `SafetyEvaluationTeamSystem-17`. The actual A.6.1 application `SafetyAcceptanceApplication-17` binds candidate `C-17` separately from its binding of current C.16 measurement-result episteme `SafetyMeasureResult-E17` to `SafetyResultArgument-D1` while using unchanged reusable clause `AC_SafetyGate`. Neither the assignment nor an F.6 conclusion is an A.15.1 admission premise.
 
 Because this worked case explicitly says that the Work was performed under an assignment, F.6 afterward establishes `performedUnderAssignment(EvalWork-2026-07-30-17, SafetyAcceptanceEvaluationAssignment-17)` through the same obtaining A.13 assignment. The direct case fact links that exact pair, holder equality holds, and the assignment interval covers the Work. A different overlapping assignment held by the same performer would not establish this attribution.
 
 `SafetyMeasureResult-E17` states the measured safety characteristic, scale, attributed value, uncertainty, model, calibration, and measurement Work; it is neither the raw detector output nor the acceptance verdict. The clause application obtains `unknown` because the uncertainty interval crosses the threshold. A later `SafetyMeasureResult-E18` can bind through separately identified `SafetyAcceptanceApplication-18` while `AC_SafetyGate` remains unchanged. A C.16 result for `CostUSD_2026`, a result with an incompatible declared shape, or raw detector output fails `SafetyResultArgument-D1` before the predicate runs; it does not cause a new reusable clause edition. A separate C.2.1 episteme asserts that exact verdict and cites its provenance under A.10 and, when the EvidenceGraph extension is present, G.6; G.11 supplies currentness. A later C.11 result may record `defer`, and its claim uses the verdict episteme through an exact premise or decision-use relation. Any decision-making Work remains separate. The clause card, proof-ledger row, evidence edge, and decision record do not retroactively establish the measurement Work or the evaluation occurrence.
+
+**Show 4 (a support model and its separate acceptance threshold).**
+
+For the pump-triage use in G.5 §0.5, consider a separately declared gated variant. `AC_InputConditionGate-E1` accepts a declared probability of at least 0.85 that both the measurement series is valid (event A) and its time alignment is valid (event B) for the same 24-hour input. Its scope, evaluation window, result-input declaration, and `unknown` behavior belong to this G.4 clause, not to the default composition rule. `PumpInputEvidence-E1` supplies the receiving model and provenance for those event meanings and probabilities. An applicable `TaskMapRef` binds that clause, profile, and the matching C.22 task signature.
+
+Suppose the application inputs establish P(A)=0.9 and P(B)=0.9 and the profile's model establishes independence. The model gives P(A ∩ B)=0.81, so the clause returns `fail`. Minimum 0.9 would incorrectly pass. If independence or a justified conditional alternative is unavailable, the missing joint probability yields the clause's `unknown` result, with the declared downstream degrade/abstain behavior; a high F or formal line tag cannot replace it.
+
+For a different receiving question that asks only for a qualified comparison on existing heterogeneous support, the profile retains the proof, empirical contributions, shared-bias limitations, and contrary evidence under B.1.3/C.2.2. It does not invent a probability or apply `AC_InputConditionGate-E1` to that different question. The ordinary G.5 shortlist remains available without an additional assurance calculation.
 
 ### G.4:6 - Bias-Annotation
 
@@ -351,8 +361,8 @@ The pattern mitigates these by requiring typed acceptance clauses, explicit poli
 | **CC‑G4‑04** | Every reusable `CAL.Acceptance` binds the exact Characteristic and exact A.6.1 `resultInputDeclarationRef` values that declare the admissible C.16 measurement-result episteme inputs; the exact current result episteme is bound only in an actual application. A clause marked one-off may additionally cite `fixedResultEpistemeRefs[]?`. Every clause also declares its predicate or threshold, `ClaimScope`, evaluation window, any separate qualification window that limits use, unknown handling, and failure behavior. A statistically risk-controlled clause also names its loss, target, calibration population and window, sampling or exchangeability assumptions, declared treatment of shift, and the exact policy that states or defines the guarantee. Inputs with distinct source-local meanings cite the exact F.17 cells and obtaining F.9 relation; cross-plane or cross-edition inputs cite their applicable crossing records. None of these declarations establishes performed evaluation or a verdict. |
 | **CC‑G4‑05**      | If an acceptance clause, operator, or flow induces numeric comparison or aggregation, it cites the relevant `CG‑Spec.characteristic` ids and links to legality proof refs (CSLC) in the ProofLedger; otherwise it must be authored so that downstream can degrade or abstain rather than perform illegal operations. |
 | **CC‑G4‑06**      | Every `CAL.Flow` declares its result kind and the set of gating acceptance clauses; any thinning/selection‑aid policies (e.g., ε‑front selection) are explicitly policy‑bound and do not silently replace the underlying result kind.                                                                      |
-| **CC‑G4‑07**      | Every `CAL.EvidenceProfile` declares: provenance anchors (A.10), evidence lanes (`F/G/R`), freshness/decay pins (incl. freshness window + decay/Γ_time selector refs), and any penalty routing policy pins (`Φ(CL)`, `Ψ(CL^k)`, `Φ_plane`) needed for run‑time `SCR` surfacing. It either pins an explicit `ΓFoldRef.edition` override or (if absent) cites `DefaultId.GammaFoldForR_eff` (via `G.Core.DefaultGoverningDefinitionIndex`). Penalty policies affect `R_eff` only and do not define dominance. Any referenced penalty policy family is justified in the ProofLedger (monotone + bounded).  |
-| **CC‑G4‑08**      | `CAL.ProofLedger` exists and is UTS‑citable; it links each operator/flow/clause to required proof/justification refs and records explicit degradation conditions when assumptions fail. If an explicit `ΓFoldRef` is pinned, it includes monotonicity + boundedness/boundary behavior proof refs for that fold. |
+| **CC‑G4‑07** | Every `CAL.EvidenceProfile` declares the provenance anchors, evidence lanes, and currentness or loss-policy pins its use needs. It cites `DefaultId.GammaFoldForR_eff` for B.3/C.2.2 support-model discipline and pins any numerical Γ-fold actually used. That calculation must preserve input meanings, scales, dependencies, formal/empirical distinctions, and mapping limits; absent a common model, retain separate support and a bounded synthesis. Losses affect R only and do not define dominance or an acceptance threshold. |
+| **CC‑G4‑08** | `CAL.ProofLedger` links each operator, flow, or clause to its required proof or justification and explicit failure behavior. A numerical Γ-fold or loss includes its receiving quantity, input scales, dependency model, derivation or calibration, assumptions, and boundary behavior; monotonicity and boundedness alone are insufficient. A missing required model cannot be repaired by F-to-R conversion or an invented default score. |
 | **CC‑G4‑09**      | CAL publication includes RSCR tests and Worked‑Examples sufficient to detect illegality (incl. unit laundering / ordinal arithmetic), to exercise authored acceptance/flow behavior, and to validate the authored freshness envelope when it is part of admissibility; missing tests/examples are treated as an auditable gap, not as “assumed OK”. |
 | **CC‑G4‑10**      | Each `TaskMapRef = <taskMapId, taskMapEdition>` resolves one immutable map edition containing the exact `CALCharterRef`, task, C.22 `TaskSignatureRef`, and edition-bearing acceptance-clause, operator, flow, and evidence-profile refs used by selection. Changing the charter, task, signature edition, or a cited component creates a new map edition. When G.4 gates are current, G.5 consumes this exact map alongside the same `TaskSignatureRef`; a mismatch or unresolved ref blocks that gated selector use. The map neither constructs the TaskSignature nor embeds thresholds or duplicates acceptance semantics. |
 | **CC‑G4‑11**      | Any method/discipline specifics are placed under `G.4:4.5 Extensions` as `GPatternExtension` blocks (stable `PatternScopeId`, explicit governing definition, pins, and RSCR triggers); no extension introduces competing defaults or replaces `G.Core` invariants. |
@@ -390,14 +400,14 @@ The pattern mitigates these by requiring typed acceptance clauses, explicit poli
 
 ### G.4:9 - Consequences
 
-* CAL becomes a stable, citable CAL Pack: operator/acceptance semantics are explicit artifacts, not tacit code behavior.
+* CAL operator/acceptance semantics become stable, citable CAL Pack content rather than tacit code behavior.
 * Legality failures are surfaced as authoring defects (RSCR‑testable) rather than run‑time surprises.
 * Downstream patterns (`G.5`, `G.8`, `G.9`, `G.10`, `G.11`) can reference stable ids/pins without redefining acceptance or operator semantics.
 * Method pluralism is supported: multiple calculi can coexist as separate operator/flow/acceptance families, wired via Extensions rather than mixed into the core kit.
 
 ### G.4:10 - Rationale
 
-CAL sits at the boundary where typed measurement becomes actionable choice. Making CAL a published, typed, and testable artifact reduces semantic drift and prevents “shadow legality gates” from emerging in tools or in downstream prose.
+CAL sits at the boundary where typed measurement becomes actionable choice. Publishing typed and testable CAL declarations reduces semantic drift and prevents “shadow legality gates” from emerging in tools or in downstream prose.
 
 The design separates concerns:
 
@@ -410,7 +420,7 @@ This yields modularity (one governing definition per invariant or default), audi
 
 ### G.4:11 - SoTA-Echoing
 
-Source qualification was checked on 2026-07-30. The source identities below are immutable publications; the G.4 adoption decisions remain qualified through 2027-07-30 unless a governing neighbour adopts a successor earlier or a new result contradicts the named assumption boundary.
+The qualification period for the source-use decisions below starts on 2026-07-30. The source identities below are immutable publications; the G.4 adoption decisions remain qualified through 2027-07-30 unless a governing neighbour adopts a successor earlier or a new result contradicts the named assumption boundary.
 
 | Exact source and source-use decision | Visible G.4 mutation | Rejected overread | Smallest source-change replay |
 | --- | --- | --- | --- |
@@ -420,15 +430,15 @@ Source qualification was checked on 2026-07-30. The source identities below are 
 
 Distributionally robust and broad multi-objective families are discovery leads, not G.4 decision sources. Current comparison, partial-order, and selected-set law stays with A.18/A.19; a future external source enters this table only after it changes a present C1–C9 action, worked case, or conformance row. Source refresh is local to the row's named rule, example, and check.
 
-#### G.4:11.1 - Maintainer-facing architecture and publication inventory
+#### G.4:11.1 - CAL architecture and publication inventory
 
-G.4 is a design-time authoring pattern. It publishes a notation-independent `CAL Pack@CG-Frame` with a charter for the exact CG frame, EntityOfConcern, ReferencePlane, specification editions, and assumption envelope; stable operator, clause, and flow ids; evidence and currentness refs; proof-or-gap records; worked examples and tests; continuity notes; and a minimal `TaskMap`. It uses G.Core, G.0, and G.1–G.3 for Part-G, CG-frame, SoTA, CHR, and legality disciplines; A.6.1 for declarations and actual bindings; A.13 and A.15.1 for precise performers and independently admitted runtime Work; F.6 only for a current assignment-bound attribution through the same obtaining assignment; C.2.1 for result epistemes; and A.10, G.11, B.3, and C.11 for provenance, currentness, assurance, and decisions. G.6 is used only when `G.4:Ext.EvidenceGraphWiring` is present. Method-specific semantics remain in the applicable extension pattern. The detailed manifests, schemas, and interfaces above are maintainer-facing citation surfaces for this one practitioner path, not a second workflow.
+G.4 is a design-time authoring pattern. It publishes a notation-independent `CAL Pack@CG-Frame` with a charter for the exact CG frame, EntityOfConcern, ReferencePlane, specification editions, and assumption envelope; stable operator, clause, and flow ids; evidence and currentness refs; proof-or-gap records; worked examples and tests; continuity notes; and a minimal `TaskMap`. It uses G.Core, G.0, and G.1–G.3 for Part-G, CG-frame, SoTA, CHR, and legality disciplines; A.6.1 for declarations and actual bindings; A.13 and A.15.1 for precise performers and independently admitted runtime Work; F.6 only for a current assignment-bound attribution through the same obtaining assignment; C.2.1 for result epistemes; and A.10, G.11, B.3, and C.11 for provenance, currentness, assurance, and decisions. G.6 is used only when `G.4:Ext.EvidenceGraphWiring` is present. Method-specific semantics remain in the applicable extension pattern. The detailed manifests, schemas, and interfaces above are citation surfaces for CAL authors and consumers within this one practitioner path, not a second workflow.
 
 ### G.4:12 - Relations
 
 **Builds on:** `G.Core` (and the pattern template discipline in `E.8`).
 
-**Uses:** `G.1` (CG‑Frame Card), `G.2` (SoTA Synthesis Pack), `G.3` (CHR Pack), `G.0` (CG‑Spec legality gate), `A.19` (CN‑Spec plus direct comparison and selection patterns), `A.18` (CSLC), `A.2.6` (`U.ClaimScope`), `A.6.1` (declarations and actual bindings), `A.13` (precise performer core), `A.15.1` (independent Work admission), `A.2.1` (assignment species and occurrences), and `F.6` only for exact assignment-bound attribution through the same obtaining assignment, `C.2.1` (result epistemes), `C.11` (decision results), `A.10` (provenance and bounded reliance), `B.3` (assurance), `G.11` (currentness), and `E.18`, `A.21`, `F.9`, `F.17`, and `E.17` (GateCrossing harness).
+**Uses:** `G.1` (CG‑Frame Card), `G.2` (SoTA Synthesis Pack), `G.3` (CHR Pack), `G.0` (CG‑Spec legality gate), `A.19` (CN‑Spec plus direct comparison and selection patterns), `A.18` (CSLC), `A.2.6` (`U.ClaimScope`), `A.6.1` (declarations and actual bindings), `A.13` (precise performer core), `A.15.1` (independent Work admission), `A.2.1` (assignment species and occurrences), and `F.6` only for exact assignment-bound attribution through the same obtaining assignment, `C.2.1` (result epistemes), `C.11` (decision results), `A.10` (provenance and bounded reliance), `B.3` (assurance), `G.11` (currentness), and `E.18` (transformation-flow structure and GateCrossing), `A.21` (gate decisions from independent check results), `F.9` (actual relations between source-local meanings), `F.17` (SchemeSenseCells), and `E.17` (multi-view publication).
 
 **Uses (via Extensions):** `G.6` (EvidenceGraph/Path citation; when `G.4:Ext.EvidenceGraphWiring` is present), `C.18` (NQD), `C.19` (E/E‑LOG), `C.23` (SoS‑LOG).
 

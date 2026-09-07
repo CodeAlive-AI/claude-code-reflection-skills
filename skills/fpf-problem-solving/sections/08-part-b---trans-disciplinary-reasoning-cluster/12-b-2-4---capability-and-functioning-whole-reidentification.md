@@ -16,9 +16,9 @@ The first useful question is whether those facts can still be explained by the e
 
 **Not this pattern when.**
 
-- If the claim is ordinary capability, use `A.2.2` and `C.16`.
-- If the claim is function-like wording or functioning relation without whole reidentification, use `A.6.F`.
-- If the claim is transformation or transformation-flow structure, use `A.3.4`, `E.18`, and `C.30.TFS-REL`.
+- If the claim is ordinary capability, use `A.2.2`; use `C.16` for its measured-characteristic claims.
+- If function-like wording hides the exact claim, use `A.6.F` to recover its direct subject pattern; an already precise functioning claim returns directly to that pattern.
+- If the claim is transformation or transformation-flow structure, use `A.3.4` or `E.18` respectively; use `C.30.TFS-REL` for the selected structure's bounded architecture use.
 - If the claim is method, method relation, method description, work plan, or work occurrence, use `A.15`, `A.3.1`, `A.3.2`, `A.15.2`, and `A.15.1`.
 - If the claim is module allocation or bearer allocation, use `A.6.M`, `C.30`, `A.22`, and `C.30.ASV` according to whether the live claim concerns the module, architecture, selected structure, or architectural structural view.
 - If the claim is measurement, threshold, score, robustness, quality, or a whole-level characteristic, use `C.16` and `A.19` for that claim and `A.10` only when evidence use is current.
@@ -45,9 +45,9 @@ Without this specialization:
 
 | Force | Tension |
 | --- | --- |
-| Capability facts vs whole identity | Exact capability facts can make a new-whole question live, but most capability claims stay with A.2.2 and C.16; their evidence remains separate. |
+| Capability facts vs whole identity | Exact capability facts can make a new-whole question live; capability claims stay with A.2.2 and measured-characteristic claims with C.16, whether or not that question arises. Their evidence remains separate. |
 | Functioning relation vs part-whole relation | Functioning often crosses parts and bearers; it is not parthood by wording. |
-| Transformation-flow structure vs mathematical description | Flow structure may enter architecture claims; graphs and diagrams remain lenses or publications unless selected as objects. |
+| Transformation-flow structure vs mathematical description | Flow structure may enter architecture claims; selecting a graph or diagram as an object of concern does not identify it with the flow structure it represents. Its lens, description, or publication use remains separate. |
 | Method composition vs performed work | A method relation can describe possible doing, while a dated work occurrence is an in-life fact and evidence only supports claims about that occurrence. |
 | New whole vs local improvement | The pattern must preserve real novelty without turning every improvement into MHT. |
 
@@ -71,10 +71,10 @@ Before applying B.2, test whether the exact facts are already explained under a 
 
 | Exact fact or claim under concern | Subject pattern if sufficient | B.2.4 remains current only when |
 | --- | --- | --- |
-| Capability envelope | `A.2.2`, `C.16`; `A.10` only for evidence use | the exact envelope belongs to a candidate whole that the existing whole cannot explain |
-| Function or functioning relation | `A.6.F`, `A.3.4`, `C.16` | the obtaining relation and whole-level facts leave a residual new-whole question |
-| Transformation-flow structure | `C.30.TFS-REL`, `E.18`, `A.3.4`; `C.29` only for a mathematical representation use | the selected in-life structure changes which whole can carry the current claim |
-| Method relation or method family | `A.15`, `A.3.1`, `G.5`; `C.29` only when a lens is used | the exact method facts change the whole, not merely the way of doing |
+| Capability envelope | `A.2.2` for the capability of an exact System holder, `C.16` for measured characteristics; `A.10` only for evidence use | the exact envelope and holder facts leave a candidate-whole question that the existing whole cannot explain |
+| Function or functioning relation | `A.6.F` recovers the exact claim and its direct subject pattern; `A.3.4` for an actual transformation and `C.16` for a measured characteristic | the obtaining relation and whole-level facts leave a residual new-whole question |
+| Transformation-flow structure | `E.18` for the selected structure, `A.3.4` for actual transformations, `C.30.TFS-REL` for bounded architecture use; `C.29` only for a mathematical representation use | the selected in-life structure changes which whole can carry the current claim |
+| Method relation or method family | `A.3.1` for Method identity, `B.1.5` for composition, `A.15` for role–Method–Work alignment, and `G.5` for registry or selector-facing use; use the direct pattern for any separately claimed family relation and `C.29` only when a lens is used | the exact method facts change the whole, not merely the way of doing |
 | Method description or procedure text | `A.3.2` and `C.2.1` distinguish the MethodDescription and its episteme identity; use `E.17` or `E.24.PUB` for a current publication occurrence, form, or carrier, `C.2.P` for unresolved source-expression or source-to-use wording, and `A.10` or `G.6` only when evidence provenance is relied on | an in-life whole-reidentification question remains after the description is separated |
 | Work plan or work occurrence | `A.15.2`, `A.15.1` | exact planned or performed work facts leave a new-whole question; the plan or occurrence is not the whole by label |
 | Module, component, or bearer allocation | `A.6.M`, `C.30`, `A.22`, `C.30.ASV` | exact allocation and architecture facts defeat the existing-whole explanation |
@@ -104,7 +104,7 @@ Use B.2 when the exact direct facts show that the existing whole cannot carry th
 
 - a production cell has an exact capability envelope, obtaining coordination and functioning relations, a selected in-life transformation-flow structure, and external commitments that cannot be explained by individual machines or the old aggregate;
 - a service platform has an obtaining functioning relation and external commitments that cannot be assigned to one service or module;
-- a team, toolchain, and method family participate in exact coordination and work facts that make a result-system candidate live; or
+- exact coordination and work facts concerning a team, a toolchain, and the enacted Methods from a method family make a result-system candidate live; or
 - a candidate episteme has exact constitution and explanatory-use facts that leave an episteme whole-reidentification question.
 
 After the return, use B.2 for the existing-whole/new-whole comparison, its one exact candidate, and any optional record. B.2.4 adds no result record or evidence slice. The direct patterns still define and test the contributing facts, while evidence or measurement supports the associated claims.
@@ -113,9 +113,9 @@ After the return, use B.2 for the existing-whole/new-whole comparison, its one e
 
 #### B.2.4:5.1 - Production Cell Capability
 
-A milling machine, robot arm, fixture, inspection station, and scheduling rule can remain a collection of assets. A new production-cell candidate becomes current only when exact capability, functioning, coordination, and transformation-flow facts cannot be explained by any single component or the old aggregate. Cell-level cycle time and tolerance measurements may support the claim; they do not create the candidate or those facts.
+A milling machine, robot arm, fixture, and inspection station can remain a collection of assets even when a scheduling rule for their use is available. A new production-cell candidate becomes current only when exact capability, functioning, coordination, and transformation-flow facts cannot be explained by any single component or the old aggregate. Cell-level cycle time and tolerance measurements may support the claim; they do not create the candidate or those facts.
 
-Use A.6.F for function-like wording, A.3.4 for transformations, C.30.TFS-REL for transformation-flow structure, A.15.1 for performed work, C.16 for cycle-time and tolerance characteristics, and B.2 only when the cell whole must be reidentified.
+Use A.6.F for function-like wording, A.3.4 for transformations, E.18 for transformation-flow structure and C.30.TFS-REL for its bounded architecture use, A.15.1 for performed work, C.16 for cycle-time and tolerance characteristics, and B.2 only when the cell whole must be reidentified.
 
 #### B.2.4:5.2 - CI/CD Capability
 
@@ -125,9 +125,9 @@ B.2.4 becomes current only if exact capability, coordination, commitment, and wo
 
 #### B.2.4:5.3 - Theory Explains New Phenomena
 
-A new theory may explain phenomena that the source portfolio did not explain. B.2.4 can supply the exact explanatory-capability fact to B.2's ordinary existing-whole comparison, while evidence separately supports or challenges its claim. B.2.3 supplies the episteme-result specialization if the exact candidate is `U.Episteme`; C.2.1 defines its constitution; C.29 handles any mathematical-lens use.
+A new theory may explain phenomena that the source portfolio did not explain. Use B.2.4 to bring the exact explanatory-use facts into B.2's ordinary existing-whole comparison, while evidence separately supports or challenges the claim about that use. This does not assign an A.2.2 capability to the episteme. B.2.3 supplies the episteme-result specialization if the exact candidate is `U.Episteme`; C.2.1 defines its constitution; C.29 handles any mathematical-lens use.
 
-### B.2.4:5.1 - Bias-Annotation
+### B.2.4:5.4 - Bias-Annotation
 
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
@@ -152,9 +152,9 @@ A new theory may explain phenomena that the source portfolio did not explain. B.
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
-| Capability by declaration | A leader names a new capability, but the exact capability facts remain component-level or unknown. | Use A.2.2 and C.16 for the facts and A.10 for support; use B.2 only if the existing-whole explanation fails. |
-| Function as part | A function block is treated as a physical or organizational part. | Use A.6.F for function-like wording, C.30.TFS-REL for the transformation-flow relation, A.6.M for the module, and C.30, A.22, or C.30.ASV for the current architecture, selected structure, or structural-view claim. |
-| Method chain as whole | A sequence of methods is called a new holon. | Recover method relation and work occurrence; use B.2 only when a result holon is current. |
+| Capability by declaration | A leader names a new capability, but the exact capability facts remain component-level or unknown. | Use A.2.2 for the capability facts, C.16 for their measured characteristics, and A.10 for support; use B.2 only if the existing-whole explanation fails. |
+| Function as part | A function block is treated as a physical or organizational part. | Use A.6.F for function-like wording, E.18 for transformation-flow structure and C.30.TFS-REL for its bounded architecture use, A.6.M for module wording, and C.30, A.22, or C.30.ASV for the current architecture, selected structure, or structural-view claim. |
+| Method chain as whole | A sequence of methods is called a new holon. | Recover the exact method relation and any current work occurrence; use B.2 only when a result holon is current. |
 | Diagram as flow structure | A diagram or graph is treated as the transformation-flow structure itself. | Use the applicable description, publication, mathematical-lens, or selected-structure pattern; use B.2.4 only after the selected structure is recovered and a whole-reidentification question remains. |
 | Metric jump as whole | A KPI improves and MHT is declared. | Use C.16, A.10, and existing-whole explanation first. |
 
@@ -170,7 +170,7 @@ Costs:
 
 - Teams must do the subject-pattern test before using B.2.4.
 - Many impressive capability claims will stay outside MHT.
-- B.2.4 depends on B.2 for the final whole-reidentification record.
+- B.2.4 depends on B.2 for the whole-reidentification result and any durable record required by the receiving use.
 
 ### B.2.4:9 - Rationale
 
@@ -182,7 +182,7 @@ B.2.4 keeps this mixed situation disciplined. It does not rename the capability,
 
 | Source line | Practical implication for this pattern |
 | --- | --- |
-| Capability and functioning approaches | A capability envelope states what a holon can do under conditions; it is not automatically a new whole. Evidence supports or challenges the claim about the envelope but does not create it. |
+| Capability and functioning approaches | An A.2.2 capability envelope states what its named System holder can do under conditions; it is not automatically a new whole. Evidence supports or challenges the claim about the envelope but does not create it. |
 | Functional architecture and transformation-flow practice | Obtaining functioning relations and selected in-life flow structures can make a new-whole question live; descriptions and diagrams remain distinct from those facts. |
 | Method and work ontology in FPF | Method, method description, work plan, and performed work occurrence must stay separate when capability evidence is interpreted. |
 | TAME and agency-as-characteristic-space work | Agency-like evidence is multi-characteristic and thresholded by concern; B.2.4 does not create a binary agency kind. |

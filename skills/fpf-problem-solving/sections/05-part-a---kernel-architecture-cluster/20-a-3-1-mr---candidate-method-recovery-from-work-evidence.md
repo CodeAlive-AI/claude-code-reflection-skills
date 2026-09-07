@@ -12,7 +12,7 @@
 
 **Use this when.** Use this pattern when you have observations or records from several performances and want to understand what reusable way they may show, but no Method has yet been established.
 
-**First useful result.** Return a traceable provisional explanation of the reusable way the material may show, the main competing explanation, important gaps, and the next observation or trial that would separate them—or state honestly that the material shows only what happened.
+**First useful result.** Return a traceable provisional explanation of the reusable way the material may show, its real rivals, important gaps and limits—or state honestly that the material shows only what happened. A distinguishing question is included when it changes the intended recovery or downstream use; neither an answerable future test nor an investigation plan is required merely to finish the account.
 
 **Three recognition cases.**
 
@@ -22,7 +22,7 @@
 
 **What goes wrong if missed.** One vivid occurrence is generalized into a Method. Repeated event order is treated as reusable applicability. Several rival candidate subjects are combined into one false EntityOfConcern. A mined model, executable diagram, or coherent account is called a MethodDescription before a Method has been admitted. Missing tacit or discretionary contributions disappear behind the record format.
 
-**What this buys.** A project can use imperfect evidence without overclaiming. Each positive candidate has a truthful subject, source-to-claim trace, important gaps, a rival, and a distinguishing question. Weak evidence can still return a useful record-only result. Stronger reconstruction can continue in specialist `ME.18` without making every ordinary use pay that burden.
+**What this buys.** A project can use imperfect evidence without overclaiming. Each positive candidate has a truthful subject, source-to-claim trace and important limits, with real rivals or unresolved ambiguity preserved. A useful distinguishing question remains separate from a commitment to investigate it. Weak evidence can return a useful record-only result; specialist `ME.18` follows only when its larger contribution is needed.
 
 **Not this pattern when.** Use the closest applicable pattern instead:
 
@@ -79,15 +79,15 @@ If no candidate entity or truthful effective scheme can be recovered, lower the 
 5. **Distinguish each candidate subject.** For every materially different possible reusable way, state the provisional identity and scheme from §4.1. If two candidates cannot be told apart without unsupported claims, retain the ambiguity or lower the result.
 6. **Write one account per candidate.** Ask the `A.3.1` questions without granting Method membership: applicability, participant meanings, preconditions, intended result or preserved condition, reusable actions, supported parts or interfaces, allowed variation, and stops. Mark every unsupported position unknown rather than filling a familiar template.
 7. **Compare stability, variation, and alternatives.** Ask what recurs across independently grounded occurrences, what changes with the situation, what may be a performer-specific habit or local workaround, and whether another account explains the same evidence. Frequency alone establishes neither a Method part nor its value.
-8. **State a held-out or distinguishing question.** Name one representative occurrence, trial, comparison, or additional source not used to shape the favored account, and the observation that would support, separate, repair, or lower the candidates. Make the test proportionate to the receiving use; it is not automatically an effectiveness trial.
+8. **State a distinguishing question when it changes use.** If separating, repairing or lowering the candidates matters to the receiving use, identify the meaningful difference and the representative occurrence, trial, comparison or additional source that could expose it. A held-out question preserves its independence from account construction. The question need not be answerable now and is not a study commitment. A source-traceable provisional account can finish without designing unavailable or irrelevant follow-up. Separately select investigation only when its attainable contribution warrants its whole design, acquisition, interpretation and displaced-Work burden.
 9. **Return the strongest honest result.** Return one or more candidate accounts ready for `A.3.1` identification or specialist work, with a separate comparison only when needed; or lower to a Work-related record, local regularity, performer-specific habit, observed sequence, or unresolved cue. Prepare MethodDescription-authoring input separately. The same account can qualify as `U.MethodDescription` only after its `EntityOfConcern` is admitted as one `U.Method` and its claims pass `A.3.2`.
 
 #### A.3.1.MR:4.3 - Select the result branch
 
 | Evidence state | Result |
 | --- | --- |
-| Several occurrences support one reusable account at the required grain and a held-out question is answerable | One source-traceable candidate-account episteme about one independently distinguished candidate reusable way. |
-| Several accounts still explain the observations | One account episteme per candidate, source support and gaps for each, and the missing discriminating evidence; add a separate comparison episteme only when a named use needs it. |
+| Several occurrences support one reusable account at the required grain, with visible source limits | One source-traceable candidate-account episteme about one independently distinguished possible reusable way. No answerable held-out question is required unless that answer is needed by the receiving claim. |
+| Several accounts still explain the observations | One account episteme per candidate with source support, gaps and real ambiguity; add a distinguishing question only when it changes recovery or downstream use, and a separate comparison episteme only for a named retained use. |
 | The material shows only what happened or one local regularity | A Work-related record, local regularity, observed sequence, or habit claim; no Method or MethodDescription. |
 | Candidate identity, scheme, Work occurrence, source support, or evidence construction cannot be grounded | The missing information, relation, Method, configuration, source, or interpretation rule and the blocked receiving use. |
 
@@ -97,7 +97,7 @@ Treat evidence preparation, process discovery, and candidate-Method recovery as 
 
 1. Named data-preparation Method or Methods select source events, name activities, correlate records and objects, choose event-state or start/complete encodings, and apply abstraction. Dated preparation Work uses named source data and produces an event-log episteme about the identified event-data collection or structure described by the log.
 2. A named discovery Method may return a behavioural-model episteme. Conformance checking may compare a log with a separate descriptive or normative model. Enhancement may add timing, organizational, performance, or prediction claims. Object-centric mining may preserve several typed objects and qualified relations.
-3. This recovery Method uses those well-scoped results with other evidence to return candidate reusable-way accounts, unrecorded contributions, honest lowering, and a distinguishing trial.
+3. This recovery Method uses those well-scoped results with other evidence to return candidate reusable-way accounts, unrecorded contributions, honest lowering and a distinguishing question only when it changes the intended use. A prospective question does not establish that any trial was designed or performed.
 
 None of the earlier contributions automatically recovers a Method. A discovered process model remains a `U.Episteme` about selected evidence unless another rule establishes a different kind or use. A conformance result relates a log and model; it does not prove that the model describes the obtaining Method or that every deviation is defective. Executability and visual process form do not satisfy `A.3.2`.
 
@@ -132,6 +132,12 @@ If the correlation key, configuration, or source window cannot be recovered, the
 
 Three timestamped records show that one operator checked A before B on three shifts, but the performer assignments, applicability, source window, and purpose of the sequence cannot be grounded. The useful result is an observed sequence in those records and a list of missing facts. It is not a candidate Method account, Method, or MethodDescription.
 
+#### A.3.1.MR:5.4 - A current account without another investigation
+
+In a constructed continuation of the pump-inspection case, the supervisor needs only to compare the two candidate explanations against the four existing records before deciding how to organize the instruction material. The fixed-order and cue-responsive accounts, their separate subjects, source support and missing tactile contribution are enough for that limited comparison. Both remain provisional. No new question, fifth visit or research plan is needed to complete the requested account.
+
+If the receiving use changes to choosing an uncued inspection order in vibration cases, the cue response becomes a load-bearing distinction. State the question and preserve the unresolved boundary even when a fifth visit is unavailable. Select an actual investigation only if a suitable performer, source access, permission and window make useful discrimination worth its whole burden. Neither the useful question nor an available plan admits a Method or supplies an observed answer.
+
 ### A.3.1.MR:6 - Bias-Annotation
 
 - **Automation bias:** admitting a Method from a mined or executable model without testing the reusable way under A.3.1.
@@ -148,11 +154,11 @@ Three timestamped records show that one operator checked A before B on three shi
 - **CC-A3.1.MR-3 — Source-to-claim trace.** Can the reader see which source supports each account claim?
 - **CC-A3.1.MR-4 — Evidence construction.** Are selection, naming, correlation, abstraction, configuration, window, and likely missing contributions explicit when they matter?
 - **CC-A3.1.MR-5 — One candidate per account.** Does every candidate-account episteme have one candidate reusable-way EntityOfConcern and effective scheme?
-- **CC-A3.1.MR-6 — Rival retained.** Is the main competing account or unresolved ambiguity visible?
-- **CC-A3.1.MR-7 — Held-out question.** Is there a proportionate observation or trial that could distinguish, repair, or lower the candidates?
+- **CC-A3.1.MR-6 — Rival retained.** Are real competing accounts or unresolved ambiguity visible without inventing a rival to complete the form?
+- **CC-A3.1.MR-7 — Useful distinguishing question.** Where discrimination changes recovery or downstream use, is the question clear and, if held out, independent of account construction? Does the account remain usable when no answerable investigation is needed or available, with stronger dependent claims withheld?
 - **CC-A3.1.MR-8 — Honest result branch.** Does the result stop at candidate account, separate comparison, record-only result, or named blocker without granting Method or MethodDescription membership?
 - **CC-A3.1.MR-9 — Specialist exit.** Is `ME.18` used for complete reconstruction only when the receiving use needs its larger burden?
-- **CC-A3.1.MR-10 — Plain use.** Can a cold practitioner explain the candidate, evidence, rival, gap, and next test without reading a predicate inventory?
+- **CC-A3.1.MR-10 — Plain use.** Can a cold practitioner explain the candidate, evidence, real rivals, gaps and supported current use without a predicate inventory or a mandatory next-test plan?
 
 ### A.3.1.MR:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -163,7 +169,7 @@ Three timestamped records show that one operator checked A before B on three shi
 | “Several candidates form one concern.” | Return one account per candidate; create a separate comparison subject only for a named use. |
 | “One expert performance proves the reusable way.” | Use it to open a hypothesis; seek several grounded occurrences or lower the result. |
 | “The log is raw fact.” | Name preparation Method, configuration, source, dated Work, correlation, encoding, window, and resulting event-log episteme. |
-| “Unknown means fill the standard field.” | Mark unsupported positions unknown and state the next distinguishing evidence. |
+| “Unknown means fill the standard field.” | Keep unsupported positions unknown and preserve their use limits. Add a distinguishing question only when it changes the receiving use; a missing field does not commission evidence collection. |
 | “Every recovery needs a full study.” | Stop at the smallest source-traceable candidate or honest record-only result; enter `ME.18` only for specialist reconstruction. |
 
 ### A.3.1.MR:9 - Consequences
@@ -197,7 +203,7 @@ The one-account-per-candidate rule protects episteme subject truthfulness when e
 ### A.3.1.MR:12 - Relations
 
 - **Builds on:** `C.2.1` for each account episteme, its EntityOfConcern, and effective scheme; `A.3.1` for the questions that shape a candidate without granting Method membership; A.13 for each precise performer's local agency core; `A.15.1` for independent admission of grounded Work occurrences; F.6 only for a current precise assignment-bound attribution; and `A.10` for bounded source reliance.
-- **Coordinates with:** `A.3.2` for later MethodDescription membership; `A.15.6` for recovery of ambiguous process or case wording; `A.22` for a separately selected comparison structure only when a named use needs it; and `C.32.MWA` for prospective several-structure practice synthesis.
+- **Coordinates with:** `A.3.2` for later MethodDescription membership; `A.15.6` for ambiguous process or case wording; `A.22` for a separately selected comparison structure only when needed; `C.32.MWA` for prospective several-structure practice synthesis; and `C.11.DUA` when a questionable investigation demand needs appraisal of its attainable contribution and whole burden.
 - **Receives bounded evidence from:** process-data preparation, discovery, conformance, enhancement, object-centric mining, interviews, observations, artifacts, and measurements under their own Methods and claims.
 - **Hands off to:** `A.3.1` for Method identification or specialist `ME.18` for complete reconstruction; neither continuation is automatic.
 - **Keeps separate:** source, record, event log, behavioural model, Work, candidate reusable way, candidate account, admitted Method, MethodDescription, and any comparison episteme.

@@ -3,13 +3,13 @@
 
 **Tag.** Architectural pattern (Part‑G core invariants hub; refactoring/deduplication)
 **Stage.** *design‑time* (authoring discipline + ID‑stable citation discipline; no run‑time mechanism)
-**Primary hooks.** E.8 (pattern template), E.10 (lexical/ontological rules), E.19 (conformance discipline), A.6.7 (SuiteObligations + suite protocol pins), A.15.3 (planned baseline), A.19 (CN‑Spec), G.0 (CG‑Spec), A.19.CHR (CHR suite boundary), C.23 (SoS‑LOG), F.17 (UTS), F.15 (RSCR).
+**Primary hooks.** E.8 (pattern template), E.10 (lexical/ontological rules), E.19 (conformance discipline), A.6.7 (SuiteObligations + suite protocol pins), A.15.3 (planned baseline), A.19.CN (CN‑Spec), G.0 (CG‑Spec), A.19.CHR (CHR suite boundary), C.23 (SoS‑LOG), F.17 (UTS), F.15 (unification SCR/RSCR).
 
 **Status.** Stable
 **Placement.** Part G core section before `G.0` (without renumbering `G.0…G.13`).
 **Normativity.** Normative unless explicitly marked informative
 
-**Purpose.** Provide *one governing definition* for Part‑G‑wide invariants (**delegation-first citation and change-control discipline**), plus a typed **RSCR trigger kind catalogue** and a **Default Governing Definition Index**, so Part G can be refactored without semantic drift or public‑ID breakage.
+**Purpose.** Provide *one place to find the governing definitions* for Part‑G‑wide invariants (**delegation-first citation and change-control discipline**), plus a typed **RSCR trigger kind catalogue** and a **Default Governing Definition Index**, so Part G can be refactored without semantic drift or public‑ID breakage.
 
 **Phase‑2 constraint.** `G.Core` is the only new Part‑G pattern introduced in Phase‑2; discipline/method/generator specifics remain in `G.x` as `Extensions`, citations to existing governing patterns, or Phase‑3 seeds (appendix) without new Phase‑2 norms.
 
@@ -30,7 +30,7 @@ This pattern (`G.Core`) therefore acts as the **deduplication hub** for FPF Part
 
 Without one governing definition for Part‑G‑wide invariants, Part G drifts in at least six recurring ways:
 
-1. **Shadow governing spec refs** emerge: downstream patterns restate CN‑Spec / CG‑Spec constraints, accidentally creating “local specs” that can diverge from the canonical governing spec refs.
+1. **Shadow governing specs** emerge: downstream patterns restate CN‑Spec / CG‑Spec constraints, accidentally creating “local specs” that can diverge from the canonical governing definitions.
 2. **Crossing discipline becomes inconsistent**: “crossing events” and “crossing visibility” are described differently across `G.x`, causing ambiguity about what must be pinned (UTS/Path/policy‑ids/editions) and what triggers refresh/regression.
 3. **Guard semantics drift**: tri‑state eligibility and “unknown handling” can be reinterpreted in local prose, producing hidden fourth statuses or implicit coercions.
 4. **Hidden scalarization appears**: partial orders are silently collapsed into scalars, or totalization is introduced implicitly through “helpful” numeric summaries.
@@ -64,13 +64,13 @@ Part G requires a single place where these invariants and refactoring discipline
 
 | Obligation handle | Canonical governing definition(s) | Part‑G note |
 | --- | --- | --- |
-| `transport_declarative_only` + `cg_spec_cite_required_for_numeric_ops` | A.6.7 + A.19 (CN‑Spec) + G.0 (CG‑Spec) + A.19.CHR | CN/CG are *pins*, not copies (“governing spec refs are pins, not copies”). No embedded/shadow governing spec refs. |
+| `transport_declarative_only` + `cg_spec_cite_required_for_numeric_ops` | A.6.7 + A.19.CN (CN‑Spec) + G.0 (CG‑Spec) + A.19.CHR | Cite CN‑Spec and CG‑Spec through *pins* rather than copying their definitions. No embedded/shadow governing specs. |
 | `bridge_only_crossings` | A.6.7 + E.18 | Any cross-Context or cross-plane/kind move is Bridge‑mediated; no implicit crossings. |
 | `crossing_visibility_required` | E.18 (CrossingBundle) + A.6.7 | Crossing visibility is a published **CrossingBundle**. `edition_key` changes on **crossing‑relevant artefacts** (Bridge/CL surfaces, BridgeCards, CrossingBundle registries, and UTS rows for crossing artefacts) are treated as crossing-bundle edits. If the required CrossingBundle is missing/non‑conformant, downstream consumers MUST **abstain** from cross-Context or cross-plane reuse (no silent crossings). |
 | `two_bridge_rule_for_described_entity_change` | A.6.7 | entityOfConcern retargeting requires an explicit KindBridge (`CL^k`) in addition to any Context/Plane Bridge. |
 | `guard_decision_tristate(pass|degrade|abstain)` + `unknown_never_coerces_to_pass` | A.6.7 + C.23 | `GuardDecision := {pass|degrade|abstain}` only; `unknown` maps to `degrade`/`abstain` via explicit SoS‑LOG branch/policy pins. |
 | `penalties_route_to_r_eff_only` | A.6.7 | Penalties affect the **R lane (R_eff)** only; **F/G invariants** must not be altered by penalties. |
-| `no_silent_scalarisation_of_partial_orders` + `no_silent_totalisation` | A.6.7 | Partial orders stay set‑valued; no silent scalar ranks or “helpful” totalisation. |
+| `no_silent_scalarisation_of_partial_orders` + `no_silent_totalisation` | A.6.7 | Partial-order results stay set‑valued; no silent scalar ranks or “helpful” totalisation. |
 | `planned_slot_filling_in_work_planning_only` + `finalize_launch_values_in_work_enactment_only` + `gate_decision_separation` | A.15.3 + A.19.CHR + A.6.7 | Planned baselines are WorkPlanning‑only; launch/finalization values are WorkEnactment‑only; planning does not govern GateDecision/DecisionLog semantics. |
 | `DefaultGoverningDefinitionIndex.single_governing_definition_per_DefaultId` | this pattern | Any default names exactly one governing definition; `G.Core.DefaultGoverningDefinitionIndex` is an index, not a second spec. |
 
@@ -289,7 +289,7 @@ EvidenceGraph `H3` example causes → canonical kinds:
 | ------------------------------ | --------------------------------------------------------- | ----- |
 | `DefaultId.PortfolioMode`       | `CC‑G5.23`                                                | Existing governing definition; other mentions delegate to it. |
 | `DefaultId.DominanceRegime`     | `CC‑G5.28`                                                | Existing governing definition; other mentions delegate to it. |
-| `DefaultId.GammaFoldForR_eff`   | `CC‑G5.4`                                                 | Default Γ‑fold for `R_eff` is weakest‑link; overrides require explicit CAL support. |
+| `DefaultId.GammaFoldForR_eff` | `CC‑G5.4` | Model-qualified support composition under B.3/C.2.2; no universal numeric fold. Keep separate support when no common model is justified. |
 
 This table may grow over time; the rule is that the **governing definition must already be named** (or be intentionally set to `G.Core` when the default is truly Part‑G‑wide and not governed elsewhere). Any change in a row (add/remove/change governing definition) SHALL be treated as a refresh‑sensitive edit and recorded as `RSCRTriggerKindId.DefaultGoverningDefinitionChange` (payload: affected `DefaultId.*`, old governing definition ref, new governing definition ref).
 
@@ -355,7 +355,7 @@ Conformance items are authoring obligations and are enforced transitively by `CC
 | **CC‑GCORE‑CROSS‑1** | A Part‑G pattern that introduces or consumes crossings SHALL enforce `SuiteObligations.bridge_only_crossings` and `SuiteObligations.crossing_visibility_required` (CrossingBundle per E.18); SHALL prohibit implicit crossings; SHALL treat `edition_key` changes on **crossing‑relevant artefacts** (Bridge/CL/CrossingBundle registries and UTS rows for crossing artefacts) as `RSCRTriggerKindId.CrossingBundleEdit` (and, when an edition pin is involved, also `RSCRTriggerKindId.EditionPinChange` per multi‑cause discipline); and SHALL cite `SuiteObligations.two_bridge_rule_for_described_entity_change` through its canonical governing definition. |
 | **CC‑GCORE‑GUARD‑1** | A Part‑G pattern SHALL treat `GuardDecision := {pass|degrade|abstain}` as the only admissibility/eligibility decision domain (`SuiteObligations.guard_decision_tristate(pass|degrade|abstain)`); `unknown` SHALL NOT silently coerce to `pass` (`SuiteObligations.unknown_never_coerces_to_pass`); “sandbox/probe‑only” SHALL be expressed via SoS‑LOG branch pins (policy/FailureBehavior) (see `C.23`), not as an extra decision value. |
 | **CC‑GCORE‑PEN‑1**   | A Part‑G pattern SHALL route penalties/assurance loss to the **R lane (`R_eff`) only** (`SuiteObligations.penalties_route_to_r_eff_only`) and SHALL preserve **F/G invariants** under penalties (penalties do not alter legality/invariant lanes). |
-| **CC‑GCORE‑SET‑1**   | A Part‑G pattern SHALL preserve set-return semantics for partial orders and SHALL prohibit silent scalarization/totalization (`SuiteObligations.no_silent_scalarisation_of_partial_orders`, `SuiteObligations.no_silent_totalisation`); any scalar summary SHALL be report-only unless declared as a admissible comparator surface. |
+| **CC‑GCORE‑SET‑1**   | A Part‑G pattern SHALL preserve set-return semantics for partial orders and SHALL prohibit silent scalarization/totalization (`SuiteObligations.no_silent_scalarisation_of_partial_orders`, `SuiteObligations.no_silent_totalisation`); any scalar summary SHALL be report-only unless declared as an admissible comparator surface. |
 | **CC‑GCORE‑SKP‑1**   | A Part‑G pattern SHALL preserve the suite/kit/pack distinction (A.19.CHR) and SHALL keep shipping concerns governed by their canonical governing patterns (e.g., G.10) rather than embedding shipping semantics into unrelated kits or core invariants. |
 | **CC‑GCORE‑P2W‑1**   | A Part‑G pattern that uses planned baselines SHALL anchor them via `SlotFillingsPlanItem` in WorkPlanning (`SuiteObligations.planned_slot_filling_in_work_planning_only`) and SHALL finalize launch values only in WorkEnactment (`SuiteObligations.finalize_launch_values_in_work_enactment_only`); gate decisions remain separated per `SuiteObligations.gate_decision_separation`. |
 | **CC‑GCORE‑LINK‑1**  | Every conforming `G.x` SHALL satisfy `G.Core:4.2` by providing a `G.x:<n> - G.Core linkage (normative)` section containing a `GCoreLinkageManifest` (incl. either `CoreConformanceProfileIds` or `CoreConformanceIds`, either `RSCRTriggerSetIds` or `RSCRTriggerKindIds`, and either `CorePinSetIds` or `CorePinsRequired` (or both)). Nil‑elision is permitted for `∅` fields. |
@@ -372,7 +372,7 @@ Conformance items are authoring obligations and are enforced transitively by `CC
 ### G.Core:8 - Common anti-patterns and how to avoid them
 
 * **Anti-pattern:** Restating CN‑Spec/CG‑Spec rules inside a `G.x` “for convenience”.
-  **Avoid:** cite `A.19` and `G.0` through `CC‑GCORE‑CN‑CG‑1`.
+  **Avoid:** cite `A.19.CN` and `G.0` through `CC‑GCORE‑CN‑CG‑1`.
 
 * **Anti-pattern:** Adding a fourth guard status (“unknown”, “maybe”, “probe-only”) as a separate decision value.
   **Avoid:** keep guard domain tri‑state; express “probe-only” as policy/branching and record via pins/audit.
@@ -394,7 +394,7 @@ Conformance items are authoring obligations and are enforced transitively by `CC
 
 ### G.Core:9 - Consequences
 
-* **Positive:** Part‑G‑wide invariants cite `G.Core` as their governing definition; refactors become safer and easier to audit.
+* **Positive:** Part‑G patterns cite `G.Core` to find the governing definitions of shared invariants; refactors become safer and easier to audit.
 * **Positive:** RSCR becomes reason-code driven (typed triggers), improving traceability and preventing semantic drift.
 * **Positive:** Default conflicts become detectable and resolvable because each `DefaultId` names one governing definition.
 * **Negative:** Adds an extra authoring step (linkage sections and CoreRef CC item) to each `G.x`.
@@ -420,16 +420,16 @@ Although FPF is conceptual (not a data governance framework), `G.Core` aligns Pa
 
   * `E.8` pattern template and section discipline
   * `E.10` lexical/ontological rules (strict distinction; twin naming; kind‑suffix discipline)
-* `E.18` CrossingBundle (crossing visibility bundle)
+  * `E.18` CrossingBundle (crossing visibility bundle)
   * `E.19` conformance discipline
   * `A.6.7` SuiteObligations + suite protocol pins (delegation support)
   * `A.15.3` SlotFillingsPlanItem (planned baseline anchor)
-  * `A.19` CN‑Spec governance card
+  * `A.19.CN` CN‑Spec governance card
   * `G.0` CG‑Spec legality gate
   * `A.19.CHR` CHR suite boundary and "governance cards and legality gates are cited as pins, not copied locally" discipline
   * `C.23` SoS‑LOG (tri‑state branches; sandbox/probe‑only)
   * `F.17` UTS (identifier registry; alias/deprecation discipline)
-  * `F.15` RSCR (regression/conformance loop)
+  * `F.15` static and regression conformance checks for unification slices
 
 * **Used by:**
 

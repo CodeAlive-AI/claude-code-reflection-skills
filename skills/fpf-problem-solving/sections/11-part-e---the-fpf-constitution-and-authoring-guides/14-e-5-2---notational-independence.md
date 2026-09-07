@@ -39,14 +39,14 @@ drift—or ignore FPF altogether.
    FPF **conceptual prefixes** (e.g., `U.`, `Γ_`, `ut:`, `tv:`, `ev:`, `mero:`) are  **cognitive namespaces**, not syntax tokens. Core patterns **MUST NOT**  tie their meaning to any concrete serialisation or URI scheme for these prefixes; any expansions are **illustrative only** and live in Tooling or Pedagogy.
 
 5. **Cards and other "forms"**
-Cards, tables and other "forms" exist in FPF core only as conceptual model, not as data model, thus no need to data-related notation or notation for lint. Comformance checklist and quards is also conceptual, argumentation like "this will ease machine check" is forbidden, no machine checking is intended in core; machine checks and linters live only in Tooling.
+Cards, tables and other "forms" are specified in the FPF Core only as conceptual models, not as data models; they do not require data-related or lint-specific notation. Conformance checklists and guards are also conceptual. Argumentation such as "this will ease machine checking" is forbidden; no machine checking is intended in the Core. Machine checks and linters live only in Tooling.
 
 ### E.5.2:5 - Archetypal Grounding (System / Episteme)
 
 | Scenario | `U.System` example | `U.Episteme` example |
 |----------|-------------------|----------------------|
 | Definition | Boundary of a pump is expressed in prose plus set notation; a diagram is illustrative. | F‑G‑R assurance components defined textually; a triple‑store serialisation is illustrative. |
-| Alternate rendering | Same pump semantics rendered in a lattice diagram or a tabular sheet remain valid. | R‑scores plotted in a heatmap or listed in CSV remain equivalent. |
+| Alternate rendering | Same pump semantics rendered in a lattice diagram or a tabular sheet remain valid. | R‑scores plotted in a heatmap or listed in a tabular serialisation remain equivalent. |
 
 ### E.5.2:6 - Conformance Checklist
 

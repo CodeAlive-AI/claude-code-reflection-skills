@@ -18,13 +18,13 @@ Ask: **Which other Systems may undergo a relevant change, through what supported
 
 **First useful move.** Name the exact focus and receiver. Generate a small set of concrete change-producing possibilities, trace outward through supported direct relations or explicitly modal path claims, and challenge the current boundary for a missing bearer.
 
-**First useful result.** Return the smallest bounded affected-System consequence account that changes or holds open the named receiver. One qualified consequence claim and one unresolved bearer or path are enough when they lead to a probe, constraint, alternative, monitoring condition, or honest stop.
+**First useful result.** Return the smallest bounded consequence account useful to the named decision or investigation. A qualified claim, retained constraint or alternative, modal path, or explicit unknown can finish the answer with its material limit. Further discovery is selected only when its obtainable contribution warrants the whole burden.
 
-**Cheap stop.** Stop if the current bearer set and consequence claims already support the receiver at the declared configuration, scope, horizon, and evidence window. Also stop when an exact non-System finding or missing relation blocks the next claim; return that finding to its direct owner instead of inventing a System.
+**Cheap stop.** Stop if the current bearer set and consequence claims already support the receiver at the declared configuration, scope, horizon, and evidence window. Also stop the affected claim branch when an exact non-System finding or missing relation blocks its next claim; return that finding to its direct owner instead of inventing a System.
 
 **What goes wrong if missed.** A familiar participant list becomes the boundary of inquiry, a possible path is reported as an obtaining relation, a scale label stands in for a constructed whole, or unlike changes disappear inside one aggregate. The receiver closes while a cheap observation or alternative could still have changed it.
 
-**What this buys.** The practitioner gets a reviewable set of possible bearers, relation-status claims, changed characteristics, evidence limits, and next probes without importing a full domain impact, risk, due-diligence, or assessment procedure.
+**What this buys.** The practitioner gets a reviewable set of possible bearers, relation-status claims, changed characteristics, evidence limits, and a useful receiving result without importing a full domain impact, risk, due-diligence, or assessment procedure.
 
 **Not this pattern when.**
 
@@ -39,7 +39,7 @@ Ask: **Which other Systems may undergo a relevant change, through what supported
 | Expression | Working meaning here |
 | --- | --- |
 | consequence-bearing System | An actual `U.System` whose state or characteristic may change under the stated conditions. This is a plain description, not a kind, role, assignment, or status. |
-| intended System referent | A designator for a not-yet-present or not-yet-identified System inside a modal claim. It does not assert current systemhood or existence. |
+| intended System referent | A designator for a System whose intended existence is stated in a modal claim. It does not assert current systemhood or existence. An unidentified bearer remains an explicit unknown with the claim's modality preserved. |
 | supported obtaining direct-relation occurrence | One exact world-side relation occurrence whose participants, predicate, and obtaining conditions are supported under its direct governor. |
 | modal path claim | A claim that a path may obtain, naming the proposed relation kind, candidate participants, conditions, support, and uncertainty. |
 | consequence claim | A claim about a possible or observed changed state or characteristic, its bearer, conditions, time, support, uncertainty, and causal status. The claim is not the world-side change. |
@@ -74,7 +74,7 @@ The result is either premature closure or an unbounded catalogue. Both fail to c
 | Force | Tension |
 | --- | --- |
 | Reach vs support | Consequences can travel far, while evidence for distant paths is often weak. |
-| Early action vs false actuality | A plausible path can justify a cheap probe, but not an assertion that the relation obtains. |
+| Early action vs false actuality | A plausible path can change a constraint or justify a worthwhile obtainable probe, while remaining insufficient to assert that the relation obtains. |
 | Breadth vs ontology | More candidate bearers improve discovery only while each keeps its exact kind or honest blocker. |
 | Several scales vs one decision | Several holons may change differently, while the receiver still needs a bounded next move. |
 | Reuse vs domain authority | A common discovery action is transferable; domain quantities, thresholds, evidence Methods, and decisions are not. |
@@ -91,12 +91,12 @@ Discover outward from concrete possibilities, preserve the status of every relat
 3. **Generate change-producing possibilities.** Consider intended and plausible Work, realization, operation, use, maintenance, misuse, failure, recovery, adaptation, continuing change, retirement, and later conditions that matter here. These are examples of possibilities, not a lifecycle or mandatory sequence.
 4. **Trace paths and challenge the boundary.** Follow supported obtaining direct-relation occurrences separately from modal path claims. For a modal claim, name the proposed relation kind, candidate participants, conditions, support, and uncertainty. Then ask which Systems capable of bearing the stated change remain outside the current frame.
 5. **Recover relation status and holon basis.** Establish every claimed world-side relation occurrence—such as part-whole, participation, dependency, crossing, or exposure—only through its direct governor. Recover an environment from one focal System delimitation, exact external referents, supported crossing relations, and the selected use; recover a delimitation or boundary through its own FPF construction and supporting facts, not as a relation occurrence. Support a containing-System claim through the exact part-whole relation and construction. A context or declared scope remains a use-bounding fact and does not by itself make a world-side relation obtain. Use exact construction facts rather than a level word. Use B.2 or B.2.2 only when current facts create a real whole-reidentification question, then inspect possible bearers on both sides.
-6. **Recognize or retain bearer references.** Use `A.1.SCR` only when an actual candidate's systemhood is load-bearing. Keep a not-yet-present or unidentified bearer as an intended referent or explicit unknown inside modal content. Preserve a collection, place, scope, or other holon under its own kind or blocker.
+6. **Recognize or retain bearer references.** Use `A.1.SCR` only when an actual candidate's systemhood is load-bearing. Keep a not-yet-present intended bearer as a designator inside modal content; retain an unidentified bearer as an explicit unknown without changing the claim's modality. Preserve a collection, place, scope, or other holon under its own kind or blocker.
 7. **Qualify each consequence claim.** Name the changed state or characteristic, exact bearer, obtaining-occurrence or modal-path status, conditions, configuration, direction and magnitude cue when known, time, grounded whole/part or declared-scope coordinate when current, evidence, uncertainty, and causal status.
 8. **Keep cross-scale coordinates distinct.** Preserve each bearer's changed state or characteristic, conditions, horizon, evidence, uncertainty, and receiving use. A later domain aggregate may be added for its own use; it does not replace the original claims or set priority by scale.
 9. **Connect the result.** For each material claim, state whether the receiver needs a constraint, alternative, evidence-producing probe, specialist return, monitoring condition, reversible step, or explicit unresolved gap. Route a stronger claim to the pattern or practice that defines and tests it.
-10. **Prioritize inquiry without erasing sides.** Investigate first what could reverse or constrain the receiver, what is hard to reverse, what has large uncertainty and cheap information, and what bearer/path combination is poorly observed. Keep the original coordinates visible.
-11. **Stop and reopen.** Stop at the smallest account that changes or holds open the receiver. Record plausible missing bearers or paths, the cheapest next discovery action, and the observation, new System, changed whole, changed use, evidence, or specialist result that reopens the account.
+10. **Select further inquiry by contribution and burden.** When a particular missing bearer or path could change the receiving use, apply `C.11.DUA` to what an attainable observation could establish and its full preparation, access, performer, interpretation, delay, displaced work, and downside. Compare it with the useful present account, retained constraint or alternative, and stop. Examine proposed observations separately and as a programme: individually useful requests can compete for the same capacity or jointly miss the window. Prioritize a selected inquiry by its consequences and reversibility, keeping poorly observed sides and their original coordinates visible.
+11. **Stop and reopen.** Finish when the account gives the receiver the useful qualified answer and its material limit. Retain plausible missing bearers or paths and a reopen condition where they change interpretation or a later use. Name a next discovery action only when selected under step 10; an unresolved path requires no study proposal or separate explanation for omitting one.
 
 This sequence of actions is a reasoning aid. Discovery, observation, design, comparison, and specialist inquiry may proceed concurrently and reopen one another.
 
@@ -105,14 +105,14 @@ This sequence of actions is a reasoning aid. Discovery, observation, design, com
 | Current statement | Admissible treatment |
 | --- | --- |
 | A direct relation occurrence is supported | Record the exact participants, predicate, conditions, support, and qualification window under its direct governor. |
-| A path is plausible but not observed | Keep a modal path claim with proposed relation kind, candidate participants, conditions, support, uncertainty, and a probe. |
+| A path is plausible but not observed | Keep a modal path claim with proposed relation kind, candidate participants, conditions, support, uncertainty, and its consequence for the present use. Add a probe only when selected for its attainable value. |
 | A required relation kind has no governor | Return the exact participants and blocked use through `A.6.RCD`; do not mint `relatedTo`, `impact`, or `consequence` as a generic relation. |
 | An environment is current | Name the focal System delimitation, the exact external referents, the supported crossing relations, and the use that makes them relevant. |
 | A containing System is claimed | Support the exact part-whole relation and construction; proximity, influence, or a larger box is insufficient. |
 | A scale distinction changes the search | Recover exact holons or declared scopes and the obtaining construction, delimitation, crossing, or dependency facts. A level label alone establishes none. |
 | A different whole may now carry the claim | Use B.2/B.2.2 only for the exact existing-whole/new-whole comparison; then inspect candidate bearers on both sides without assuming either side wins. |
 
-An exact modal claim is useful because it tells the next observer what must be checked. It remains modal until the obtaining predicate is supported.
+An exact modal claim can qualify the present answer and identify what a later observation would have to establish. Add a separate actuality claim only when the direct obtaining predicate and its case conditions are supported.
 
 #### A.1.CSD:4.3 - Record the Result as One Ordinary Episteme
 
@@ -120,7 +120,7 @@ The account is reusable only when its `C.2.1` identity and working content are e
 
 | Result part | Required content |
 | --- | --- |
-| `C.2.1` identity | One exact proposed or observed focus entity as `EntityOfConcern`; one exact ClaimGraph carrying the examined possibilities, bearer and intended-referent designations, relation/path and possible-change claims, support, uncertainty, residual, probe, and reopen claim; and the effective ReferenceScheme supplying designation and interpretation rules plus only the measurement, comparison, or evaluation rules actually used. |
+| `C.2.1` identity | One exact proposed or observed focus entity as `EntityOfConcern`; one exact ClaimGraph carrying the examined possibilities, bearer and intended-referent designations, relation/path and possible-change claims, support, uncertainty, material residual, and any selected probe or useful reopen claim; and the effective ReferenceScheme supplying designation and interpretation rules plus only the measurement, comparison, or evaluation rules actually used. |
 | working bounds and receiver | Configuration when relevant, scope, horizon, and exact receiving decision or investigation. The receiver remains a neighboring use. |
 | examined possibilities | The concrete intended or plausible change-producing occurrences and the outside-in boundary challenge applied. |
 | relation, holon, and transition basis | Supported obtaining direct-relation occurrences; separately identified modal path claims; constructively recognized holons or declared scopes; any genuine whole-reidentification basis; and exact missing relation or recognition blockers. |
@@ -128,13 +128,13 @@ The account is reusable only when its `C.2.1` identity and working content are e
 | consequence claims | Changed state or characteristic, exact bearer, obtaining-occurrence or modal-path status, conditions, time, grounded whole/part or scope coordinate when current, direction or magnitude cue, evidence, uncertainty, and causal status. |
 | cross-scale separation | The original bearer, change, condition, horizon, evidence, uncertainty, and receiving-use coordinates for every retained side. Any aggregate remains additional. |
 | receiver connection | Constraint, alternative, evidence-producing probe, specialist return, monitoring condition, reversible step, or unresolved gap. |
-| discovery residual and reopen | Plausible missing bearers or paths, cheapest next action, and exact reopen condition. |
+| discovery residual and reopen | The missing bearer or path and reopen condition that matter to the receiving use. Include a further action only when its obtainable contribution warrants the complete inquiry burden. |
 
 A thin account may contain one qualified consequence claim plus one unresolved bearer, path, or specialist return when those entries already change the receiver. Blank fields do not assert closure. Bearers and unknowns are participants in the ClaimGraph, not extra EntityOfConcern values. If one truthful focus cannot govern the combined claims, keep the claims local or identify several account epistemes.
 
 #### A.1.CSD:4.4 - Recognition and Assurance Split
 
-**Recognition.** A cold reader can find the focus, receiver, at least one possible bearer, the obtaining-or-modal status of its path, the possible changed characteristic, support and uncertainty, and the next probe or stop.
+**Recognition.** A cold reader can find the focus, receiver, at least one possible bearer, the obtaining-or-modal status of its path, the possible changed characteristic, support and uncertainty, and the useful qualified answer, constraint, alternative, selected probe, or stop.
 
 **Assurance.** Trust in systemhood, relation occurrence, measurement, causal effect, source reliance, comparison, and specialist result remains with the direct patterns and practices.
 
@@ -145,13 +145,13 @@ A thin account may contain one qualified consequence claim plus one unresolved b
 | A flood-pump modernization may shift load, maintenance demand, downstream flow, and failure exposure. | Name the configuration decision, trace the finite change through supported plant relations and modal operating paths, and challenge the selected boundary. | One additional pump, maintenance, downstream, or containing-System claim changes a design constraint or monitoring condition; otherwise stop with the exact missing relation. |
 | An on-call and platform arrangement is being reorganized. | Trace the proposed Work and assignment changes to employee, provider, service, customer, and neighboring organization Systems without treating those names as a level ladder. | Keep workload, capability, service, and organization consequences separate; return the missing bearer or relation to the organization-change Method. |
 | A public appointment service is being redesigned through facilitated inquiry. | Trace service and policy alternatives to applicant, staff, provider, transport, and other material Systems; use participation as a discovery source, not proof of systemhood or authority. | Return descriptive bearer claims to the facilitated inquiry; route participation, concern, and authority questions to their direct practice. |
-| A nutrient pulse in a bioreactor may change living and engineered Systems. | Trace supported feed and effluent relations separately from modal biological and operating paths, and recover actual whole/part facts. | Select a spatial sample, pressure-drop observation, or effluent probe while retaining any unrecognized whole as an explicit blocker. |
+| A nutrient pulse in a bioreactor may change living and engineered Systems. | Trace supported feed and effluent relations separately from modal biological and operating paths, and recover actual whole/part facts. | Return the separate consequence claims and current limit; select spatial sampling, pressure observation, or effluent measurement only when their individual and combined contribution warrants the programme. |
 
 The same discovery action changes all four situations. Their domain Methods, quantities, evidence rules, and decisions remain different.
 
 #### A.1.CSD:5.1 - Minimally Viable Worked Case: Nutrient Pulse
 
-`FeedPulsePlan-FP4` proposes a larger nutrient pulse for `BioreactorOperatingSystem-BR7`. The receiving investigation is `ProbeDecision-PD4`: choose the next observation before changing the feed setting for the next 48 hours. The plan is the account's one exact focus EntityOfConcern; the ClaimGraph examines the possible feed-operation occurrence it specifies rather than treating the plan as a physical cause. The probe decision is the account's neighboring use.
+In this constructed case, `FeedPulsePlan-FP4` proposes a larger nutrient pulse for `BioreactorOperatingSystem-BR7`. The receiving investigation is `ProbeDecision-PD4`: decide whether and which further observations are worthwhile before changing the feed setting for the next 48 hours. The plan is the account's one exact focus EntityOfConcern; the ClaimGraph examines the possible feed-operation occurrence it specifies rather than treating the plan as a physical cause. The probe decision is the account's neighboring use.
 
 Baseline instrumentation supports one obtaining substrate-transfer occurrence from `FeedLine-F2` into the reactor medium and one obtaining effluent-flow occurrence from `BR7` to `TreatmentTrain-TT2`. Microscopy and persistence observations support the constructive recognition of individual bacterial Systems and `BiofilmPatch-BP3`: matrix-linked constituents, persistent assembly, whole-level nutrient-processing and shear-resistance characteristics, and actual participation in nutrient transformation establish the patch as a distinct System. The exact constituent relations used for the patch are recorded under their part-whole governors. No generic impact edge is added.
 
@@ -159,26 +159,30 @@ The proposed larger pulse has not occurred. The account therefore keeps four pat
 
 | Candidate bearer | Modal path and possible changed characteristic | Support and uncertainty | Receiver connection |
 | --- | --- | --- | --- |
-| sampled individual bacterial Systems near the inlet | Larger pulse -> higher local substrate concentration -> changed metabolic state and viability distribution. | Baseline gradient observations support plausibility; the proposed concentration field is unmeasured. | Add inlet-near and bulk samples before the setting change. |
-| `BiofilmPatch-BP3` | Larger pulse -> changed growth and matrix production -> changed patch coverage and shear resistance. | Current patch identity and coverage obtain; the proposed growth response remains model-supported and uncertain. | Add image-based coverage observation and preserve the current pulse as a reversible alternative. |
-| `BioreactorOperatingSystem-BR7` | Changed patch coverage and local transfer -> changed transfer efficiency and pressure drop. | Baseline pressure and transfer measurements obtain; the coupling under the larger pulse remains modal. | Add a pressure-drop monitoring condition to the trial. |
-| `TreatmentTrain-TT2` | Changed reactor effluent composition -> changed incoming load and treatment performance. | The effluent connection obtains; the proposed composition and downstream response are unmeasured. | Add an effluent sample before deciding whether the pulse can continue. |
+| sampled individual bacterial Systems near the inlet | Larger pulse -> higher local substrate concentration -> changed individual metabolic states and sample-level viability distribution. | Baseline gradient observations support plausibility; the proposed concentration field is unmeasured. | Retain the local-exposure limit; spatial sampling could distinguish inlet and bulk responses in a selected bounded trial. |
+| `BiofilmPatch-BP3` | Larger pulse -> changed growth and matrix production -> changed patch coverage and shear resistance. | Current patch identity and coverage obtain; the proposed growth response remains model-supported and uncertain. | Preserve the current pulse alternative; short-window images may leave the growth response unresolved. |
+| `BioreactorOperatingSystem-BR7` | Changed patch coverage and local transfer -> changed transfer efficiency and pressure drop. | Baseline pressure and transfer measurements obtain; the coupling under the larger pulse remains modal. | Preserve the pressure/transfer constraint; a trace during a selected trial could test the proposed coupling. |
+| `TreatmentTrain-TT2` | Changed reactor effluent composition -> changed incoming load and treatment performance. | The effluent connection obtains; the proposed composition and downstream response are unmeasured. | Keep the downstream-load limit visible; an effluent observation could change whether a tested pulse may continue. |
 
-The account keeps bacterial, biofilm, reactor, and treatment-train characteristics separate. It does not average them into one score. Its discovery residual names an observed unattached aggregate outside `BiofilmPatch-BP3`. Current evidence supports treating the observed members as a collection; whether that collection also forms a whole/System remains `unknown` because assembly, persistence, and the kind-specific A.1 facts are unsupported. The next recognition probe images the same aggregate across two sampling intervals and records any stable assembly relation and whole-level behavior. Recover those A.1/C.13 facts before classifying it; only supported failure of a required A.1 component or condition warrants a negative System result.
+The account keeps bacterial, biofilm, reactor, and treatment-train characteristics separate. It does not average them into one score. Its discovery residual names an observed unattached aggregate outside `BiofilmPatch-BP3`. Current evidence supports treating the observed members as a collection; whether that collection also forms a whole/System remains `unknown` because assembly, persistence, and the kind-specific A.1 facts are unsupported. The aggregate's whole identity does not alter this receiving decision in the case, so it remains an explicit unknown. If later reliance needs that identity, the relevant A.1/C.13 evidence would concern stable assembly, persistence, and whole-level behavior across observations; acquiring it still needs a worthwhile receiving contribution. Recover those facts before classifying it; only supported failure of a required A.1 component or condition warrants a negative System result.
 
-The first useful result is the four-part probe: spatial bacterial sampling, image-based biofilm-coverage observation, pressure-drop monitoring, and effluent measurement. The current pulse setting remains the reversible alternative until those observations support a change. Stop when `ProbeDecision-PD4` can choose that probe set and alternative and every retained modal path has a support statement, uncertainty, and reopen observation. Reopen if a new whole is recognized, the feed configuration changes, or an observation reverses one path claim.
+The current pulse remains available while the larger pulse's consequences are modal. For the inquiry choice, suppose the domain investigation supplies these attainable contributions and full efforts, including preparation, any required trial operation, observation, and individual interpretation: spatial sampling can distinguish local exposure within 48 hours for one staff-hour; a pressure trace can qualify the transfer constraint for one hour; and an effluent observation can address downstream load for one and a half hours. Those answers could change the admissible pulse comparison. A two-hour imaging series would not discriminate the growth response in this window. These are illustrative planning premises, not biological thresholds or observed effects.
+
+The programme has four available staff-hours after existing duties and adds half an hour of shared coordination and joint interpretation. All four observations would take six hours and exceed that capacity; selecting each in isolation would overcommit it. Spatial sampling, pressure observation, and effluent measurement together take four hours, finish in the receiving window, and supply the worthwhile discriminating contribution. The inquiry selects that programme while retaining the current pulse alternative and the unresolved biofilm-growth and aggregate-identity claims. If access, interpretation capacity, protection, or trial authority cannot support it, the available result is the qualified account with the current setting retained.
+
+The domain practice governs whether any trial or subsequent feed change is admissible. Selecting observations neither performs them nor establishes their outcomes, causal effects, or permission. Reopen when a new whole becomes material, the feed configuration changes, an observation reverses a path claim, or the programme's contribution or feasibility changes.
 
 ### A.1.CSD:6 - Bias Annotation
 
 | Bias risk | Failure | Repair |
 | --- | --- | --- |
 | Visible-system closure | Only Systems already named by the current project or investigation are considered. | Trace outward from concrete possibilities and challenge the current boundary. |
-| High-agency bias | Systems unable to speak, decide, or participate are omitted. | Apply A.1 systemhood and consequence relevance; voice and agency are neither admission tests nor evidence. |
-| Relation promotion | A plausible arrow becomes an obtaining world-side relation. | Keep the path modal until its direct predicate and conditions are supported. |
+| High-agency bias | Systems unable to speak, decide, or participate are omitted. | Apply A.1 systemhood and consequence relevance; neither voice nor agency is required. |
+| Relation promotion | A plausible arrow becomes an obtaining world-side relation. | Keep the modal path claim distinct; add a separate actuality claim only when its direct predicate and case conditions are supported. |
 | Level ladder | Familiar scale words are treated as Systems in a fixed hierarchy. | Recover exact holons, scopes, construction, crossings, and any real whole-reidentification question. |
 | Aggregate closure | A total hides changed characteristics, evidence, or receivers on one side. | Preserve the original coordinates and make any aggregate an additional domain result. |
 | Causal overread | Sequence, association, or model output is treated as an effect of intervention. | Keep the narrower claim and use `C.28` when the receiver relies on causality. |
-| Completeness theatre | A long list is presented as exhaustive. | Use a receiver-relative stop and state the discovery residual and cheapest next action. |
+| Completeness theatre | A long list is presented as exhaustive. | Use a receiver-relative stop and retain the material residual; select additional discovery by its attainable contribution and complete burden. |
 
 ### A.1.CSD:7 - Conformance Checklist
 
@@ -187,14 +191,14 @@ The first useful result is the four-part probe: spatial bacterial sampling, imag
 | `CC-A1-CSD-1` | names one exact focus entity and one exact receiving decision or investigation. |
 | `CC-A1-CSD-2` | states configuration when relevant, scope, horizon, and the possibilities examined. |
 | `CC-A1-CSD-3` | traces supported obtaining direct-relation occurrences separately from modal path claims and challenges the starting frame for possible consequence-bearing Systems that remain outside it, stopping relative to the named receiver rather than claiming exhaustive coverage. |
-| `CC-A1-CSD-4` | gives every modal path a proposed relation kind, candidate participants, conditions, support, uncertainty, and a probe or stop. |
+| `CC-A1-CSD-4` | gives every modal path a proposed relation kind, candidate participants, conditions, support, uncertainty, and its present use limit; a probe is conditional on selected attainable value. |
 | `CC-A1-CSD-5` | uses A.1/A.1.SCR for load-bearing System recognition and preserves non-System findings under their own kind or blocker. |
 | `CC-A1-CSD-6` | derives scale distinctions from exact holons, scopes, construction, delimitation, crossings, or a genuine B.2/B.2.2 question rather than a fixed ladder. |
 | `CC-A1-CSD-7` | states the possible or observed changed characteristic, exact bearer, conditions, time, evidence, uncertainty, and causal status. |
 | `CC-A1-CSD-8` | keeps unlike bearer, change, horizon, evidence, uncertainty, and receiver coordinates visible across scales. |
 | `CC-A1-CSD-9` | identifies the constraint, alternative, probe, specialist return, monitoring condition, reversible step, or gap that changes the receiver. |
 | `CC-A1-CSD-10` | returns one ordinary C.2.1 episteme with one focus EntityOfConcern, exact ClaimGraph, and effective ReferenceScheme, or keeps the claims local. |
-| `CC-A1-CSD-11` | records plausible missing bearers or paths, the cheapest next discovery action, and an exact reopen condition. |
+| `CC-A1-CSD-11` | retains the missing bearer or path and reopen condition needed by the receiving use; any further inquiry is worthwhile and obtainable separately and as a programme, without a mandatory no-inquiry record. |
 | `CC-A1-CSD-12` | leaves measurement, causality, value, comparison, authority, assurance, and domain decisions with their direct owners. |
 
 ### A.1.CSD:8 - Common Failures and Repairs
@@ -212,9 +216,9 @@ The first useful result is the four-part probe: spatial bacterial sampling, imag
 
 ### A.1.CSD:9 - Consequences and Reopen Condition
 
-The pattern makes quiet and remote Systems discoverable without turning discovery into a role taxonomy or universal assessment procedure. It gives downstream work a qualified starting point: an actual bearer, an intended referent, a supported relation occurrence or modal path, a possible changed characteristic, and the evidence-producing move that matters next.
+The pattern makes quiet and remote Systems discoverable without turning discovery into a role taxonomy or universal assessment procedure. It gives downstream work a qualified starting point: an actual bearer, an intended referent, a supported relation occurrence or modal path, a possible changed characteristic, and the useful constraint, alternative, qualified answer, or selected evidence-producing move.
 
-The cost is explicit uncertainty and more disciplined relation handling. Some inquiries stop with a missing System-recognition or relation fact; that stop is useful because it identifies the next observation.
+The cost is explicit uncertainty and more disciplined relation handling. Some inquiries stop with a missing System-recognition or relation fact; that limit can be useful without commissioning the observation needed for a stronger claim.
 
 Reopen the account when the focus, configuration, scope, horizon, whole/part construction, obtaining-relation support, bearer recognition, observation, specialist result, or receiving use changes. Reopen this pattern itself only if repeated cross-domain use cannot express the shared discovery move without a new genuinely transdisciplinary result.
 
@@ -227,6 +231,7 @@ The core account ends before stronger neighboring claims. Continue only when the
 | Does evidence support a retained claim, and may it be relied on now? | `A.10`, with `C.27` for temporal adequacy and `B.3` for assurance. |
 | Does a claimed effect, intervention, or counterfactual have adequate causal support? | `C.28`. |
 | Does a mathematical scale, aggregation, optimization, or representation lens preserve what the receiver needs? | `C.29`; use `C.30.ILC` only for a current cross-scope architecture residual. |
+| Would a particular further inquiry warrant its full attainable burden? | `C.11.DUA`; `A.15.9` for a selected outside-practice contribution. |
 | How does a finite configuration change compare, and what is chosen? | `C.11.CRC`, then `C.11`. |
 | Does a later question concern value, benefit, harm, responsibility, admissible sacrifice, or an actual interlevel conflict? | Enter through `D.1`; use `D.2` for multilevel entry, `D.3` for an actual conflict description, `D.4` for mediation or decision use, and `D.5` for its bounded audits. |
 
@@ -238,7 +243,7 @@ A.1.SCR answers whether one proposed entity is a System. A.1.CSD begins after a 
 
 A.1.STM locates one unsupported answer across a long dependency; C.28 qualifies one causal-use claim; C.11.CRC constructs a finite comparison. None generates the bounded bearer/path/change account at comparable effort. A.1.CSD therefore stays a thin sibling in the A.1 family and returns each stronger claim to its direct owner.
 
-The result remains an ordinary C.2.1 episteme because the recurring need is a reusable set of qualified claims, not a new world-side kind or relation. One focus gives the account identity; several bearers give it content.
+The result remains an ordinary C.2.1 episteme because the recurring need is a reusable set of qualified claims, not a new world-side kind or relation. One focus fixes the account's EntityOfConcern within its C.2.1 identity triple; claims about several bearers give it content.
 
 ### A.1.CSD:12 - SoTA Echoing and Source Use
 
@@ -259,7 +264,7 @@ These sources converge on path tracing, boundary challenge, proportional inquiry
 ### A.1.CSD:13 - Relations
 
 - **Builds on:** `A.1` for admitted holon and System recognition; `C.2.1` for the account episteme; `A.14`, `B.1`, `B.1.2`, and `C.13` for exact relations, wholes, collections, delimitation, crossings, and constructive grounding.
-- **Uses conditionally:** `A.1.SCR` for a load-bearing bearer-recognition question; `B.2` and `B.2.2` only for genuine whole reidentification; `A.6.RCD` for a missing direct-relation governor; `A.10`, `C.27`, `C.28`, `C.29`, `C.30.ILC`, `C.11.CRC`, `C.11`, and the D-family only for their exact neighboring questions.
+- **Uses conditionally:** `A.1.SCR` for a load-bearing bearer-recognition question; `B.2` and `B.2.2` only for genuine whole reidentification; `A.6.RCD` for a missing direct-relation governor; `A.10`, `C.27`, `C.28`, `C.29`, `C.30.ILC`, `C.11.DUA`, `A.15.9`, `C.11.CRC`, `C.11`, and the D-family only for their exact neighboring questions.
 - **Supplies:** a bounded affected-System consequence account to a named decision or investigation. Current `SYSE.17` adds engineering possibilities, project/configuration inputs, engineering returns, assurance interfaces, and specialist authority boundaries.
 - **Does not replace:** domain impact, risk, due-diligence, value-engineering, ecological, safety, legal, medical, economic, governance, policy, participation, or facilitation Methods; System recognition; causal support; comparison; assurance; authority; or decision.
 

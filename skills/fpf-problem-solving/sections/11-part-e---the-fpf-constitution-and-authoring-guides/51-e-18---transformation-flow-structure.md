@@ -56,7 +56,7 @@ This slice names the selected structure and its identified loci first. If dated 
 
 When a sentence says that a system performs an actual functional transformation at one point in a flow, E.18 carries only the selected flow structure, locus, path, slice, crossing, valuation, and pins. The independently identified bounded transformation, transformer or candidate bearer, affected referent, input and output boundary, functional-port boundary, functioning relation, method or algorithm, mechanism, and performed work are recovered through `A.3.4`, `A.6.F`, `C.30.ASV`, `A.6.M`, `A.6.1`, and the A.15 family as applicable. A desired state, method, `MethodDescription`, `WorkPlan`, architecture selection, model, description, evaluation result, publication, or transfer does not ground the actual transformation. When exact dated work is claimed to cause or realize the change, use the current exact predicate and case facts under A.6.RCD disposition 1, or—only when no direct predicate expresses the compound claim and admitted base-predicate semantics support it—one local C.2.1 claim under disposition 2. Keep the Work, Transformation, and claim separate. When production-work participation, entity-identity inception, or production completion is claimed, cite the separate local `A.15.PROD` claim; E.18 does not derive it from structure membership. A computational algorithm may fill `MethodRef?` or `MethodDescriptionRef?`; a physical-world way of transforming may fill `U.Method`; neither is inferred from E.18 structure membership.
 
-**Not this pattern when.** Use `A.20` for internal step validity, `A.21` for gate-decision publication, `E.20` for mechanism-governing-definition placement, `A.3.4` for bounded transformation under conditions, `E.18.2` for mathematical descriptions of the selected structure, `C.27.TA` for temporal aspects, `C.27` for temporal-claim adequacy or supported-use claims, the A.15 family for work planning, performed work, or work-entry readiness (`A.15.5`), `E.17` for publication faces, and `E.10` for wording-use repair when the current EntityOfConcern is not the selected structure, path, crossing, or flow valuation.
+**Not this pattern when.** Use `A.20` for internal step validity, `A.21` for gate decisions, `E.20` for mechanism-governing-definition placement, `A.3.4` for bounded transformation under conditions, `E.18.2` for mathematical descriptions of the selected structure, `C.27.TA` for temporal aspects, `C.27` for temporal-claim adequacy or supported-use claims, the A.15 family for work planning, performed work, or work-entry readiness (`A.15.5`), `E.17` for publication faces, and `E.10` for wording-use repair when the current EntityOfConcern is not the selected structure, path, crossing, or flow valuation.
 
 **What goes wrong if missed.** A practitioner may treat a reference flow, a wording-use cue such as `transition`, or a tool pipeline as a new graph kind or a hidden prescribed procedure, then lose comparability, crossing evidence, and slice-local refresh boundaries.
 
@@ -236,9 +236,9 @@ The tuple is the complete `SubflowRef` identity. Replacing the parent, an includ
 
 E.18 **imports E.17** wholesale **and associates MVPK faces with `PublicationScope` (USM)**.
 **MVPK remains the source for:**
-* the set of face kinds (`PlainView`, `TechCard`, `InteropCard`, `AssuranceLane`),
+* the set of face designators (`PlainView`, `TechCard`, `InteropCard`, `AssuranceLane`),
 * pin discipline and Publication Characteristics (PC),
-* “no new numeric claims, no re‑listing of inputs and outputs, and no Γ‑semantics on faces”.
+* “no new claims; in the optional morphism profile, no re‑listing of inputs and outputs and no Γ‑semantics on publication morphisms”.
 
 E.18 **does not re-specify** these rules; it only adds **structure-scope obligations** for faces published over transformation-flow paths:
 
@@ -247,7 +247,7 @@ E.18 **does not re-specify** these rules; it only adds **structure-scope obligat
 3. **ComparatorSet and set returns (structure-scope).** Any `ComparatorSet` and `SetSemanticsRef` used along a transformation-flow path carries **edition identifiers**; affected faces are **re-emitted** on edition change; faces with comparison **return sets and declared partial orders** (no hidden scalarization), reusing MVPK's declared-order discipline.
 4. **Gamma_time on compare and launch faces.** Every current compare or launch publication face on an E.18 path pins `Gamma_time`; implicit *latest* is not admissible. A.21 cites the exact current profile application and qualification window. **CHR avoids acceptance thresholds** (*NoThresholdsInCHR*); gate and threshold claims are carried by A.21 and Part G, while actual performed facts are established through independently obtaining relations involving exact Work occurrences under A.15.1. A source `unknown`, `notRun`, or error remains explicit before the current profile rule maps it to a gate decision.
 
-> **Reminder.** MVPK already bans "signature" on faces, input-output re-listing, arithmetic on faces, and unpinned numeric content (E.17 §5.4-5.5). E.18 **does not weaken or override** those rules; it only constrains how they are used along transformation-flow paths.
+> **Reminder.** MVPK supplies the "signature" naming rule, the optional morphism profile's input-output rule, arithmetic-visibility rules, and material numeric-pin requirements (E.17 §5.4-5.5). E.18 **does not weaken** those rules; `CC-E18-09` states the additional constraints on faces published along transformation-flow paths.
 
 **Lean publish-mode (AssuranceLane-Lite).** Lean changes publication faces only, not policy or checks. A current face cites the `profileApplicationRef`, identified `GateCheckApplicationResult` refs, and `GateDecisionResultRef`; it cites a `DecisionLogRef` only when an audit, history, replay, or reuse record is current. The underlying check-application results remain unchanged.
 
@@ -460,7 +460,7 @@ The whole table remains available when a use actually combines many branches. Wh
 | --- | --- | --- |
 | Graph expression as selected structure | A mathematical graph, morphism chain, or tool pipeline is treated as the `TransformationFlowStructure` itself. | Separate selected structure from mathematical description; use `E.18.2` and `C.29` when lens adequacy is live. |
 | Flow as performed work | A valuation or path is treated as a work occurrence or work procedure. | Keep work planning and performed work with the A.15 family. |
-| Gate everywhere | Internal step validity, crossing, launch, and gate-decision publication are collapsed. | Use `A.20` for internal constraint validity and `A.21` for gate fit, aggregation, decision, and publication. |
+| Gate everywhere | Internal step validity, crossing, launch, and gate-decision publication are collapsed. | Use `A.20` for internal constraint validity, `A.21` for gate fit, aggregation, and decision, and `E.17` for publication. |
 | Publication face as evidence | An MVPK face or dashboard view is treated as evidence, gate passage, release authorization, or deontic permission. | Use `E.17` for publication, `A.10` for evidence/currentness, `A.21` for gate effects, `A.2.9` for an issuing act, `A.2.8.PER` for strong/weak permission, exercise, non-violation, or conflict, `A.2.8` only for an actual duty/recommendation/prohibition commitment, and the actual release authority for release. |
 | Whole-flow refresh | Any small edition, source-use relation, or source-publication relation change triggers a whole-structure rewrite. | Refresh the smallest affected path slice, crossing, edition pin, source-use relation, source-publication relation, or publication face. |
 
@@ -492,7 +492,7 @@ Register Tech tokens (ASCII) used by this pattern with twin labels: `Transformat
 
 **Trade‑offs.**
 a) **Higher upfront modeling cost:** exact crossing positions, per-binding replay accounts, gate refs, and optional durable crossing bundles demand care; mitigated by keeping ordinary local crossings in readable prose and unbundled when no downstream reliance needs replay.
-b) **Longer transfer face sets:** MVPK faces are verbose by design; lean face sets can be used for low-risk segments.
+b) **Longer transfer face sets:** Required path and publication refs can lengthen faces; lean face sets can be used for low-risk segments.
 c) **Tooling alignment:** some incumbent DAG-only orchestrators conflict with budgeted cycles and set-return semantics; adapters project E.18 semantics to their interop boundary, while `E.18.2` carries the mathematical graph-description relation when that projection matters.
 
 ### E.18:11 - Rationale

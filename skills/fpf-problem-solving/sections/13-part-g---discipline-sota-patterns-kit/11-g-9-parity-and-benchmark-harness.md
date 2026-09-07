@@ -10,7 +10,7 @@
 
 ### G.9:0.1 — What goes wrong if missed
 
-- benchmark numbers mix different windows, baselines, or comparator editions and still pretend to be comparable
+- benchmark reports present numbers from different windows, baselines, or comparator editions as comparable
 - reuse across distinct source-local meanings, a reference-plane crossing, or a normalization mapping stays hidden until a disagreement appears downstream
 - parity flattens a partial order into one scalar winner and silently changes what the comparison means
 
@@ -41,7 +41,7 @@ Parity claims become non‑reproducible or non‑comparable when any of the foll
 * dominance and `PortfolioMode` interpretation rules,
 * gate outcomes (why a run abstained or degraded).
 
-G.9’s role is to make these recoverable as **pinned and publishable** as a *method of obtaining outputs* (MOO) without introducing new governing spec refs.
+G.9 makes these comparison inputs and outcomes recoverable through published pins as part of its *method-of-obtaining-outputs* (MOO) disclosure, without introducing new governing spec refs.
 
 ### G.9:3 — Forces
 
@@ -56,7 +56,7 @@ G.9’s role is to make these recoverable as **pinned and publishable** as a *me
 ### G.9:4 — Solution
 #### G.9:4.0 — G.Core linkage (normative)
 
-This pattern is **core‑invariant** and therefore binds to **G.Core** by declaration (not by restating invariants here).
+This pattern binds to **G.Core** through the following manifest.
 
 **GCoreLinkageManifest (G.9)** *(normative; expands per `G.Core:4.2`)*
 Effective obligations/pins/triggers are computed as **union(expand(sets), explicit deltas)** under `Nil‑elision`.
@@ -72,7 +72,7 @@ Effective obligations/pins/triggers are computed as **union(expand(sets), explic
   `GCoreTriggerSetId.CGSpecGate`
   }
 * `RSCRTriggerKindIds` := {
-  `RSCRTriggerKindId.EvidencePathOrSourceRelationEdit`,
+  `RSCRTriggerKindId.EvidenceSurfaceEdit`,
   `RSCRTriggerKindId.PenaltyPolicyEdit`,
   `RSCRTriggerKindId.BaselineBindingEdit`,
   `RSCRTriggerKindId.TelemetryDelta`
@@ -155,7 +155,7 @@ A declared set of pins required for reproducibility and audit (editions + policy
 The concrete contents are *pattern-local* (G.9 declares the pin set), but must satisfy the *core pin discipline* via `G.Core`.
 
 **(3) `ParityReport`** *(UTS publication record; work-result or audit-facing publication record only when the neighboring source exists)*
-A UTS-publishable parity publication record produced by running one exact `ParityPlanRef`. By itself it is not a dated `U.Work` occurrence, audit performance, evidence path, assurance result, or gate decision; those claims require A.15 and A.15.1, A.10 and G.6, B.3, or A.21 respectively.
+A UTS-publishable parity publication record produced by a parity run under one exact `ParityPlanRef`. Work or audit occurrence claims use `A.15`/`A.15.1`; evidence-path claims use `A.10`/`G.6`; a separate named assurance claim uses `B.3`; and a gate decision uses `A.21` under its applicable profile. Keep each such occurrence, path, or result distinct from the report.
 
 `ParityReport := ⟨
   ParityReportId(UTS),
@@ -183,7 +183,7 @@ The report carries the exact `ParityPlanRef` and echoes the `BaselineBindingRef`
 
 **Naming discipline.**
 
-* Heads reuse existing U‑types and LEX discipline; no new “strategy” primitive is minted here.
+* Head names follow the existing kind definitions and LEX discipline.
 * The older labels `ParityPlan@Context` and `ParityReport@Context` are retired. The suffix named neither identity nor comparison basis; current records are `ParityPlan` and `ParityReport`, with all operative conditions carried in explicit fields and exact refs.
 * Tech/Plain twins follow E.10 rules (no drift‑inducing synonyms in Tech).
 
@@ -209,7 +209,7 @@ Planning is the act of making the parity run *reproducible by construction*:
 
 Execution is **one run** under the pinned plan:
 
-1. **Validate CSLC references and pins.** Validate the cited CSLC comparability and admissibility references, active pins, and witnesses; run eligibility or acceptance checks under the plan’s `TaskSignature (S2)` and refuse or abstain on non-admissible operations (record trace; no “fourth status”). If a live `A.21` gate consumes this check, cite its `GateDecisionRef`/`DecisionLogRef`; do not create a `G.9`-local CSLC gate.
+1. **Validate CSLC references and pins.** Validate the cited CSLC comparability and admissibility references, active pins, and witnesses; run eligibility or acceptance checks for the supplied `TaskSignatureRef` (S2), using the pinned plan’s conditions, and refuse or abstain on non-admissible operations (record trace; no “fourth status”). If a live `A.21` gate consumes this check, cite its `GateDecisionRef`/`DecisionLogRef`; do not create a `G.9`-local CSLC gate.
 2. **Invoke selection/dispatch.** Apply **G.5** under the plan’s pinned refs and emit selector outputs in a form consistent with G.5’s `PortfolioMode` and selected-set semantics.
 
    When parity is comparing bounded specialization, the report should echo the active specialization profiles or equivalent pins so readers can recover the work-measure threshold target, prior exposure, budget-to-threshold, post-threshold efficiency when relevant, transfer, retention, downside field, and any corridor-entry baseline or evidence note from the parity object itself rather than from later narrative explanation.
@@ -239,14 +239,14 @@ FreshnessWindows = { sensorSeries: at-most-24h-old-at-run,
 CNSpecRef.edition = PumpCN-E2
 CGSpecRef.edition = PumpCG-E4
 ComparatorSpecRef.edition = PumpTriageComparator-E3
-ParityPinSet = [PumpVibrationMeasureSpec-E2]
+ParityPinSet = [PumpCN-E2, PumpCG-E4, PumpTriageComparator-E3, PumpVibrationMeasureSpec-E2]
 EvidenceGraphId = PumpTriageEvidence-E5
 PathId[] = [PumpReadings-P7, ComparatorRun-P3]
 PathSliceId = PumpParitySlice-S2
 expected selector result = unordered Shortlist
 ```
 
-The plan explicitly says that `BaselineSet` and `targetRefs[]` contain the same two row refs. `EvaluationWindow` bounds the observations and results included in the comparison. `FreshnessWindows` asks a different question at run or reuse time: whether each required input and evidence path is still recent enough to rely on. A report from this run carries `parityPlanRef=<PumpTriageParity, E1>`, `BaselineBindingRef=PumpTriageBaselineBinding-E1`, the same evidence path, and the unordered `Shortlist`; it does not invent a scalar winner. A cold reader can therefore recover the subject, comparison boundary, two window meanings, measurement and comparator editions, and evidence without opening a causal, crossing, assurance, telemetry, or publication branch.
+The plan explicitly says that `BaselineSet` and `targetRefs[]` contain the same two row refs. `EvaluationWindow` bounds the observations and results included in the comparison. `FreshnessWindows` asks a different question at run or reuse time: whether each required input and evidence path is still recent enough to rely on. A report from this run carries `parityPlanRef=<PumpTriageParity, E1>`, `BaselineBindingRef=PumpTriageBaselineBinding-E1`, the same evidence path, and the unordered `Shortlist`; it does not invent a scalar winner.
 
 **Conditional specialization case.** Loop-engineering parity may add further pins after the ordinary comparison boundary above is complete. An evaluation program, benchmark script, or dashboard is part of the evaluation or comparison procedure; it is not the Characteristic being improved.
 
@@ -350,7 +350,7 @@ The following blocks store **wiring only** (pins/refs/policy‑ids, relevant tri
   * `FailureBehaviorPolicyId/SoSLogBranchId`
   * `EvidenceTrace.PathId[]` / `PathSliceId?`
   * `AcceptanceClauseId[]` *(when referenced)*
-* **RSCRTriggerKindIds:** `{RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.EvidencePathOrSourceRelationEdit, RSCRTriggerKindId.MaturityRungChange, RSCRTriggerKindId.TelemetryDelta}`
+* **RSCRTriggerKindIds:** `{RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.EvidenceSurfaceEdit, RSCRTriggerKindId.MaturityRungChange, RSCRTriggerKindId.TelemetryDelta}`
 * **Notes (wiring-only):** Explains **why** a parity run degraded/abstained by citing SoS‑LOG ids and evidence paths; does not redefine guard semantics.
 
 **GPatternExtension block: `G.9:Ext.DHCParityPins`**
@@ -378,7 +378,7 @@ The following blocks store **wiring only** (pins/refs/policy‑ids, relevant tri
   * `DHCDefinitionSetRef.edition?`
   * `TargetSliceRef?`
   * `DistanceDefRef.edition?`
-* **RSCRTriggerKindIds:** `{RSCRTriggerKindId.EditionPinChange, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.EvidencePathOrSourceRelationEdit}`
+* **RSCRTriggerKindIds:** `{RSCRTriggerKindId.EditionPinChange, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.EvidenceSurfaceEdit}`
 * **Notes (wiring-only):** Carry exactly the active fields of the C.21 replay basis. `TargetSliceRef` appears only when the parity computation consumes that A.2.6 selection and states its relation to `ClaimScopeRef`. Compatible same-semantics readings use the admitted C.16 comparison basis directly; actual distinct-local-sense use also cites the obtaining F.9 relation, direction, admitted use, and loss. C.21 defines the DHC semantics.
 
 **GPatternExtension block: `G.9:Ext.QDArchiveParity`**
@@ -479,9 +479,9 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
     Tech prose and heads **SHALL** follow E.10: do not introduce drift‑prone primitives (e.g., “metric” as a Tech primitive); reference the source pattern's canonical terms and pinned refs.
 
 13. **CC‑G9.13 — MOO disclosure for parity (local).**
-    `Run_Parity` / `Publish_ParityReport` **SHALL** record the ParityHarness identity (UTS ids) and the active pins required to interpret the outcome (editions + policy‑ids), so parity remains auditable without relying on “decision logs”.
+    `Run_Parity` / `Publish_ParityReport` **SHALL** record the ParityHarness identity (UTS ids) and the active pins required to interpret the outcome (editions + policy‑ids), so the reader can recover the harness and pins from the parity record itself.
 
-14. **CC-G9-CLP-1 - Causal method rung parity.** If a parity report compares causal methods, it SHALL first run `CausalRungParityScreen`; when full parity remains plausible, it SHALL declare target causality-ladder rung, causal-use claim kind, `estimandRef`, interventional-action basis, causal support-component refs, exact transport endpoints and transportability result when needed, estimate result when needed, bridge and loss where rungs differ, and `causalUseSupportResultRef` when relevant C.28 support is consumed, and degraded parity or abstain result where parity cannot be established.
+14. **CC-G9-CLP-1 - Causal method rung parity.** If a parity report compares causal methods, it SHALL first run `CausalRungParityScreen`; when full parity remains plausible, it SHALL declare target causality-ladder rung, causal-use claim kind, `causalEstimandRef`, interventional-action basis, causal support-component refs, exact transport endpoints and transportability result when needed, estimate result when needed, bridge and loss where rungs differ, and `causalUseSupportResultRef` when relevant C.28 support is consumed, and degraded parity or abstain result where parity cannot be established.
 
 ### G.9:7 — Anti‑patterns and remedies
 
@@ -529,7 +529,7 @@ A team compares an observational predictor, an intervention optimizer, and a cou
 
 - C.29 may flag: parity or benchmark input whose comparator, distance, descriptor geometry, embedding, normalization, surrogate model, learned representation, parity measure, model-family label, or model-selection basis depends on a mathematical lens that changes the parity claim and is missing, under-specified, or overread.
 - This pattern keeps: baseline set, freshness, comparator edition, normalization ids, bridge discipline, parity plan, parity report, and reproducible benchmark publication.
-- Non-admissible use: a `C.29` output does not publish a benchmark report, create benchmark superiority, supply selector output, or supply parity-measure admissibility by itself.
+- The `C.29` mathematical-lens account is a cited input to parity. `G.9` governs the benchmark report and conclusion, and `G.5` governs any selector-facing output declaration. Parity-measure admissibility comes from the cited `CG‑Spec`/`MM‑CHR`.
 - C.29 application: for an under-lensed or overread parity input, cite the applicable `C.29` output for the stated use: `NoMathLensUseNeeded`, `MathLensUse.LensCandidateNote`, `MathLensUse.OneLine`, `MathLensUse.MiniCard`, `MathLensUse.FullCard`, or `NeighborGoverningPatternNote`. Use the cheap output that changes the next admissible parity use; full-card work is only required when the live parity or benchmark claim needs it.
 
 **Builds on:** `G.Core`, `G.5`, `G.6`, `G.4`, `F.15`, `E.17`, `E.18`, `A.21`, `F.17`, `E.5.2`, `E.10`.

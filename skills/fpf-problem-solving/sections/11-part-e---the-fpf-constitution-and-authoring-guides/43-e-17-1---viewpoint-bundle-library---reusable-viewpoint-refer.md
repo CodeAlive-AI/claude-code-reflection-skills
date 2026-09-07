@@ -16,9 +16,9 @@
 
 **Ordinary stop.** Stop when exact L, the declaration, and the needed reference subset are recoverable. Do not reconstruct L's constitution, instantiate every member, select an A.22 structure, prove conformance, or publish the catalogue merely to import an admitted family.
 
-**Admission boundary.** E.24.UK admits `U.Viewpoint` and `U.View`; it does not admit `U.ViewpointBundleLibrary` or `U.ViewpointBundle`. E.17.1 therefore defines an ordinary catalogue-episteme form and local bundle declarations in its claim content. The historical filename remains a discovery locator only and grants no kind membership.
+**Admission boundary.** E.24.UK admits `U.Viewpoint` and `U.View`; it does not admit `U.ViewpointBundleLibrary` or `U.ViewpointBundle`. E.17.1 therefore defines an ordinary catalogue-episteme form and local bundle declarations in its claim content.
 
-**Do not use this when.** One describing use merely selects one viewpoint or a small one-off set that has no recurring family-level purpose. Keep the exact references local; a bundle adds no conformance, membership, structure, publication, or correspondence merely by collecting them.
+**Do not use this when.** One describing use merely selects one viewpoint or a small one-off set that has no recurring family-level purpose. Keep the exact references local; a bundle adds no conformance, `U.Viewpoint` or `U.View` membership, structure, publication, or correspondence merely by collecting them.
 
 **What changes in practice.** Authors reuse exact references and preserve their bundle provenance; reviewers can detect silent member substitution, alias collision, and package-driven membership claims.
 
@@ -40,14 +40,14 @@ E.17.1 therefore supplies one explicit packaging pattern for reusable viewpoint 
 
 ### E.17.1:2 - Problem
 
-Without a viewpoint-bundle library pattern:
+When recurring viewpoint families lack a stable catalogue:
 
 1. **Each domain invents local viewpoint families.**
    Similar families reappear under slightly different labels, but no stable catalogue `U.Episteme` records whether the underlying viewpoints are actually the same.
 2. **Viewpoint identity drifts.**
    A family called `functional`, `capability`, or `operational` may differ only lexically, or may differ semantically, but there is no disciplined place to tell which is which.
 3. **`MultiViewDescribing` cannot reuse a family cleanly.**
-   Every instance must restate its finite viewpoint family locally instead of importing an existing bundle.
+   Each describing use that needs the family must restate it locally instead of importing an existing bundle.
 4. **Reusable viewpoint-library practice remains external.**
    FPF lacks a native place where reusable viewpoint families can be expressed as reviewable catalogue content without importing a standard's ontology.
 5. **Reader-facing labels leak into semantics.**
@@ -100,7 +100,7 @@ Open the complete constitution below for the affected catalogue edition when aut
   - for current maintenance responsibility, cite its direct admitted predicate and actual participants or return the exact missing governor; assignment establishes no responsibility; and
   - for prospective maintenance guidance, retain only the change-control note, intended maintenance condition or `U.WorkPlan`, and scope tag; this content asserts no performed Work, current assignment, or responsibility.
 
-The catalogue entry only cites these values, which are defined or constrained elsewhere and creates none of them.
+The catalogue entry only cites these values, which are defined or constrained elsewhere, and creates none of them.
 
 Library, edition, and family designators are lexical values under `R_L`, not local ValueKinds, public U-kinds, episteme identity discriminators, or entities by spelling. A local family declaration is claim content in `G_L`, not automatically a separate entity or episteme. Its compact locator `<editionDesignator(L), familyDesignator>` is a retrieval aid under `R_L`; it does not replace L's C.2.1 identity. If a receiving use truly needs one declaration as a separately identified episteme, constitute that new episteme independently under C.2.1 rather than inferring it from a row.
 
@@ -112,7 +112,7 @@ Normative constraints:
 
 #### E.17.1:4.3 - Local bundle declaration and its ordinary family designator
 
-A bundle declaration is a bounded claim block inside exact `G_L`. It states one finite, non-empty recurring family of exact `U.ViewpointRef` values drawn from exact catalogue subject `K_L`. Every reference resolves under `R_L` to one exact viewpoint episteme edition P that has already gained `U.Viewpoint` membership under E.17.0. The declaration neither admits P nor changes P's C.2.1 identity.
+A bundle declaration is a bounded claim block inside exact `G_L`. It states one finite, non-empty recurring family of exact `U.ViewpointRef` values resolving to members of exact catalogue subject `K_L`. Every reference resolves under `R_L` to one exact viewpoint episteme edition P that has already gained `U.Viewpoint` membership under E.17.0. The declaration neither admits P nor changes P's C.2.1 identity.
 
 Its minimum claim content is:
 
@@ -140,7 +140,7 @@ When a describing use names a family designator, it resolves exact catalogue edi
 
 A local subset names exact catalogue edition L, the source family designator, and the member references actually used, while keeping omitted members visible as unused or intentionally excluded. A multi-library use preserves each exact `<editionDesignator(L), familyDesignator>` source and member provenance rather than flattening everything into one unnamed family. If one use selects several viewpoints, it constructs their C.13 collection with exact membership; it does not overload one reference or infer a new family from adjacency.
 
-Construction, identity viewing, transformation, declaration membership, selection, naming, rendering, or publication grants neither `U.Viewpoint` nor `U.View` membership. A local overlay may add didactic or publication material without changing exact L. Changing a member viewpoint's meaning, the reference target, membership set, or family meaning requires a new local catalogue edition or family declaration rather than silent mutation under the inherited family designator.
+Construction, identity viewing, transformation, declaration membership, selection, naming, rendering, or publication grants neither `U.Viewpoint` nor `U.View` membership. A local overlay may add didactic or publication material without changing exact L. Changing a member viewpoint's meaning, the reference target, membership set, or family meaning requires a new local catalogue edition carrying the revised or new family declaration rather than silent mutation under the inherited family designator.
 
 #### E.17.1:4.5 - Guard and naming discipline
 
@@ -162,7 +162,7 @@ Changing a participant or restoring availability after a gap yields another publ
 ### E.17.1:5 - Archetypal Grounding
 
 
-**Tell.** A viewpoint bundle library lets FPF say "use this already-defined viewpoint family" without confusing that family with the concrete views or publication faces that later realize it.
+**Tell.** A viewpoint bundle library lets FPF say "use this already-defined viewpoint family" without confusing that family with the concrete views or publication faces used later.
 
 **Show (System; hypothetical template instance).** E.17.2 can guide one project to bind local references `r_functional`, `r_procedural`, `r_allocation`, and `r_module` to exact project P editions inside one constituted catalogue L. Until those bindings and their resolution under exact `R_L` exist, these names are variables and no reusable TEVB family value is present.
 
@@ -180,7 +180,7 @@ After a recurring family-level use is established, the pattern biases FPF toward
 - `CC-VBL-3` A describing use imports an exact subset from exact `<editionDesignator(L), familyDesignator>`, preserves omissions and provenance, and selects any one actual P through one singular reference.
 - `CC-VBL-4` Every candidate E is independently identified and gains `U.View` membership only through obtaining E/P conformance—not through construction, selection, bundling, naming, form, carrier, rendering, or publication.
 - `CC-VBL-5` A family designator is not used as an id kind, publication-face/form kind, carrier kind, viewpoint reference, or substitute for an exact member.
-- `CC-VBL-6` Changes to member references, targets, family meaning, or compatibility constraints create another catalogue edition or family declaration; publication or annex-only change does not reidentify unchanged P.
+- `CC-VBL-6` Changes to member references, targets, family meaning, or compatibility constraints create another catalogue edition carrying the revised or new family declaration; publication or annex-only change does not reidentify unchanged P.
 - `CC-VBL-7` Multi-bundle imports preserve exact catalogue provenance and collisions only. Same-scheme comparison names its exact predicate and participants and applies the pattern that defines that predicate. Cross-context comparison resolves exact F.17 cells, obtaining F.9 Bridge, separate `<u,d,r,t>` claim, and required A.10 or B.3 reliance; otherwise it stops at lexical or structural contrast.
 - `CC-VBL-8` E.24.PUB expression, bearing, publication, recurrence, rendering work, and C.29 representation remain distinct, grant no viewpoint or view membership, and make no represented world-side relation obtain.
 - `CC-VBL-9` A bundle intended for non-expert reuse should provide references that resolve under their applicable schemes to exact archetypal-grounding examples or sections for its member viewpoints; grounding aids recognition but grants no membership.
@@ -191,7 +191,7 @@ After a recurring family-level use is established, the pattern biases FPF toward
 |---|---|---|
 | **Publication-face hijack** | A family designator is reused as a publication-face name or document type. | `CC-VBL-5` keeps the ordinary designator distinct from a publication face, form, carrier, viewpoint reference, or exact member. |
 | **Bundle equals view collection** | A folder or report pack is called a viewpoint bundle even though no exact `U.ViewpointRef` values resolve to admitted `U.Viewpoint` epistemes. | `E.17.1` defines the bundle as a declared family of exact viewpoint references, not a file grouping. |
-| **Silent local drift** | A local project keeps the old family designator but swaps in different viewpoints. | `CC-VBL-6` requires another catalogue edition or family declaration when member references, targets, family meaning, or compatibility constraints change. |
+| **Silent local drift** | A local project keeps the old family designator but swaps in different viewpoints. | `CC-VBL-6` requires another catalogue edition carrying the revised or new family declaration when member references, targets, family meaning, or compatibility constraints change. |
 | **Namespace collapse** | Engineering and publication viewpoint designators are mixed as if they were one lexical namespace. | The solution keeps the designator namespaces distinct and requires explicit attribution. |
 
 ### E.17.1:9 - Consequences
@@ -205,7 +205,7 @@ After a recurring family-level use is established, the pattern biases FPF toward
 
 ### E.17.1:10 - Rationale
 
-`MultiViewDescribing` already assumes that viewpoint plurality exists. `E.17.1` supplies packaging and provenance discipline for that plurality, including cases where viewpoints are used to re-express positions in `U.LanguageStateSpace` or trajectories in `U.LanguageStateMoveTrajectory`. Without it, every domain can only improvise locally and member provenance becomes fragile. Semantic correspondence is a separate result: same-scheme comparison states its exact predicate and participants, while cross-context comparison uses F.9 and a bounded-use reliance path.
+`MultiViewDescribing` supports viewpoint plurality. `E.17.1` supplies packaging and provenance discipline for that plurality, including cases where viewpoints are used to re-express positions in `U.LanguageStateSpace` or trajectories in `U.LanguageStateMoveTrajectory`. It makes member provenance explicit across repeated uses. Semantic correspondence is a separate result: same-scheme comparison states its exact predicate and participants, while cross-context comparison uses F.9 and a bounded-use reliance path.
 
 ### E.17.1:11 - Source status, local rationale, and reopen condition
 
@@ -287,7 +287,7 @@ A local project often wants a small adaptation: one extra concern note, one narr
 A practical rule is:
 
 - if the local project selects a subset or adds only didactic/publication material, keep exact catalogue edition L and its declaration unchanged and declare the local subset or annex; do not treat the overlay as declaration content;
-- if the local project changes viewpoint membership or meaning, publish a new local catalogue edition or a new family declaration.
+- if the local project changes viewpoint membership or meaning, publish a new local catalogue edition carrying the revised or new family declaration.
 
 This is how bundle reuse remains trustworthy across organizations.
 
@@ -303,7 +303,7 @@ Preserve the exact provenance of every imported `U.ViewpointRef` and resolved P 
 
 If the compared meanings are interpreted under one exact effective reference scheme, identify the exact P editions or claim subgraphs being compared, state the exact comparison predicate, polarity, scope, and participants, and apply the pattern that defines that predicate. If no direct semantic predicate is current, report only the observable lexical or structural contrast—members, omissions, order, target criteria, or claim-shape differences—and do not call it correspondence.
 
-If the comparison crosses effective schemes or semantic contexts, first resolve the two exact F.17 `SchemeSenseCell` endpoints. Use F.9 only when its direct Bridge predicate is actually satisfied. Then state the proposed comparison or reuse separately as one bounded C.2.1 use claim about that exact Bridge with `<u,d,r,t>` and polarity, and recover the exact A.10 reliance disposition or the B.3 assurance branch when its threshold is met. Without the exact cells, obtaining Bridge, bounded-use claim, and required reliance path, stop at lexical or structural contrast. Catalogue provenance remains useful in every branch, but never substitutes for any of them.
+If the comparison crosses effective schemes or semantic contexts, first resolve the two exact F.17 `SchemeSenseCell` endpoints. Use F.9 only when its direct Bridge predicate is actually satisfied. Then state the proposed comparison or reuse separately as one bounded C.2.1 use claim about that exact Bridge with `<u,d,r,t>` and polarity, and recover the exact A.10 reliance disposition or the B.3 assurance branch when an actual named assurance claim for that bounded use is current. Without the exact cells, obtaining Bridge, bounded-use claim, and required reliance path, stop at lexical or structural contrast. Catalogue provenance remains useful in every branch, but never substitutes for any of them.
 
 #### E.17.1:14.4 - Engineering vs publication families
 
@@ -377,7 +377,7 @@ Do not create all three by default. Library sprawl destroys the cognitive advant
 
 #### E.17.1:17.1 - Rename vs semantic change
 
-A lexical rename that leaves viewpoint meaning and membership unchanged may be treated as a naming-layer migration. A change in membership, concern, admissibility, or member semantics is not just a rename; it requires another catalogue edition or family declaration.
+A lexical rename that leaves viewpoint meaning and membership unchanged may be treated as a naming-layer migration. A change in membership, concern, admissibility, or member semantics is not just a rename; it requires another catalogue edition carrying the revised or new family declaration.
 
 #### E.17.1:17.2 - Migration from local `Sigma` lists
 
@@ -416,7 +416,7 @@ A description family may project only a subset of a reusable bundle. This is adm
 
 First decide whether the comparison stays inside one exact effective reference scheme. In that branch, name the exact members or claim subgraphs, comparison predicate, polarity, scope, and participants, then apply the pattern that defines the predicate; provenance merely identifies their catalogue origins. If only names, member sets, omissions, or structures can be compared, state that bounded lexical or structural contrast and stop.
 
-When local senses cross schemes or semantic contexts, resolve the exact F.17 cells and apply F.9. Claim a semantic correspondence only when the exact Bridge obtains. A proposed comparison, translation, or reuse also needs its own bounded-use claim naming the proposed use, direction, correspondence rule, tolerated loss, and polarity, plus a current A.10 reliance disposition or the B.3 assurance branch when its threshold is met. Similar family labels, matching designators, matching member counts, or provenance tuples establish none of those results. Use F.9.1 only to add a separate stance episteme whose EntityOfConcern is that bounded-use claim; it neither annotates nor reidentifies the Bridge and cannot widen the claim.
+When local senses cross schemes or semantic contexts, resolve the exact F.17 cells and apply F.9. Claim a semantic correspondence only when the exact Bridge obtains. A proposed comparison, translation, or reuse also needs its own bounded-use claim naming the proposed use, direction, correspondence rule, tolerated loss, and polarity, plus a current A.10 reliance disposition or the B.3 assurance branch when an actual named assurance claim for that bounded use is current. Similar family labels, matching designators, matching member counts, or provenance tuples establish none of those results. Use F.9.1 only to add a separate stance episteme whose EntityOfConcern is that bounded-use claim; it neither annotates nor reidentifies the Bridge and cannot widen the claim.
 
 #### E.17.1:19.3 - Boundary to publication-face design
 A publication face may render one composite presentation of several viewpoints, but the face is not the bundle. `E.17.1` therefore requires the underlying member structure to remain recoverable even when a public-facing document flattens it for readability.

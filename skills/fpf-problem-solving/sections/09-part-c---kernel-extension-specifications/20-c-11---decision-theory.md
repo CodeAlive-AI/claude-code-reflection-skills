@@ -34,6 +34,8 @@ If that first output still cannot be stated, the local comparison is unfinished 
 - What next probe could still change the choice, if any?
 - Is this still local choice, or has the question moved to a neighboring problem—for example, search, pool policy, selector-result declaration, publication availability, or enactment?
 
+**When advice still hides the decision.** Use `C.11.DUA` when a recommendation or evidence demand still needs its receiving question, demanded work or requirement merits recovered. Return here when a current chooser and options support a local choice. An already adequate choice uses this pattern directly.
+
 **Typical reroutes.** `C.38` when labels or fragments still need to become complete ways of obtaining the same result; `C.18` when the real question is open-ended invention or reframing; `C.19` when the working question is how broadly to explore or exploit the candidate pool; `C.24` when one option is already chosen and the work has become sequencing or enactment; `A.13` when the hard question is agenthood rather than choice; `A.18` for Scale and Coordinate bindings or `A.19` for a declared CharacteristicSpace or reusable predicate when that support question itself becomes primary.
 
 **Common neighboring-pattern mistakes.** Do not use `C.11` to hide search work inside "decision", to hide candidate-pool policy inside one local choice, or to hide execution planning inside one generic rationality account. Do not treat declaring selector-facing set-result content, or later making that result available, as if either were the same question as deciding.
@@ -115,9 +117,9 @@ A conforming `C.11` pass does not stop at naming schools of decision theory. It 
    Add one `CounterfactualModel` plus one `SubjunctiveDependenceRelation` when the case depends on one predictor, one structurally linked chooser, or one decision-procedure coupling that intervention talk alone does not capture.
    Use the least-committing dependence layer that still covers the live case, and do not switch layers across options without saying so explicitly.
 
-5. **Run the probe-worthiness test before commitment.**
-   State one `ProbeActionSet`, one `ProbeBudget`, and one `CostToProbe`.
-   Use `ValueOfInformation` for additional observation or measurement, and `ValueOfComputation` for additional reasoning, simulation, or search over the already-available options.
+5. **Compare a live inquiry alternative before commitment.**
+   An inquiry alternative is live when a current proposal, consequential uncertainty, anomaly or applicable requirement supplies a plausible way for further information or computation to change this choice or its warranted use.
+   Apply the probe-worthiness test to that alternative, stating the feasible probe, budget, cost and relevant information or computation value at the precision the choice needs. Otherwise this step adds no investigation or recording requirement. An empty form field does not activate inquiry, and no new search is required to certify that no other inquiry exists.
    This rule is intentionally local or myopic: it judges the best next feasible probe over the current `OptionSet` and current comparison basis, not one full sequential or non-myopic experimental program. Richer `OED` lines may strengthen this doctrine, but the local `C.11` closure rule already has to decide whether the next feasible probe can still change the current choice.
    If no feasible further probe fits the remaining `ProbeBudget`, or if the best available probe no longer justifies its `CostToProbe`, close under the current comparison basis.
    If a feasible probe is still worth its cost, and that probe could still change which option survives or whether the current `OptionSet` should be rejected, run it, update the `BeliefState` and `OutcomeModel`, and return to step 3.
@@ -125,7 +127,7 @@ A conforming `C.11` pass does not stop at naming schools of decision theory. It 
 
 6. **Apply one `ChoiceRule` and emit one `ChoiceResult` plus the next question.**
    End with one explicit result: `choose now`, `reject current set`, `probe again`, or `reroute because this is no longer local choice`.
-   If the result is `choose now`, name the winning option or the retained tie-set plus the reason no remaining feasible probe is worth its cost.
+   If the result is `choose now`, name the selected option or retained tie-set and the comparison basis supporting it; add the outcome of a live inquiry comparison or a limitation needed by the decision or its recipient.
    If the result is `reject current set`, name the reason no current option survives under the present basis and, when more work follows, the neighboring question that now takes over.
    If the result is `probe again`, name the next probe and the exact comparison defect it is supposed to repair.
    A `C.11` pass is done only when it names the lawful choice result and the reason that result is lawful.
@@ -139,13 +141,15 @@ No separate premise-qualification result sits between those owners and `C.11`. U
 #### C.11:4.2.1 - Well-formed comparison state
 
 
-Well-formedness constraint: a live `C.11` comparison state is usable only when the decision record states all of the following:
+Well-formedness constraint: a live `C.11` comparison state is usable only when the decision record states the following, subject to the stated condition on inquiry:
 
 - one `DecisionSubject` at one `DecisionSubjectGranularity`;
 - one current `OptionSet`;
 - one current comparison basis through `PreferenceOrder` or `EvaluativeMeasure`, plus one `BeliefState` and one `OutcomeModel`;
 - one active dependence layer for the current comparison, unless the record explicitly says that comparison is still being reopened;
-- one current account of whether another probe is still feasible and worth its cost.
+- when an inquiry alternative is live, an account of its feasibility, cost and possible contribution to the choice; when a decision or later use needs a retained inquiry limitation or reason, that minimum content in the same decision result.
+
+An inactive inquiry item requires no empty value, no no-probe statement and no waiver. The chooser, option set, shared comparison basis and applicable dependence layer remain necessary.
 
 The comparison is still unfinished, not yet wrong but not yet closeable, when any of the following remains true:
 
@@ -196,7 +200,7 @@ If the next probe would no longer change which option survives but would only ch
 
 `ChoiceRule` and `ChoiceResult` are not the same kind of thing.
 
-- `ChoiceRule` is the doctrine or operator that says how the current comparison basis, dependence layer, and probe-worthiness value support one `ChoiceResult`.
+- `ChoiceRule` is the doctrine or operator that says how the current comparison basis, dependence layer, and any applicable probe-worthiness value support one `ChoiceResult`.
 - `ChoiceResult` is the emitted record stating which choice result is lawful now under that rule.
 
 The operational answer of this pattern is therefore one emitted `ChoiceResult` under one explicit `ChoiceRule`. The result is complete only when it states the choice result and the condition that makes that result lawful.
@@ -212,9 +216,8 @@ A fifth soft result such as "keep thinking", "stay with the current view", or "t
 
 For `choose now`, the emitted `ChoiceResult` should show:
 
-- the selected option or the retained tie-set;
-- the comparison basis under which that result currently holds;
-- the reason no still-feasible probe is worth its cost.
+- the selected option or retained tie-set and the comparison basis supporting it;
+- the outcome of a live inquiry comparison or a limitation needed by the decision or its recipient, when applicable.
 
 For `reject current set`, the emitted `ChoiceResult` should show:
 
@@ -249,6 +252,8 @@ The comparison may close as `reject current set` only when all of the following 
 - no still-feasible next probe is expected to rescue one member with enough expected value to justify its cost;
 - the result is still one local choice conclusion rather than one disguised pool-policy, selector-result declaration, publication-availability, or enactment result.
 
+Assess the probe conditions above from the current basis and any live inquiry alternative. They are conditions of a warranted choice, not a requirement to produce a separate account of omitted checking.
+
 The comparison should close as `probe again` only when all of the following are true together:
 
 - one next probe is named by value;
@@ -268,7 +273,7 @@ If none of those closure conditions can yet be satisfied, the record is still un
 
 #### C.11:4.2.5 - Minimal decision-record form
 
-A minimal `C.11` decision record has this shape:
+A minimal `C.11` decision record has the shape below. Include `ProbeDecisionValue` only for a live inquiry alternative or an inquiry judgement whose content the decision or recipient needs. Include only the relevant information or computation value. A retained prose reason or limitation alone does not activate that block: put only the needed statement in `ChoiceResult`.
 
 ```text
 DecisionSubject(...)
@@ -281,14 +286,13 @@ ComparisonBasis(
   optional intervention/counterfactual/subjunctive layer
 )
 ChoiceRule(
-  closure rule over the current basis and probe decision value
+  closure rule over the current basis and any applicable probe decision value
 )
-ProbeDecisionValue(
+ProbeDecisionValue(  # conditional as described above
   probeActionSet,
   probeBudget,
   costToProbe,
-  valueOfInformation,
-  valueOfComputation
+  relevant valueOfInformation or valueOfComputation or both
 )
 ChoiceResult(
   choiceDisposition = choose_now | reject_current_set | probe_again | reroute,
@@ -297,9 +301,7 @@ ChoiceResult(
 )
 ```
 
-The record does not need that exact syntax. It does need that exact content.
-
-If the record does not state the current chooser, current options, current comparison basis, current `ChoiceRule`, current probe decision value, and current `ChoiceResult`, then it is not yet a usable decision record.
+Exact syntax is unnecessary. The chooser, options, shared comparison basis, `ChoiceRule` and `ChoiceResult` are required. Inquiry content is required only under the stated condition; an absent block requires no placeholder or omission explanation.
 
 Use branch language only when it changes the actual comparison being performed.
 
@@ -502,19 +504,21 @@ A `C.11` decision record is complete only when it states:
 - how the options are compared: `PreferenceOrder` or `EvaluativeMeasure`, plus `BeliefState` and `OutcomeModel`;
 - which heavier dependence layer is active when the case needs it: `InterventionModel` for causal repair, or `CounterfactualModel` plus `SubjunctiveDependenceRelation` for success-first or predictor-coupled repair;
 - what comparison doctrine currently governs the case: one explicit `ChoiceRule`;
-- whether further probing is available and worth paying for; when a further probe or computation pass is live, state `ProbeActionSet`, `ProbeBudget`, `CostToProbe`, `ValueOfInformation`, and `ValueOfComputation`;
+- when an inquiry alternative is live, an account of its feasibility, cost and possible contribution to the choice; when a decision or later use needs a retained inquiry limitation or reason, that minimum content in the same decision result.
 - what the current comparison concludes: one emitted `ChoiceResult` that says choose now, reject the current set, probe again, or reroute.
   That result must name either the selected option, the retained tie-set, the rejected current set, or the next probe or reroute named by value.
 
 Without that explicit tuple, choice doctrine usually collapses into one of three easier but wrong substitutes: generic rationality talk, search folklore, or planning folklore.
 
-The finish condition is more specific than "the record now sounds informed." The record is finished enough for practical use only when the choice result stated in `ChoiceResult` follows from the stated comparison basis, stated `ChoiceRule`, and stated probe decision value rather than from unstated background assumptions.
+The finish condition is more specific than "the record now sounds informed." The record is finished enough for practical use only when the choice result stated in `ChoiceResult` follows from the stated comparison basis, stated `ChoiceRule`, and any applicable probe decision value rather than from unstated background assumptions.
 
 A `C.11` pass is finished enough for practical use when all three conditions hold:
 
 - the current comparison basis is explicit enough to explain the stated `ChoiceResult`: why an option or tie-set survives, no current option survives, or probing or rerouting is needed;
-- the reason to stop probing, or the reason to probe again, is explicit rather than assumed;
+- any live inquiry alternative has been resolved sufficiently to support the choice, and the result retains any inquiry reason or limitation needed by this decision or its recipient;
 - the next question is explicit: `choose now`, `reject current set`, `probe again`, or `reroute`.
+
+An inactive inquiry item adds no placeholder or omission account to this tuple or finish condition.
 
 If the case remains tied or underdetermined under the current basis, say that directly and keep the tie-set explicit. A lawful `ChoiceResult` may still be `probe again` or `reroute`, but it must not pretend that one winner already exists when the current basis has not earned that conclusion.
 
@@ -581,7 +585,7 @@ The family map also remains plural: causal, success-first, active-inference, and
 | `CC-C11.1` | The pattern **SHALL** state that `C.11` governs choice among already-available options rather than formation of comparable ways or open-ended candidate generation. | Keeps `C.38` and `C.18` outside and prevents candidate-construction or search takeover. |
 | `CC-C11.2` | The pattern **SHALL** keep `DecisionSubject` as the default chooser term, and **SHALL NOT** use `Agent` as the generic chooser term unless one explicit agency claim is governed by `A.13`; measured characteristic and evidence claims use `A.17` for Characteristic identity and arity, `A.18` for Scale and Coordinate bindings, `A.19` for the declared space and reusable predicate, `C.16` for the measurement account, and `A.10` for bounded reliance on the evidence. | Prevents unwanted narrowing of the chooser. |
 | `CC-C11.3` | The pattern **SHALL** state the boundary among `C.11`, `C.38`, `C.18`, `C.19`, `C.24`, and `G.5` explicitly in the body. | Prevents collapse of choice doctrine, same-result way formation, open-ended generation, candidate-pool policy, planning, and selector-facing result declaration. |
-| `CC-C11.4` | `Solution` **SHALL** state one inspectable decision procedure from `DecisionSubject` and `OptionSet` through comparison basis, dependence layer, probe-worthiness test, one explicit `ChoiceRule`, and one emitted `ChoiceResult`. | Keeps `C.11` as one operational answer to the choice question rather than one survey of schools. |
+| `CC-C11.4` | `Solution` **SHALL** state one inspectable decision procedure from `DecisionSubject` and `OptionSet` through comparison basis, dependence layer, applicable probe-worthiness test, one explicit `ChoiceRule`, and one emitted `ChoiceResult`. | Keeps `C.11` as one operational answer to the choice question rather than one survey of schools. |
 | `CC-C11.5` | The pattern **SHALL** name one minimal decision inventory including `DecisionSubject`, `DecisionSubjectGranularity`, `OptionSet`, `PreferenceOrder`, `EvaluativeMeasure`, `BeliefState`, `OutcomeModel`, `ChoiceRule`, `ChoiceResult`, `ProbeActionSet`, `ProbeBudget`, `CostToProbe`, `ValueOfInformation`, and `ValueOfComputation`. | Keeps the calculus objectual rather than slogan-like. |
 | `CC-C11.6` | Load-bearing inventory terms used in the pattern text **SHALL** receive local plain glosses or equivalent operational clarification inside the body. | Prevents the core terminology from remaining implicit or displaced into outside basis carriers. |
 | `CC-C11.7` | Relation-heavy terms such as `PreferenceOrder`, `CounterfactualModel`, and `SubjunctiveDependenceRelation` **SHALL** remain answerable to `A.6.P` together with `A.6.5`. | Keeps dependence language inspectable and deconflicted. |
@@ -591,7 +595,7 @@ The family map also remains plural: causal, success-first, active-inference, and
 | `CC-C11.11` | Shortlist or other selector-facing set-result declaration **SHALL NOT** be treated as part of `C.11`; if the question shifts to declaring or naming that result, the text **SHALL** apply `G.5`. Actual presentation or availability **SHALL** remain separate: use `E.17` for the publication face and return to source and `E.24.PUB` for the publication occurrence and availability. | Preserves the boundary among local choice, selector-result declaration, and publication availability. |
 | `CC-C11.12` | When one heavier dependence layer or neighboring family line is activated, the text **SHALL** state what limitation of the simpler comparison it repairs and what changes in the actual comparison once that line is in play. | Prevents branch-name citation from replacing use-time doctrine. |
 | `CC-C11.13` | The text **SHALL** make the closure rule explicit enough to justify why the lawful result is `choose now`, `reject current set`, `probe again`, or `reroute` rather than some softer holding-pattern output, and **SHALL** treat vaguer endings as unfinished rather than as lawful results. | Prevents the decision record from ending in one sophisticated but operationally empty result. |
-| `CC-C11.14` | The decision record **SHALL** make one minimal decision-record shape explicit: chooser, option set, comparison basis, one explicit `ChoiceRule`, probe decision value, and one emitted `ChoiceResult`; `choose now`, `reject current set`, `probe again`, and `reroute` outputs **SHALL** each state their mandatory fields explicitly enough to determine the lawful choice result without reopening surrounding rationale. | Keeps the pattern usable as one working decision record rather than one doctrinal memo. |
+| `CC-C11.14` | The decision record **SHALL** make one minimal decision-record shape explicit: chooser, option set, comparison basis, one explicit `ChoiceRule`, inquiry content under the condition in 4.2.1, and one emitted `ChoiceResult`; `choose now`, `reject current set`, `probe again`, and `reroute` outputs **SHALL** each state their mandatory fields explicitly enough to determine the lawful choice result without reopening surrounding rationale. An inactive inquiry item is not a missing mandatory field and creates no omission record. | Keeps the pattern usable as one working decision record rather than one doctrinal memo. |
 | `CC-C11.15` | If a `ChoiceResult` is supported by a causal effect, counterfactual comparison, causal policy, or off-policy causal evaluation claim, it **SHALL** carry `ChoiceResult.causalUseSpec?` with the target rung, claim kind, relevant support-component refs, support-result ref when consumed, supported use, and unsupported use. | Prevents decision-theory vocabulary from certifying causal-use support. |
 
 ### C.11:8 - Common Anti-Patterns and How to Avoid Them
@@ -603,7 +607,7 @@ One quick usability test helps here: if the closing line does not state one lawf
 | Candidate-formation or search takeover | The text starts constructing complete ways or generating options as if that work were already part of decision doctrine. | `C.11` loses its decision-theory EntityOfConcern and silently absorbs `C.38` or `C.18`. | State the option set as already existing; use `C.38` for same-result way formation and `C.18` for open-ended generation. |
 | Policy collapse | Exploration or exploitation governance over a candidate pool is written as if it were identical with choosing among current options. | Choice doctrine and candidate-pool policy become indistinguishable. | `C.19` remains explicit as the neighboring pattern for selection policy and exploration governance. |
 | Planning collapse | Sequencing, replanning, and enactment budgeting are written as if they were already part of the choice calculus. | Planning-side question moves out of `C.24` by accident. | Execution order and operational budgeting remain in `C.24`, even when `C.11` says more probing is rational. |
-| Inventory without decision rule | The current comparison names many objects and schools but never shows how to move from a live option set through one `ChoiceRule` to one `ChoiceResult`. | The pattern becomes one cleaned-up survey rather than one decision discipline. | State one explicit decision-record shape: chooser, option set, comparison basis, dependence layer, probe-worthiness test, one explicit doctrine, and one emitted result. |
+| Inventory without decision rule | The current comparison names many objects and schools but never shows how to move from a live option set through one `ChoiceRule` to one `ChoiceResult`. | The pattern becomes one cleaned-up survey rather than one decision discipline. | State one explicit decision-record shape: chooser, option set, comparison basis, dependence layer, applicable probe-worthiness test, one explicit doctrine, and one emitted result. |
 | Hidden basis shift | Different options are compared under different belief states, outcome models, or dependence layers without one explicit statement that the basis changed. | The comparison only looks precise; in fact the choice rule cannot be audited. | Keep one shared comparison basis until one named probe or model change updates it, and state explicitly when the dependence layer changes. |
 | No closure rule | The text sounds careful but never says what makes `choose now`, `reject current set`, `probe again`, or `reroute` lawful. | The record never closes into one explicit decision result. | State the closure conditions explicitly and show why the current case satisfies exactly one of them. |
 | Undefined load-bearing terms | Terms such as `PreferenceOrder`, `BeliefState`, or `OutcomeModel` appear without local operational clarification. | Core comparison objects stay implicit and the decision question depends on outside theory or undocumented assumptions. | Give one local plain gloss or equivalent operational clarification for each load-bearing term used in the pattern text. |

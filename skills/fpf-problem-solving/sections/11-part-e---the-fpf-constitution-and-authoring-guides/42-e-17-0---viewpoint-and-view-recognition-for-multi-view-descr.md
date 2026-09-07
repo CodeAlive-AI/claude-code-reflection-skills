@@ -81,7 +81,7 @@ If the current thing is only a diagram element, graph node, form, or carrier, re
 
 #### E.17.0:4.2 - Resolve one exact viewpoint episteme
 
-`U.Viewpoint` is a same-individual dependent durable kind under `U.Episteme`. One exact viewpoint P is the same individual as a C.2.1 episteme, not a slot value, method, publication form, bundle member, selected structure, local result value, or RelationSignature.
+`U.Viewpoint` is a same-individual dependent durable kind under `U.Episteme`. One exact viewpoint P is the same individual as a C.2.1 episteme.
 
 P has one truthful C.2.1 EntityOfConcern. In the ordinary self-contained branch it is the exact independently admitted durable or local target kind whose membership criterion P uses. For a local kind, recover which candidates it can classify, what intended members must satisfy, what separates relevant non-members, and when a changed declaration still describes the same kind. A practice or source boundary helps find and compare that membership rule; it does not decide kind identity. Only when separately versioned convention components and their organization change a named reuse, comparison, or maintenance action is P instead about exact selected `S_viewpoint : U.Structure`. Neither branch introduces a new public kind or organization record.
 
@@ -122,7 +122,7 @@ State the result immediately after the five tests:
 
 **Ordinary stopping rule.** Stop with that readable result when the next work needs neither an exact occurrence designator nor warrant. Add an occurrence designator, assertion episteme, evaluation episteme or local result value, evidence path, work record, or decision-use episteme only for the named receiving need. A readable assertion is not occurrence identity, but neither is mandatory reification or evidence justified without a consumer.
 
-For fixed E and P, one positive occurrence is participant-determined by `<E,P>`. A classifier, evaluation work, assertion, evidence path, result value, operational state, publication, audience, current use, or newly selected slice may discover, warrant, or use the judgment but enters neither its participants nor identity. If conformance could change while E and P remain fixed because another current object changed, route that condition to a separately identified adequacy or evaluation claim or reopen the relation architecture.
+For fixed E and P, one positive occurrence is participant-determined by `<E,P>`. Discovering, warranting, or using the judgment may involve a classifier, evaluation work, assertion, evidence path, result value, operational state, publication, audience, current use, or newly selected slice; none adds a participant or identity discriminator to the conformance occurrence. If conformance could change while E and P remain fixed because another current object changed, route that condition to a separately identified adequacy or evaluation claim or reopen the relation architecture.
 
 Conformance covers E's semantic content relative to P's fixed convention claims. Truth about T, decision fitness, stakeholder satisfaction, evidence-backed adequacy, publication usefulness, and operational usefulness remain separate evaluations. Evaluation never makes the direct predicate obtain or produces another occurrence for the same fixed pair.
 
@@ -135,7 +135,7 @@ Conformance covers E's semantic content relative to P's fixed convention claims.
 | `CandidateEpistemeSlot` | `U.Episteme` | `U.EpistemeRef` |
 | `ViewpointEpistemeSlot` | `U.Viewpoint` | `U.ViewpointRef` |
 
-The declaration, SlotSpecs, references, and participant fillers neither make the relation obtain nor identify its occurrence. P remains the ordinary episteme about its exact C.2.1 EntityOfConcern; P is not this signature.
+The declaration, SlotSpecs, references, and relation-participant designations alone do not establish that the relation obtains. Its positive occurrence is identified by the actual E/P pair under the fixed predicate. P remains the ordinary episteme about its exact C.2.1 EntityOfConcern; P is not this signature.
 
 The complete F.18 NameCard for the direct conformance kind is below. Its public-row fields point to the current F.17 result rather than paraphrasing that result's scheme or local sense:
 
@@ -259,7 +259,7 @@ When the structured branch is triggered, Q carries these eight organization cons
 
 Replay mutually dependent groups through stratified or witnessed joint/fixed-point semantics. Without that witness, the candidate fails the A.22 selection criterion for the named use. A graph, strongly connected component, iteration syntax, or fixed-point diagram is at most a C.29 representation of already judged occurrences and semantics; it is not the witness, criterion, or selected structure.
 
-An exact system—not A.22, Q, P, or a relation—uses the applicable A.22 structure-selection method over exact C, exact obtaining occurrences `r_1,...,r_n`, the applied Q constraints, and the admissible-use frame. The symbols `r_1,...,r_n` are local notation, not an O object or collection kind. The selection yields exact S under A.22; C remains the C.13 collection, and each r retains the predicate and occurrence identity defined by its relation pattern.
+An exact system uses the applicable A.22 structure-selection method over exact C, exact obtaining occurrences `r_1,...,r_n`, the applied Q constraints, and the admissible-use frame. The symbols `r_1,...,r_n` are local notation, not an O object or collection kind. The selection yields exact S under A.22; C remains the C.13 collection, and each r retains the predicate and occurrence identity defined by its relation pattern.
 
 Identity and change stay local:
 
@@ -306,7 +306,7 @@ Citation, co-membership, reference resolution, compatible schemes, or a graph ed
 | `DependentConstituentSlot` | `U.Episteme` | `U.EpistemeRef` |
 | `BaseConstituentSlot` | `U.Episteme` | `U.EpistemeRef` |
 
-The SlotSpecs declare reusable participant meanings and polarity. They do not fill themselves, make the relation obtain, or identify an occurrence. The current A.6.6 vocabulary resolution chain is `viewpointConventionDependsOn` -> current vocabulary entry -> `ViewpointConventionDependencyRelationSignature` -> its EntityOfConcern, `ViewpointConventionDependencyRelation`. The NameToken, its separate NameCard, vocabulary entry, signature episteme, direct kind, and occurrence remain distinct; spelling or citation proves none of them equivalent and makes no occurrence obtain.
+The SlotSpecs declare reusable participant meanings and polarity. Their declaration does not make the relation obtain or identify an occurrence. The current A.6.6 vocabulary resolution chain is `viewpointConventionDependsOn` -> current vocabulary entry -> `ViewpointConventionDependencyRelationSignature` -> its EntityOfConcern, `ViewpointConventionDependencyRelation`. The NameToken, its separate NameCard, vocabulary entry, signature episteme, direct kind, and occurrence remain distinct; spelling or citation proves none of them equivalent and makes no occurrence obtain.
 
 ##### E.17.0:4.7.1 - Local designation of the direct relation kind; public row pending
 
@@ -340,9 +340,9 @@ The compact positive statement may stop at “this exact constituent depends on 
 | `A_dependency` | a separately reviewable readable assertion is needed: one C.2.1 assertion episteme whose exact EntityOfConcern is `E_dependent` and whose claims state the direct predicate for exact `E_base` | authoring does not make r obtain; A is neither r, an occurrence description, nor a third participant |
 | `O_dependency` | an already recoverable r needs a separate description: one C.2.1 description episteme whose exact EntityOfConcern is r and whose claims may state endpoints and participant-determined identity | the description is not r, and endpoint mention without independently recoverable r is insufficient |
 | `D_dependencyUse` | one named A.22 structure-selection judgment needs a reviewable claim that exact r is admissible: one C.2.1 episteme identified through obtaining `EpistemeConstitutionRelation(G_dependencyUse,r,S_decl)`, where G is its exact `U.ClaimGraph`, r is its exact EntityOfConcern, and `S_decl` is its effective `U.ReferenceScheme` | D is not G, r, `S_decl`, an assertion, occurrence description, `U.Signature`, RelationSignature, selected structure, actor, or third dependency-relation participant; the participant triple does not constitute itself, and obtaining r does not entail use-specific admissibility |
-| `J_dependency` | that named selection judgment needs inspectable inferential support | J is non-constitutive justification content, distinct from G; it makes no claim true, identifies no occurrence, and performs no work |
+| `J_dependency` | that named selection judgment needs inspectable inferential support | J is non-constitutive justification content, distinct from G; it carries the inferential account for the obtaining and selection-admissibility claims. Claim truth and r's occurrence identity remain governed by their direct rules |
 | empirical or formal evaluation package | a named receiving use needs a tested result or formal conclusion | its actors, work, methods, bases, results, evidence, production, and use relations remain separate from r and D |
-| later selection work and C.11 result | accountable selection or project choice is separately current | an exact system performs Work using the selected method; A.22, a pattern, episteme, graph, method, or result never acts, and no generic acceptance relation follows |
+| later selection work and C.11 result | accountable selection or project choice is separately current | an exact system performs Work using the selected method; no generic acceptance relation follows |
 
 `D_dependencyUse` is therefore the exact C.2.1 episteme identified through obtaining `EpistemeConstitutionRelation(G_dependencyUse,r,S_decl)`. The ordered triple names the exact ClaimGraph, EntityOfConcern, and effective ReferenceScheme participants; it is not a self-constituting card or record and does not make the relation obtain.
 
@@ -374,7 +374,7 @@ When empirical interpretation or replay testing is current, identify separately:
 
 Establish actual participation of `E_dependent`, `E_base`, each parameter, and `B_dependencyEmpirical` during W only through the exact relations that define those participation positions or A.6.1 operation-application bindings. A MethodDescription or compatible SlotSpec establishes no participation. Open a local A.15.PROD claim only when the receiving use needs to say W first constituted T or later completed its declared production; inception, completion, episteme identity, and dependency obtaining remain distinct.
 
-When formal interpretation is current, constitute exact formal-evidence episteme `E_dependencyProof = <G_dependencyProof,E_dependent,S_proof>` and exact `B_dependencyFormal` identifying the theory, axiom set, proof semantics, and interpretation basis. Its ClaimGraph designates exact `E_base`, proof obligation, formal method, basis, and result. Preserve entailment, refutation, malformed input, timeout, and checker failure as different outcomes; neither a refutation nor a checker failure fabricates positive r. The proof episteme performs no verification and is not r or a participant.
+When formal interpretation is current, constitute exact formal-evidence episteme `E_dependencyProof = <G_dependencyProof,E_dependent,S_proof>` and exact `B_dependencyFormal` identifying the theory, axiom set, proof semantics, and interpretation basis. Its ClaimGraph designates exact `E_base`, proof obligation, formal method, basis, and result. Preserve entailment, refutation, malformed input, timeout, and checker failure as different outcomes; neither a refutation nor a checker failure fabricates positive r. The proof episteme is distinct from r and its participants.
 
 If reusable target claims are needed, constitute them separately under C.2.1:
 
@@ -390,7 +390,7 @@ Keep these three cases distinct:
 2. a negative empirical or formal result may support `C_dependencyDoesNotObtain` without presupposing r, fabricating D, or becoming a positive occurrence; and
 3. T may support the claim that r obtains without supporting use-specific admissibility; a later decision method may consume empirical and formal result epistemes in separate declared premise slots and produce a separate C.11 result.
 
-Historical use of any claim or result requires exact work, enacted method, and an obtaining premise, decision-use, reference-use, or operation-argument relation. Storage, inspection, citation, attachment, production, graph membership, or adjacency is not use. Keep empirical and formal algebras distinct; keep provenance and assurance with A.10, G.6, and B.3. Retain a missing-governor blocker instead of inventing a generic evidence, use, or acceptance relation.
+For historical reliance on a claim or result, use `A.10` to recover its obtaining premise, decision-use, reference-use, or operation-argument relation for the named bounded use. Recover exact Work and its enacted Method only when that dated Work is itself a current claim or the expressly selected empirical evaluation branch above requires them. Retain that branch's A.13 performer basis, independent A.15.1 Work admission, and F.6 when precise assignment-bound attribution is consumed. Storage, inspection, citation, attachment, production, graph membership, or adjacency alone does not establish that use. Keep empirical and formal algebras distinct; keep provenance and assurance with A.10, G.6, and B.3. Retain a missing-governor blocker instead of inventing a generic evidence, use, or acceptance relation.
 
 ##### E.17.0:4.7.4 - Schemes, scope, transformation, and change
 
@@ -502,7 +502,7 @@ Reopen the pattern when either conformance participant kind changes, the fixed p
 
 ### E.17.0:7 - Rationale, lineage, and current FPF basis
 
-Only a recoverable exact external source may appear here as SoTA evidence. ISO 42010 remains vocabulary lineage. The two former research-category rows below are deliberately recast as local design rationale because E.17.0 consumes the current FPF construction, representation, relation, evaluation, and work boundaries directly; a category label is not evidence.
+Only a recoverable exact external source may appear here as SoTA evidence. ISO 42010 remains vocabulary lineage. The local design rationale below uses the current FPF construction, representation, relation, evaluation, and work boundaries directly; a category label is not evidence.
 
 | Source or practice line | Adopted move | Rejected overread | Practical effect |
 |---|---|---|---|
@@ -517,7 +517,7 @@ Only a recoverable exact external source may appear here as SoTA evidence. ISO 4
 - Use **C.13** to construct exact `C_viewpoint` only in the action-changing structured-viewpoint branch, and any separately needed collection of selected viewpoints or views.
 - **A.6.6** defines the reusable `viewpointConventionDependsOn` vocabulary entry; **A.6.5** declares the four SlotSpecs inside the two RelationSignature declarations. E.17.0 defines direct dependency and conformance obtaining tests and positive occurrence identity.
 - **C.3.2** admits the two optional local explicit-result ValueKinds and any exact local target or stakeholder KindSignature; their values do not determine direct judgments.
-- Use **A.22** to select `S_viewpoint` only when separately versioned convention organization changes a named action, and to select any separately current multi-view structure. E.17.0 supplies Q and candidate relation occurrences for that branch; no pattern or episteme acts.
+- Use **A.22** to select `S_viewpoint` only when separately versioned convention organization changes a named action, and to select any separately current multi-view structure. E.17.0 supplies Q and candidate relation occurrences for that branch.
 - **A.6.3** defines optional source-to-receiving viewing construction, including identity viewing; it does not define view membership.
 - **E.10.D2** defines description epistemes and specification use. A describing use is always named; it selects a viewpoint only when that choice changes reading, checking, or a permitted conclusion. Selection does not establish conformance.
 - **F.18** supplies the two relation-kind NameCards; naming metadata neither defines relation semantics nor grants admission. **F.9** applies only when an exact relation between distinct F.17 `SchemeSenseCell` values obtains.

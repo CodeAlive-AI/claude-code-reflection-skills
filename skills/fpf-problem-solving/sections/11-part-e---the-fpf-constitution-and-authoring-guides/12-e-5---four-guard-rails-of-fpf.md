@@ -29,7 +29,7 @@ slowly:
 | **Purity vs Pragmatism** | Preserve pristine concepts ↔ need real examples. |
 | **Universality vs Convention** | Rules valid across domains ↔ convenience of one familiar notation. |
 | **Modularity vs Integration** | Independent layers ↔ temptation to cross‑link for speed. |
-| **Objectivity vs Perspective** | Neutral framework ↔ Transformers’ unavoidable cultural lens. |
+| **Objectivity vs Perspective** | Neutral framework ↔ contributors’ unavoidable cultural lens. |
 
 ### E.5:4 - Solution — the Four Guard‑Rails
 FPF establishes **four architecturally enforced guard‑rails** that every Core, Tooling, and Pedagogy artefact must obey.  They function as an “immune system” resisting each entropic pull.
@@ -37,7 +37,7 @@ FPF establishes **four architecturally enforced guard‑rails** that every Core,
 
 | # | Guard‑Rail | Protects against |
 |---|------------|------------------|
-| **GR‑1** | **DevOps Lexical Firewall** | Implementation, governance, automatisation and DevOps concerns gravity |
+| **GR‑1** | **DevOps Lexical Firewall** | Pull of implementation, governance, automation, and DevOps concerns |
 | **GR‑2** | **Notational Independence** | Notation lock‑in |
 | **GR‑3** | **Unidirectional Dependency** | Convenience cycles |
 | **GR‑4** | **Cross‑Disciplinary Bias Audit** | Disciplinary monoculture |
@@ -61,7 +61,8 @@ Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
 | **CC‑GR.2** | Artefacts classified as Tooling or Pedagogy **MUST NOT** violate any rule in GR‑1 through GR‑4. | Keeps entropic forces outside the Conceptual Core. |
 | **CC‑GR.3** | A revision to any guard‑rail pattern **REQUIRES** a Design‑Rationale Record that (a) states the reason, and (b) includes a Pillar‑impact analysis per E.3 precedence model. | Aligns evolution with higher‑level principles. |
 | **CC‑GR.4** | The aggregate of guard‑rail rules **MUST** remain internally consistent and acyclic; no guard‑rail may override another without explicit precedence edges. | Preserves deterministic governance. |
-| **CC‑GR.5** | Every Core pattern **MUST** anchor its primary primary EntityOfConcern or primary relation with a declared **ReferencePlane** (`world | concept | episteme`) at first mention. | Keeps Core about extensional or intensional values rather than their paperwork, and aligns with CHR:ReferencePlane. |
+| **CC‑GR.5** | Every Core pattern **MUST** anchor its primary EntityOfConcern or primary relation with a declared **ReferencePlane** (`world | concept | episteme`) at first mention. | Keeps Core about extensional or intensional values rather than their paperwork, and aligns with CHR:ReferencePlane. |
+
 *All CC‑GR duties are **conceptual**. Any automated checks are **informative only** and live in Tooling/Pedagogy.*
 
 ### E.5:7 - Consequences

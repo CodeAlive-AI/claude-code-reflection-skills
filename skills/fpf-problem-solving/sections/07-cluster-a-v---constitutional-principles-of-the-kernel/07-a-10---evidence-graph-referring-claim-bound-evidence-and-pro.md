@@ -88,6 +88,8 @@ The canonical local `RelianceDisposition` member set is exactly: `pass`, `degrad
 
 When an actual named assurance claim is current, use B.3 for that assurance question. A.10 continues to supply the exact source and provenance paths but does not issue the assurance result. Consequential evidence use without such a claim stays with the direct safety, access, status, gate, permission, release, responsibility, or controlled-action pattern.
 
+A reliance limitation qualifies the attempted use. When advice must also say what to do next, use `C.11.DUA` to compose a feasible continuation from that limitation. Further inquiry is one possible continuation. Retain the unsupported claim boundary when choosing a narrower use, another action or a stop. Use an already adequate `C.11` choice directly.
+
 #### A.10:4.5a - Route unlike exploratory inputs without changing their kind
 
 When an observation, objective, former cue, novelty characterization, or similarly interesting item is proposed as a premise for an exploratory or creative move, recover the item under its direct owner before applying this bounded reliance classification. Do not rename every item `signal` or `cue`, and do not create a second premise-disposition vocabulary.

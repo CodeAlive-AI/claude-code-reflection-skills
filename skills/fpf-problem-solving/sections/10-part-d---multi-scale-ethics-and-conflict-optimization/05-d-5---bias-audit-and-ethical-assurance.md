@@ -27,14 +27,18 @@ Bias, fairness, human-impact, causal-fairness, and ethical-assurance concerns ca
 | Force | Tension |
 | --- | --- |
 | Ordinary verification vs. subgroup harm | Evidence or accuracy can look strong while representation, proxy, metric, visibility, language, or impact bias remains current. |
-| Lightweight scan vs. consequential use | Local reversible use may need a small register, while release-bearing or repeated use needs a fuller audit report. |
+| Bounded answer vs. stronger reliance | A current concern may need only a qualified answer; a release or assurance claim can need a fuller account of the basis, mitigations, and residuals it relies on. |
 | Fairness wording vs. causal claim | Metric disparity, associative fairness, interventional fairness, and counterfactual fairness are different claims. |
 | Assurance relation vs. ethical permission | Assurance can record examined evidence and residuals, but cannot turn unresolved bias or harm into moral authorization. |
 | Audit frame vs. neighboring owners | D.5 must keep bias and ethical assurance visible without replacing evidence, causality, measurement, architecture, or D.1 through D.4. |
 
 ### D.5:2 - Solution
 
-Open a `BiasAuditAssuranceFrame@Context`:
+Identify the object, the bias or fairness concern, and the use the answer must support. Give the result warranted by the available basis, with the affected groups and limitations that change that use. A metric comparison can finish at its qualified measurement result; recognizing a value conflict returns to `D.3` or `D.4`.
+
+An intended audit, fairness, or assurance conclusion must satisfy its own evidence conditions. A missing basis leaves that conclusion unsupported. Select further investigation and the record it needs for that particular claim or decision, using §3.1.
+
+Use `BiasAuditAssuranceFrame@Context` to organize an audit whose recipient needs to inspect the connection among claims, evidence, constraints, and residuals. The applicable content may already be present in the result being used:
 
 ```text
 BiasAuditAssuranceFrame@Context:
@@ -53,17 +57,17 @@ BiasAuditAssuranceFrame@Context:
   impactClaimRef?
   causalFairnessUseRef?
   causalUseSupportResultRef?: CausalUseSupportResultRef
-  evidenceRefs
+  evidenceRefs?
   assuranceClaimRefs?
   assuranceUseRef?
   mitigationOrConstraintRefs?
   acceptedResidualRefs?
   admissibleUse
-  inadmissibleOverread
-  strongerSourceReturnCondition
+  inadmissibleOverread?
+  strongerSourceReturnCondition?
 ```
 
-The frame is not a universal ethics owner. It is the local audit object used when bias, fairness, impact, or ethical assurance is current.
+The frame organizes the audit account. It is neither the object being audited nor evidence that its use is fair. Include relied-on evidence and any stronger-source return needed by the particular conclusion.
 
 ### D.5:3 - Bias and Fairness Recognition
 
@@ -94,9 +98,13 @@ BiasRegister@Context:
   nextReviewTrigger?
 ```
 
-Use a fuller `BiasAuditReport@Context` when the object is being released, relied on by other work, exposed to affected people or groups, or used for assurance. Also use it after a material change to source currentness, affected population, ClaimScope or qualification window, model, metric, or policy. The report is a Description episteme or publication-use object; it does not make the audited object fair by existing.
+Choose depth from the claim and consequence that the recipient needs to judge. A bounded finding, corrected metric statement, or identified conflict can complete the present use, including when it concerns an affected group or appears in a publication. Retain the limitation that prevents that result from being read as a wider fairness or assurance claim.
 
-Lightweight scan is enough when the intended use is local, reversible, low-impact, and the scan finds no affected group, proxy, metric, representation, causal-use, or publication-use concern. Use deeper review when the use is consequential, repeated, automated, externally published, safety-relevant, or regulatorily or deontically constrained. Deeper review is also required when the use crosses a ClaimScope, qualification window, population, or publication boundary, or when an affected group, missing group, proxy variable, threshold, causal fairness claim, accepted residual, or assurance claim is current.
+Use a fuller `BiasAuditReport@Context` when the receiving decision needs to inspect the combined evidence, mitigations, and residuals behind an audit or assurance conclusion. A consequential or reusable causal-fairness audit retains this report and the C.28 support it consumes. A release that relies on a particular protective claim needs the evidence and audit account required to support that claim. Reuse a matching existing account; after a material change, reopen the claims whose basis or use changed. The report is a Description episteme or publication-use object, with scope and depth set by that reliance.
+
+A concrete indication of harm, a missing basis for an intended claim, or an applicable assurance requirement can make further investigation necessary before that use. Name what its result could change, who can obtain it, and whether its contribution warrants its full cost and delay; use `C.11.DUA` when this appraisal is unresolved. If the needed basis remains unavailable, state which intended claim remains unsupported and give any feasible narrower use, mitigation, or stop with its conditions. Neither a short record nor a large report supplies missing evidence.
+
+Exposure, repetition, automation, publication, and changed populations are cues to examine the actual use and consequence. They do not by themselves prescribe a full audit or a separate explanation for omitting one. When a protective or documentation requirement is disputed, use `C.11.DUA` to examine its hazard, threshold basis, protective contribution, feasibility, and distributed burden, while keeping its current force and amendment authority explicit.
 
 #### D.5:3.2 - Compact Bias Concern Taxonomy
 
@@ -128,7 +136,7 @@ Use `B.3` for the assurance relation. Use `A.10` for evidence provenance and sou
 
 ### D.5:6 - Archetypal Grounding (Worked Slice)
 
-A hiring-screening model has high aggregate accuracy and an internal note says it is "fair." D.5 first asks what fairness claim is being made. If the claim is only a metric disparity comparison, the audit records the metric, affected groups, intended use, missing evidence, and admissible use. If the team claims counterfactual fairness, C.28 must expose the causal estimand, additional counterfactual-identifiability assumptions, and an estimate with its consistency result when that estimate is relied on. Missing conditions lower the C.28 support result before D.5 decides its audit use. If the audit exposes a conflict between company efficiency and applicant harm across declared scopes, D.3 describes that conflict and D.4 guides its decision use.
+A hiring-screening model has high aggregate accuracy and an internal note says it is "fair." D.5 first asks what fairness claim is being made. If the claim is only a metric disparity comparison, give the metric or evaluation result with its affected groups, intended use, and material limits, then stop. A recipient can reuse or publish that bounded comparison without treating it as a conclusion that hiring is fair. An intended stronger conclusion reopens its actual missing basis. If the team claims counterfactual fairness, C.28 must expose the causal estimand, additional counterfactual-identifiability assumptions, and an estimate with its consistency result when that estimate is relied on. Missing conditions lower the C.28 support result before D.5 decides its audit use. If the audit exposes a conflict between company efficiency and applicant harm across declared scopes, D.3 describes that conflict and D.4 guides its decision use.
 
 ### D.5:6.1 - Bias-Annotation
 
@@ -143,7 +151,7 @@ A hiring-screening model has high aggregate accuracy and an internal note says i
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-D5-1 | The audited EntityOfConcern, intended use, any affected populations or Systems, bias, fairness, impact, or ethical claim, evidence, assurance use when current, repair return, and admissible use are named. ClaimScope and qualification window are explicit when they delimit the audit. | Keeps audit scope inspectable. |
+| CC-D5-1 | The result names the audited EntityOfConcern, intended use, affected populations or Systems, and the bias, fairness, impact, or ethical concern being answered. Relied-on evidence and material limitations qualify its warranted use. Assurance use, repair return, ClaimScope, and qualification window are explicit when they delimit the audit; record and investigation depth follow the particular reliance in §3.1. | Keeps audit scope inspectable. |
 | CC-D5-2 | Metric, causal fairness, evidence, assurance, publication, and architecture-residual claims use their direct owners. | Prevents D.5 from swallowing neighboring patterns. |
 | CC-D5-3 | Ethical assurance is recorded as assurance or evidence relation, not moral permission. | Keeps assurance from becoming ethical authorization. |
 | CC-D5-4 | If the audit exposes interlevel conflict, use D.3 for the conflict description and D.4 for mediation or decision use. | Keeps D.5 connected to the D cluster without replacing it. |
@@ -153,7 +161,7 @@ A hiring-screening model has high aggregate accuracy and an internal note says i
 | Anti-pattern | What goes wrong | Repair |
 | --- | --- | --- |
 | Ethics ghetto | Bias or fairness is left in a separate ethics note while the model, metric, release, publication, or work plan keeps operating unchanged. | Put the concern on the audited EntityOfConcern and its intended use, then name the mitigation, constraint, or accepted residual. |
-| Checklist charade | A checklist is completed without naming affected people or groups, evidence, current use, or residuals. | Use `BiasRegister@Context` for a light scan or `BiasAuditReport@Context` for deeper review; do not treat a blank checklist as assurance. |
+| Checklist charade | A checklist is completed without answering the concern about affected people, evidence, use, or residuals. | Return the bounded finding or judgement; use a register or report when its content is needed for tracking or reliance. |
 | Bias whack-a-mole | One disparity is patched while proxy, representation, metric, visibility, or language concerns move elsewhere. | Keep REP, ALG, VIS, MET, and LNG concerns visible until the admissible use and accepted residual are explicit. |
 
 ### D.5:8 - Consequences
@@ -164,7 +172,7 @@ This pattern keeps bias, fairness, impact, causal-fairness audit consumption, an
 
 `D.5` exists because bias, fairness, human-impact, causal-fairness audit consumption, and ethical assurance often survive ordinary technical checks. It keeps those concerns in one audit frame while preserving direct owners: metrics and measurement remain with measurement patterns, causal fairness remains with causal-use patterns, assurance remains an assurance relation, and multilevel ethical conflict remains with D.2 through D.4.
 
-Audit record depth is selected by use, reliance, exposure, source currentness, and residual risk. A compact register is enough for local low-impact use when no live concern remains; a fuller report is required when release, reliance, affected people or groups, source-currentness change, causal fairness, accepted residual, or assurance use is current.
+Audit depth follows what a particular claim or decision needs from the result. A compact account can carry a useful finding; a stronger audit or assurance conclusion needs its supporting evidence and the record required for that reliance. Material changes reopen the affected basis, and a disputed requirement remains open to substantive appraisal without losing its present force.
 
 ### D.5:10 - SoTA-Echoing
 
@@ -179,6 +187,7 @@ Audit record depth is selected by use, reliance, exposure, source currentness, a
 
 - Builds on `D.1` and coordinates with `D.2`, `D.3`, and `D.4` for value frame, multilevel entry, conflict description, and mediation or decision use.
 - Coordinates with `A.10` for evidence and source currentness.
+- Coordinates with `C.11.DUA` for the contribution and feasibility of further inquiry and the merits and current force of disputed audit or protective requirements.
 - Coordinates with `B.3` for assurance relation and reliance.
 - Coordinates with `C.16` for metric and measurement construction.
 - Coordinates with `C.28` for causal fairness, including counterfactual-identification assumptions, estimation consistency when an estimate is used, and the bounded causal-use support result.

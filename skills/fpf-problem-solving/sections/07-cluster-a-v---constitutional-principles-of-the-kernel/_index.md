@@ -9,10 +9,10 @@
 - [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use](04-a-7-cp---constructive-premise-compact-and-reasoning-basis-us.md) (195 lines) — Type: Architectural (A)
 - [A.8 - Universal Core Principle](05-a-8---universal-core-principle.md) (140 lines) — Type: Kernel admission discipline pattern
 - [A.9 - Cross‑Scale Consistency (C‑3)](06-a-9---cross-scale-consistency.md) (114 lines) — “The logic of a bolt must still be the logic of the bridge.”
-- [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (380 lines) — Normativity: Normative
-- [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes](08-a-10-1---revalidate-affected-uses-when-a-relied-on-source-ch.md) (333 lines) — Pattern type. Method pattern.
+- [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (382 lines) — Normativity: Normative
+- [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes](08-a-10-1---revalidate-affected-uses-when-a-relied-on-source-ch.md) (336 lines) — Pattern type. Method pattern.
 - [A.11 - Ontological Parsimony](09-a-11---ontological-parsimony.md) (155 lines) — Type: Kernel parsimony and admission discipline pattern
-- [A.11.OP - Decision-Relevant Least Action and Operational Parsimony](10-a-11-op---decision-relevant-least-action-and-operational-par.md) (241 lines) — Type: Part A pragmatic principle pattern
+- [A.11.OP - Decision-Relevant Least Action and Operational Parsimony](10-a-11-op---decision-relevant-least-action-and-operational-par.md) (264 lines) — Type: Part A pragmatic principle pattern
 - [A.12 - Acting-Side Externalization and Reflexive Split](11-a-12---acting-side-externalization-and-reflexive-split.md) (297 lines) — Type: Part A architectural ontology pattern
 - [A.13 - The Agential Role & Agency Spectrum](12-a-13---the-agential-role-agency-spectrum.md) (147 lines) — “Agency is not a kind of thing; it is a way some systems operate.”
 - [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](13-a-14---advanced-mereology-components-portions-aspects-phases.md) (360 lines) — Type: Kernel mereology and part-whole relation discipline pattern
@@ -23,9 +23,9 @@
 - [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](18-a-15-4---work-relevant-appearance-based-reliance-repair.md) (480 lines) — Type: Architectural (A)
 - [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](19-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (218 lines) — Type: Architectural (A)
 - [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](20-a-15-6---project-process-and-case-recovery-through-work-meth.md) (396 lines) — Type: Architectural (A)
-- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](21-a-15-7---situation-responsive-work-steering-and-next-action.md) (199 lines) — Type: Architectural (A)
+- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](21-a-15-7---situation-responsive-work-steering-and-next-action.md) (201 lines) — Type: Architectural (A)
 - [A.15.8 - Work-Performance Configuration and Recovery Testing](22-a-15-8---work-performance-configuration-and-recovery-testing.md) (225 lines) — Type: Architectural (A)
-- [A.15.9 - Request and Use a Bounded Result from Another Practice](23-a-15-9---request-and-use-a-bounded-result-from-another-pract.md) (182 lines) — Normativity: Normative unless explicitly marked informative
+- [A.15.9 - Request and Use a Bounded Result from Another Practice](23-a-15-9---request-and-use-a-bounded-result-from-another-pract.md) (178 lines) — Normativity: Normative unless explicitly marked informative
 - [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](24-a-15-prod---production-work-entity-identity-inception-and-pr.md) (510 lines) — Type: Architectural (A)
 - [A.16 - Language-State Move Coordination](25-a-16---language-state-move-coordination.md) (239 lines) — Type: Architectural (A)
 - [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](26-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (269 lines) — Type: Architectural (A)
@@ -47,6 +47,6 @@
 - [A.19.CPM - Unified Comparison Mechanism (CPM)](42-a-19-cpm---unified-comparison-mechanism.md) (379 lines) — Type: Architectural (A)
 - [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](43-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (422 lines) — Type: Architectural (A)
 - [A.20 - Constraint Validity for Transformation Steps](44-a-20---constraint-validity-for-transformation-steps.md) (253 lines) — Type: Architectural (A)
-- [A.21 - Gate Decisions from Independent Check Results](45-a-21---gate-decisions-from-independent-check-results.md) (294 lines) — Type: Architectural (A)
+- [A.21 - Gate Decisions from Independent Check Results](45-a-21---gate-decisions-from-independent-check-results.md) (296 lines) — Type: Architectural (A)
 - [A.22 - Structure and Structural Views (STRUCT-CAL)](46-a-22---structure-and-structural-views.md) (486 lines) — Type: Architectural pattern
 - [A.22.CGUS - Constraint-Governed Unfolding Structure](47-a-22-cgus---constraint-governed-unfolding-structure.md) (340 lines) — Type: A.22 specialization of U.Structure

@@ -13,12 +13,14 @@
 
 **Use this when.** Use this pattern when someone proposes making an action or apparatus mandatory and a plausible question remains: does this requirement change the subject work, or does it only make the route look controlled?
 
-The primary `EntityOfConcern` is one proposed mandatory requirement under one declared use and one substantive horizon. The pattern governs only that admission decision; *action*, *apparatus*, *requirement*, and *horizon* keep their ordinary meanings.
+The primary `EntityOfConcern` is one proposed mandatory requirement under one declared use and one substantive horizon. The pattern screens the requirement for a substantive contribution. A contribution is necessary, but does not alone make the work obtainable, worthwhile or obligatory; *action*, *apparatus*, *requirement*, and *horizon* keep their ordinary meanings.
 
 **First useful result.** Return one of two short answers:
 
-- retain the requirement for this use and horizon because it changes a named substantive branch, realizes an already selected result, or preserves a named assurance or recovery condition on which the use relies; or
-- remove the requirement or leave it optional because none of those conditions changes when it is removed.
+- retain the requirement for this use and horizon because it has a named substantive contribution and its direct choice, realization, assurance or authority basis justifies requiring the work; or
+- remove the requirement or leave it optional because it has no such contribution, or because a contribution does not justify its burden for this use.
+
+For a proposed inquiry whose worth is still open, use `C.11.DUA` to compare what can be gained with feasible effort, delay, opportunity cost and downside; use `C.11` when a current chooser and options need a local choice. Finish with the supported answer and feasible continuation, which may retain the current action, narrow a claim or decline an unsupported use.
 
 Ordinary use needs no score or separate record. Name the receiving decision, result, reliance, or recovery condition in the same sentence as the disposition.
 
@@ -36,7 +38,7 @@ These are one recurring problem across unlike situations: mandatory effort can b
 
 **Not this pattern when.**
 
-- When an applicable direct authority already establishes the obligation, use that authority. Apply A.11.OP only to discretionary apparatus inside the space it leaves.
+- When the question is the force or applicability of an instituted obligation, use its direct authority. Apply A.11.OP only to discretionary apparatus inside the space it leaves. If the present question concerns the obligation's merits, use `C.11.DUA` to examine its protective contribution, burden and feasible amendment; that appraisal does not cancel its current force.
 - When several already qualifying alternatives need comparison, use their direct choice, apparatus, architecture, or Method Engineering pattern.
 - When the question is whether a new durable ontology value should exist, use `A.11`.
 - When the question is how to use an already selected pattern, use `E.11.PUA` or `E.11.PUR`.
@@ -69,7 +71,7 @@ Apply one bounded admission question before making the proposed action or appara
 
 > **Admission rule.** An author or method designer **MUST NOT** make a proposed action or apparatus mandatory unless at least one materially plausible result can change a named substantive decision or branch within the declared horizon, the action realizes an already selected transformation or required subject result, or removing it changes a named assurance or recoverability condition on which the declared use relies.
 
-Passing one branch establishes only that the requirement is non-ceremonial for this use and horizon. Every stronger claim remains with its direct owner.
+Passing one branch establishes only a substantive contribution for this use and horizon. It does not establish that the work can be obtained or is worth requiring. Complete any live worth or choice question through its direct owner before selecting the requirement.
 
 #### A.11.OP:4.1 - Name the use and nearest substantive horizon
 
@@ -83,11 +85,13 @@ The nearest substantive horizon is not necessarily the next event. It may includ
 
 | Admission branch | Passing condition | Boundary of the result |
 | --- | --- | --- |
-| **Decision-changing result** | At least one materially plausible result changes a named subject branch or selection among named alternatives inside the horizon. An information-gathering action passes when one of its possible results changes a later policy even if the immediate action stays the same. | The passing basis is the result-to-decision dependency; likelihood and the eventual branch remain open. |
-| **Selected realization** | The action performs a required part of an already selected transformation or obtains the required subject result. A deterministic step needs no fabricated rival outcomes. | This branch admits only the realizing action; it presupposes selection and leaves authorization, actual Work, and result status to their direct owners. |
+| **Decision-changing result** | At least one materially plausible result changes a named subject branch or selection among named alternatives inside the horizon. An information-gathering action passes when one of its possible results changes a later policy even if the immediate action stays the same. | The passing basis is the result-to-decision dependency. Obtainability, expected contribution after uncertainty, burden and eventual choice remain open. |
+| **Selected realization** | The action performs a required part of an already selected transformation or obtains the required subject result. A deterministic step needs no fabricated rival outcomes. | This branch establishes the action's contribution to the selected result; it presupposes selection and leaves feasibility, authorization, actual Work, and result status to their direct owners. |
 | **Assurance or recoverability preservation** | Removing the action changes a named assurance or recoverability condition on which the declared use relies. | This branch preserves that condition; its required level and evidential basis come from the direct assurance or recovery owner. |
 
-Compare the concrete situation with and without the requirement. If one branch passes, retain the requirement at no more formality than its direct owner and named reliance need justify. If several proposed actions or apparatus configurations pass, return their comparison to the pattern that directly governs those alternatives.
+Compare the concrete situation with and without the requirement. A passing branch removes the objection that the work contributes nothing. Retain it only as far as its direct basis justifies requiring it. An already selected transformation or established reliance can supply that basis without another comparison.
+
+When a proposed inquiry could matter but its worth remains open, apply `C.11.DUA` to the actual demand and receiving question. Identify the attainable observation, what it could change, and its whole cost within the receiving horizon. Compare available continuations through `C.11` when a local choice is needed. A useful possible result can still arrive too late, require unavailable means, or cost more than its contribution. Keep the presently supported answer or select a feasible alternative under its actual limits. Do not invent an OptionSet or an inquiry merely to certify that none is needed.
 
 If no branch passes, remove the requirement or leave it as an optional convenience. Convenience and prior investment do not supply the missing receiving difference.
 
@@ -95,23 +99,27 @@ If no branch passes, remove the requirement or leave it as an optional convenien
 
 *Materially plausible* means more than logical possibility and less than certainty. The direct owner of the claimed consequence supplies its standard of evidence. A low-probability result can remain material when its consequence changes exposure or the admissible policy. A large information volume is material only when some possible result changes a named receiving use.
 
-When the branches cannot be distinguished, name the exact claim and missing basis and return them to that claim's direct owner. Alternatively, run a bounded experiment whose possible results can genuinely change the named decision. Unresolved usefulness does not create permanent mandatory status.
+When the branches cannot be distinguished, name the exact claim and missing basis and return them to that claim's direct owner. Keep the qualified answer already supported. A bounded experiment is one possible continuation only when an attainable result and worthwhile contribution justify its whole burden under §4.2. Unresolved usefulness alone does not select an experiment or create permanent mandatory status.
 
 #### A.11.OP:4.4 - Return authority and claims to their direct owners
 
 Apply this screen only inside the space left by every applicable direct authority. The direct owner establishes the obligation or floor and resolves disputes about its basis or applicability.
 
-A passing branch establishes only that the requirement is non-ceremonial for the named use and horizon. Every downstream claim remains with the direct pattern named in Relations; obtain that result by value instead of treating this admission as its substitute.
+When the requirement itself is being appraised, use `C.11.DUA` to compare the protected bearer and interest, the threshold and horizon, the causal contribution claimed, and who bears the burden. Identify who can amend the requirement and whether that amendment is feasible in time. Keep its merits and present force distinct: neither a protective label nor a burdensome rule settles the merits, and an unfavorable appraisal supplies no unilateral waiver. The legal, ethical and domain claims remain with their direct owners.
+
+A passing branch establishes only the named contribution. Every downstream claim remains with the direct pattern named in Relations; obtain the required result by value instead of treating this screen as its substitute.
 
 #### A.11.OP:4.5 - Keep the result light and reopenable
 
 For ordinary use, say:
 
-> Keep `<requirement>` for `<declared use>` until `<nearest substantive horizon>` because `<named branch and receiving difference>`.
+> Keep `<requirement>` for `<declared use>` until `<nearest substantive horizon>` because `<named contribution and the basis for requiring this work>`.
 
 or:
 
 > Remove or demote `<requirement>` for `<declared use>` because keeping and removing it produce the same substantive decision and result and change no relied-on assurance or recovery condition.
+
+If a proposed inquiry has a contribution but is unavailable or not worthwhile, finish with the current supported answer and selected continuation. Keep a short reason or limitation in that result when the recipient needs it; add no empty probe fields or separate omission account.
 
 A named later use that must cite, compare, audit, or rely on the disposition records it in the existing record kind appropriate to that use. Otherwise the one-sentence result is complete.
 
@@ -133,13 +141,27 @@ The same route runs a deterministic build after the sources and publication form
 
 A maintenance team must choose next week between Method A and Method B for a recurring seal failure. A bounded probe performed today can return one of three observations: evidence favoring A, evidence favoring B, or an unresolved result that triggers a hold. Today's immediate action is unchanged, but every possible probe result has a named effect on the later Method-selection decision.
 
-The probe passes the decision-changing-result branch. Its horizon ends at that named selection and its stated window, not at the probe's completion flag. If the team later shows that every possible observation leads to Method A, the probe no longer passes for that use and is removed, redesigned, or made optional.
+The probe passes the contribution screen. Its horizon ends at that named selection and window. The team still has to decide whether to obtain it.
+
+For a constructed comparison, suppose A, B and holding are all available within the applicable operating constraints. The team minimizes expected hours of later rework or deferral over the same maintenance horizon. Its current model gives three conditions with weights 0.4, 0.4 and 0.2:
+
+| Selected continuation | Condition favoring A | Condition favoring B | Unresolved condition |
+| --- | --- | --- | --- |
+| Method A | 0 hours | 10 hours | 5 hours |
+| Method B | 10 hours | 0 hours | 5 hours |
+| Hold | 4 hours | 4 hours | 4 hours |
+
+These are illustrative planning inputs. On this basis, A and B each cost five expected hours; holding costs four. Suppose the probe distinguishes the three conditions in time. Choosing A, B or holding after its result costs 0.8 expected hours before probe effort. At one hour for the whole probe, the total is 1.8 hours, so the team selects the probe and the stated conditional continuation. At five hours for the same probe, still available before selection, the total is 5.8 hours: the completed advice is to hold on the current basis. If the probe cannot return before selection, its information does not serve this horizon. The operating constraints and uncertainty remain visible in each answer.
+
+If instead the team establishes that every materially plausible observation leads to Method A and no other reliance changes, the probe fails even the contribution screen for that use. The team can choose A directly, without inventing a study and then recording why it was omitted.
 
 #### A.11.OP:5.3 - Assurance evidence with an unchanged operating decision
 
 A pressure-system release check is expected to confirm the current operating decision. The release authority nevertheless relies on its evidence, and omission changes the accepted exposure for release. The check passes assurance preservation even when its most likely result leaves the operating branch unchanged.
 
 `B.3`, the applicable evidence pattern, and the release authority set the assurance floor and disposition. A.11.OP returns only that the check is non-ceremonial for this named release reliance. A candidate check qualifies here only when the relying condition, exposure change, and direct owner are known.
+
+Now consider a local rule requiring a copy of the same accepted check record. In this constructed case, every relying reader already has the original, and retyping adds no independent verification. It consumes the technician's only hour available for correcting an identified defect. The local rule owner can amend this copying requirement today while retaining the required check and its accessible evidence. The useful amendment is to use the original record and recover that hour for correction. The protected people and pressure-system condition, the lost correction opportunity and the feasible authority to amend supply the comparison. If the amendment cannot be obtained in time, the technician follows the applicable requirement or authorized hold route; a favorable merits comparison alone does not authorize omission.
 
 #### A.11.OP:5.4 - Recovery cue and discriminating language
 
@@ -174,9 +196,9 @@ Scope: **Universal** for the cross-domain admission question governed by this pa
 | `CC-A11.OP-3` Three-branch comparison | Keeping and removing the requirement have been compared through decision-changing result, selected realization, and assurance or recoverability preservation. |
 | `CC-A11.OP-4` Material plausibility | Each claimed difference has the basis appropriate to its subject, evidence, risk, causal, decision, or assurance claim; bare logical possibility and information volume are insufficient. |
 | `CC-A11.OP-5` Deterministic realization | A required deterministic step is retained when it realizes the already selected result without fabricated outcome branches. |
-| `CC-A11.OP-6` Delayed decision value | Information is retained only when at least one materially plausible result can change a named later decision inside the stated horizon. |
+| `CC-A11.OP-6` Delayed decision value | For an inquiry proposed for a later decision or reliance, at least one materially plausible result reaches that named use inside the horizon. This contribution is not sufficient to require acquisition; a live inquiry decision also establishes obtainability and worthwhile contribution under its direct owner. |
 | `CC-A11.OP-7` Assurance boundary | A retained assurance or recovery action names the relied-on condition and its direct owner; that owner establishes the floor and evidential basis. |
-| `CC-A11.OP-8` Disposition boundary | Passing a branch is reported only as non-ceremonial admission for the named use and horizon; every stronger claim is returned to its direct owner. |
+| `CC-A11.OP-8` Disposition boundary | Passing a branch establishes contribution only. The final disposition uses the applicable choice, realization, assurance or authority basis; appraisal of a requirement's merits remains separate from its current force. |
 | `CC-A11.OP-9` Light result | Ordinary use ends in the direct one-sentence disposition; a durable result uses an existing record kind required by a named later use. |
 | `CC-A11.OP-10` Direct-owner return | Each downstream claim remains with the direct pattern named in Relations and is obtained from that pattern by value. |
 | `CC-A11.OP-11` Reopen condition | The disposition names or makes recoverable which change in horizon, result, transformation, duty, reliance, or alternative can reopen it. |
@@ -192,13 +214,13 @@ Scope: **Universal** for the cross-domain admission question governed by this pa
 | **Administrative self-receiver** | A receipt is justified because it updates the route state that exists only to carry the receipt. | Name a subject decision or reliance outside the requirement's own administration. |
 | **Fabricated alternatives for deterministic work** | A build or transformation step must invent outcome branches to look decision-relevant. | Retain it through selected realization when it performs the already selected result. |
 | **Precaution label as assurance** | Calling a step “safety” or “compliance” creates an unsupported floor. | Name the direct authority, evidence, exposure, and relied-on condition; return their disposition to the direct owner. |
-| **Branch passage as authority or optimum** | Admission is substituted for the stronger claim governed elsewhere. | Report only non-ceremonial admission; obtain authority or comparison from its direct owner. |
+| **Possible contribution as sufficient reason to require work** | A probe is demanded because it could matter, despite unavailable means, excessive burden or a missed receiving window. | Establish contribution here; complete the live demand or choice question through C.11.DUA or C.11 and retain a useful current answer when acquisition is not selected. |
 | **Mandatory parsimony record** | The screen creates the same ceremony it is meant to remove. | Use one ordinary disposition sentence unless a named later use needs a durable episteme. |
 | **Free-energy or physics laundering** | Expected free energy, variational free energy, or Hamiltonian least action is presented as proof of a universal engineering rule. | Keep only the bounded epistemic, pragmatic, horizon, and risk distinctions; reject mathematical equivalence and mandated scalarization. |
 
 ### A.11.OP:9 - Consequences
 
-The pattern changes practice before a requirement is installed. A designer names the receiving horizon and checks what keeping or removing the requirement changes. Duplicate status work becomes removable without making “less paperwork” a universal argument. Deterministic transformations remain because they produce the selected result. Exploration, assurance, recovery, and small cues remain when their delayed or relied-on consequence is explicit.
+The pattern changes practice before a requirement is installed. A designer names the receiving horizon and checks what keeping or removing the requirement changes. Duplicate status work becomes removable without making “less paperwork” a universal argument. Deterministic transformations remain because they produce the selected result. Exploration, assurance, recovery, and small cues have a substantive reason to remain when their delayed or relied-on consequence is explicit. Their direct basis determines whether to require them; a relevant but excessive inquiry can give way to a qualified current answer.
 
 | Benefit | Cost or boundary |
 | --- | --- |
@@ -212,7 +234,7 @@ The pattern changes practice before a requirement is installed. A designer names
 
 Operational parsimony is about relevance, not abstract minimization. The fewest-step method can be wrong when one additional action realizes the chosen result, changes a later policy, or preserves a relied-on condition. The longest method can also be wrong when its extra actions have no substantive receiver. Comparing keeping and removing one proposed requirement makes that difference visible without inventing a global cost function.
 
-The three branches cover distinct reasons for mandatory status. Decision-changing result preserves exploration and discrimination. Selected realization preserves deterministic work. Assurance or recoverability preservation protects a named relied-on condition. Each reason justifies only mandatory status for the declared use and horizon; its direct owner establishes every downstream claim.
+The three branches distinguish contributions that a step-count screen would confuse. Decision-changing result recognizes exploration and discrimination. Selected realization recognizes deterministic work. Assurance or recoverability preservation recognizes a named relied-on condition. None alone establishes obtainability, net value or an obligation. Existing selection or reliance can settle the need; otherwise the direct choice or demand method completes it. This preserves useful work while allowing a probe that could matter to lose against an available continuation.
 
 The horizon must be substantive and bounded. A next-event horizon hides delayed information value; an indefinite horizon lets hypothetical future usefulness justify everything. The nearest named receiver is the smallest horizon that can carry the reason and the smallest reopen boundary when the use changes.
 
@@ -222,7 +244,8 @@ The rule coordinates existing decisions, transformations, results, evidence, ass
 
 | Practice question | Best-known line and serious alternative | Defect overcome and pattern mutation | Source roles and limits | Reopen condition |
 | --- | --- | --- | --- | --- |
-| How should a process designer recognize information-seeking action whose value appears in a later decision rather than the immediate result? | The selected line distinguishes epistemic from pragmatic value and evaluates present action across counterfactual future policies. The serious default is an immediate-result screen that calls a probe useless when the next action stays unchanged. | The default deletes useful exploration. **Adapt:** the decision-changing-result branch admits a probe only when a materially plausible result changes a named later policy inside the substantive horizon. | Friston et al., [“Active Inference: A Process Theory”](https://direct.mit.edu/neco/article/29/1/1/8207/Active-Inference-A-Process-Theory) (2017), supplies the epistemic/pragmatic distinction; Friston et al., [“Sophisticated Inference”](https://direct.mit.edu/neco/article-abstract/33/3/713/97487) (2021), supplies the counterfactual policy horizon. They are best-known-line candidates for these discriminators, not evidence of a universal engineering threshold, FPF ontology, or effectiveness claim. At comparable use effort, naming the receiving decision preserves delayed value that the immediate-result default loses. | Reopen if stronger current evidence changes the epistemic/pragmatic distinction, defeats the receiving-decision test, or supplies a lower-effort discriminator that preserves the same exploration boundary. |
+| How should a process designer recognize information-seeking action whose value appears in a later decision rather than the immediate result? | Historical anchors distinguish epistemic from pragmatic value and evaluate present action across counterfactual future policies. The serious default is an immediate-result screen that calls a probe useless when the next action stays unchanged. | The default deletes useful exploration. **Adapt:** the decision-changing-result branch recognizes a probe's contribution when a materially plausible result changes a named later policy inside the substantive horizon; the receiving choice still decides whether obtaining it is worthwhile. | Friston et al., [“Active Inference: A Process Theory”](https://direct.mit.edu/neco/article/29/1/1/8207/Active-Inference-A-Process-Theory) (2017), supplies the epistemic/pragmatic distinction; Friston et al., [“Sophisticated Inference”](https://direct.mit.edu/neco/article-abstract/33/3/713/97487) (2021), supplies the counterfactual policy horizon. They supply historical discriminators, not evidence of a universal engineering threshold, FPF ontology, or effectiveness claim. At comparable use effort, naming the receiving decision preserves delayed value that the immediate-result default loses. | Reopen if stronger current evidence changes the epistemic/pragmatic distinction, defeats the receiving-decision test, or supplies a lower-effort discriminator that preserves the same exploration boundary. |
+| When does relevant uncertainty justify another inquiry? | The current constructed-value-of-information line separates decision relevance from uncertainty magnitude and examines uncertainty in the prioritization itself. The serious alternative treats either large uncertainty or a possible decision change as a sufficient acquisition rule. | **Adapt:** contribution screens a demand; the receiving decision then compares attainable gain with the whole burden. Use a proportionate sensitivity comparison when plausible input changes could reverse that result. | Runge et al., [A Simplified Method for Value of Information Using Constructed Scales](https://pubsonline.informs.org/doi/10.1287/deca.2023.0474) (2023), supplies preliminary decision-relevance assessment. Davis et al., [Constructed value of information with iterative scoring and parametric uncertainty](https://pubmed.ncbi.nlm.nih.gov/41678595/) (2026), supplies a later research-priority comparison in which scoring uncertainty can change priorities. Their domain results motivate these distinctions; they do not establish a universal required score, authority or engineering threshold. `C.11` and `C.11.DUA` carry the local choice and advice methods. | Reopen when a relevant source or actual use changes how attainable information alters the receiving decision, or defeats the proportionality of the comparison. |
 | Can expected free energy or physical least action serve as a universal scalar rule for admitting engineering actions? | The selected critical line shows that expected free energy is not obtained merely by projecting variational free energy forward, while least-action results in the free-energy principle depend on a particular random-dynamical and Bayesian construction. The serious alternative is to transplant EFE, VFE, or Hamiltonian “least action” as a general engineering objective. | The transplant launders model-dependent mathematics into authority and can hide the actual receiving use. **Reject:** no EFE/VFE/Hamiltonian equivalence or mandatory score enters the Solution. **Adapt:** judge information-seeking work by a named receiving decision and counterfactual horizon, with risk and ambiguity supplied by their direct owners. | Millidge, Tschantz, and Buckley, [“Whence the Expected Free Energy?”](https://direct.mit.edu/neco/article/33/2/447/95645/Whence-the-Expected-Free-Energy) (2021), supplies failure evidence against the simple VFE-forward account. Friston et al., [“The free energy principle made simpler but not too simple”](https://www.sciencedirect.com/science/article/pii/S037015732300203X) (2023), supplies the model-dependent least-action construction. Neither source establishes an engineering duty, assurance floor, scalar optimum, or universal process law. The selected qualitative rule is cheaper to apply and keeps direct authorities visible. | Reopen if a current primary result establishes a transferable engineering admission rule with explicit scope and lower decision error at comparable effort, or if a governed use requires a quantitative comparator under its own direct pattern. |
 
 ### A.11.OP:12 - Relations
@@ -230,7 +253,7 @@ The rule coordinates existing decisions, transformations, results, evidence, ass
 - **Classified by:** `E.3` as one `Prag` principle. It primarily advances P-1 Cognitive Elegance, P-7 Pragmatic Utility, P-10 Open-Ended Evolution, and P-11 State-of-the-Art Alignment while respecting the other Pillars.
 - **Coordinates with:** `A.11`, which governs admission of ontology additions. Namespace adjacency makes the two parsimony questions discoverable; their EntitiesOfConcern remain distinct.
 - **Coordinates with:** `E.11.PUA` and `E.11.PUR`, which govern use, recommendation, coordination, and reuse after a pattern has been selected. A.11.OP asks whether an extra mandatory requirement belongs in the first place.
-- **Coordinates with:** `C.11`, `C.19.2`, `A.19`, and Method Engineering for comparison or configuration of qualifying alternatives under their own conditions. Those owners decide the application threshold and choose among alternatives.
+- **Coordinates with:** `C.11.DUA` for the merits and feasible continuation of an advice or evidence demand, including a single requirement with no live OptionSet; `C.11` for a current local choice and probe-worthiness; and `C.19.2`, `A.19`, and Method Engineering for their apparatus, architecture or Method comparisons. A.11.OP supplies the contribution screen. These direct owners complete the applicable demand, selection or configuration question.
 - **Coordinates with:** `E.13` for proxy-to-value repair and `E.23` for operations inside repeated evaluated improvement. A.11.OP retains the initial action-admission question.
 - **Coordinates with:** `A.3.1` and `A.3.2` for Method and MethodDescription identity, `A.15.1` for dated Work, and `A.15.7` for next-action choice during ongoing Work. A.11.OP governs design-time admission of the requirement.
 - **Constrained by:** applicable law and regulation, `E.5` Guard-Rails, `A.10` reliance boundaries, `B.3` assurance floors, and any other direct subject or authority pattern for the use.

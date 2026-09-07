@@ -46,7 +46,7 @@ The common failures are:
 
 | Force | Tension this pattern resolves |
 | --- | --- |
-| Compact citation versus subject patternship | One path is easy to cite, but each represented fact and relation must remain with its exact governor. |
+| Compact citation versus the represented facts' governing rules | One path is easy to cite, but each represented fact and relation must remain with its exact governor. |
 | Graph readability versus ontic force | Nodes and edges make a chain legible; their presence cannot make any represented relation obtain. |
 | Result continuity versus result collapse | A path may connect measurement, evaluation, aggregation, and decision while preserving every local result and result episteme. |
 | Reusable declaration versus performed occurrence | Methods, descriptions, policies, and clauses may be cited, but dated work and actual bindings remain separate. |
@@ -61,7 +61,7 @@ Create an `EvidenceGraph` only after the relied-on claim or bounded use and its 
 
 | Represented claim or object | Subject pattern before G.6 represents it |
 | --- | --- |
-| Reusable method, generic participants, parameters, effects, and conditions | exact `U.Method`; `A.3.2` for its `U.MethodDescription` |
+| Reusable method, generic participants, parameters, effects, and conditions | `A.3.1` for the exact `U.Method`; `A.3.2` for its `U.MethodDescription` |
 | Independently admitted dated Work and its exact actual performer refs; optional obtaining F.6 relation and assignment occurrence refs when the path expressly consumes attribution; enactment, resources, and direct participation or binding facts | `A.13` for each exact actual performer and `A.15.1` for independent Work admission; `F.6` and `A.2.1` only when the path represents precise assignment-bound attribution; the exact direct participation or resource relation; and `A.6.1` for operation-application bindings |
 | Production or inception of an entity or episteme | one exact local A.15.PROD claim when its entry condition is met, or a direct subject predicate under its own pattern |
 | Measurement result and its measurement-specific basis | `C.16` |
@@ -166,7 +166,7 @@ PathCitationRecord:
   ReopenTrigger
 ```
 
-`NotCarried` names every stronger use that the path does not establish: Work occurrence, participation, production, claim truth, assurance, approval, permission, gate passage, release, causal identification, benchmark superiority, acceptance, or decision. Actual downstream use requires one independently admitted dated Work ref, its A.13-qualified performer refs, and one exact premise, reference, operation-argument, decision-use, or other direct relation. Add attribution refs only when that downstream use expressly consumes precise assignment-bound attribution; path availability or citation is not actual use.
+`NotCarried` names every stronger claim or use that the path does not establish: Work occurrence, participation, production, claim truth, assurance, approval, permission, gate passage, release, causal identification, benchmark superiority, acceptance, or decision. Actual downstream use requires one independently admitted dated Work ref, its A.13-qualified performer refs, and one exact premise, reference, operation-argument, decision-use, or other direct relation. Add attribution refs only when that downstream use expressly consumes precise assignment-bound attribution; path availability or citation is not actual use.
 
 #### G.6:4.4 - Provenance ledger
 
@@ -225,7 +225,7 @@ G.6 may give this chain one `PathId` only after the measurement, work, binding, 
 
 An engine programme has several C.16 resource measurements, dated test-run work occurrences, exact phase and overlap relations, and a shared warm-up allocation rule. B.1.6 dated aggregation work applies `ProgrammeResourcePolicy-v3` and obtains a typed resource vector with propagated uncertainty; a distinct C.2.1 episteme states it.
 
-The G.6 path cites every measurement result and episteme, the work-set and overlap relations, the edition-pinned policy, aggregation work, aggregation result, sources, and representation refs. The ledger does not make epoch labels into work parts, allocate the warm-up energy, perform uncertainty propagation, or turn the aggregate into an emissions verdict.
+The G.6 path cites every measurement result and episteme, the work-set and overlap relations, the edition-pinned policy, aggregation work, aggregation result, sources, and representation refs. Epoch labels alone do not establish work-part relations. Warm-up energy allocation and uncertainty propagation are performed in the aggregation work; an emissions verdict remains a separate result.
 
 #### G.6:5.3 - Produced model and benchmark use
 
@@ -241,7 +241,7 @@ A dashboard cell shows `Ready`. F.10 governs the status-use classification; A.10
 
 | Bias | Guard |
 | --- | --- |
-| Graph-authority bias | A node or edge represents an object or direct relation only after its governor establishes it. |
+| Graph-authority bias | A node or edge represents an object or direct relation only after that object or obtaining relation has been independently established under its governing rule. |
 | Generic-edge bias | Reject fallback `verifiedBy`, `validatedBy`, `measuredBy`, `producedByWork`, and `evidences` relations; recover the exact direct relation. |
 | Result-node bias | Keep subject result, result episteme, carrier, outcome, assurance, and later action distinct. |
 | Declaration-runtime bias | A method, description, policy, clause, signature, or plan establishes no occurrence or actual binding. |
@@ -302,7 +302,7 @@ The ledger is likewise an index over established provenance, not a result store 
 
 ### G.6:11 - SoTA-Echoing
 
-Source qualification was checked against the publishers' current surfaces on 2026-07-30. These decisions remain qualified through 2027-07-30 unless a new Recommendation, specification edition, maintenance status, or replacement changes the adopted contract earlier. Internal FPF neighbour authority stays in Relations; it is not presented as an external source decision.
+The source-use decisions below are based on the publishers' source versions current on 2026-07-30. These decisions remain qualified through 2027-07-30 unless a new Recommendation, specification edition, maintenance status, or replacement changes the adopted contract earlier. Internal FPF neighbour authority stays in Relations; it is not presented as an external source decision.
 
 | Exact source and source-use decision | Visible G.6 mutation | Rejected overread | Smallest source-change replay |
 | --- | --- | --- | --- |

@@ -10,9 +10,9 @@ Use this pattern when B.2 has identified one exact candidate new whole and that 
 
 The first useful question is not "is there emergence?" First test the exact candidate against A.1's six common components. Then test whether its physical or operational organization makes it eligible to act in work or transformation while preserving its identity—the direct `U.System` criterion. After those two tests, recover only the additional facts used by the concrete case, such as delimitation, an objective or commitment, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or time. State each fact or claim through the pattern that defines its object or relation. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
 
-Use `B.2` first to decide whether whole reidentification is needed and to identify the one candidate new whole. Use `B.2.2` only when that candidate's already admitted kind is `U.System`.
+Use `B.2` first to decide whether whole reidentification is needed and to identify the one candidate new whole. Use `B.2.2` only when that candidate is to be tested under the already admitted `U.System` kind.
 
-**What goes wrong if missed.** A real operating whole is still managed through old component claims, or a mere collection is declared a new system without system participation evidence.
+**What goes wrong if missed.** A real operating whole is still managed through old component claims, or a mere collection is declared a new system without establishing its A.1 basis and acting eligibility.
 
 **What this buys.** The system MHT keeps the useful meta-system-transition intuition while preserving FPF's subject patterns for system participation, architecture, capability, transformation, work, evidence, and assurance.
 
@@ -28,7 +28,7 @@ Use `B.2` first to decide whether whole reidentification is needed and to identi
 
 `B.2` is holon-general. `B.2.2` is its `U.System` specialization.
 
-A system-result MHT is current when B.2's exact new whole proposed for recognition under the already admitted `U.System` kind is an acting physical or operational holon and the case needs that same recognized whole to carry one or more separately governed system-level claims, such as delimitation, objective, coordination, capability, functioning, architecture, transformation, work, assurance, or time. The old constituent systems may remain parts, participants, resources, or interacting neighbors, but their claims do not automatically become claims about that recognized result system.
+A system-result MHT is current when B.2's exact new whole proposed for recognition under the already admitted `U.System` kind is a physical or operational holon eligible to act and the case needs that same recognized whole to carry one or more separately governed system-level claims, such as delimitation, objective, coordination, capability, functioning, architecture, transformation, work, assurance, or time. The old constituent systems may remain parts, participants, resources, or interacting neighbors, but their claims do not automatically become claims about that recognized result system.
 
 A collection of systems is not thereby a system MHT. B.2.2 carries B.2's existing-whole/new-whole comparison through complete A.1 recognition and the direct `U.System` criterion; it does not create a system-specific result object or record schema.
 
@@ -47,10 +47,10 @@ Without this specialization:
 | Force | Tension |
 | --- | --- |
 | Component assurance vs result-system assurance | Old component claims may still matter, but they do not automatically cover the new operating whole. |
-| Delimitation vs external participation | The result system needs an admitted delimitation while external acting systems, resources, and environments remain outside it. |
+| Delimitation vs external participation | The result system needs an admitted delimitation while external acting systems, external resources, and its environment remain outside it. |
 | Coordination vs whole identity | An obtaining coordination relation can make the system question live, but coordination alone does not satisfy A.1 or the direct `U.System` criterion. |
 | Capability gain vs identity change | A new capability envelope can reveal a result system, but some gains remain ordinary capability or functioning claims. |
-| System architecture vs system description | Architecture claims concern the operating whole; diagrams and records are description epistemes or publication forms. |
+| System architecture vs system description | Architecture claims concern the operating whole; diagrams and records have separate description, representation, or publication uses. |
 
 ### B.2.2:4 - Solution
 
@@ -75,11 +75,11 @@ If a required A.1 component or the acting-eligibility criterion fails, do not id
 When the candidate is recognized as `U.System`, state every changed result-system fact or claim under its subject pattern:
 
 - system-role assignments through `A.2.1`, relations among system-role kinds through `A.2.7`, and other relations through the patterns that define them;
-- capabilities through `A.2.2` and `C.16`;
-- methods and mechanisms through `A.15`, `A.6.1`, and any other applicable method or mechanism pattern;
+- capabilities through `A.2.2` and their measured-characteristic claims through `C.16`;
+- methods through `A.3.1`, their descriptions through `A.3.2`, and mechanisms through `A.6.1`; use `A.15` when their alignment with roles and work is the question;
 - transformations through `A.3.4`;
 - work occurrences through `A.15.1`;
-- functioning and functional structure through `A.6.F` and `C.30.TFS-REL`;
+- functioning and functional-structure wording through `A.6.F` to its direct subject pattern; selected transformation-flow structures through `E.18` and their bounded architecture use through `C.30.TFS-REL`;
 - architecture through `C.30`, `A.22`, and `C.30.ASV`;
 - evidence and assurance through `A.10`, `B.3`, and `B.3.5`;
 - temporal and dynamics claims through `C.27`, `A.19`, and the direct temporal patterns.
@@ -93,8 +93,8 @@ When a receiving use has materialized B.2's optional `MHTTriggerProfile`, read i
 | Cue recorded in `MHTTriggerProfile` | System-case reading | Subject pattern kept visible |
 | --- | --- | --- |
 | Delimitation change | The operating whole now has an external delimitation and crossing relations that differ from the old aggregate. | `A.1`, `B.1.2`, `A.14`, `C.13` |
-| Objective or evaluation change | The whole is now evaluated by a system-level objective, mission, SLO, safety case, or viability claim. | `C.16`, `E.13`, `A.10`, decision or assurance patterns |
-| Supervision or coordination change | A controller, protocol, governance relation, or distributed coordination relation regulates constituent behavior for the result whole. | `B.2.5`, `A.12`, `A.3.4`, `A.15.1` |
+| Objective or evaluation change | Recover the system-level objective, mission, or SLO used as an evaluation criterion; distinguish any safety case or viability claim from that criterion. | `C.16`, `E.13`, `A.10`, decision or assurance patterns |
+| Supervision or coordination change | Recover how constituent behavior is regulated for the result whole, including controller or distributed-coordination facts; name any protocol or governance claim separately. | `B.2.5` only for supervisor-subholon feedback; `A.12`, `A.3.4`, `A.15.1` for their separately current claims |
 | Capability or closure claim | Recover the exact capability envelope and closure relations of the proposed new whole after recognition under `U.System`; keep supporting evidence separate. | `A.2.2`, `C.16`, `A.10` for evidence use, and `B.2.4` when whole reidentification is current |
 | Agency threshold | The result whole crosses a concern-specific agency threshold in characteristic space. | `A.13`, `A.19`, `C.16` |
 | Temporal consolidation | A commissioning, phase, release, or operating-time consolidation changes the current system identity claim. | `C.27`, `A.15.1`, temporal patterns |
@@ -134,7 +134,7 @@ Before MHT, the project has individual drones with local navigation and maintena
 
 - **Candidate new whole:** the search-and-rescue swarm named by B.2.
 - **A.1 basis:** exact drone constituents, obtaining formation and coverage-coordination relations, the governed swarm assembly, the swarm reidentification rule, and the whole-level area-search characteristic; its boundary, command and mission interfaces, operating characteristics, and identity-preservation conditions also fit the applicable larger rescue-system construction rule.
-- **System criterion:** the swarm has its own command-and-operating-area delimitation, mission objective, coordination relations, external commitments, and acting eligibility.
+- **System criterion:** the swarm has acting eligibility. This case also has its own command-and-operating-area delimitation, mission objective, coordination relations, and external commitments.
 - **Assurance:** swarm-level tests support claims about the candidate; individual drone certificates remain component evidence and do not establish the swarm facts.
 
 The old drone evidence remains relevant, but it is not enough for the swarm-level assurance claim.
@@ -149,7 +149,7 @@ If the only change is a better dashboard or one more service, use architecture-d
 
 A machine, robot, fixture, workpiece carrier, and inspection station can become a production cell when the cell has its own delimitation, objective, obtaining coordination relations, transformation structure, exact work occurrences, and capability envelope. Evidence separately supports the claims about those facts.
 
-The fixture being manufactured is not part of the machine merely because the machine changes it. The production cell claim needs a result system; the manufacturing relation remains transformation and work.
+A fixture being manufactured as a workpiece is not part of the machine merely because the machine changes it. The production cell claim needs a result system; the manufacturing relation remains transformation and work.
 
 ### B.2.2:5.4 - Bias-Annotation
 
@@ -172,13 +172,13 @@ The fixture being manufactured is not part of the machine merely because the mac
 | `CC-B2.2-5` | An obtaining supervision or coordination relation is not treated as automatic system recognition, and evidence for it is not treated as safety warrant. |
 | `CC-B2.2-6` | Acting-system participation, transformation, and work are separated from parthood. |
 | `CC-B2.2-7` | Component assurance is not silently transferred to the result system. |
-| `CC-B2.2-8` | Descriptions, dashboards, simulations, and digital twins remain epistemes or publications unless the operating system itself is the EoC. |
+| `CC-B2.2-8` | Recover the episteme, representation, or publication claim for a description, dashboard, simulation, or digital twin separately from recognition of the operating system it describes, even when that system is the EoC. |
 
 ### B.2.2:7 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
-| Named aggregate as system | "The platform" or "the fleet" is treated as a system because it has a name. | Identify one exact candidate and apply the complete A.1 and direct `U.System` criteria; return to the old whole if either fails. |
+| Named aggregate as system | "The platform" or "the fleet" is treated as a system because it has a name. | Identify one exact candidate and apply the complete A.1 and direct `U.System` criteria; if either fails or cannot be determined, withhold system-result recognition and return that failure or `unknown` to B.2 without inferring that the old whole is sufficient. |
 | Component certificate transfer | Individual part certificates are used as result-system assurance. | Re-base assurance through B.2.2:4.5 and evidence-use patterns. |
 | Controller as containing whole | A controller or external system is treated as the new whole because it changes the parts. | Use A.12, A.3.4, B.2.5, and part-whole patterns separately. |
 | Dashboard as system | A monitoring model is treated as the operating system. | Use episteme, publication, source-use, C.30.AD, or digital-twin description patterns. |
@@ -211,7 +211,7 @@ The key distinction is ontological, not lexical. A whole proposed for recognitio
 | Meta-system transition and holonic systems lineage | A new coordinated whole can become the relevant operating object. | Use B.2 for whole reidentification, then apply complete A.1 and `U.System` recognition to the same candidate as required by B.2.2. |
 | Systems-of-systems and cyber-physical systems practice | Operational closure, coordination, external commitments, and assurance often change at the level of the exact new whole proposed for and then recognized under `U.System`. | B.2.2 keeps the direct facts with their subject patterns and tests each assurance claim against that exact recognized system instead of transferring component support. |
 | Constructional and part-whole ontology | Acting on an object and being part of it are different relations. | A.12, A.3.4, A.15.1, A.14, and C.13 remain separate subject patterns. |
-| Digital-twin and architecture-description practice | Rich descriptions can track a system without being the system. | Dashboards, models, twins, and publications use episteme and description patterns unless the operating system is recovered as EoC. |
+| Digital-twin and architecture-description practice | Rich descriptions can track a system without being the system. | Use episteme, description, representation, and publication patterns for the descriptive item; recover the operating system independently as EoC. |
 
 ### B.2.2:11 - Relations
 
@@ -219,7 +219,7 @@ The key distinction is ontological, not lexical. A whole proposed for recognitio
 - **Builds on:** `A.1`, `B.1.2`, `A.14`, and `C.13` for holon and system delimitation and part-whole grounding.
 - **Coordinates with:** `A.12`, `A.3.4`, `A.15`, `A.15.1`, `A.2.1`, `A.2.2`, `C.16`, `A.6.F`, `C.30`, `A.22`, `C.30.ASV`, `C.30.TFS-REL`, `A.10`, `B.3`, and `B.3.5`.
 - **Uses:** `B.2.5` when supervisor-subholon feedback relation is part of the system-result evidence.
-- **Contrasts with:** `B.2.3` for MHT-result holons admitted as `U.Episteme` and `B.2.4` for capability and functioning whole-reidentification evidence.
+- **Contrasts with:** `B.2.3` for MHT-result holons admitted as `U.Episteme` and `B.2.4` for the capability and functioning decision bridge to whole reidentification.
 
 ### B.2.2:End
 

@@ -38,7 +38,7 @@ FPF delivers a **generative scaffold** realised as:
    * **Cross‑Scale Coherence** — the same algebra binds parts to wholes at any level;
    * **Didactic Transparency** — each element exposes its own reasoning path.
 
-### E.1:5 - ** Conformance Checklist**
+### E.1:5 - Conformance Checklist
 
 | ID              | Requirement                                                                                                                                          | Rationale                                       |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -53,7 +53,7 @@ FPF delivers a **generative scaffold** realised as:
 *Trade‑offs* — Authors face an initial learning curve and must trace every rule to an invariant; disciplined traceability is required to prevent variant sprawl.
 
 ### E.1:7 - Relations & Precedence
-Pattern E.1 governs **E.2 Eleven Pillars** and the Guard‑Rail set **A.5–A.8**; any later pattern that conflicts with E.1 **MUST** be revised via a DRR before entering the Canon.
+Pattern E.1 governs **E.2 Eleven Pillars** and the Guard‑Rail set **E.5**; any later pattern that conflicts with E.1 **MUST** be revised via a DRR before entering the Canon.
 
 *“Purpose without a scaffold is wishful thinking; a scaffold without purpose is cargo‑cult—FPF welds the two into disciplined imagination.”*
 

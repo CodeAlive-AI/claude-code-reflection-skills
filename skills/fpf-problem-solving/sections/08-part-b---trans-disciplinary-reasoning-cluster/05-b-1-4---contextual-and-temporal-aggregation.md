@@ -6,7 +6,7 @@
 
 **Use this when.** Use this pattern when the current claim aggregates already recovered relations over an exact set of ordered positions, phases, or a time window, and the question is not just ordinary part-whole construction. Typical cues are ordered steps, order-sensitive argument chains, asset histories, proper temporal restrictions of one enduring carrier, rolling windows, use-bounded roll-ups, time-sliced evidence, or a bounded chronology over exact C.2.1 episteme identities and already obtaining edition relations.
 
-**Not this pattern when.** If the question is ordinary part-whole or collection admission, use `B.1`, `A.14`, and `C.13`. If it is episteme identity or historical edition continuity, use `C.2.1` before any aggregation. If the question is the method as such, method description, work plan, dated work occurrence, or Work temporal part or episode, use `A.3.1`, `A.3.2`, `A.15.2`, or `A.15.1`. If the question is work-resource accounting, use `B.1.6`. If the question is changed identity, use the pattern that defines the subject's identity or change; if a new whole must be reidentified, use `B.2` through `B.2.P`. If the question is temporal adequacy of a claim, use `C.27`.
+**Not this pattern when.** If the question is ordinary part-whole or collection admission, use `B.1`, `A.14`, and `C.13`. If it is episteme identity or historical edition continuity, use `C.2.1` before any aggregation. If the question is the method as such, method description, work plan, dated work occurrence, or Work temporal part or episode, use `A.3.1`, `A.3.2`, `A.15.2`, or `A.15.1`. If the question is work-resource accounting, use `B.1.6`. If the question is changed identity, use the pattern that defines the subject's identity or change; for a clear whole-reidentification question, use `B.2` directly to test whether the existing whole suffices or a new whole must be reidentified. Use `B.2.P` first only when emergence-family wording hides the claim kind. If the question is temporal adequacy of a claim, use `C.27`.
 
 **What goes wrong if missed.** Order, phase, context, or time-window wording becomes ordinary parthood, method order, performed work, evidence currentness, or whole reidentification by label.
 
@@ -93,7 +93,7 @@ If one source phrase mixes both modes, split the record. A Method may have an or
 | Proper `PhaseOf`, portion, membership, or other parthood relation for a non-Work carrier | `A.14`, `B.1`, and `C.13` as appropriate; Work temporal and part relations remain with `A.15.1` |
 | Holon delimitation or boundary-crossing relation | `A.1`, `B.1`, `A.12`, `A.3.4`, or the pattern that defines the exact relation |
 | Bounded change under conditions | `A.3.4` |
-| Whole reidentification, emergence-family wording, MHT, MET, MFT, synergy, or metric-mirage wording | Use `B.2.P` to test whether a whole-reidentification problem is current. If it remains current, use `B.2`, `B.2.2`, `B.2.3`, `B.2.4`, or `B.2.5` according to the recovered whole, emergence, autonomy, capability, or supervisor relation claim. |
+| Whole reidentification, emergence-family wording, MHT, MET, MFT, synergy, or metric-mirage wording | Use `B.2.P` when emergence-family wording hides the claim kind. If a whole-reidentification question remains, including one raised by an autonomy or capability change, use `B.2`; `B.2.2` and `B.2.3` handle System and Episteme result recognition, and `B.2.4` is the capability/functioning decision bridge. Use `B.2.5` separately for an exact two-sided supervisor-subholon feedback claim, whether or not whole reidentification is current. |
 | Architecture structural view or selected structure | `C.30.ASV`, `A.22`, or the pattern that defines or tests the architecture claim |
 | Mathematical order, graph, algebraic notation, graph path, or morphism used as expression | Use `C.29` when mathematical-lens adequacy, preserved structure, lost structure, payoff, or stop condition is being evaluated. Use `E.18` when the selected transformation-flow structure is current. Use `E.18.2` when the mathematical expression of that selected structure is current. |
 
@@ -178,7 +178,7 @@ For temporal phase aggregation:
 | Overread | Repair |
 | --- | --- |
 | A sequence is treated as physical parthood. | Recover ordered relation refs and use contextual aggregation; use part-whole patterns only for part-whole claims. |
-| A phase label is treated as a new system level. | Recover the carrier identity and phase relation; use whole reidentification only if B.2.P keeps that claim current. |
+| A phase label is treated as a new system level. | Recover the carrier identity and phase relation. If a clear whole-reidentification question remains, use `B.2` directly; use `B.2.P` first only when emergence-family wording hides the claim kind. |
 | A planning order is treated as performed work. | Use `A.15.2` for work plan and `A.15.1` for dated work occurrence. |
 | A resource total is placed inside temporal aggregation. | Use `B.1.6` for the work-resource ledger. |
 | A diagram or table is treated as the aggregate. | Recover the Description episteme or publication relation and the EntityOfConcern separately. |
@@ -209,7 +209,7 @@ The old `DesignRunTag` warning is preserved as a rule rather than a label: do no
 - Builds on `B.1`, `A.14`, and `C.13` for part-whole, phase, and constructive grounding discipline.
 - Coordinates with `C.2.1` for exact episteme identities and independently obtaining edition relations; with `A.3.1`, `A.3.2`, `A.15.2`, and `A.15.1` for method, method description, work plan, dated work occurrence, and exact Work-temporal relations.
 - Coordinates with `B.1.6` for work-resource aggregation.
-- Coordinates with `A.3.4` for transformation. When whole reidentification or emergence-family wording is current, `B.2.P` tests the problem and the relevant B.2-family pattern defines or constrains the recovered claim.
+- Coordinates with `A.3.4` for transformation. Use `B.2` directly for a clear whole-reidentification question; use `B.2.P` first only when emergence-family wording hides the claim kind. The relevant subject pattern defines or constrains the recovered claim.
 - Coordinates with `C.27` for temporal-claim adequacy. When mathematical expression is selected, `C.29` tests lens-use adequacy, `E.18` defines the selected transformation-flow structure, and `E.18.2` defines its mathematical description.
 
 ### B.1.4:End

@@ -24,7 +24,7 @@ and fragmenting historical audits.
 Establish a **Lexical Firewall** around the **Conceptual Core** *(conceptual constraint; not a build‑time linter)*:
 
 1. **Forbidden lexicon**
-   Normative patterns **SHALL NOT** contain tool‑or file‑specific words
+   Normative patterns **SHALL NOT** contain tool‑ or file‑specific words
    (e.g. protocol keywords, file extensions, IDE commands).
    Permissible wording: “a reference parser”, “a serialisation schema”.
 
@@ -35,6 +35,7 @@ Establish a **Lexical Firewall** around the **Conceptual Core** *(conceptual con
 
 3. **Glossary pointer**
    If an unavoidable technical term appears, it is defined in a *Tooling Glossary* outside the Core and referenced by conceptual alias—not embedded.
+
 *Non‑normative automation.* Machine checks **MAY** exist in Tooling; they are advisory and **MUST NOT** be imported into the Core.
 
 ### E.5.1:5 - Archetypal Grounding (System / Episteme)

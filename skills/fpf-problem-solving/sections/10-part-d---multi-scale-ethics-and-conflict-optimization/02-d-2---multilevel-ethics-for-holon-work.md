@@ -34,13 +34,15 @@ A change can be beneficial at one declared level or scope while imposing harm, e
 
 ### D.2:2 - Solution
 
-Open a `MultilevelEthicsEntry@Context`:
+Name the local gain, who or what may bear a loss, and the levels or scopes that make this an ethical concern. State the next question to settle. Recognition is complete when those sides and the next use are clear; an already qualified `D.3` conflict or `D.4` decision question can be used directly.
+
+Use `MultilevelEthicsEntry@Context` when the practitioner or a recipient needs to recover these connections for comparison or revision. Keep its content in the existing answer or working note when that suffices. Add evidence, value-frame editions, and supporting relations where the stated concern actually relies on them:
 
 ```text
 MultilevelEthicsEntry@Context:
   ethicalConcernRef
   affectedEntityOfConcernRef
-  valueFrameEditionRefs
+  valueFrameEditionRefs?
   claimScopeRef?: U.ClaimScope
   qualificationWindowRef?
   declaredLevelOrScopeRefs
@@ -69,12 +71,12 @@ MultilevelEthicsEntry@Context:
   workRefs?
   transformationRefs?
   expectedConsequenceRefs
-  evidenceRefs
-  uncertaintyOrCurrentnessCondition
+  evidenceRefs?
+  uncertaintyOrCurrentnessCondition?
   nextSubjectPatternLocator
 ```
 
-The entry record has one job: recognize that multilevel ethics is live and choose the next pattern to apply. It does not itself resolve the conflict.
+The entry has one job: make the multilevel concern recognizable and choose its next use. It does not require a separate dossier or new inquiry before the concern can be discussed. A proposed inquiry goes through `C.11.DUA` when its receiving contribution or feasibility is unresolved; conflict description and decision use remain with `D.3` and `D.4`.
 
 For this pattern, holon work includes material systems and epistemes when they are the affected EntityOfConcern. An architectural description, standard, model card, policy publication, or research program may be the affected episteme; the pattern still asks which levels, scopes, affected holons, interests, responsibilities, and consequences are live.
 
@@ -96,7 +98,9 @@ For this pattern, holon work includes material systems and epistemes when they a
 
 ### D.2:5 - Archetypal Grounding (Worked Slice)
 
-A product team wants to reduce service cost by making a medical device harder to service outside authorized centers. The move may improve manufacturer quality control and reduce liability risk, but harm patients in regions where authorized service is unavailable. `D.2` opens the entry: manufacturer, patients, service organizations, and device fleet are named as affected holons; the applicable regulatory and project value-frame editions delimit the claim; the regional and service scopes are explicit; value concerns include safety, access, responsibility, and maintainability; and the work plan and expected consequences are named. The team then uses `D.3` to record the conflict description and `D.4` for mediation or decision use.
+A product team wants to reduce service cost by making a medical device harder to service outside authorized centers. At the first discussion, the team expects better manufacturer quality control and lower liability risk, while patients in regions without authorized service may lose timely access. Name those sides and their scopes, then return the next question: which service restriction, if any, addresses the particular hazard without imposing avoidable access harm? This is a useful `D.2` result. `D.3` can describe the tension in a short note from the available account.
+
+Now suppose a release decision depends on whether a proposed servicing method can leave calibration outside the declared tolerance. A qualified test team can perform the discriminating check before the release window closes, and the release authority needs its result under the applicable rule. Preserve that focused investigation and the rule's actual force. Use `C.11.DUA` to compare the restriction's protective contribution with access harm, feasible alternatives, delay, and displaced work; a safety label settles none of those merits. `D.4` carries the resulting decision, including the authority needed to change a requirement or accept a residual. If the required basis cannot be obtained, the proposed release remains unsupported; a narrower continuation must meet its own conditions.
 
 ### D.2:5.1 - Bias-Annotation
 
@@ -113,7 +117,7 @@ A product team wants to reduce service cost by making a medical device harder to
 | --- | --- | --- |
 | CC-D2-1 | Declared levels or scopes come from the situation and are named by value. | Prevents fixed moral ladders and false `U.Level`. |
 | CC-D2-2 | Affected holons, epistemes, Methods, actual Work, and consequences are named when current. Role wording is recovered through `E.10.ROLE`; a local kind and a C.2.1 System-classification assertion episteme remain separate. Every assignment recovers its directly declared species and obtaining occurrence. Participation or affected-party status, responsibility, commitment, permission, and authority each use their own direct relation or exact `missing-governor`. | Keeps the entry usable without making assignment imply participation or responsibility. |
-| CC-D2-3 | `nextSubjectPatternLocator` is `D.3`, `D.5`, `C.30.ILC`, or another subject pattern named by value. | Keeps D.2 as entry recognition, not conflict solver. |
+| CC-D2-3 | The result identifies the next live question and `D.3`, `D.4`, `D.5`, `C.30.ILC`, or another subject pattern that answers it. The entry record is used only when its recoverable content contributes to that use. | Keeps D.2 as entry recognition, not conflict solver. |
 | CC-D2-4 | Mathematical scale, threshold, optimization, or Pareto reasoning uses `C.29` or the direct measurement pattern. | Prevents math wording from becoming ethics ontology. |
 
 ### D.2:8 - Common Anti-Patterns and How to Avoid Them
@@ -122,7 +126,7 @@ A product team wants to reduce service cost by making a medical device harder to
 | --- | --- | --- |
 | One-level ethics | The case is treated as good because one declared level improves. | Name every affected level or scope that changes the ethical claim. |
 | Ladder import | A fixed level list is imported before the case is understood. | Recover the situation-defined scopes first. |
-| Entry as solution | D.2 is used to decide the conflict. | Use D.2 only to open the entry and select D.3, D.4, D.5, C.30.ILC, or another subject pattern. |
+| Entry as solution | D.2 is used to decide the conflict. | Name the concern and select D.3, D.4, D.5, C.30.ILC, or another subject pattern for its next use. |
 | Hidden episteme harm | A standard, model, policy, or architecture description is treated only as a document, not as an affected episteme with use consequences. | Separate the episteme, its publication relation, use relation, and affected systems or people. |
 
 ### D.2:7 - Consequences
@@ -150,6 +154,7 @@ The pattern deliberately avoids a fixed ladder. It asks for declared levels and 
 - Builds on `A.1`, `B.1`, and `C.13` for holon, level, scope, and part-whole grounding.
 - Coordinates with `D.3` for the interlevel ethical conflict description and with `D.4` for mediation or decision use.
 - Coordinates with `D.5` for bias, fairness, impact audit, causal-fairness audit consumption, and ethical assurance.
+- Coordinates with `C.11.DUA` when a proposed inquiry or disputed protective requirement needs contribution, feasibility, and burden appraisal.
 - Coordinates with `A.15`, `A.3.4`, `C.16`, `C.29`, and `C.30.ILC` when method, work, transformation, measurement, mathematical lens, or architecture residual claims are current.
 
 ### D.2:End

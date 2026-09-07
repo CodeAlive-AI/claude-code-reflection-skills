@@ -4,11 +4,11 @@
 **Stage.** *design-time* legality gate (establishes comparison legality & evidence minima; constrains run-time gates)
 **Primary output.** `CG‑Spec` — a notation-independent legality gate for a `CG‑Frame`, published to UTS (with explicit edition pins for downstream reproducibility and RSCR).
 **Primary hooks.** `USM.ScopeSlice(G)`, `entityOfConcern`, `SCP`, `MinimalEvidence`, `CNSpecRef`, `Γ‑fold`, `Φ(CL)` / `Φ_plane` policy pins, `UTS` publication (Name Cards + edition pins).
-**Non-duplication note.** Universal Part‑G invariants are governed by `G.Core` and are satisfied here **only via delegation** (`CC‑G0‑CoreRef` → `CC‑GCORE‑*`). Single‑governing definition CN/CG spec-ref discipline is enforced via `CC‑GCORE‑CN‑CG‑1` (no shadow specs; no competing defaults).
+**Non-duplication note.** Universal Part‑G invariants are cited through `G.Core` and are satisfied here **only via delegation** (`CC‑G0‑CoreRef` → `CC‑GCORE‑*`). Single‑governing definition CN/CG spec-ref discipline is enforced via `CC‑GCORE‑CN‑CG‑1` (no shadow specs; no competing defaults).
 
 ### G.0:1 - Problem frame
 
-A team defines or evolves a `CG‑Frame` (e.g., a frame for creativity measurement, decision quality, architecture trade‑offs, or selected-set publication). Downstream mechanisms (G.1–G.5 and beyond) must compare, aggregate, and publish CHR‑typed observations in ways that are:
+A team defines or evolves a `CG‑Frame` (e.g., a frame for creativity measurement, decision quality, architecture trade‑offs, or selected-set publication). Downstream comparison, aggregation, and publication of CHR‑typed observations (G.1–G.5 and beyond) must be:
 
 * lawful with respect to measurement admissibility (scale/unit/polarity constraints),
 * auditable with explicit evidence minima and provenance,
@@ -107,7 +107,7 @@ CG‑Spec :=
 
   ReferenceMap := minimal map{term/id → UTS|CHR|SoTA-pack refs},
 
-  CNSpecRef := ⟨A.19 ref, CNSpecRef.edition⟩,          // CN‑Spec is the governance card (one governing definition)
+  CNSpecRef := ⟨CN‑Spec ref, CNSpecRef.edition⟩,          // CN‑Spec is the governance card defined in A.19.CN (one governing definition)
 
   Characteristics := [CHR.Characteristic.id…],          // pointers only; authored in G.3 CHR pack
 
@@ -116,13 +116,13 @@ CG‑Spec :=
   SCP := ⟨SCPId, SCPRef.edition, map Characteristic.id → SCPEntry⟩,
   MinimalEvidence := ⟨MinEvId, MinimalEvidenceRef.edition?, map Characteristic.id → MinEvidenceEntry⟩,  // min pin: CGSpecRef.edition
 
-  Γ‑fold := ⟨GammaFoldId, ΓFoldRef.edition,
+  Γ‑fold := ⟨GammaFoldId, ΓFoldRef.edition?,   // pin the actual model/policy when a numerical fold is used
              defaultRef := DefaultId.GammaFoldForR_eff,
              override? := ⟨overrideRef, proof_refs, boundary_notes⟩
            ⟩,
 
   // Penalty routing and plane policies are by explicit policy ids.
-  // Semantics (tri-state, penalties→R_eff-only, crossing visibility, set-return) are governed by G.Core.
+  // For semantics (tri-state, penalties→R_eff-only, crossing visibility, set-return), cite G.Core and the governing definitions it identifies.
   CL‑Routing := ⟨policy_id, map Bridge.CL → penalty_spec⟩,
   Φ := ⟨phi_policy_id, phi_table_ref?, psi_policy_id?, phi_plane_policy_id?⟩,
 
@@ -173,9 +173,9 @@ CG‑Spec :=
 
 1. **Charter the frame.** Declare `Context`, `Scope`, `entityOfConcern`, boundary examples/non-examples, and `ReferenceMap`.
 2. **Draft ComparatorSet and SCP.** Enumerate permitted comparator forms and bind each to CHR characteristics and legality constraints (scale/unit/polarity discipline). Attach guard bindings as explicit references/pins.
-3. **Bind Characteristics.** Ensure every compared quantity is a CHR characteristic id (reuse/mint via UTS discipline).
+3. **Bind Characteristics.** For every comparison, identify the CHR characteristics of the quantities being compared and cite them by id (reuse/mint via UTS discipline).
 4. **Declare MinimalEvidence.** For each characteristic: required lanes/carriers, freshness window, crossing allowances (if any), and explicit failure behavior wiring (tri-state semantics delegated to `G.Core`).
-5. **Pin trust folding and penalties.** Cite the one governing definition for `DefaultId.GammaFoldForR_eff` unless explicitly overridden with proof refs; publish `Φ`/CL policy ids explicitly.
+5. **Pin the support-composition basis.** Cite `DefaultId.GammaFoldForR_eff` for the model-qualified rule. A numerical fold or loss pins its actual receiving model, compatible inputs, dependency assumptions, and justification refs; monotonicity and boundedness alone are insufficient. When no common aggregate is justified, the referenced rule retains separate support and a bounded synthesis. Publish any actually used Φ/CL policy ids; keep acceptance thresholds in G.4.
 6. **Publish and register regression tests.** Publish `CG‑Spec@UTS` with edition-pinned segments; register RSCR tests for the frame’s legality surfaces and evidence minima.
 7. **Public-id continuity and refresh readiness.** Declare refresh cadence and deprecations with lexical continuity notes; ensure RSCR trigger kinds are emitted as canonical ids.
 
@@ -188,8 +188,8 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 * **PatternScopeId:** `G.0:Ext.SpecRefSurfaces`
 * **GPatternExtensionId:** `SpecRefSurfaces`
 * **GPatternExtensionKind:** `InteropSpecific`
-* **GoverningPatternId:** `A.19`
-* **Uses:** `{A.19}`
+* **GoverningPatternId:** `A.19.CN`
+* **Uses:** `{A.19.CN}`
 * **⊑/⊑⁺:** `∅`
 * **RequiredPins/EditionPins/PolicyPins (minimum):**
 
@@ -285,20 +285,20 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 | --- | --- |
 | **CC‑G0‑CoreRef** | `G.0` is conformant only if the applicable core obligations listed in `G.0:4.1` are satisfied (delegation to `CC‑GCORE‑*`; no shadow specs, no competing defaults, typed RSCR triggers, explicit pins). |
 | CC‑G0‑01 | `CG‑Spec` is published as a notation-independent UTS object with explicit `Edition`, `Context`, `Scope`, `entityOfConcern`, and a minimum `ReferenceMap`. |
-| CC‑G0‑02 | `CNSpecRef.edition` is present and is treated as an external governance-card reference (no local redefinition of CN semantics). *(Delegation target: `CC‑GCORE‑CN‑CG‑1`.)* |
+| CC‑G0‑02 | `CNSpecRef.edition` is present and identifies the edition of the external governance card cited by `CNSpecRef` (no local redefinition of CN semantics). *(Delegation target: `CC‑GCORE‑CN‑CG‑1`.)* |
 | CC‑G0‑03 | `ComparatorSet` is explicit and finite; each comparator is typed and bound to `SCP` and referenced CHR characteristics; **anything not enumerated MUST be treated as illegal/abstain by default** (no implicit comparator defaults). |
 | CC‑G0‑04 | `SCP` declares, per characteristic, the lawful operation regime needed for each referenced comparator (scale/unit/polarity constraints and any required proofs/refs). |
-| CC‑G0‑05 | `MinimalEvidence` is declared per characteristic and includes explicit lane/carrier requirements, freshness window references (if any), and explicit failure behavior wiring (tri-state semantics delegated). If freshness windows are used, a stable window id (e.g., `PathSliceId`) MUST be pinned for audit. |
-| CC‑G0‑06 | `Γ‑fold` is present as an edition-pinned segment and either (i) cites `DefaultId.GammaFoldForR_eff` (one governing definition) or (ii) provides an explicit override with proof refs. |
+| CC‑G0‑05 | `MinimalEvidence` is declared per characteristic and includes explicit lane/carrier requirements, freshness window references (if any), and explicit failure behavior wiring (tri-state semantics delegated). If freshness windows are used, a stable reference making the applicable window recoverable (e.g., a `PathSliceId` with its declared time window) MUST be pinned for audit. |
+| CC‑G0‑06 | The edition-addressable Γ-fold segment **MUST** cite `DefaultId.GammaFoldForR_eff` at `G.5 CC‑G5.4`. Pin any numerical model/policy actually used, with its receiving quantity, input meanings and scales, dependencies, operation and proof/justification refs as required by that governing rule and B.3/C.2.2. With no justified numerical fold, retain the separate support permitted by the governing rule; the segment is not a demand for a score. |
 | CC‑G0‑07 | If crossing penalties are used, `CL‑Routing` and `Φ` policy ids are explicit and auditable (policy ids are exposed as pins/refs) **and are required pins for downstream SCR publication on penalised claims** (see `G.6`). |
 | CC‑G0‑08 | `AcceptanceStubs` in `CG‑Spec` are templates only; any context-local thresholds/acceptance policies are governed by CAL acceptance artefacts (G.4) and are cited, not duplicated. |
 | CC‑G0‑09 | RSCR tests and triggers for edits to legality surfaces and evidence minima are present and use canonical `RSCRTriggerKindId`s. The RSCR test set SHOULD cover at least: illegal_op_refusals; unit and scale legality checks; freshness windows; partial-order scalarisation refusals; threshold semantics; CL→`R_eff` routing; refusal of `degrade.order` on unit mismatches (MM‑CHR). |
 | CC‑G0‑10 | `PublicIdContinuity` is declared: governing definition, DRR link, refresh cadence, decay and aging policy, and deprecations. Deprecations preserve lexical continuity (Δ-discipline; delegated to `CC‑GCORE‑ID‑*`). |
 | CC‑G0‑11 | *(Conditional)* If `Illumination` / QD hooks are present, `DescriptorMapRef.edition`, `DistanceDefRef.edition`, and any `InsertionPolicyRef` / promotion policy ids are pinned (or explicitly marked absent) and are recorded in provenance/audit pins. |
-| CC‑G0‑12 | *(Conditional)* If freshness windows influence gating/selection, they are published and enforced, and the relevant window ids (`PathSliceId` or equivalent) are recorded in SCR/audit pins. |
-| CC‑G0‑13 | **Pre-flight numeric gates.** Any numeric comparison/aggregation declared in `ComparatorSet` has associated `GateChecks` for unit legality, scale legality, pinned SOP/editions, and declared comparability assumptions; failing any check yields `refuse` or `abstain` (tri-state semantics delegated). |
+| CC‑G0‑12 | *(Conditional)* If freshness windows influence gating/selection, they are published and enforced, and references making the relevant windows recoverable (`PathSliceId` with a declared time window, or equivalent) are recorded in SCR/audit pins. |
+| CC‑G0‑13 | **Pre-flight numeric gates.** Any numeric comparison/aggregation declared in `ComparatorSet` has associated `GateChecks` for unit legality, scale legality, pinned SOP/editions, and declared comparability assumptions; failing any check requires refusing the operation or returning an `abstain` guard result (tri-state semantics delegated). |
 | CC‑G0‑14 | **GateCrossing hook exposure.** Exports provide `Expose_CrossingHooks` inputs so `GateChecks` (`E.18/A.21`) can validate plane consistency, crossing intent, lane purity, and lexical SD; failures MUST block publication. |
-| **CC‑G0‑Φ** | `Φ(CL)` (and `Φ_plane`, if used) is monotone, bounded, and table-backed; policy ids are published; construction preserves `R_eff ≥ 0`. |
+| **CC‑G0‑Φ** | An actually used numerical Φ(CL) or plane-loss policy has a justified receiving quantity, scale, input interpretation, assumptions, and derivation or calibration under B.3/C.2.2. Publish the policy ids and any required table. Preserve the model's loss direction and bounds; monotonicity, boundedness, or clipping alone does not establish a valid loss model. |
 | **CC‑G0‑Unknowns** | *Delegated.* Unknown handling MUST follow the tri-state guard semantics `{pass|degrade|abstain}` with no silent coercions. (See `CC‑GCORE‑GUARD‑1`.) |
 | **CC‑G0‑CSLC** | Scale/unit/polarity legality MUST be proven before any aggregation; illegal arithmetic on ordinal/nominal values is nonconformant. (Governed by the relevant legality patterns; `G.0` only binds and cites.) |
 
@@ -337,7 +337,7 @@ This pattern aligns with post‑2015 best practice in evaluation and governance 
 
 ### G.0:12 - Relations
 
-**Builds on:** `G.Core`, `A.19 (CN‑Spec)`, `A.10 (evidence carriers)`, `A.17–A.19 / C.16 (MM‑CHR legality)`, `A.18 (CSLC)`, `B.3 (trust / Γ‑fold family)`, `F.* (contexts, bridges, CL, UTS)`, `E.10 (lexical rules)`, `E.5.* (notation independence discipline)`.
+**Builds on:** `G.Core`, `A.19.CN (CN‑Spec)`, `A.10 (evidence carriers)`, `A.17–A.19 / C.16 (MM‑CHR legality)`, `A.18 (CSLC)`, `B.3 (trust / Γ‑fold family)`, `F.* (contexts, bridges, CL, UTS)`, `E.10 (lexical rules)`, `E.5.* (notation independence discipline)`.
 **Used by:** `G.1` (generator guards), `G.2` (harvesting constraints), `G.3` (required CHR), `G.4` (acceptance templates / proof hooks), `G.5` (eligibility gates), `G.6` (evidence/pin surfaces), and downstream parity/shipping/refresh where `CG‑Spec` is pinned.
 **Publishes to:** `UTS` (Name Cards + editioned `CG‑Spec` segments).
 

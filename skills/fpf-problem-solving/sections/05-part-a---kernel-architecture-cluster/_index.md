@@ -7,7 +7,7 @@
 - [A.1 - Holon Ontic Foundation (U.Holon and Admitted Holon Kinds)](02-a-1---holon-ontic-foundation.md) (361 lines) — Type: Part A architectural ontology pattern
 - [A.1.1 - Bounded Model-Use Structure and DDD Bounded-Context Recovery](03-a-1-1---bounded-model-use-structure-and-ddd-bounded-context.md) (438 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](04-a-1-scr---finding-the-acting-or-changed-system.md) (259 lines) — Type: Part A practitioner application pattern
-- [A.1.CSD - Discovering Systems That May Bear Consequences](05-a-1-csd---discovering-systems-that-may-bear-consequences.md) (267 lines) — Type: Part A practitioner discovery pattern
+- [A.1.CSD - Discovering Systems That May Bear Consequences](05-a-1-csd---discovering-systems-that-may-bear-consequences.md) (272 lines) — Type: Part A practitioner discovery pattern
 - [A.1.STM - Using the System-Thinking Long Mantra](06-a-1-stm---using-the-system-thinking-long-mantra.md) (171 lines) — Type: Part A practitioner application pattern
 - [A.2 - System-Role Kinds and Assignments](07-a-2---system-role-kinds-and-assignments.md) (420 lines) — Type: Architectural (A)
 - [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment](08-a-2-1---u-systemroleassignment---contextual-system-role-assi.md) (349 lines) — Type: Definitional (D)
@@ -22,7 +22,7 @@
 - [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](17-a-2-9-u-speechact.md) (401 lines) — Type: Definitional work-ontic pattern
 - [A.3 - Transformer Constitution (Quartet)](18-a-3---transformer-constitution.md) (220 lines) — Establish a substrate-neutral way to say which system performed one dated world-side Work occurrence, under which exact U.RoleAssignment, by enacting which U.Method, and which separately governed...
 - [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](19-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (459 lines) — Type: Definitional pattern
-- [A.3.1.MR - Candidate-Method Recovery from Work Evidence](20-a-3-1-mr---candidate-method-recovery-from-work-evidence.md) (206 lines) — Type: Architectural (A)
+- [A.3.1.MR - Candidate-Method Recovery from Work Evidence](20-a-3-1-mr---candidate-method-recovery-from-work-evidence.md) (212 lines) — Type: Architectural (A)
 - [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing](21-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) (332 lines) — Type: Definitional pattern
 - [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](22-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (324 lines) — Type: Definitional pattern
 - [A.3.4 - U.Transformation: Bounded Change Under Conditions](23-a-3-4---u-transformation-bounded-change-under-conditions.md) (391 lines) — Type: Definitional pattern

@@ -89,7 +89,7 @@ If later operation shows that reliable water delivery depends on an upstream res
 | Current question | Leave through | Near miss blocked here |
 | --- | --- | --- |
 | Is this exact existing entity a system? | A.1 and A.1.SCR | A noun, diagram box, plan, system-role label or assignment, or capability does not establish systemhood. |
-| Which omitted Systems may undergo relevant changes that alter the current decision or investigation? | A.1.CSD | Use the current frame as a starting point for A.1.CSD's bounded search; keep possible paths modal until their direct predicates are supported. |
+| Which omitted Systems may undergo relevant changes that alter the current decision or investigation? | A.1.CSD | Use the current frame as a starting point for A.1.CSD's bounded search; keep modal path claims distinct and add a separate actuality claim only when the direct predicate and its case conditions are supported. |
 | Which system is this project about? | A.15.6 | Keep system identity, project designation, system-role-kind interpretation, and any system-role assignment distinct. |
 | What is promised, provided, connected, permitted, or stopped? | A.6.P §4.11a, then its subject pattern | *Service* or *access* does not select a system or one service bundle. |
 | Which inside could support the outside use? | C.32.P2S and C.30 family | Architecture chosen before a stated outside-use hypothesis must return to that missing basis. |
@@ -97,7 +97,7 @@ If later operation shows that reliable water delivery depends on an upstream res
 | What reusable way, performed occurrence, or actual change is current? | A.3.1, A.15.1, or A.3.4 | Method, Work, and Transformation are different objects and none proves the others. |
 | Did production, identity inception, completion, or readiness occur? | A.15.PROD, A.15.5, and A.21 as applicable | A final visible step, result label, or `DesignRunTag` proves none of these claims. |
 | Is this one TFS, an internal subflow, or a network? | E.18 and E.18.NET | A graph shape, shared entity, or `creates` label does not identify a network or relation. |
-| Does evidence support this claim, and may a receiver rely on it? | A.10 and B.3 | Evidence availability and assurance are not truth, actuality, or map completion. |
+| Does evidence support this claim, and may a receiver rely on it? | A.10; B.3 only for a named assurance use | Evidence availability and assurance are not truth, actuality, or map completion. |
 
 ### A.1.STM:7 - Recognition stress boundary
 

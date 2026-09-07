@@ -10,7 +10,7 @@ FPF fixes two archetypal sub-holons: **`U.System`** (physical/operational) and *
 
 ### C.2:2 - Problem
 
-Teams routinely entangle **programs, specifications, proofs, and datasets**; a “proof” is treated as a tested routine, a “program” is cited as if it entailed a theorem. **Trust decays** because justification and evidence freshness are not explicit. Epistemes are anthropomorphised as actors (“the standard enforces…”), producing **category errors at execution**. Without a shared composition and equivalence calculus, aggregates hide weakest links and analogies harden into overclaims. KD‑CAL must stop these failure modes with a **single constitution and scale‑set**.
+Teams routinely entangle **programs, specifications, proofs, and datasets**; a proof is treated as evidence that an actual system meets its assumptions, or a program as if it entailed a theorem. Warrant becomes opaque when support and its applicable currentness conditions are not explicit. Epistemes are anthropomorphised as actors (“the standard enforces…”), producing category errors at execution. Aggregation can hide a missing necessary premise, erase complementary support, or conceal contrary evidence behind an unjustified score. KD-CAL keeps constitution, input meanings, scales, and support dependencies explicit.
 
 ### C.2:3 - Forces
 
@@ -27,7 +27,7 @@ Teams routinely entangle **programs, specifications, proofs, and datasets**; a �
 
 * **Formality F.** From free prose to **machine‑checkable proof/specification**. Litmus: *would a machine reject it if wrong?*
 * **Claim scope (G), a set‑valued applicability over `U.ContextSlice`, with ∩/SpanUnion/translate algebra; CL penalties apply to R, not to F/G.** Litmus: *how wide is the declared scope, and under what minimal assumptions does the claim hold?*
-* **Reliability R.** From untested idea to **continuously validated claim**. Litmus: *where is the last successful severe test?* **R‑claims MUST bind to evidence and declare relevance windows; stale bindings degrade R or require waiver per ESG policy.**
+* **Reliability R.** Warrant for this exact claim and receiving use. Litmus: *what supports this conclusion, under which assumptions, and what limits it?* **R-claims MUST bind to their actual formal or empirical support.** A numerical R requires the B.3/C.2.2 meaning, scale, and model; otherwise retain separate support and a bounded reasoned conclusion. A proof under axioms needs no empirical score, and F cannot be substituted for R. Relevance windows and B.3.4 currentness rules apply where the relied-on support consumes them.
 
  **Congruence Level (CL), pairwise ladder.**
  `CL‑0` **Opposed/Disjoint** (contrastive; no substitution); `CL‑1` **Comparable / Naming‑only** (label similarity; no substitution); `CL‑2` **Translatable / RoleAssignment‑eligible** (structure‑preserving mapping in a declared fragment with **stated loss**; theorems may transport); `CL‑3` **Near‑identity / Type‑structure‑safe** (invariants match; type‑structure substitution allowed). *CL is a characteristic of a relation between two epistemes; it is not a fourth member of the F–G–R assurance tuple and it is not a characteristic space of its own.* **Norm:** substitution is permitted only if plane‑preserving and **CL ≥ 2**; substituting **type‑structure** requires **CL = 3**.
@@ -38,21 +38,22 @@ Teams routinely entangle **programs, specifications, proofs, and datasets**; a �
 
 * **ΔF — Formalise.** Rewrite for stricter calculi/grammars; raise proof obligations.
 * **ΔG — Generalise / Specialise.** Widen or narrow the **claim scope** (assumptions & scope). Changes to decomposition granularity are an **orthogonal view** and do not change **G** unless they alter the envelope.
-* **ΔR — Calibrate / Validate.** Strengthen severe tests or add live monitoring; update evidence bindings.
+* **ΔR — Calibrate / Validate.** Revise warrant through support that actually bears on the claim: proof or reasoning, calibration, severe tests, or monitoring as applicable. State what the contribution changes. A formalization alone is ΔF, not an R increase; choosing new inquiry is a separate decision.
 * **ΔCL — Congrue.** Establish and record the sameness relation between **two** epistemes (ladder 0→3).
-  Moves compose into **paths**; CL along a path is the **minimum** of its links.
+  Moves compose into **paths**. A CL chain minimum retains only the ordered congruence meaning justified by the relation family; it is not a numerical reliability loss.
 
-#### C.2:4.3 - Composition (Γ\_epist) and propagation
+#### C.2:4.3 - Composition (Γ_epist) and propagation
 
-Let **Γ\_epist** combine epistemes `{Eᵢ}` into a composite episteme **Γ** that makes a joint claim (*AND‑style*) or exposes an interface (*series composition*). KD‑CAL imposes **safe defaults**:
+Let **Γ_epist** compose exact epistemes `{Eᵢ}` for one declared claim and use. B.1.3 supplies the synthesis/compilation Method; B.3 and C.2.2 govern warrant and scale discipline.
 
-* **R (Reliability).** Along any justification **path** `P`, compute **`R_eff(P) = max(0, min_i R_i − Φ(CL_min(P)))`** (weakest‑link with congruence penalty). For **series** composition (claims needed conjunctively), the path‑wise weakest‑link applies; for **parallel** support (independent lines to the *same* claim), use **`R(Γ) = max_P R_eff(P)`** (annotate independence); never exceed the best attested line. A traversed notation, scope-translation, kind, plane, source-local, model-use, or evidence-reuse relation contributes to `CL_min(P)` only through the loss rule it actually declares.
+* **R (Reliability).** First distinguish indispensable premises, alternative sufficient arguments, complementary evidence, different scope slices, and counterevidence. Identify duplicated data and shared assumptions or bias. A numerical fold requires warranted input meanings, compatible scales, dependencies, and a receiving model. Neither series nor parallel syntax supplies a default minimum or maximum, and there is no universal cap at the best support line. Where no common model is justified, retain separate contributions and limitations in a bounded reasoned synthesis.
+* **F (Formality).** `F(Γ) = minᵢ F(Eᵢ)` over the essential formal constituents of the claim. This is an ordinal formality statement, not an R calculation. Raise F by the actual ΔF move; neither an axiomatic mode nor a `line=formal` tag converts F into empirical warrant.
+* **G (ClaimScope).** Required premises compose only on their overlapping scope. Distinct supported slices may form `SpanUnion({G_path})` under A.2.6 and C.2.2's type-before-scope rule; retain their support separately and drop unsupported regions. A new source does not by itself generalise the claim. Scope change remains an explicit ΔG± move.
+* **CL (Congruence).** Keep each traversed mapping and the ordered meaning of its declared CL visible. A chain minimum is usable where that relation's congruence rule justifies it. A notation, scope-translation, kind, plane, source-local, model-use, or evidence-reuse relation contributes only its own warranted loss. A numerical Φ needs its receiving model; a monotone table or clipped output does not supply one.
 
-* **F (Formality).** `F(Γ) = minᵢ F(Eᵢ)` (monotone non‑increasing along used paths). To raise **F**, apply **ΔF** to the weakest parts.
-* **G (ClaimScope).** On any dependency **path**, take the **intersection** of claim scopes (the **narrowest overlapping scope**). Across **independent support paths to the same claim**, set **`G(Γ) = SpanUnion({G_path})` constrained by support** (drop unsupported regions). Widening/narrowing the scope is an explicit **ΔG±** operation.
-* **CL (Congruence).** For a chain of mappings `E₀ ~ E₁ ~ … ~ Eₖ`, the **path congruence** is `min CL(Eⱼ,Eⱼ₊₁)`. Passing through a **NotationBridge** sets CL to the bridge’s declared level; the **Φ(CL)** penalty is applied in the **R** fold for any path that traverses it.
+For example, two necessary independent conditions with probabilities 0.9 each have conjunction probability 0.81, not minimum 0.9. Conversely, a limited complementary source need not reduce the support already available. A credible contrary result changes the affected conclusion. A theorem A ⇒ P remains valid as a formal result while evidence violating A can defeat its use as assurance of an actual system.
 
-These rules keep Γ aligned with the **holonic kernel**: Γ is only defined on holons and respects identity/boundary discipline from the core.
+Γ remains defined on holons and respects the core's identity and boundary discipline. Its support account establishes neither a new action permission nor the worth of acquiring further evidence.
 
 #### C.2:4.4 - What **must not** be conflated (normative guards)
 
@@ -62,11 +63,11 @@ These rules keep Γ aligned with the **holonic kernel**: Γ is only defined on h
 
 ### C.2:5 - ✱ Archetypal Grounding (Tell–Show–Show)
 
-**Universal rule (tell).** *Compose knowledge by Γ_epist with weakest-link R, monotone F, and explicit CL on every relation that declares it. Identify the episteme by exact claim content, EntityOfConcern, and effective reference scheme; keep empirical grounding, edition, viewpoint selection, view conformance, representation, publication form, publication occurrence, and carrier in their own direct relations.*
+**Universal rule (tell).** *Compose knowledge by Γ_epist with explicit support roles, dependence, scope, and justified input scales. Use the receiving model for any R calculation, or return a bounded non-aggregate synthesis. Identify the episteme by exact claim content, EntityOfConcern, and effective reference scheme; keep empirical grounding, edition, viewpoint selection, view conformance, representation, publication form, publication occurrence, and carrier in their own direct relations.*
 
 **System (show, current physical-system lens).** Consider a **battery-pack thermal subsystem** integrating a physics model of heat flow and an operating envelope for fast-charge. As a **system**, it composes pumps, sensors, and controllers through the system, composition, boundary, state, and dynamics guidance in `A.1`, `A.14`, `A.22`, and `A.3.4`, with conservation constraints made explicit; `B.1.6` and `C.16` govern resource and measurement claims as applicable. Planned `C.1` (Sys-CAL) may later consolidate that guidance, but it supplies no current governing semantics. The assurance story depends on epistemes about the model and envelope; the system **acts**, epistemes constrain. (Archetypes and boundary discipline per core.)
 
-**Episteme (show, KD-CAL lens).** Consider a **CMIP-class climate projection episteme** (post-2015 generation): its exact claim content covers PDEs and parameterisations; its EntityOfConcern identifies what the projection claims concern; and its effective reference scheme supplies the interpretation rules. A separate `U.ClaimScope` names historical forcings, resolution, and assumptions. Any empirical-grounding occurrence names the grounding holon and covered claim subgraph separately. Its representation may include domain equations and a tabular schema linked by an explicit notation or representation relation with stated loss. Compose sub-epistemes for radiation, clouds, and ocean mixing: `R = min` across the critical path; an independent hindcast line can raise `R` only up to its own level; `F` is bounded by the least-formal sub-claim unless the composition adds formal invariants.
+**Episteme (show, KD-CAL lens).** Consider a **CMIP-class climate projection episteme** (post-2015 generation): its exact claim content covers PDEs and parameterisations; its EntityOfConcern identifies what the projection claims concern; and its effective reference scheme supplies the interpretation rules. A separate `U.ClaimScope` names historical forcings, resolution, and assumptions. Any empirical-grounding occurrence names the grounding holon and covered claim subgraph separately. Its representation may include domain equations and a tabular schema linked by an explicit notation or representation relation with stated loss. When composing radiation, cloud, and ocean-mixing contributions, identify which assumptions the particular projection requires and what each hindcast actually tests. Shared models or data do not establish independent confirmation. An aggregate R needs the domain quantity and dependency model; otherwise retain the separate tests, assumptions, scope limits, and any disagreements. F remains an ordinal account of the essential formal constituents.
 
 ### C.2:6 - Bias‑Annotation
 
@@ -77,15 +78,15 @@ These rules keep Γ aligned with the **holonic kernel**: Γ is only defined on h
 ### C.2:7 - Conformance Checklist
 
 1. **C2-1 (Episteme constitution and neighbors).** Every `U.Episteme` **MUST** satisfy C.2.1 constitution through exact claim content, one exact EntityOfConcern, and one effective `U.ReferenceScheme`. Empirical grounding and edition are stated through their separate C.2.1 relations. Viewpoint selection and `U.View` conformance use E.17.0; representation uses C.29/A.6.3.RT; publication occurrence, form, and carrier use E.17/E.24.PUB. None is treated as an episteme slot or identity component merely because a record or notation places it beside the constitution values.
-2. **C2‑2 (Coordinates).** Each episteme **SHALL** declare `[F,G,R]` with a brief rationale; **F** is `U.Formality ∈ {F0…F9}` per **C.2.3**, **exactly one episteme‑level F** computed as the **min over essential parts**. CL is declared for **pairs only**. A named notation scheme **MAY** use sub‑anchors (e.g., `F4[OCL]`, `F7[HOL]`), which **MUST** preserve the global order and **map to their parent anchor** from C.2.3.
-3. **C2‑3 (Composition).** Authors **SHALL** choose Γ_mode (**series** vs **parallel**). For any justification **path** use **`R_eff(P) = max(0, min_i R_i − Φ(CL_min(P)))`**; for **parallel** independent lines to the *same claim*, take **`R(Γ) = max_P R_eff(P)`** (never exceeding the highest-R support line). Compute `F(Γ) = min` along the used paths. For **G**, use **path‑wise intersections** and then **SpanUnion({G_path}) constrained by support**. A traversal **MUST** name the actual scope-translation, notation, kind, plane, source-local, model-use, evidence-reuse, or other direct relation and apply only its declared congruence loss to `R`.
+2. **C2‑2 (Coordinates).** Each episteme **SHALL** declare `[F,G,R]` for its exact claim and use with a brief rationale; where R has no justified numerical model, retain its unquantified support and bounded conclusion. Formal validity needs no empirical score; **F** is `U.Formality ∈ {F0…F9}` per **C.2.3**, **exactly one episteme‑level F** computed as the **min over essential parts**. CL is declared for **pairs only**. A named notation scheme **MAY** use sub‑anchors (e.g., `F4[OCL]`, `F7[HOL]`), which **MUST** preserve the global order and **map to their parent anchor** from C.2.3.
+3. **C2‑3 (Composition).** Authors **SHALL** identify support roles and dependencies under B.1.3/C.2.2 before combining inputs. Any numerical R or loss **MUST** have justified meanings, scales, assumptions, and a receiving model under B.3; no universal min/max or F-to-R conversion applies. Otherwise return separate support and a bounded synthesis. F uses the minimum over essential formal constituents; G uses applicable path intersections and supported SpanUnion under A.2.6. Every reuse **MUST** name the actual direct relation and retain its warranted limitation; do not hide contrary evidence or unsupported scope.
 4. **C2‑4 (NotationBridge).** Multi‑notation representation components **SHOULD** register `NotationBridge` edges with CL and loss note; any cross‑notation reasoning **MUST** cite the bridge’s CL.
 5. **C2‑5 (No action).** Epistemes **MUST NOT** be assigned actions; work is executed by systems in role.
 
 ### C.2:8 - Consequences
 
-**Benefits.** A single, compact **map** for all knowledge epistemes or publications; fast detection of weakest‑link **R** in aggregates; disciplined reuse across domains with explicit **CL**; consistent separation of **meaning** from **material carriers**.
-**Trade-offs.** Authors must learn to declare Γ-mode and CL explicitly; multi-notation work requires relation-specific bookkeeping. *Mitigation:* the three-part C.2.1 constitution test and direct neighboring patterns keep the ordinary entry brief while preserving recoverable precision.
+**Benefits.** A compact map for knowledge epistemes; visible support dependencies and limitations; useful formal and qualitative results alongside justified calculations; disciplined reuse across domains with explicit CL; consistent separation of meaning from material carriers.
+**Trade-offs.** Authors must identify the support relation and any calculation model; multi-notation work keeps its relation-specific basis. Some useful syntheses have no common scalar. *Mitigation:* the C.2.1 constitution test and direct neighboring patterns keep the ordinary entry brief while preserving recoverable precision.
 
 ### C.2:9 - Rationale
 
@@ -100,7 +101,7 @@ KD-CAL turns the coarse legacy semiotic picture into **holonic composition** ove
 ### C.2:11 - Worked mini‑examples (post‑2015 flavours)
 
 * **Formal lift (ΔF).** Recasting a 2019 **variational free‑energy** narrative into a typed calculus raises **F**, clarifies scope, and enables CL‑2 bridges between biological and ML formulations—*without* claiming empirical gain (**R** unchanged).
-* **Parallel evidence (R, max).** Two independent **hindcast** lines (circa CMIP6, 2019) supporting the same forecast allow `R(Γ)=max(R₁,R₂)`; if one line drifts, the composite is bounded by the higher-R support line until series constraints apply.
+* **Complementary hindcast evidence.** Two hindcast lines supporting a climate projection may address different errors, reuse data, or cover different conditions. Identify those relations before combining them; a maximum may select one attested argument only under that declared meaning, not measure their combined corroboration. Keep disagreement and unsupported scope visible. This illustration supplies no climate-specific reliability model.
 * **Notation bridge (CL drop).** A 2021 **type‑theoretic specification** rendered in a semi‑formal DSL requires a `NotationBridge` with a CL<3 note; any theorem transported across must respect the bridge’s declared preservation.
 
 *(No tooling is implied; these are conceptual moves within the calculus.)*

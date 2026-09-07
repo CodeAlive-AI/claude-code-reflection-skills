@@ -25,13 +25,13 @@ Cross‑Scale Consistency**.
 1. **Bias‑Lens set**
    Every normative pattern is assessed through **five lenses** that match the
    Principle classes from **E.3**:
-   `Gov`, `Arch`, `Onto/Epist`, `Prag`, `Did`.
+   `Gov`, `Arch`, `Epist` (epistemological and ontological), `Prag`, `Did`.
 
 2. **Equilibrium question**
    For each lens ask:
    *“Does the pattern over‑privilege this class or silence it?”*
    *Examples:*
-   *   Over‑reliance on `Onto/Epist` precision may ignore `Prag` cost.
+   *   Over‑reliance on `Epist` precision may ignore `Prag` cost.
    *   Dominant `Arch` metaphors may alienate `Did` audiences.
 
 3. **Scope‑or‑Balance rule**
@@ -42,15 +42,15 @@ Cross‑Scale Consistency**.
 
 4. **Audit trace**
    The pattern carries a short **Bias‑Annotation** paragraph recording
-   which lenses were tested and any scoping statement. No workflow checklists or
-   reviewer metadata or other data and data format and data governance tips is stored in the Core.
+   which lenses were tested and any scoping statement. Keep workflow checklists,
+   reviewer metadata and other data outside the Core, along with tips on data formats and data governance.
 
 ### E.5.4:5 - Archetypal Grounding (System / Episteme)
 
 | Bias lens | Example imbalance | Conceptual correction |
 |-----------|------------------|-----------------------|
 | `Arch` vs `Did` | Pump pattern uses abstract category theory terms. | Add plain‑language boundary narrative or move abstraction to appendix. |
-| `Onto/Epist` vs `Prag` | Episteme trust score defined with complex logic but no guidance on empirical cost. | Add pragmatic note on evidence collection cost or scope the pattern. |
+| `Epist` vs `Prag` | Episteme trust score defined with complex logic but no guidance on empirical cost. | Add pragmatic note on evidence collection cost or scope the pattern. |
 
 ### E.5.4:6 - Conformance Checklist
 
@@ -70,9 +70,9 @@ Cross‑Scale Consistency**.
 
 ### E.5.4:8 - Rationale
 Coupling the audit directly to the Principle Taxonomy keeps the guard‑rail
-**concept‑driven**, not workflow‑driven. No mention of review boards,
-CI‑jobs, or checklists appears in the Core; such mechanics belong in the
-Tooling Guide. This guard‑rail therefore satisfies **GR‑1** (Firewall)
+**concept‑driven**. Review-board procedures, CI jobs, and workflow
+checklists belong in the Tooling Guide. This separation satisfies
+**GR‑1** (Firewall)
 while securing Pillars **P‑2, P‑7 Pragmatic Utility, P‑8**.
 
 ### E.5.4:9 - Relations

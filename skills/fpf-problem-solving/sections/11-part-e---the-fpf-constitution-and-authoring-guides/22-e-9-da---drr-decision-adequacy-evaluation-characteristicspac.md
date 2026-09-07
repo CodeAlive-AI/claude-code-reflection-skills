@@ -6,7 +6,7 @@ Status: Core.
 
 Use `E.9.DA` when one exact `DRR` must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through, source-use carry-through, scope-boundary decision, split decision, or architecture-hold decision. Add exact C.2.1 episteme identity only when the judgement or a named later reliance depends on it. E.9.DA supplies the object-specific evaluation questions and reusable coordinate meanings.
 
-Not this pattern when the evaluated object is one authored pattern version, one admission or refresh review, one local wording repair, or a measurement-law problem. Use `E.21`, `E.19`, `F.19` for ordinary wording repair with `E.10` as cue and unresolved-meaning route, or `C.16`, `A.17`, `A.18`, and `A.19` for those objects.
+Use `E.21` to judge an authored pattern version, `E.19` to review an FPF pattern edition or bounded subset for admission or refresh, `F.19` for ordinary wording repair with `E.10` as cue and unresolved-meaning route, and `C.16`, `A.17`, `A.18`, and `A.19` for measurement-law questions. Those questions are outside this DRR-adequacy evaluation.
 
 First useful move: read the exact DRR in its declared authoring use and state its working problem, selected answer, practical change, first drafting action, and boundary. When it selects a broad authoring rule, inspect the actual predecessor/proposed host effect before opening any optional assessment or result apparatus.
 
@@ -67,11 +67,11 @@ For a broad language or ontology rule, `DraftingActionability`, `LexicalAndNamin
 
 #### E.9.DA:4.1 - Local names and kind settlement
 
-The following names support only the complete reusable-result branch. An ordinary bounded review need not instantiate them. When the branch is opened, each name resolves to the existing FPF object or reference stated here; none names a checking machine, actor, authority, or mandatory record.
+The following names support only the complete reusable-result branch. An ordinary bounded review need not instantiate them. When the branch is opened, each name resolves to the existing FPF object or reference stated here; none names an authority or mandatory record.
 
 | Local name | Kind and function |
 |---|---|
-| `DRRDecisionAdequacyEvaluation` | Compatibility compound label for the full evaluation package. Any use resolves to the exact values current for its receiving use: configuration, optional semantic Method, optional assessment application and bindings, optional Work admission, result episteme, witnesses or evidence-use relations, and optional record. The label is not one kind, actor, Method, application, or Work occurrence. |
+| `DRRDecisionAdequacyEvaluation` | Compatibility compound label for the full evaluation package. Any use resolves to the exact values current for its receiving use: configuration, optional semantic Method, optional assessment application and bindings, optional Work admission, result episteme, witnesses or evidence-use relations, and optional record. The label is not one kind, Method, application, or Work occurrence. |
 | `DRRDecisionAdequacyCharacteristicSpaceRef` | Reference to the exact A.19 `U.CharacteristicSpace` whose slots are the required E.9.DA coordinates and whose scale bindings use `E.9.DA:4.3`; not an assessment, result, or record. |
 | `DRRDecisionAdequacyEvaluationSpecRef` | Reference to this object-specific A.19.ECS evaluation-specification episteme: applicability, coordinates, scale meanings, evidence/missingness rules, result shape, calibration, status meanings, and reopen conditions. |
 | `DRRVersionRef` | Exact C.2.1 `DRR` episteme version named by value as the checked object. |
@@ -212,7 +212,7 @@ If an important omitted question is found, state it as a substantive finding bef
 | Coordinate | Evaluation question |
 |---|---|
 | `BoundedDecisionQuestionRecoverability` | Can the reader recover the FPF content decision question named by value and adjacent questions outside it? |
-| `SelectedAnswerDecisiveness` | Does the `DRR` decide the selected answer now rather than leave it for drafting? |
+| `SelectedAnswerDecisiveness` | Does the `DRR` record the selected answer as a decision made now rather than left for drafting? |
 | `SourceUseAndDecisionInheritanceCarryThrough` | Does needed source use or accepted decision inheritance change selected answers, boundaries, obligations, cases, architecture choices, stops, or reopen conditions by value? |
 | `AlternativeDispositionCompleteness` | Are the alternatives needed to explain the selected answer, live boundary, or reopen condition closed, while irrelevant discussion history is absent from the current DRR? |
 | `SelectedLocusObligationClosure` | Are selected content responsibilities and explicit non-responsibilities assigned to selected loci named by value without unclassified selected loci, hidden ontic-candidate decisions, or precision-restoration profile defects that would become pasteable pattern prose? |
@@ -424,11 +424,11 @@ The current-best source set spans empirical decision-document use, rationale-com
 |---|---|
 | `E.9` | Defines the DRR decision method and ordinary minimum form, with optional exact work/result and C.2.1 identity when a current claim or named reliance needs them. E.9.DA checks one exact DRR; it is not a second DRR method or form. |
 | `A.19`, `A.19.ECS`, `A.17`, `A.18`, `C.16`, `C.16.Q`, `C.25` | Define or constrain the characteristic space, evaluation specification, characteristics, scales, measurement boundary, quality-ascription precision, declared-use floor, noncompensatory status meaning, and any separately selected Q-Bundle consumed here. E.9.DA supplies the DRR-specific coordinates and result rules. |
-| `A.13`, `A.15.1`, `F.6`, `A.6.1`, `A.2`, `A.2.1`, `C.3.2` | `A.13` supplies every precise evaluator-performer's core and same obtaining assignment; `A.15.1` independently admits dated Work; `F.6` supplies a separate later relation only when precise assignment-bound attribution is current. `A.6.1` defines an exact application and its actual bindings; `A.2` and `A.2.1` supply the assignment species and occurrence; `C.3.2` is relevant only to an independently asserted local system-role classification. Method, application, Work, and attribution are independently conditional here. Neither an application nor Method alone implies Work. |
-| `C.2.1` | Constitutes an exact checked DRR or reusable coordinate/result/record episteme when that identity is current. An ordinary bounded review need not create those objects. |
-| `A.10`, `B.3` | Govern exact evidence use/provenance and any assurance or reliance on the result. Witness presence and a favorable value create neither relation. |
+| `A.13`, `A.15.1`, `F.6`, `A.6.1`, `A.2`, `A.2.1`, `C.3.2` | `A.13` supplies every precise evaluator-performer's core and same obtaining assignment; `A.15.1` independently admits dated Work; `F.6` supplies a separate later relation only when precise assignment-bound attribution is current. `A.6.1` governs an exact application of a declared mechanism operation and its actual bindings; `A.2` and `A.2.1` supply the assignment species and occurrence; `C.3.2` is relevant only to an independently asserted local system-role classification. Method, application, Work, and attribution are independently conditional here. Neither an application nor Method alone implies Work. |
+| `C.2.1` | Defines the identity of an exact checked DRR or reusable coordinate/result/record episteme when that identity is current. An ordinary bounded review need not create those objects. |
+| `A.10`, `B.3` | `A.10` governs exact evidence use and provenance. `B.3` governs an assurance use of the result when an actual named assurance claim about an exact target claim is current. Witness presence and a favorable value create neither relation. |
 | `F.10`, `G.11` | Govern any downstream status use/interpretation and currentness. A local E.9.DA status value does not authorize drafting by itself. |
-| `E.24.PUB`, `C.29` | Govern publication occurrence, form, carrier, and representation of a result or record; state publication separately from the assessment and its evidence basis. |
+| `E.24.PUB`, `C.29` | `E.24.PUB` governs publication occurrence, form, and carrier; `C.29` governs representation through a declared mathematical lens when such a lens is used for a result or record. State publication separately from the assessment and its evidence basis. |
 | `E.8` | Governs later authored pattern bodies and the current-best-versus-lineage, source-payload, adoption, changed-locus, and reopen discipline used in §11. |
 | `E.19` | May use precise E.9.DA findings, a repaired DRR, or reusable coordinate-result claims, and may expose an upstream DRR defect. Its admission or refresh review remains distinct. |
 | `E.21` | Declares the pattern-quality characteristic space and result rules used for resulting pattern versions. Dated E.21 assessment work and its result concern one exact pattern version, not DRR adequacy, E.19 admission, or the E.9.DA record. |
